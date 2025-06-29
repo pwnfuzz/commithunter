@@ -107,7 +107,7 @@ LOOKBACK_HOURS = int(os.getenv("LOOKBACK_HOURS", "24"))
 
 def github_request(url: str, params: Dict[str, Any] | None = None) -> Any:
     headers = {"Accept": "application/vnd.github+json"}
-    token = os.getenv("GITHUB_TOKEN")
+    token = os.getenv("PAT_TOKEN")
     if token:
         headers["Authorization"] = f"Bearer {token}"
     response = requests.get(url, headers=headers, params=params, timeout=30)
