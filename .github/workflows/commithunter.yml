@@ -36,7 +36,8 @@ jobs:
           git add output/* || true
           if git diff --cached --quiet; then
               echo "No changes to commit."
-            else
+          else
               git commit -m "chore: update commit hunter results"
               git push
+          fi
   
