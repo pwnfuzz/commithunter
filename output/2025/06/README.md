@@ -39,3 +39,8 @@
 | 2025-06-30T13:49:50Z | [c3e28e9](https://github.com/postgres/postgres/commit/c3e28e9fd936b83dbb6dfb5003b6221d98f8469c) | postgres/postgres |
 | 2025-06-30T09:30:56Z | [9601351](https://github.com/postgres/postgres/commit/960135114629bc89da0dd1d839541098c7e6401a) | postgres/postgres |
 | 2025-06-30T08:12:31Z | [c5c4fbb](https://github.com/postgres/postgres/commit/c5c4fbb4d482b87c2a6c90337f3b657b2d0002ca) | postgres/postgres |
+| 2025-06-30T17:35:43Z | [fa6cf0b](https://github.com/chromium/chromium/commit/fa6cf0b2ea471dc7a5a4cd2aea6026bfbad1481e) | chromium/chromium |
+| 2025-06-30T17:20:13Z | [2a6320a](https://github.com/chromium/chromium/commit/2a6320aa7d1ff5b58d85b1646a5fded4faa4adeb) | chromium/chromium |
+| 2025-06-30T18:16:57Z | [3c41afd](https://github.com/WebKit/WebKit/commit/3c41afd934ce277f61f52f063fc35e3321686e8e) | webkit/WebKit |
+| 2025-06-30T17:56:17Z | [de4580f](https://github.com/WebKit/WebKit/commit/de4580fe7eeedb0b8582ce8ea85919b788e1d58b) | webkit/WebKit |
+| 2025-06-30T17:10:43Z | [143c9bf](https://github.com/WebKit/WebKit/commit/143c9bf9638fb9bf95f59f98bad780ed6b5820af) | webkit/WebKit |
