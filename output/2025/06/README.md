@@ -51,3 +51,9 @@
 | 2025-06-30T20:07:45Z | [7d60b25](https://github.com/chromium/chromium/commit/7d60b25dcefa09cff2f5476f47ad1e3ece3ac0e9) | chromium/chromium |
 | 2025-06-30T19:13:34Z | [d30bcc0](https://github.com/chromium/chromium/commit/d30bcc02612ec16dd33370a89525670bf95ba20d) | chromium/chromium |
 | 2025-06-30T19:11:57Z | [fb8ec98](https://github.com/WebKit/WebKit/commit/fb8ec98f6a4562ab0928775b332a5be603f1da22) | webkit/WebKit |
+| 2025-06-30T20:14:42Z | [0dda538](https://github.com/chromium/chromium/commit/0dda538507dc9df42631165b896d1bddaea6f435) | chromium/chromium |
+| 2025-06-30T16:08:37Z | [3027e4a](https://github.com/mozilla/gecko-dev/commit/3027e4afe3a1279d9875f2f241a74b600afa5323) | mozilla/gecko-dev |
+| 2025-06-30T13:27:50Z | [cf26e96](https://github.com/mozilla/gecko-dev/commit/cf26e96a377156895333a1f6a87d8b649849c7d2) | mozilla/gecko-dev |
+| 2025-06-30T11:08:32Z | [3af6be2](https://github.com/mozilla/gecko-dev/commit/3af6be24a049026765ce702796b0c756ff90447a) | mozilla/gecko-dev |
+| 2025-06-30T09:17:13Z | [c40c3cc](https://github.com/mozilla/gecko-dev/commit/c40c3ccdf47324474627845adc2e0935d4be3528) | mozilla/gecko-dev |
+| 2025-06-30T21:26:10Z | [2db1b7d](https://github.com/WebKit/WebKit/commit/2db1b7d6bafd526be8ce153a7593c993fa4e64f1) | webkit/WebKit |
