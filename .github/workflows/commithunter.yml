@@ -3,7 +3,7 @@ name: CommitHunter
 on:
   push:                # Trigger on any push to any branch
   schedule:
-    - cron: '0 0 * * *'  # Every 24 hours at 00:00 UTC
+    - cron: '0 * * * *'  # Every every one hour at 00:00 UTC
   workflow_dispatch:    # Manual trigger
 
 jobs:
