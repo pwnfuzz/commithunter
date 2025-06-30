@@ -48,3 +48,6 @@
 | 2025-06-30T18:28:33Z | [62c03a9](https://github.com/chromium/chromium/commit/62c03a941f9adce5be17c106e56d888cd0ceb9ab) | chromium/chromium |
 | 2025-06-30T19:00:20Z | [e498e0d](https://github.com/WebKit/WebKit/commit/e498e0debab264e2d840a9e74613b60c420d04f4) | webkit/WebKit |
 | 2025-06-30T18:36:01Z | [2f67f45](https://github.com/WebKit/WebKit/commit/2f67f454356413a702c53fdcaf5a8b007f034d63) | webkit/WebKit |
+| 2025-06-30T20:07:45Z | [7d60b25](https://github.com/chromium/chromium/commit/7d60b25dcefa09cff2f5476f47ad1e3ece3ac0e9) | chromium/chromium |
+| 2025-06-30T19:13:34Z | [d30bcc0](https://github.com/chromium/chromium/commit/d30bcc02612ec16dd33370a89525670bf95ba20d) | chromium/chromium |
+| 2025-06-30T19:11:57Z | [fb8ec98](https://github.com/WebKit/WebKit/commit/fb8ec98f6a4562ab0928775b332a5be603f1da22) | webkit/WebKit |
