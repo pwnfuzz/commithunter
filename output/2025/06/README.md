@@ -44,3 +44,7 @@
 | 2025-06-30T18:16:57Z | [3c41afd](https://github.com/WebKit/WebKit/commit/3c41afd934ce277f61f52f063fc35e3321686e8e) | webkit/WebKit |
 | 2025-06-30T17:56:17Z | [de4580f](https://github.com/WebKit/WebKit/commit/de4580fe7eeedb0b8582ce8ea85919b788e1d58b) | webkit/WebKit |
 | 2025-06-30T17:10:43Z | [143c9bf](https://github.com/WebKit/WebKit/commit/143c9bf9638fb9bf95f59f98bad780ed6b5820af) | webkit/WebKit |
+| 2025-06-30T18:43:48Z | [d8b943b](https://github.com/chromium/chromium/commit/d8b943bcbce2ee54c380415f46958a7a3b7427d0) | chromium/chromium |
+| 2025-06-30T18:28:33Z | [62c03a9](https://github.com/chromium/chromium/commit/62c03a941f9adce5be17c106e56d888cd0ceb9ab) | chromium/chromium |
+| 2025-06-30T19:00:20Z | [e498e0d](https://github.com/WebKit/WebKit/commit/e498e0debab264e2d840a9e74613b60c420d04f4) | webkit/WebKit |
+| 2025-06-30T18:36:01Z | [2f67f45](https://github.com/WebKit/WebKit/commit/2f67f454356413a702c53fdcaf5a8b007f034d63) | webkit/WebKit |
