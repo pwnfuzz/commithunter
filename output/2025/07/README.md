@@ -1,65 +1,10 @@
+# Security Relevant Updates
 
+_Last updated: 2025-07-01 06:25 UTC_
 
-| Date | Commit | Repo |
-|------|--------|------|
-| 2025-06-30T10:11:39Z | [63cb8f9](https://github.com/openssl/openssl/commit/63cb8f99a13fdc4c7c3b1e88d66a3ff70b72e642) | openssl/openssl |
-| 2025-06-30T14:06:47Z | [d3332d4](https://github.com/dotnet/runtime/commit/d3332d45ced7b5511c0c6083a967f80cac1afc96) | dotnet/runtime |
-| 2025-06-30T22:37:46Z | [a7f1e9e](https://github.com/chromium/chromium/commit/a7f1e9ec2d14cdae207ee18e30b71f812d67472b) | chromium/chromium |
-| 2025-06-30T20:14:42Z | [0dda538](https://github.com/chromium/chromium/commit/0dda538507dc9df42631165b896d1bddaea6f435) | chromium/chromium |
-| 2025-06-30T20:07:45Z | [7d60b25](https://github.com/chromium/chromium/commit/7d60b25dcefa09cff2f5476f47ad1e3ece3ac0e9) | chromium/chromium |
-| 2025-06-30T19:13:34Z | [d30bcc0](https://github.com/chromium/chromium/commit/d30bcc02612ec16dd33370a89525670bf95ba20d) | chromium/chromium |
-| 2025-06-30T18:43:48Z | [d8b943b](https://github.com/chromium/chromium/commit/d8b943bcbce2ee54c380415f46958a7a3b7427d0) | chromium/chromium |
-| 2025-06-30T18:28:33Z | [62c03a9](https://github.com/chromium/chromium/commit/62c03a941f9adce5be17c106e56d888cd0ceb9ab) | chromium/chromium |
-| 2025-06-30T17:35:43Z | [fa6cf0b](https://github.com/chromium/chromium/commit/fa6cf0b2ea471dc7a5a4cd2aea6026bfbad1481e) | chromium/chromium |
-| 2025-06-30T17:20:13Z | [2a6320a](https://github.com/chromium/chromium/commit/2a6320aa7d1ff5b58d85b1646a5fded4faa4adeb) | chromium/chromium |
-| 2025-06-30T16:28:46Z | [6f3bec1](https://github.com/chromium/chromium/commit/6f3bec1784aca0cfa6ef1d9209420c44aa12c7f3) | chromium/chromium |
-| 2025-06-30T15:40:15Z | [60e7534](https://github.com/chromium/chromium/commit/60e7534475d3f1fbf76750b19dea2220bab52ffe) | chromium/chromium |
-| 2025-06-30T13:33:42Z | [beafe46](https://github.com/chromium/chromium/commit/beafe463362949a0c65bd32ae9adcfa142b2aae9) | chromium/chromium |
-| 2025-06-30T13:09:41Z | [2112213](https://github.com/chromium/chromium/commit/21122139ea67a71fec39e71d3c3ed3b066d82ea2) | chromium/chromium |
-| 2025-06-30T12:37:28Z | [4313197](https://github.com/chromium/chromium/commit/43131978898efb2b83b936d6148d1f1cb28e9698) | chromium/chromium |
-| 2025-06-30T11:32:10Z | [8f8b623](https://github.com/chromium/chromium/commit/8f8b623c1bd9fe658f87b672885a95c707b04bb5) | chromium/chromium |
-| 2025-06-30T11:00:34Z | [6ea8451](https://github.com/chromium/chromium/commit/6ea845148338bfc8456133393818f6df93c82c0e) | chromium/chromium |
-| 2025-06-30T10:11:58Z | [8d3b822](https://github.com/chromium/chromium/commit/8d3b822303948ccb06b4b9250031ee2c73e25cef) | chromium/chromium |
-| 2025-06-30T09:47:41Z | [29efc09](https://github.com/chromium/chromium/commit/29efc09cf8973781ae12795d05a70314ae52ccbd) | chromium/chromium |
-| 2025-06-30T09:25:45Z | [65cec6b](https://github.com/chromium/chromium/commit/65cec6bbd1682767c7d279eb99fec8b37daa51fe) | chromium/chromium |
-| 2025-06-30T09:09:13Z | [81a1127](https://github.com/chromium/chromium/commit/81a112758442be58f29ccb4acaddf6561f60188c) | chromium/chromium |
-| 2025-06-30T09:08:16Z | [2bcf416](https://github.com/chromium/chromium/commit/2bcf4167359e294c197010d2ddfb4b6dd38f18f6) | chromium/chromium |
-| 2025-06-30T08:03:28Z | [a9eeff7](https://github.com/chromium/chromium/commit/a9eeff71e3fb1382d3eb46f0b82c276f63446079) | chromium/chromium |
-| 2025-06-30T06:54:26Z | [666a50a](https://github.com/chromium/chromium/commit/666a50a28d7145956b0b4b98ea057437155aa20c) | chromium/chromium |
-| 2025-06-30T02:02:10Z | [fdd1868](https://github.com/chromium/chromium/commit/fdd1868d2de738e9566399992e9bd4e4d94baaa4) | chromium/chromium |
-| 2025-06-30T16:08:37Z | [3027e4a](https://github.com/mozilla/gecko-dev/commit/3027e4afe3a1279d9875f2f241a74b600afa5323) | mozilla/gecko-dev |
-| 2025-06-30T13:27:50Z | [cf26e96](https://github.com/mozilla/gecko-dev/commit/cf26e96a377156895333a1f6a87d8b649849c7d2) | mozilla/gecko-dev |
-| 2025-06-30T11:08:32Z | [3af6be2](https://github.com/mozilla/gecko-dev/commit/3af6be24a049026765ce702796b0c756ff90447a) | mozilla/gecko-dev |
-| 2025-06-30T09:17:13Z | [c40c3cc](https://github.com/mozilla/gecko-dev/commit/c40c3ccdf47324474627845adc2e0935d4be3528) | mozilla/gecko-dev |
-| 2025-07-01T01:01:23Z | [c9651d6](https://github.com/WebKit/WebKit/commit/c9651d6e97ae380627a634511249933c0a615098) | webkit/WebKit |
-| 2025-07-01T00:13:28Z | [cb619a3](https://github.com/WebKit/WebKit/commit/cb619a3e3f54e69f1b46d36645b46606f9d12c9c) | webkit/WebKit |
-| 2025-07-01T00:12:11Z | [e2d0e14](https://github.com/WebKit/WebKit/commit/e2d0e14844dbef802866cfc2a46d234a507b0c48) | webkit/WebKit |
-| 2025-06-30T23:09:13Z | [11b49b3](https://github.com/WebKit/WebKit/commit/11b49b3d842e9268d289b86c1f10237093ab417e) | webkit/WebKit |
-| 2025-06-30T22:39:23Z | [6f89b28](https://github.com/WebKit/WebKit/commit/6f89b28dfb13595fbb09e8f3b955c156df53b191) | webkit/WebKit |
-| 2025-06-30T22:23:25Z | [8fd5ab7](https://github.com/WebKit/WebKit/commit/8fd5ab7bf0260ad28d50e10b8a66a0b1bf9eac07) | webkit/WebKit |
-| 2025-06-30T21:26:10Z | [2db1b7d](https://github.com/WebKit/WebKit/commit/2db1b7d6bafd526be8ce153a7593c993fa4e64f1) | webkit/WebKit |
-| 2025-06-30T19:11:57Z | [fb8ec98](https://github.com/WebKit/WebKit/commit/fb8ec98f6a4562ab0928775b332a5be603f1da22) | webkit/WebKit |
-| 2025-06-30T19:00:20Z | [e498e0d](https://github.com/WebKit/WebKit/commit/e498e0debab264e2d840a9e74613b60c420d04f4) | webkit/WebKit |
-| 2025-06-30T18:36:01Z | [2f67f45](https://github.com/WebKit/WebKit/commit/2f67f454356413a702c53fdcaf5a8b007f034d63) | webkit/WebKit |
-| 2025-06-30T18:16:57Z | [3c41afd](https://github.com/WebKit/WebKit/commit/3c41afd934ce277f61f52f063fc35e3321686e8e) | webkit/WebKit |
-| 2025-06-30T17:56:17Z | [de4580f](https://github.com/WebKit/WebKit/commit/de4580fe7eeedb0b8582ce8ea85919b788e1d58b) | webkit/WebKit |
-| 2025-06-30T17:10:43Z | [143c9bf](https://github.com/WebKit/WebKit/commit/143c9bf9638fb9bf95f59f98bad780ed6b5820af) | webkit/WebKit |
-| 2025-06-30T16:10:49Z | [34e4b87](https://github.com/WebKit/WebKit/commit/34e4b871322e872acaed32b6cec020679fac098a) | webkit/WebKit |
-| 2025-06-30T15:26:28Z | [ffb2fe1](https://github.com/WebKit/WebKit/commit/ffb2fe10b66b6053346e1a49e667dabaa5cdf99d) | webkit/WebKit |
-| 2025-06-30T15:59:55Z | [522bca9](https://github.com/haproxy/haproxy/commit/522bca98e14385beaf0b06a4f711777ba1aab933) | haproxy/haproxy |
-| 2025-06-30T15:59:55Z | [5c3d0a5](https://github.com/haproxy/haproxy/commit/5c3d0a554b3db024aef62826b67821ca6a1383ee) | haproxy/haproxy |
-| 2025-06-30T15:59:55Z | [3465f88](https://github.com/haproxy/haproxy/commit/3465f88f8ab9c3f163d73938765f741c2b7e6a67) | haproxy/haproxy |
-| 2025-06-30T14:48:00Z | [5ba0a2d](https://github.com/haproxy/haproxy/commit/5ba0a2d5270f2ba52a3022578e52fb5709bff3cb) | haproxy/haproxy |
-| 2025-06-30T14:47:59Z | [a2a142b](https://github.com/haproxy/haproxy/commit/a2a142bf40c76114cf85dfe1f48d7b14ec70ad5f) | haproxy/haproxy |
-| 2025-06-30T14:43:51Z | [7fc8ab0](https://github.com/haproxy/haproxy/commit/7fc8ab0397f01c58a31f203b4d97c79cff3ae244) | haproxy/haproxy |
-| 2025-06-30T14:26:25Z | [01dfe17](https://github.com/haproxy/haproxy/commit/01dfe17acf5b16471482f4f80849d3cddee9b613) | haproxy/haproxy |
-| 2025-06-30T14:26:19Z | [9d3c73c](https://github.com/haproxy/haproxy/commit/9d3c73c9f2c7650de356c4b75cb114a6a60282c4) | haproxy/haproxy |
-| 2025-06-30T23:57:05Z | [2e94721](https://github.com/postgres/postgres/commit/2e947217474c15c7fd9011d1ab2b0d4657b3eae2) | postgres/postgres |
-| 2025-06-30T14:22:02Z | [f20a347](https://github.com/postgres/postgres/commit/f20a347e1a613cfc9053e7bc3d254608ae968386) | postgres/postgres |
-| 2025-06-30T13:49:50Z | [c3e28e9](https://github.com/postgres/postgres/commit/c3e28e9fd936b83dbb6dfb5003b6221d98f8469c) | postgres/postgres |
-| 2025-06-30T09:30:56Z | [9601351](https://github.com/postgres/postgres/commit/960135114629bc89da0dd1d839541098c7e6401a) | postgres/postgres |
-| 2025-06-30T08:12:31Z | [c5c4fbb](https://github.com/postgres/postgres/commit/c5c4fbb4d482b87c2a6c90337f3b657b2d0002ca) | postgres/postgres |
-| 2025-07-01T02:51:24Z | [6c82cfc](https://github.com/chromium/chromium/commit/6c82cfce321f1443ed00e83c6e91f0b750cdff61) | chromium/chromium |
-| 2025-07-01T02:12:19Z | [1d6dde9](https://github.com/chromium/chromium/commit/1d6dde936f3a4913a8da8c69609ebd4be559234e) | chromium/chromium |
-| 2025-07-01T03:50:51Z | [56ca2c2](https://github.com/chromium/chromium/commit/56ca2c27eb414925f447103b0d6ce35f5d6f23a4) | chromium/chromium |
-| 2025-07-01T04:13:48Z | [c679897](https://github.com/postgres/postgres/commit/c67989789cec3953effca4e01dff834abff9116a) | postgres/postgres |
+| Date | Type | Identifier | Repository |
+| ---- | ---- | ---------- | ---------- |
+| 2025-06-30T10:11:39Z | Commit | [63cb8f9](https://github.com/openssl/openssl/commit/63cb8f99a13fdc4c7c3b1e88d66a3ff70b72e642) | openssl/openssl |
+| 2025-06-30T13:59:56Z | PR | [#27920](https://github.com/openssl/openssl/pull/27920) | openssl/openssl |
+| 2025-06-30T10:15:18Z | PR | [#27910](https://github.com/openssl/openssl/pull/27910) | openssl/openssl |
+| 2025-06-30T16:16:47Z | PR | [#30593](https://github.com/wazuh/wazuh/pull/30593) | wazuh/wazuh |
