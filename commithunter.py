@@ -70,7 +70,11 @@ OUTPUT_ROOT = Path("output")
 LOOKBACK_HOURS = int(os.getenv("LOOKBACK_HOURS", "24"))
 
 GITHUB_API_URL = "https://api.github.com"
+# Get token from environment variable (recommended for security)
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+if not GITHUB_TOKEN:
+    print("Warning: GITHUB_TOKEN environment variable not set. Some features may be rate-limited.")
+
 HEADERS = {
     "Accept": "application/vnd.github+json",
     **({"Authorization": f"Bearer {GITHUB_TOKEN}"} if GITHUB_TOKEN else {})
@@ -93,16 +97,33 @@ def github_request(url: str, params: Dict[str, Any] | None = None) -> Any:
     response.raise_for_status()
     return response.json()
 
-def github_graphql_query(query: str, variables: Dict[str, Any] = {}) -> Any:
+def github_graphql_query(query: str, variables: Dict[str, Any] = None) -> Any:
+    if variables is None:
+        variables = {}
+        
+    if not GITHUB_TOKEN:
+        print("Error: GITHUB_TOKEN is required for GraphQL queries")
+        return {"data": None}
+        
     url = "https://api.github.com/graphql"
     headers = {
         "Authorization": f"Bearer {GITHUB_TOKEN}",
         "Accept": "application/vnd.github+json"
     }
-    json_payload = {"query": query, "variables": variables}
-    response = requests.post(url, headers=headers, json=json_payload, timeout=30)
-    response.raise_for_status()
-    return response.json()
+    
+    try:
+        json_payload = {"query": query, "variables": variables}
+        response = requests.post(url, headers=headers, json=json_payload, timeout=30)
+        response.raise_for_status()
+        return response.json()
+    except requests.exceptions.HTTPError as e:
+        print(f"GitHub API error: {e}")
+        if e.response.status_code == 401:
+            print("Authentication failed. Please check your GITHUB_TOKEN")
+        return {"data": None}
+    except Exception as e:
+        print(f"Error making GraphQL query: {e}")
+        return {"data": None}
 
 # -------------------------
 # Fetch GitHub commits, PRs, advisories
@@ -145,6 +166,11 @@ def fetch_recent_prs(repo: str, since_iso: str) -> List[Dict[str, Any]]:
 
 def fetch_ghsa_advisories(since: datetime) -> List[Dict[str, Any]]:
     print("Fetching recent GitHub Security Advisories...")
+    
+    if not GITHUB_TOKEN:
+        print("Skipping GitHub Security Advisories - GITHUB_TOKEN not provided")
+        return []
+        
     advisories = []
     after = None
     query = """
@@ -191,24 +217,32 @@ def fetch_ghsa_advisories(since: datetime) -> List[Dict[str, Any]]:
       }
     }
     """
-    while True:
-        variables = {
-            "after": after,
-            "since": since.isoformat()
-        }
-        result = github_graphql_query(query, variables)
-        data = result.get("data", {}).get("securityAdvisories", {})
-        if not data:
-            break
+    try:
+        while True:
+            variables = {
+                "after": after,
+                "since": since.isoformat()
+            }
+            result = github_graphql_query(query, variables)
+            if not result or "data" not in result or not result["data"]:
+                print("Failed to fetch GitHub Security Advisories")
+                break
+                
+            data = result.get("data", {}).get("securityAdvisories", {})
+            if not data:
+                break
+                
+            nodes = data.get("nodes", [])
+            advisories.extend(nodes)
             
-        nodes = data.get("nodes", [])
-        advisories.extend(nodes)
-        
-        page_info = data.get("pageInfo", {})
-        if not page_info.get("hasNextPage"):
-            break
+            page_info = data.get("pageInfo", {})
+            if not page_info.get("hasNextPage"):
+                break
+                
+            after = page_info.get("endCursor")
             
-        after = page_info.get("endCursor")
+    except Exception as e:
+        print(f"Error fetching GitHub Security Advisories: {e}")
         
     return advisories
 

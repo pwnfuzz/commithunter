@@ -1,17 +1,33 @@
 name: CommitHunter
 
 on:
-  push:                # Trigger on any push to any branch
+  push:
+    branches: [ main, master ]
   schedule:
-    - cron: '0 * * * *'  # Every every one hour at 00:00 UTC
+    - cron: '0 * * * *'  # Every hour at minute 0
   workflow_dispatch:    # Manual trigger
+
+# Set the permissions for the GITHUB_TOKEN
+permissions:
+  contents: write
+  security-events: read
+  actions: read
 
 jobs:
   scan:
     runs-on: ubuntu-latest
+    
+    # Use the GitHub token with the necessary permissions
+    permissions:
+      contents: write  # For committing changes
+      security-events: read  # For reading security advisories
+      actions: read  # For workflow status checks
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Fetch all history for all branches and tags
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -25,19 +41,25 @@ jobs:
 
       - name: Run commit hunter
         env:
-          GITHUB_TOKEN: ${{ env.PAT_TOKEN }}
+          # Use the built-in GITHUB_TOKEN with the security-events: read permission
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python commithunter.py
 
-      - name: Commit results
+      - name: Commit and push changes
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
         run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add output/* || true
-          if git diff --cached --quiet; then
-              echo "No changes to commit."
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          
+          # Add only the output directory and README
+          git add README.md output/ || echo "No files to add"
+          
+          # Check if there are changes to commit
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update security findings [skip ci]"
+            git push
           else
-              git commit -m "chore: update commit hunter results!"
-              git push
+            echo "No changes to commit."
           fi
   
