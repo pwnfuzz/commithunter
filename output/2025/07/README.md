@@ -59,3 +59,5 @@
 | 2025-06-30T13:49:50Z | [c3e28e9](https://github.com/postgres/postgres/commit/c3e28e9fd936b83dbb6dfb5003b6221d98f8469c) | postgres/postgres |
 | 2025-06-30T09:30:56Z | [9601351](https://github.com/postgres/postgres/commit/960135114629bc89da0dd1d839541098c7e6401a) | postgres/postgres |
 | 2025-06-30T08:12:31Z | [c5c4fbb](https://github.com/postgres/postgres/commit/c5c4fbb4d482b87c2a6c90337f3b657b2d0002ca) | postgres/postgres |
+| 2025-07-01T02:51:24Z | [6c82cfc](https://github.com/chromium/chromium/commit/6c82cfce321f1443ed00e83c6e91f0b750cdff61) | chromium/chromium |
+| 2025-07-01T02:12:19Z | [1d6dde9](https://github.com/chromium/chromium/commit/1d6dde936f3a4913a8da8c69609ebd4be559234e) | chromium/chromium |
