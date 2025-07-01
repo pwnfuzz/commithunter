@@ -20,8 +20,7 @@ REPOSITORIES = [
     "erlang/otp",
     "wazuh/wazuh",
     "roundcube/roundcubemail",
-    "langflow/langflow",
-    "simplehelp/simplehelp",
+    "langflow-ai/langflow",
     "hibernate/hibernate-validator"
 ]
 
@@ -144,65 +143,73 @@ def fetch_recent_prs(repo: str, since_iso: str) -> List[Dict[str, Any]]:
         page += 1
     return prs
 
-def fetch_ghsa_advisories(repo: str) -> List[Dict[str, Any]]:
-    owner, name = repo.split("/")
+def fetch_ghsa_advisories(since: datetime) -> List[Dict[str, Any]]:
+    print("Fetching recent GitHub Security Advisories...")
     advisories = []
     after = None
     query = """
-    query($owner: String!, $name: String!, $after: String) {
-      repository(owner: $owner, name: $name) {
-        vulnerabilityAlerts(first: 100, after: $after) {
-          pageInfo {
-            hasNextPage
-            endCursor
+    query($after: String, $since: DateTime!) {
+      securityAdvisories(
+        first: 100,
+        after: $after,
+        orderBy: {field: UPDATED_AT, direction: DESC},
+        updatedSince: $since
+      ) {
+        pageInfo {
+          hasNextPage
+          endCursor
+        }
+        nodes {
+          ghsaId
+          summary
+          description
+          severity
+          publishedAt
+          updatedAt
+          identifiers {
+            type
+            value
           }
-          nodes {
-            securityVulnerability {
-              advisory {
-                ghsaId
-                description
-                severity
-                publishedAt
-                identifiers {
-                  type
-                  value
-                }
-                references {
-                  url
-                }
-                cvss {
-                  score
-                }
-                epss {
-                  score
-                }
-                permalink
+          references {
+            url
+          }
+          vulnerabilities(first: 10) {
+            nodes {
+              package {
+                name
+                ecosystem
               }
+              vulnerableVersionRange
             }
           }
+          cvss {
+            score
+            vectorString
+          }
+          permalink
         }
       }
     }
     """
     while True:
-        variables = {"owner": owner, "name": name, "after": after}
+        variables = {
+            "after": after,
+            "since": since.isoformat()
+        }
         result = github_graphql_query(query, variables)
-        repo_data = result.get("data", {}).get("repository")
-        if not repo_data:
+        data = result.get("data", {}).get("securityAdvisories", {})
+        if not data:
             break
-        alerts = repo_data.get("vulnerabilityAlerts")
-        if not alerts:
+            
+        nodes = data.get("nodes", [])
+        advisories.extend(nodes)
+        
+        page_info = data.get("pageInfo", {})
+        if not page_info.get("hasNextPage"):
             break
-        nodes = alerts.get("nodes", [])
-        for node in nodes:
-            vuln = node.get("securityVulnerability", {})
-            advisory = vuln.get("advisory", {})
-            advisories.append(advisory)
-        pageInfo = alerts.get("pageInfo", {})
-        if pageInfo.get("hasNextPage"):
-            after = pageInfo.get("endCursor")
-        else:
-            break
+            
+        after = page_info.get("endCursor")
+        
     return advisories
 
 # -------------------------
@@ -230,6 +237,7 @@ def advisory_matches(advisory: Dict[str, Any]) -> bool:
 # -------------------------
 
 def fetch_openwall_oss_entries(since_time: datetime) -> List[Dict[str, Any]]:
+    print(f"Fetching recent Openwall OSS entries...")
     try:
         feed = feedparser.parse(OPENWALL_OSS_URL)
     except Exception as e:
@@ -237,20 +245,23 @@ def fetch_openwall_oss_entries(since_time: datetime) -> List[Dict[str, Any]]:
         return []
 
     entries = []
-    for entry in feed.entries:
-        # entry.published_parsed is a time.struct_time in UTC
-        published_dt = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
-        if published_dt < since_time:
-            continue
-        # Filter by keywords in title or summary
-        text = f"{entry.title}\n{entry.summary}"
-        if KEYWORD_PATTERN.search(text):
+    for entry in feed.entries[:20]:  # Only check most recent 20 entries
+        try:
+            published_dt = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
+            if published_dt < since_time:
+                continue
+                
             entries.append({
                 "title": entry.title,
                 "link": entry.link,
                 "published": published_dt.isoformat(),
-                "summary": entry.summary
+                "summary": entry.get("summary", ""),
+                "type": "oss-security"
             })
+        except Exception as e:
+            print(f"Error processing OSS entry: {e}", file=sys.stderr)
+            continue
+            
     return entries
 
 # -------------------------
@@ -258,6 +269,7 @@ def fetch_openwall_oss_entries(since_time: datetime) -> List[Dict[str, Any]]:
 # -------------------------
 
 def extract_severity_from_zdi_entry(entry) -> str:
+    print(f"Extracting severity from ZDI entry: {entry.title}")
     # Usually severity is in the summary or tags; check tags first
     severity = None
     if "tags" in entry:
@@ -306,100 +318,212 @@ def fetch_zdi_high_severity(since_time: datetime) -> List[Dict[str, Any]]:
 # Format output as markdown
 # -------------------------
 
-def summarize_commit(commit: Dict[str, Any], repo: str) -> str:
+def summarize_commit(commit: Dict[str, Any], repo: str) -> tuple[str, str, str, str, str]:
     sha = commit.get("sha", "")[:7]
     url = commit.get("html_url") or f"https://github.com/{repo}/commit/{sha}"
     message = commit.get("commit", {}).get("message", "").splitlines()[0]
-    date = commit.get("commit", {}).get("author", {}).get("date", "")
-    return f"- [{repo} Commit {sha}]({url}) - {message} ({date})"
+    date = commit.get("commit", {}).get("author", {}).get("date", "")[:10]  # YYYY-MM-DD
+    return ("commit", repo, f"[{sha[:7]}]({url})", message, date)
 
-def summarize_pr(pr: Dict[str, Any], repo: str) -> str:
+def summarize_pr(pr: Dict[str, Any], repo: str) -> tuple[str, str, str, str, str]:
     num = pr.get("number")
     url = pr.get("html_url")
-    title = pr.get("title")
-    updated = pr.get("updated_at")
-    return f"- [{repo} PR #{num}]({url}) - {title} ({updated})"
+    title = pr.get("title", "")
+    updated = pr.get("updated_at", "")[:10]  # YYYY-MM-DD
+    return ("pr", repo, f"[#{num}]({url})", title, updated)
 
-def summarize_advisory(advisory: Dict[str, Any], repo: str) -> str:
+def summarize_advisory(advisory: Dict[str, Any], _: str = "") -> tuple[str, str, str, str, str]:
     ghsa_id = advisory.get("ghsaId", "N/A")
     url = advisory.get("permalink", "")
-    desc = advisory.get("description", "").splitlines()[0]
+    description = advisory.get("description", "")
+    summary = advisory.get("summary", description.splitlines()[0] if description else "")
     severity = advisory.get("severity", "N/A")
-    epss_score = advisory.get("epss", {}).get("score", 0)
-    published = advisory.get("publishedAt", "N/A")
-    return f"- [{repo} GHSA {ghsa_id}]({url}) - {desc} (Severity: {severity}, EPSS: {epss_score}, Published: {published})"
+    cvss_score = advisory.get("cvss", {}).get("score", "N/A")
+    published = advisory.get("publishedAt", "")[:10]  # YYYY-MM-DD
+    
+    # Get affected packages
+    vulns = advisory.get("vulnerabilities", {}).get("nodes", [])
+    packages = []
+    for v in vulns[:3]:  # Limit to first 3 packages
+        pkg = v.get("package", {})
+        if pkg:
+            pkg_str = f"{pkg.get('ecosystem', '')}/{pkg.get('name', '')}"
+            if pkg_str.strip('/'):
+                packages.append(pkg_str)
+    
+    pkg_info = f" ({', '.join(packages)})" if packages else ""
+    title = f"[GHSA-{ghsa_id}]({url}): {summary}{pkg_info}"
+    return ("advisory", "GHSA", title, f"{severity} (CVSS: {cvss_score})", published)
 
-def summarize_oss_entry(entry: Dict[str, Any]) -> str:
-    title = entry.get("title", "")
+def summarize_oss_entry(entry: Dict[str, Any]) -> tuple[str, str, str, str, str]:
+    title = entry.get("title", "").strip()
     link = entry.get("link", "")
-    published = entry.get("published", "")
-    return f"- [OSS-Security]({link}) - {title} ({published})"
+    published = entry.get("published", "")[:10]  # YYYY-MM-DD
+    
+    # Try to extract CVE ID if present in title
+    cve_match = re.search(r'CVE-\d+-\d+', title.upper())
+    if cve_match:
+        title = f"{cve_match.group(0)}: {title}"
+    
+    return ("oss", "OSS-Security", f"[{title}]({link})", "", published)
 
-def summarize_zdi_entry(entry: Dict[str, Any]) -> str:
-    title = entry.get("title", "")
+def summarize_zdi_entry(entry: Dict[str, Any]) -> tuple[str, str, str, str, str]:
+    title = entry.get("title", "").strip()
     link = entry.get("link", "")
-    published = entry.get("published", "")
-    return f"- [ZDI Advisory]({link}) - {title} ({published})"
+    published = entry.get("published", "")[:10]  # YYYY-MM-DD
+    
+    # Extract ZDI ID if present (e.g., ZDI-25-XXX)
+    zdi_match = re.search(r'ZDI-\d{2,4}-\d{3,4}', title)
+    if zdi_match:
+        title = f"{zdi_match.group(0)}: {title}"
+    
+    return ("zdi", "ZDI", f"[{title}]({link})", "", published)
 
 # -------------------------
 # Main process
 # -------------------------
 
+def load_existing_entries(output_file: Path) -> set[str]:
+    if not output_file.exists():
+        return set()
+    
+    seen = set()
+    with output_file.open('r', encoding='utf-8') as f:
+        content = f.read()
+        # Extract all markdown links [text](url)
+        for match in re.finditer(r'\[(.*?)\]\((.*?)\)', content):
+            url = match.group(2)
+            if '://' in url:  # Only add actual URLs, not anchor links
+                seen.add(url)
+    return seen
+
+def write_markdown_table(entries: List[tuple], output_file: Path, now: datetime):
+    # Sort entries by date (newest first)
+    entries.sort(key=lambda x: x[4], reverse=True)
+    
+    with output_file.open('w', encoding='utf-8') as f:
+        # Write header
+        f.write("# Security Updates Monitor\n\n")
+        f.write(f"*Last updated: {now.strftime('%Y-%m-%d %H:%M:%S UTC')}*\n\n")
+        
+        # Write summary
+        f.write("## Summary\n")
+        f.write("| Type | Count |\n")
+        f.write("|------|-------|\n")
+        from collections import defaultdict
+        counts = defaultdict(int)
+        for entry in entries:
+            counts[entry[0]] += 1
+        for entry_type, count in sorted(counts.items()):
+            f.write(f"| {entry_type.upper()} | {count} |\n")
+        f.write("\n---\n\n")
+        
+        # Write entries by type
+        entry_types = {
+            'advisory': 'Security Advisories',
+            'oss': 'OSS-Security',
+            'zdi': 'ZDI Advisories',
+            'commit': 'Code Commits',
+            'pr': 'Pull Requests'
+        }
+        
+        for entry_type, display_name in entry_types.items():
+            type_entries = [e for e in entries if e[0] == entry_type]
+            if not type_entries:
+                continue
+                
+            f.write(f"## {display_name}\n\n")
+            f.write("| Source | Title | Severity | Date |\n")
+            f.write("|--------|-------|----------|------|\n")
+            
+            for entry in type_entries:
+                _, source, title, severity, date = entry
+                f.write(f"| {source} | {title} | {severity or '-'} | {date} |\n")
+            
+            f.write("\n")
+
 def main():
     now = datetime.now(timezone.utc)
     since = now - timedelta(hours=LOOKBACK_HOURS)
     since_iso = since.isoformat()
+    
+    # Ensure output directory exists
+    output_dir = Path(".")  # Root directory for README.md
+    output_file = output_dir / "README.md"
+    
+    # Load existing entries to avoid duplicates
+    seen_entries = load_existing_entries(output_file)
+    all_entries = []
 
     print(f"Fetching data since {since_iso}...")
 
-    all_results = []
-
-    # --- GitHub commits, PRs, advisories ---
-    for repo in REPOSITORIES:
-        print(f"Processing repo: {repo}")
-
-        commits = fetch_recent_commits(repo, since_iso)
-        filtered_commits = [c for c in commits if commit_matches(c)]
-
-        prs = fetch_recent_prs(repo, since_iso)
-        filtered_prs = [pr for pr in prs if pr_matches(pr)]
-
-        advisories = fetch_ghsa_advisories(repo)
-        filtered_advisories = [a for a in advisories if advisory_matches(a)]
-
-        for c in filtered_commits:
-            all_results.append(summarize_commit(c, repo))
-        for pr in filtered_prs:
-            all_results.append(summarize_pr(pr, repo))
-        for adv in filtered_advisories:
-            all_results.append(summarize_advisory(adv, repo))
+    # --- GitHub Security Advisories (global) ---
+    print("Fetching GitHub Security Advisories...")
+    ghsa_advisories = fetch_ghsa_advisories(since)
+    for advisory in ghsa_advisories:
+        entry = summarize_advisory(advisory, "GHSA")
+        url = advisory.get("permalink", "")
+        if url and url not in seen_entries:
+            all_entries.append(entry)
+            seen_entries.add(url)
 
     # --- OSS-Security mailing list ---
+    print("Fetching OSS-Security updates...")
     oss_entries = fetch_openwall_oss_entries(since)
     for entry in oss_entries:
-        all_results.append(summarize_oss_entry(entry))
+        entry_data = summarize_oss_entry(entry)
+        url = entry.get("link", "")
+        if url and url not in seen_entries:
+            all_entries.append(entry_data)
+            seen_entries.add(url)
+
+    # --- Process repository-specific data ---
+    for repo in REPOSITORIES:
+        print(f"Processing repo: {repo}")
+        
+        # Process commits
+        try:
+            commits = fetch_recent_commits(repo, since_iso)
+            for commit in commits:
+                if commit_matches(commit):
+                    entry = summarize_commit(commit, repo)
+                    url = commit.get("html_url", "")
+                    if url and url not in seen_entries:
+                        all_entries.append(entry)
+                        seen_entries.add(url)
+        except Exception as e:
+            print(f"Error processing {repo} commits: {e}", file=sys.stderr)
+            
+        # Process PRs
+        try:
+            prs = fetch_recent_prs(repo, since_iso)
+            for pr in prs:
+                if pr_matches(pr):
+                    entry = summarize_pr(pr, repo)
+                    url = pr.get("html_url", "")
+                    if url and url not in seen_entries:
+                        all_entries.append(entry)
+                        seen_entries.add(url)
+        except Exception as e:
+            print(f"Error processing {repo} PRs: {e}", file=sys.stderr)
 
     # --- ZDI RSS ---
+    print("Fetching ZDI advisories...")
     zdi_entries = fetch_zdi_high_severity(since)
     for entry in zdi_entries:
-        all_results.append(summarize_zdi_entry(entry))
+        entry_data = summarize_zdi_entry(entry)
+        url = entry.get("link", "")
+        if url and url not in seen_entries:
+            all_entries.append(entry_data)
+            seen_entries.add(url)
 
-    if not all_results:
-        print("No matching security-related items found in the timeframe.")
+    if not all_entries:
+        print("No new security-related items found in the timeframe.")
         return
 
-    # Create output folder with date
-    output_dir = OUTPUT_ROOT / now.strftime("%Y-%m-%d")
-    output_dir.mkdir(parents=True, exist_ok=True)
-    output_file = output_dir / f"security_updates_{now.strftime('%Y%m%d_%H%M%S')}.md"
-
-    with output_file.open("w", encoding="utf-8") as f:
-        f.write(f"# Security Updates Report - {now.strftime('%Y-%m-%d %H:%M:%S UTC')}\n\n")
-        f.write(f"Updates collected from GitHub repos, OSS Security mailing list, and ZDI RSS feed for the past {LOOKBACK_HOURS} hours.\n\n")
-        f.write("## Summary\n\n")
-        for line in all_results:
-            f.write(line + "\n")
-
+    # Write the complete markdown file
+    write_markdown_table(all_entries, output_file, now)
+    print(f"Updated {output_file} with {len(all_entries)} entries")
     print(f"Report written to {output_file}")
 
 
