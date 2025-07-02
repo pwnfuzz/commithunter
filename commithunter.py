@@ -417,23 +417,28 @@ def summarize_zdi_entry(entry: Dict[str, Any]) -> tuple[str, str, str, str, str]
 # Main process
 # -------------------------
 
-def load_existing_entries(output_file: Path) -> set[str]:
-    if not output_file.exists():
+def load_existing_entries(output_file: Path) -> set:
+    try:
+        if not output_file.exists():
+            return set()
+            
+        seen = set()
+        with output_file.open('r', encoding='utf-8') as f:
+            content = f.read()
+            # Extract URLs from markdown links
+            urls = re.findall(r'\[(?:[^\]]+)\]\(([^)]+)\)', content)
+            seen.update(urls)
+        return seen
+    except Exception as e:
+        print(f"Warning: Could not load existing entries: {e}", file=sys.stderr)
         return set()
-    
-    seen = set()
-    with output_file.open('r', encoding='utf-8') as f:
-        content = f.read()
-        # Extract all markdown links [text](url)
-        for match in re.finditer(r'\[(.*?)\]\((.*?)\)', content):
-            url = match.group(2)
-            if '://' in url:  # Only add actual URLs, not anchor links
-                seen.add(url)
-    return seen
 
 def write_markdown_table(entries: List[tuple], output_file: Path, now: datetime):
     # Sort entries by date (newest first)
     entries.sort(key=lambda x: x[4], reverse=True)
+    
+    # Ensure parent directory exists
+    output_file.parent.mkdir(parents=True, exist_ok=True)
     
     with output_file.open('w', encoding='utf-8') as f:
         # Write header
@@ -482,8 +487,8 @@ def main():
     since_iso = since.isoformat()
     
     # Ensure output directory exists
-    output_dir = Path(".")  # Root directory for README.md
-    output_file = output_dir / "README.md"
+    OUTPUT_ROOT.mkdir(parents=True, exist_ok=True)
+    output_file = Path("README.md")  # Output to root directory
     
     # Load existing entries to avoid duplicates
     seen_entries = load_existing_entries(output_file)
