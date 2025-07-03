@@ -1,13 +1,13 @@
 # Security Updates Monitor
 
-*Last updated: 2025-07-02 23:14:55 UTC*
+*Last updated: 2025-07-03 01:12:49 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 16 |
-| COMMIT | 1 |
-| PR | 1 |
+| ADVISORY | 8 |
+| COMMIT | 2 |
+| PR | 12 |
 
 ---
 
@@ -15,32 +15,36 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-3w94-vq2x-v5wr](https://github.com/advisories/GHSA-3w94-vq2x-v5wr): ethereum does not check transaction malleability for EIP-2930, EIP-1559 and EIP-7702 transactions (RUST/ethereum) | MODERATE (CVSS: 0.0) | 2025-07-02 |
-| GHSA | [GHSA-GHSA-3m86-c9x3-vwm9](https://github.com/advisories/GHSA-3m86-c9x3-vwm9): Graylog vulnerable to privilege escalation through API tokens (MAVEN/org.graylog2:graylog2-server, MAVEN/org.graylog2:graylog2-server) | HIGH (CVSS: 0.0) | 2025-06-30 |
-| GHSA | [GHSA-GHSA-cm2r-rg7r-p7gg](https://github.com/advisories/GHSA-cm2r-rg7r-p7gg): File Browser vulnerable to insecure password handling (GO/github.com/filebrowser/filebrowser, GO/github.com/filebrowser/filebrowser/v2) | MODERATE (CVSS: 5.9) | 2025-06-30 |
-| GHSA | [GHSA-GHSA-8vxj-4cph-c596](https://github.com/advisories/GHSA-8vxj-4cph-c596): Deno has --allow-read / --allow-write permission bypass in `node:sqlite` (RUST/deno_node, RUST/deno) | MODERATE (CVSS: 9.1) | 2025-06-04 |
-| GHSA | [GHSA-GHSA-7w8p-chxq-2789](https://github.com/advisories/GHSA-7w8p-chxq-2789): Deno.env.toObject() ignores the variables listed in --deny-env and returns all environment variables (RUST/deno_runtime, RUST/deno, RUST/deno) | MODERATE (CVSS: 5.3) | 2025-06-04 |
-| GHSA | [GHSA-GHSA-xqxc-x6p3-w683](https://github.com/advisories/GHSA-xqxc-x6p3-w683): Deno run with --allow-read and --deny-read flags results in allowed (RUST/deno_runtime, RUST/deno, RUST/deno) | MODERATE (CVSS: 5.3) | 2025-06-04 |
-| GHSA | [GHSA-GHSA-5fc3-pqf2-57cx](https://github.com/advisories/GHSA-5fc3-pqf2-57cx): Apache IoTDB Discloses Sensitive Information via Log Files (PIP/apache-iotdb, PIP/apache-iotdb, MAVEN/org.apache.iotdb:node-commons) | MODERATE (CVSS: 0.0) | 2025-05-14 |
-| GHSA | [GHSA-GHSA-f4rq-f4j9-f6rm](https://github.com/advisories/GHSA-f4rq-f4j9-f6rm): Apache IoTDB Vulnerable to Remote Code Execution (PIP/apache-iotdb, MAVEN/org.apache.iotdb:iotdb-core) | CRITICAL (CVSS: 9.8) | 2025-05-14 |
-| GHSA | [GHSA-GHSA-x3m8-f7g5-qhm7](https://github.com/advisories/GHSA-x3m8-f7g5-qhm7): vLLM Allows Remote Code Execution via Mooncake Integration (PIP/vllm) | CRITICAL (CVSS: 9.1) | 2025-03-19 |
-| GHSA | [GHSA-GHSA-rm76-4mrf-v9r8](https://github.com/advisories/GHSA-rm76-4mrf-v9r8): vLLM uses Python 3.12 built-in hash() which leads to predictable hash collisions in prefix cache (PIP/vllm) | LOW (CVSS: 2.6) | 2025-02-06 |
-| GHSA | [GHSA-GHSA-p7c9-8xx8-h74f](https://github.com/advisories/GHSA-p7c9-8xx8-h74f): Apache Kafka's SCRAM implementation Incorrectly Implements Authentication Algorithm (MAVEN/org.apache.kafka:kafka_2.10, MAVEN/org.apache.kafka:kafka_2.11, MAVEN/org.apache.kafka:kafka_2.12) | LOW (CVSS: 5.3) | 2024-12-18 |
-| GHSA | [GHSA-GHSA-jxw2-jvxf-5vrp](https://github.com/advisories/GHSA-jxw2-jvxf-5vrp): Databricks JDBC Driver Command Injection vulnerability (MAVEN/com.databricks:databricks-jdbc) | HIGH (CVSS: 7.3) | 2024-12-17 |
-| GHSA | [GHSA-GHSA-7p9f-6x8j-gxxp](https://github.com/advisories/GHSA-7p9f-6x8j-gxxp): CRI-O: Maliciously structured checkpoint file can gain arbitrary node access (GO/github.com/cri-o/cri-o, GO/github.com/cri-o/cri-o, GO/github.com/cri-o/cri-o) | MODERATE (CVSS: 7.4) | 2024-11-26 |
-| GHSA | [GHSA-GHSA-h7w9-c5vx-x7j3](https://github.com/advisories/GHSA-h7w9-c5vx-x7j3): Insecure Default Initialization of Resource vulnerability in Apache Solr (MAVEN/org.apache.solr:solr, MAVEN/org.apache.solr:solr) | HIGH (CVSS: 8.1) | 2024-10-16 |
-| GHSA | [GHSA-GHSA-7rvp-xqj7-rxf2](https://github.com/advisories/GHSA-7rvp-xqj7-rxf2): Withdrawn Advisory: Daylight Studio FUEL-CMS SQLi Vulnerability (COMPOSER/codeigniter/framework) | HIGH (CVSS: 8.8) | 2023-08-11 |
-| GHSA | [GHSA-GHSA-m8p2-495h-ccmh](https://github.com/advisories/GHSA-m8p2-495h-ccmh): The SafeHtml annotation in Hibernate-Validator does not properly guard against XSS attacks (MAVEN/org.hibernate.validator:hibernate-validator) | MODERATE (CVSS: 6.5) | 2020-01-08 |
+| GHSA | [GHSA-GHSA-hc55-p739-j48w](https://github.com/advisories/GHSA-hc55-p739-j48w): @modelcontextprotocol/server-filesystem vulnerability allows for path validation bypass via colliding path prefix (NPM/@modelcontextprotocol/server-filesystem, NPM/@modelcontextprotocol/server-filesystem) | HIGH (CVSS: 0.0) | 2025-07-01 |
+| GHSA | [GHSA-GHSA-q66q-fx2p-7w4m](https://github.com/advisories/GHSA-q66q-fx2p-7w4m): @modelcontextprotocol/server-filesystem allows for path validation bypass via prefix matching and symlink handling (NPM/@modelcontextprotocol/server-filesystem, NPM/@modelcontextprotocol/server-filesystem) | HIGH (CVSS: 0.0) | 2025-07-01 |
+| GHSA | [GHSA-GHSA-xg8h-j46f-w952](https://github.com/advisories/GHSA-xg8h-j46f-w952): Pillow vulnerability can cause write buffer overflow on BCn encoding (PIP/pillow) | HIGH (CVSS: 7.1) | 2025-07-01 |
+| GHSA | [GHSA-GHSA-65gg-3w2w-hr4h](https://github.com/advisories/GHSA-65gg-3w2w-hr4h): Podman Improper Certificate Validation; machine missing TLS verification (GO/github.com/containers/podman/v4, GO/github.com/containers/podman/v5) | HIGH (CVSS: 8.4) | 2025-06-25 |
+| GHSA | [GHSA-GHSA-rp38-pj7h-r8q2](https://github.com/advisories/GHSA-rp38-pj7h-r8q2): python-a2a has a path traversal in the create_workflow function (PIP/python-a2a) | MODERATE (CVSS: 5.5) | 2025-06-17 |
+| GHSA | [GHSA-GHSA-fj44-h6xw-896g](https://github.com/advisories/GHSA-fj44-h6xw-896g): react-native-keys insecurely stores encryption cipher and Base64 chunks (NPM/react-native-keys) | HIGH (CVSS: 7.5) | 2025-06-09 |
+| GHSA | [GHSA-GHSA-jffq-528j-mp6c](https://github.com/advisories/GHSA-jffq-528j-mp6c): Withdrawn Advisory: Improper Restriction of XML External Entity Reference in Mulesoft APIkit (MAVEN/org.mule.modules:mule-apikit-module) | CRITICAL (CVSS: 9.8) | 2022-05-24 |
+| GHSA | [GHSA-GHSA-cqqj-4p63-rrmm](https://github.com/advisories/GHSA-cqqj-4p63-rrmm): HTTP Request Smuggling in Netty (MAVEN/io.netty:netty-codec-http, MAVEN/io.netty:netty, MAVEN/org.jboss.netty:netty) | CRITICAL (CVSS: 9.1) | 2020-02-21 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [b4911fb](https://github.com/torvalds/linux/commit/b4911fb0b060899e4eebca0151eb56deb86921ec) | Merge tag 'mmc-v6.16-rc1' of git://git.kernel.org/pub/scm/linux/kernel/git/ulfh/mmc | 2025-07-02 |
+| postgres/postgres | [fe05430](https://github.com/postgres/postgres/commit/fe05430ace8e0b3c945cf581564458a5983a07b6) | Correctly copy the target host identification in PQcancelCreate. | 2025-07-02 |
+| chromium/chromium | [f465913](https://github.com/chromium/chromium/commit/f465913b2fdd284b8598b0ec110833a6faa4e3d7) | Use a weak pointer for Content Filter observers in tests | 2025-07-02 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| chromium/chromium | [#213](https://github.com/chromium/chromium/pull/213) | Bump h2 from 0.3.22 to 0.3.24 in /tools/crates/gnrt | 2025-07-02 |
+| chromium/chromium | [#241](https://github.com/chromium/chromium/pull/241) | fix(deps): follow-redirects' Proxy-Authorization header kept across hosts | 2025-07-02 |
+| chromium/chromium | [#253](https://github.com/chromium/chromium/pull/253) | Bump cookie and express in /tools/android/dependency_analysis/js | 2025-07-02 |
+| chromium/chromium | [#254](https://github.com/chromium/chromium/pull/254) | Bump serve-static and express in /tools/android/dependency_analysis/js | 2025-07-02 |
+| chromium/chromium | [#256](https://github.com/chromium/chromium/pull/256) | Bump body-parser and express in /tools/android/dependency_analysis/js | 2025-07-02 |
+| chromium/chromium | [#255](https://github.com/chromium/chromium/pull/255) | Bump express from 4.18.2 to 4.21.2 in /tools/android/dependency_analysis/js | 2025-07-02 |
+| chromium/chromium | [#257](https://github.com/chromium/chromium/pull/257) | Bump send and express in /tools/android/dependency_analysis/js | 2025-07-02 |
+| chromium/chromium | [#158](https://github.com/chromium/chromium/pull/158) | Bump webpack from 5.75.0 to 5.76.0 in /tools/android/dependency_analysis/js | 2025-07-02 |
+| chromium/chromium | [#258](https://github.com/chromium/chromium/pull/258) | Bump webpack from 5.75.0 to 5.97.1 in /tools/android/dependency_analysis/js | 2025-07-02 |
+| chromium/chromium | [#259](https://github.com/chromium/chromium/pull/259) | Bump vue from 2.7.14 to 3.0.0 in /tools/android/dependency_analysis/js | 2025-07-02 |
+| chromium/chromium | [#261](https://github.com/chromium/chromium/pull/261) | Bump nanoid from 3.3.4 to 3.3.8 in /tools/android/dependency_analysis/js | 2025-07-02 |
+| chromium/chromium | [#264](https://github.com/chromium/chromium/pull/264) | Bump jinja2 from 2.10 to 3.1.5 in /tools/code_coverage | 2025-07-02 |
+| chromium/chromium | [#267](https://github.com/chromium/chromium/pull/267) | Fix: Improve robustness and security in `AwContentsIoThreadClientImpl | 2025-07-02 |
 
