@@ -1,13 +1,13 @@
 # Security Updates Monitor
 
-*Last updated: 2025-07-04 18:19:31 UTC*
+*Last updated: 2025-07-04 19:11:51 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 5 |
-| COMMIT | 6 |
-| PR | 1 |
+| ADVISORY | 4 |
+| COMMIT | 2 |
+| PR | 3 |
 
 ---
 
@@ -15,26 +15,23 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-prmv-7r8c-794g](https://github.com/advisories/GHSA-prmv-7r8c-794g): Citizen vulnerable to Stored XSS through short descriptions (COMPOSER/starcitizentools/citizen-skin) | HIGH (CVSS: 8.6) | 2025-07-03 |
-| GHSA | [GHSA-GHSA-67rr-84xm-4c7r](https://github.com/advisories/GHSA-67rr-84xm-4c7r): Next.JS vulnerability can lead to DoS via cache poisoning  (NPM/next) | HIGH (CVSS: 7.5) | 2025-07-03 |
-| GHSA | [GHSA-GHSA-p85q-mww9-gwqf](https://github.com/advisories/GHSA-p85q-mww9-gwqf): Citizen Short Description stored XSS vulnerability through wikitext (COMPOSER/starcitizentools/short-description) | HIGH (CVSS: 8.6) | 2025-07-03 |
-| GHSA | [GHSA-GHSA-xjrf-8x4f-43h4](https://github.com/advisories/GHSA-xjrf-8x4f-43h4): Improper Neutralization of Input During Web Page Generation in Spring Framework (MAVEN/org.springframework:spring-web) | MODERATE (CVSS: 5.4) | 2022-05-05 |
-| GHSA | [GHSA-GHSA-3mcp-9wr4-cjqf](https://github.com/advisories/GHSA-3mcp-9wr4-cjqf): Remote Code Execution (RCE) vulnerability in dropwizard-validation (MAVEN/io.dropwizard:dropwizard-validation, MAVEN/io.dropwizard:dropwizard-validation) | HIGH (CVSS: 7.9) | 2020-02-24 |
+| GHSA | [GHSA-GHSA-j4rj-fgcq-wmqp](https://github.com/advisories/GHSA-j4rj-fgcq-wmqp): Cockpit - Content Platform vulnerable to XSS through name or email argument names (COMPOSER/cockpit-hq/cockpit) | MODERATE (CVSS: 3.5) | 2025-07-04 |
+| GHSA | [GHSA-GHSA-rq6g-6g94-jfr4](https://github.com/advisories/GHSA-rq6g-6g94-jfr4): starcitizentools/citizen-skin is vulnerable to Stored XSS attack in the legacy search bar through page descriptions (COMPOSER/starcitizentools/citizen-skin) | HIGH (CVSS: 8.6) | 2025-07-03 |
+| GHSA | [GHSA-GHSA-gq57-v332-7666](https://github.com/advisories/GHSA-gq57-v332-7666): n8n is vulnerable to Improper Authorization through its `/stop` endpoint (NPM/n8n) | MODERATE (CVSS: 4.3) | 2025-07-03 |
+| GHSA | [GHSA-GHSA-r2fc-ccr8-96c4](https://github.com/advisories/GHSA-r2fc-ccr8-96c4): Next.js has a Cache poisoning vulnerability due to omission of the Vary header (NPM/next) | LOW (CVSS: 3.7) | 2025-07-03 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [3c2bd25](https://github.com/torvalds/linux/commit/3c2bd251d2039ce2778c35ced5ef47b3a379f5df) | Merge tag 'usb-6.16-rc5' of git://git.kernel.org/pub/scm/linux/kernel/git/gregkh/usb | 2025-07-04 |
-| torvalds/linux | [42bb9b6](https://github.com/torvalds/linux/commit/42bb9b630c4c6c0964cddca98d9d30aa992826de) | Merge tag 'drm-fixes-2025-07-04' of https://gitlab.freedesktop.org/drm/kernel | 2025-07-04 |
-| torvalds/linux | [4cf6584](https://github.com/torvalds/linux/commit/4cf65845fdd09d711fc7546d60c9abe010956922) | Input: cs40l50-vibra - fix potential NULL dereference in cs40l50_upload_owt() | 2025-07-04 |
-| torvalds/linux | [ac2ad73](https://github.com/torvalds/linux/commit/ac2ad73e75596189603995cd4283949863fd7e55) | Merge tag 'exynos-drm-fixes-for-v6.16-rc4' of git://git.kernel.org/pub/scm/linux/kernel/git/daeinki/drm-exynos into drm-fixes | 2025-07-03 |
-| torvalds/linux | [afd30ac](https://github.com/torvalds/linux/commit/afd30ace71eecc3ba06815c9b554e801e85ab73a) | Merge tag 'drm-intel-fixes-2025-07-03' of https://gitlab.freedesktop.org/drm/i915/kernel into drm-fixes | 2025-07-03 |
-| torvalds/linux | [b91e11e](https://github.com/torvalds/linux/commit/b91e11ec5cd972dc39121496c3a0cf2ec2e9a393) | Merge tag 'drm-misc-fixes-2025-07-03' of https://gitlab.freedesktop.org/drm/misc/kernel into drm-fixes | 2025-07-03 |
+| chromium/chromium | [15e9ee5](https://github.com/chromium/chromium/commit/15e9ee5ea1cb104c9674ef71653da7197b720900) | IWA: Implement notifying users when IWA opens multiple contents | 2025-07-04 |
+| chromium/chromium | [cd5f654](https://github.com/chromium/chromium/commit/cd5f654a0a8ca47d04bc36988a8c93ae03c8a6b4) | [base] Fix null pointer dereference in MemoryDetails | 2025-07-04 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| openssl/openssl | [#27920](https://github.com/openssl/openssl/pull/27920) | fuzz/cmp.c: Correct the usages of BIO_new() | 2025-07-03 |
+| openssl/openssl | [#27955](https://github.com/openssl/openssl/pull/27955) | Fix: Private Key Found Directly in Code Files in apps/ca-key.pem | 2025-07-04 |
+| chromium/chromium | [#294](https://github.com/chromium/chromium/pull/294) | Bump openssl from 0.10.71 to 0.10.72 in /tools/crates/gnrt | 2025-07-04 |
+| chromium/chromium | [#81](https://github.com/chromium/chromium/pull/81) | Bump jinja2 from 2.10 to 2.11.3 in /tools/code_coverage | 2025-07-04 |
 
