@@ -1,12 +1,12 @@
 # Security Updates Monitor
 
-*Last updated: 2025-07-07 20:16:41 UTC*
+*Last updated: 2025-07-07 21:13:49 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 4 |
-| COMMIT | 1 |
+| ADVISORY | 3 |
+| COMMIT | 2 |
 | PR | 1 |
 
 ---
@@ -15,20 +15,20 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-287x-9rff-qvcg](https://github.com/advisories/GHSA-287x-9rff-qvcg): Rust Web Push is vulnerable to a DoS attack via a large integer in a Content-Length header (RUST/web-push) | MODERATE (CVSS: 4.0) | 2025-07-05 |
-| GHSA | [GHSA-GHSA-3qhf-m339-9g5v](https://github.com/advisories/GHSA-3qhf-m339-9g5v): MCP Python SDK vulnerability in the FastMCP Server causes validation error, leading to DoS (PIP/mcp) | HIGH (CVSS: 0.0) | 2025-07-04 |
-| GHSA | [GHSA-GHSA-j975-95f5-7wqh](https://github.com/advisories/GHSA-j975-95f5-7wqh): MCP Python SDK has Unhandled Exception in Streamable HTTP Transport, Leading to Denial of Service (PIP/mcp) | HIGH (CVSS: 0.0) | 2025-07-04 |
-| GHSA | [GHSA-GHSA-26f8-x7cc-wqpc](https://github.com/advisories/GHSA-26f8-x7cc-wqpc): Apache Kafka Connect vulnerable to Deserialization of Untrusted Data (MAVEN/org.apache.kafka:connect) | HIGH (CVSS: 8.8) | 2023-02-07 |
+| GHSA | [GHSA-GHSA-794x-8x6x-qpfc](https://github.com/advisories/GHSA-794x-8x6x-qpfc): Zipkin Server vulnerable to Insecure Resource Initialization through its /heapdump endpoint (MAVEN/io.zipkin:zipkin-server) | MODERATE (CVSS: 5.3) | 2025-07-04 |
+| GHSA | [GHSA-GHSA-p9qc-8jjx-g8cg](https://github.com/advisories/GHSA-p9qc-8jjx-g8cg): Bolt CMS vulnerable to authenticated remote code execution (COMPOSER/bolt/bolt) | HIGH (CVSS: 0.0) | 2025-07-03 |
+| GHSA | [GHSA-GHSA-p3xv-97g8-4wmj](https://github.com/advisories/GHSA-p3xv-97g8-4wmj): Python Swift client is vulnerable to Missing SSL Certificate Check (PIP/python-swiftclient) | CRITICAL (CVSS: 9.1) | 2022-05-17 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| chromium/chromium | [4186904](https://github.com/chromium/chromium/commit/4186904137f642a442c91ee87d50d6dff4e605e9) | Roll BoringSSL from 913c14be725d to 3fd8220e3c88 (1 revision) | 2025-07-07 |
+| chromium/chromium | [ec6e1e4](https://github.com/chromium/chromium/commit/ec6e1e42737e1f5caebe09bcf6f11e3abef3e13d) | [A11yPerformance] Do not reuse invalid cached mac children | 2025-07-07 |
+| chromium/chromium | [0280733](https://github.com/chromium/chromium/commit/02807335eb5e9384b2169ce5771a1e400454625e) | Blocklist more tests for spanification. | 2025-07-07 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| openssl/openssl | [#27952](https://github.com/openssl/openssl/pull/27952) | Fix: Unsafe Text Processing Function Could Corrupt Data in apps/rehash.c | 2025-07-07 |
+| wazuh/wazuh | [#30675](https://github.com/wazuh/wazuh/pull/30675) | Remove wazuh-analysisd and wazuh-dbd | 2025-07-07 |
 
