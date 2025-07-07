@@ -1,17 +1,17 @@
 # Security Updates Monitor
 
-*Last updated: 2025-07-07 08:21:44 UTC*
+*Last updated: 2025-07-07 12:30:22 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| COMMIT | 1 |
+| ADVISORY | 1 |
 
 ---
 
-## Code Commits
+## Security Advisories
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| chromium/chromium | [0280733](https://github.com/chromium/chromium/commit/02807335eb5e9384b2169ce5771a1e400454625e) | Blocklist more tests for spanification. | 2025-07-07 |
+| GHSA | [GHSA-GHSA-26f8-x7cc-wqpc](https://github.com/advisories/GHSA-26f8-x7cc-wqpc): Apache Kafka Connect vulnerable to Deserialization of Untrusted Data (MAVEN/org.apache.kafka:connect) | HIGH (CVSS: 8.8) | 2023-02-07 |
 
