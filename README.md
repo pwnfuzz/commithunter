@@ -1,12 +1,12 @@
 # Security Updates Monitor
 
-*Last updated: 2025-07-07 13:29:35 UTC*
+*Last updated: 2025-07-07 14:15:00 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 2 |
-| COMMIT | 1 |
+| ADVISORY | 1 |
+| PR | 1 |
 
 ---
 
@@ -14,12 +14,11 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-794x-8x6x-qpfc](https://github.com/advisories/GHSA-794x-8x6x-qpfc): Zipkin Server vulnerable to Insecure Resource Initialization through its /heapdump endpoint (MAVEN/io.zipkin:zipkin-server) | MODERATE (CVSS: 5.3) | 2025-07-04 |
-| GHSA | [GHSA-GHSA-p3xv-97g8-4wmj](https://github.com/advisories/GHSA-p3xv-97g8-4wmj): Python Swift client is vulnerable to Missing SSL Certificate Check (PIP/python-swiftclient) | CRITICAL (CVSS: 9.1) | 2022-05-17 |
+| GHSA | [GHSA-GHSA-26f8-x7cc-wqpc](https://github.com/advisories/GHSA-26f8-x7cc-wqpc): Apache Kafka Connect vulnerable to Deserialization of Untrusted Data (MAVEN/org.apache.kafka:connect) | HIGH (CVSS: 8.8) | 2023-02-07 |
 
-## Code Commits
+## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| chromium/chromium | [0280733](https://github.com/chromium/chromium/commit/02807335eb5e9384b2169ce5771a1e400454625e) | Blocklist more tests for spanification. | 2025-07-07 |
+| openssl/openssl | [#27952](https://github.com/openssl/openssl/pull/27952) | Fix: Unsafe Text Processing Function Could Corrupt Data in apps/rehash.c | 2025-07-07 |
 
