@@ -1,13 +1,13 @@
 # Security Updates Monitor
 
-*Last updated: 2025-07-08 20:16:50 UTC*
+*Last updated: 2025-07-08 21:14:16 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 14 |
-| COMMIT | 2 |
-| PR | 1 |
+| ADVISORY | 12 |
+| COMMIT | 5 |
+| PR | 2 |
 
 ---
 
@@ -15,31 +15,33 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-3j8r-jf9w-5cmh](https://github.com/advisories/GHSA-3j8r-jf9w-5cmh): LlamaIndex vulnerability in its ObsidianReader class can lead to Path Traversal exploit (PIP/llama-index-readers-obsidian) | MODERATE (CVSS: 6.2) | 2025-07-07 |
-| GHSA | [GHSA-GHSA-3wxx-q3gv-pvvv](https://github.com/advisories/GHSA-3wxx-q3gv-pvvv): LlamaIndex vulnerable to DoS attack through uncontrolled recursive JSON parsing (PIP/llama-index-core) | MODERATE (CVSS: 6.5) | 2025-07-07 |
-| GHSA | [GHSA-GHSA-p7j4-jwjf-5x9w](https://github.com/advisories/GHSA-p7j4-jwjf-5x9w): LlamaIndex vulnerability in ArxivReader class can cause MD5 hash collisions (PIP/llama-index-readers-papers) | MODERATE (CVSS: 5.3) | 2025-07-07 |
-| GHSA | [GHSA-GHSA-w42r-mrx7-c633](https://github.com/advisories/GHSA-w42r-mrx7-c633): LlamaIndex has an XML Entity Expansion vulnerability in its sitemap parser (PIP/llama-index-readers-papers) | HIGH (CVSS: 7.5) | 2025-07-07 |
-| GHSA | [GHSA-GHSA-489j-g2vx-39wf](https://github.com/advisories/GHSA-489j-g2vx-39wf): Transformers vulnerable to ReDoS attack through its SETTING_RE variable (PIP/transformers) | MODERATE (CVSS: 5.3) | 2025-07-07 |
-| GHSA | [GHSA-GHSA-j47q-rc62-w448](https://github.com/advisories/GHSA-j47q-rc62-w448): fastapi-guard is vulnerable to ReDoS through inefficient regex (PIP/fastapi-guard) | MODERATE (CVSS: 0.0) | 2025-07-07 |
-| GHSA | [GHSA-GHSA-fmrf-6jv9-qjc7](https://github.com/advisories/GHSA-fmrf-6jv9-qjc7): LlamaIndex is vulnerable to Path Traversal attack through its ObsidianReader class (PIP/llama-index-readers-obsidian) | HIGH (CVSS: 7.5) | 2025-07-07 |
-| GHSA | [GHSA-GHSA-36rg-gfq2-3h56](https://github.com/advisories/GHSA-36rg-gfq2-3h56): Better Auth Open Redirect Vulnerability in originCheck Middleware Affects Multiple Routes (NPM/better-auth) | LOW (CVSS: 0.0) | 2025-07-07 |
-| GHSA | [GHSA-GHSA-rxf6-323f-44fc](https://github.com/advisories/GHSA-rxf6-323f-44fc): rust-protobuf crate is vulnerable to Uncontrolled Recursion, potentially leading to DoS (RUST/protobuf) | MODERATE (CVSS: 5.9) | 2025-07-05 |
-| GHSA | [GHSA-GHSA-65gg-3w2w-hr4h](https://github.com/advisories/GHSA-65gg-3w2w-hr4h): Podman Improper Certificate Validation; machine missing TLS verification (GO/github.com/containers/podman/v4, GO/github.com/containers/podman/v5) | HIGH (CVSS: 8.4) | 2025-06-25 |
-| GHSA | [GHSA-GHSA-wxcc-2f3q-4h58](https://github.com/advisories/GHSA-wxcc-2f3q-4h58): Grafana Alerting VictorOps integration could be exposed to users with Viewer permission (GO/github.com/grafana/grafana, GO/github.com/grafana/grafana, GO/github.com/grafana/grafana) | MODERATE (CVSS: 4.3) | 2025-01-31 |
-| GHSA | [GHSA-GHSA-hfrg-4jwr-jfpj](https://github.com/advisories/GHSA-hfrg-4jwr-jfpj): Improper HTML sanitization in ZITADEL (GO/github.com/zitadel/zitadel, GO/github.com/zitadel/zitadel, GO/github.com/zitadel/zitadel) | HIGH (CVSS: 8.1) | 2024-03-18 |
-| GHSA | [GHSA-GHSA-xr7p-8q82-878q](https://github.com/advisories/GHSA-xr7p-8q82-878q): teler dashboard vulnerable to DOM-based cross-site scripting (XSS) (GO/teler.app, GO/teler.app, GO/teler.app) | LOW (CVSS: 3.1) | 2022-12-06 |
-| GHSA | [GHSA-GHSA-77rm-9x9h-xj3g](https://github.com/advisories/GHSA-77rm-9x9h-xj3g): NULL Pointer Dereference in Protocol Buffers (GO/github.com/protocolbuffers/protobuf, GO/github.com/protocolbuffers/protobuf, MAVEN/com.google.protobuf:protobuf-java) | HIGH (CVSS: 7.5) | 2022-01-27 |
+| GHSA | [GHSA-GHSA-gjv4-ghm7-q58q](https://github.com/advisories/GHSA-gjv4-ghm7-q58q): MCP Server Kubernetes vulnerable to command injection in several tools (NPM/mcp-server-kubernetes) | HIGH (CVSS: 7.5) | 2025-07-08 |
+| GHSA | [GHSA-GHSA-rj53-j6jw-7f7g](https://github.com/advisories/GHSA-rj53-j6jw-7f7g): Babylon vulnerable to chain halt when a message modifies the validator set at the epoch boundary (GO/github.com/babylonlabs-io/babylon/v2) | HIGH (CVSS: 0.0) | 2025-07-08 |
+| GHSA | [GHSA-GHSA-4pfg-2mw5-f8jx](https://github.com/advisories/GHSA-4pfg-2mw5-f8jx): Cloudflare Vite plugin exposes secrets over the built-in dev server (NPM/@cloudflare/vite-plugin) | MODERATE (CVSS: 0.0) | 2025-07-08 |
+| GHSA | [GHSA-GHSA-5w57-2ccq-8w95](https://github.com/advisories/GHSA-5w57-2ccq-8w95): Node.js Sandbox MCP Server vulnerability can lead to Sandbox Escape via Command Injection (NPM/node-code-sandbox-mcp) | HIGH (CVSS: 7.5) | 2025-07-08 |
+| GHSA | [GHSA-GHSA-q93c-p2mw-p23f](https://github.com/advisories/GHSA-q93c-p2mw-p23f): Dagster vulnerable to Path Traversal attack through its /logs endpoint (PIP/dagster) | MODERATE (CVSS: 7.5) | 2025-07-07 |
+| GHSA | [GHSA-GHSA-2rhq-96q8-4vjq](https://github.com/advisories/GHSA-2rhq-96q8-4vjq): LlamaIndex vulnerable to Path Traversal attack through its encode_image function (PIP/llama-index-core) | HIGH (CVSS: 7.5) | 2025-07-07 |
+| GHSA | [GHSA-GHSA-j5pr-vrjj-9v4h](https://github.com/advisories/GHSA-j5pr-vrjj-9v4h): Lord of Large Language Models vulnerable to Observable Discrepancy attack via authenticate_user function (PIP/lollms) | HIGH (CVSS: 7.5) | 2025-07-07 |
+| GHSA | [GHSA-GHSA-phhr-52qp-3mj4](https://github.com/advisories/GHSA-phhr-52qp-3mj4): Transformers's Improper Input Validation vulnerability can be exploited through username injection (PIP/transformers) | LOW (CVSS: 3.5) | 2025-07-07 |
+| GHSA | [GHSA-GHSA-jjph-296x-mrcr](https://github.com/advisories/GHSA-jjph-296x-mrcr): Transformers vulnerable to ReDoS attack through its get_imports() function (PIP/transformers) | MODERATE (CVSS: 5.3) | 2025-07-07 |
+| GHSA | [GHSA-GHSA-q2wp-rjmx-x6x9](https://github.com/advisories/GHSA-q2wp-rjmx-x6x9): Transformers's ReDoS vulnerability in get_configuration_file can lead to catastrophic backtracking (PIP/transformers) | MODERATE (CVSS: 5.3) | 2025-07-07 |
+| GHSA | [GHSA-GHSA-m84c-4c34-28gf](https://github.com/advisories/GHSA-m84c-4c34-28gf): LlamaIndex has Incomplete Documentation of Program Execution related to JsonPickleSerializer component (PIP/llama-index-core) | MODERATE (CVSS: 5.0) | 2025-07-07 |
+| GHSA | [GHSA-GHSA-567v-6hmg-6qg7](https://github.com/advisories/GHSA-567v-6hmg-6qg7): ZITADEL "ignoring unknown usernames" vulnerability (GO/github.com/zitadel/zitadel, GO/github.com/zitadel/zitadel, GO/github.com/zitadel/zitadel) | MODERATE (CVSS: 5.3) | 2024-07-31 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [d006330](https://github.com/torvalds/linux/commit/d006330be3f782ff3fb7c3ed51e617e01f29a465) | Merge tag 'sound-6.16-rc6' of git://git.kernel.org/pub/scm/linux/kernel/git/tiwai/sound | 2025-07-08 |
-| chromium/chromium | [fca80ec](https://github.com/chromium/chromium/commit/fca80ec5b95c32a556049239427daa3a0cc41f80) | Roll V8 from 6604430bd769 to 7de1ea5c703b (11 revisions) | 2025-07-08 |
+| chromium/chromium | [fceb315](https://github.com/chromium/chromium/commit/fceb3154f98dd80df7c2cd632b04791f584e0da2) | [iOS]Add a delegate to sync encryption view | 2025-07-08 |
+| chromium/chromium | [02f3d31](https://github.com/chromium/chromium/commit/02f3d31560b9449471da8aaa77f3c69eb89c0793) | Enable stricter checks for DistilledPagePrefs observer lifetime. | 2025-07-08 |
+| chromium/chromium | [a88b02e](https://github.com/chromium/chromium/commit/a88b02e54c8157df975b3769a80ce028a129b55c) | Roll Depot Tools from abc510988246 to 1b7c452940c0 (1 revision) | 2025-07-08 |
+| torvalds/linux | [70b9c0c](https://github.com/torvalds/linux/commit/70b9c0c11e55167b9552ef395bc00f4920299177) | uapi: bitops: use UAPI-safe variant of BITS_PER_LONG again (2) | 2025-06-30 |
+| torvalds/linux | [570db4b](https://github.com/torvalds/linux/commit/570db4b39f535a8bb722adb8be0280d09e34ca99) | module: Make sure relocations are applied to the per-CPU section | 2025-06-10 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| openssl/openssl | [#27920](https://github.com/openssl/openssl/pull/27920) | fuzz/cmp.c: Correct the usages of BIO_new() | 2025-07-08 |
+| openssl/openssl | [#27993](https://github.com/openssl/openssl/pull/27993) | test/bio_base64_test.c: Add check for BIO_new() | 2025-07-08 |
+| wazuh/wazuh | [#30675](https://github.com/wazuh/wazuh/pull/30675) | Remove wazuh-analysisd and wazuh-dbd | 2025-07-08 |
 
