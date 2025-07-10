@@ -1,12 +1,13 @@
 # Security Updates Monitor
 
-*Last updated: 2025-07-10 17:15:51 UTC*
+*Last updated: 2025-07-10 18:21:04 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 23 |
-| COMMIT | 5 |
+| ADVISORY | 25 |
+| COMMIT | 1 |
+| PR | 1 |
 
 ---
 
@@ -14,37 +15,41 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-48q3-prgv-gm4w](https://github.com/advisories/GHSA-48q3-prgv-gm4w): Parse Server exposes the data schema via GraphQL API (NPM/parse-server, NPM/parse-server) | MODERATE (CVSS: 5.3) | 2025-07-10 |
-| GHSA | [GHSA-GHSA-7pgw-q3qp-6pgq](https://github.com/advisories/GHSA-7pgw-q3qp-6pgq): DynamicPageList3 vulnerability exposes hidden/suppressed usernames (COMPOSER/universal-omega/dynamic-page-list3) | HIGH (CVSS: 0.0) | 2025-07-10 |
-| GHSA | [GHSA-GHSA-962q-84v8-hxhj](https://github.com/advisories/GHSA-962q-84v8-hxhj): Jenkins QMetry Test Management Plugin vulnerability exposes API keys (MAVEN/org.jenkins-ci.plugins:qmetry-test-management) | MODERATE (CVSS: 4.3) | 2025-07-09 |
-| GHSA | [GHSA-GHSA-884f-p57j-f258](https://github.com/advisories/GHSA-884f-p57j-f258): Jenkins ReadyAPI Functional Testing Plugin vulnerability stores unencrypted authentication credentials (MAVEN/org.jenkins-ci.plugins:soapui-pro-functional-testing) | MODERATE (CVSS: 4.3) | 2025-07-09 |
-| GHSA | [GHSA-GHSA-3wgg-3j4j-3f69](https://github.com/advisories/GHSA-3wgg-3j4j-3f69): Jenkins Aqua Security Scanner Plugin vulnerability exposes scanner tokens (MAVEN/org.jenkins-ci.plugins:aqua-security-scanner) | MODERATE (CVSS: 4.3) | 2025-07-09 |
-| GHSA | [GHSA-GHSA-qcj2-99cg-mppf](https://github.com/advisories/GHSA-qcj2-99cg-mppf): Jenkins Git Parameter Plugin vulnerable to code injection due to inexhaustive parameter check (MAVEN/org.jenkins-ci.tools:git-parameter) | MODERATE (CVSS: 5.4) | 2025-07-09 |
-| GHSA | [GHSA-GHSA-367v-5ppj-2hrx](https://github.com/advisories/GHSA-367v-5ppj-2hrx): Jenkins HTML Publisher Plugin vulnerability displays controller file system information in its logs (MAVEN/org.jenkins-ci.plugins:htmlpublisher) | MODERATE (CVSS: 4.3) | 2025-07-09 |
-| GHSA | [GHSA-GHSA-qf34-qpr4-5pph](https://github.com/advisories/GHSA-qf34-qpr4-5pph): docusaurus-plugin-content-gists vulnerability exposes GitHub Personal Access Token (NPM/docusaurus-plugin-content-gists) | CRITICAL (CVSS: 10.0) | 2025-07-09 |
-| GHSA | [GHSA-GHSA-jmrv-rxgr-phvr](https://github.com/advisories/GHSA-jmrv-rxgr-phvr): Jenkins Applitools Eyes Plugin vulnerability does not mask API keys on its job configuration form (MAVEN/org.jenkins-ci.plugins:applitools-eyes) | MODERATE (CVSS: 4.3) | 2025-07-09 |
-| GHSA | [GHSA-GHSA-q92v-3f4w-5xg8](https://github.com/advisories/GHSA-q92v-3f4w-5xg8): Jenkins Applitools Eyes Plugin vulnerability exposes unencrypted keys to certain authenticated users (MAVEN/org.jenkins-ci.plugins:pplitools-eyes) | MODERATE (CVSS: 4.3) | 2025-07-09 |
-| GHSA | [GHSA-GHSA-w4xv-mj6v-p4g2](https://github.com/advisories/GHSA-w4xv-mj6v-p4g2): Jenkins User1st uTester Plugin vulnerability exposes unencrypted token to authenticated users (MAVEN/io.jenkins.plugins:user1st-utester) | LOW (CVSS: 3.3) | 2025-07-09 |
-| GHSA | [GHSA-GHSA-23j7-px3w-jwp2](https://github.com/advisories/GHSA-23j7-px3w-jwp2): Jenkins Xooa Plugin vulnerability does not mask its Xooa Deployment Token (MAVEN/io.jenkins.plugins:xooa) | MODERATE (CVSS: 4.3) | 2025-07-09 |
-| GHSA | [GHSA-GHSA-56h7-r62c-83qp](https://github.com/advisories/GHSA-56h7-r62c-83qp): Jenkins Xooa Plugin vulnerability exposes unencrypted tokens to authenticated users (MAVEN/io.jenkins.plugins:xooa) | MODERATE (CVSS: 4.3) | 2025-07-09 |
-| GHSA | [GHSA-GHSA-2g8w-9933-36vr](https://github.com/advisories/GHSA-2g8w-9933-36vr): Jenkins Warrior Framework Plugin vulnerability exposes unencrypted passwords to certain authenticated users (MAVEN/org.jenkins-ci.plugins:warrior) | MODERATE (CVSS: 4.3) | 2025-07-09 |
-| GHSA | [GHSA-GHSA-vx57-hphr-3mr9](https://github.com/advisories/GHSA-vx57-hphr-3mr9): Jenkins Sensedia API Platform Plugin vulnerability exposes unencrypted tokens (MAVEN/org.jenkins-ci.plugins:sensedia-api-platform) | MODERATE (CVSS: 4.3) | 2025-07-09 |
-| GHSA | [GHSA-GHSA-mr49-vmp6-2pwq](https://github.com/advisories/GHSA-mr49-vmp6-2pwq): Jenkins VAddy Plugin vulnerability exposes unencrypted keys to certain authenticated users (MAVEN/org.jenkins-ci.plugins:vaddy-plugin) | MODERATE (CVSS: 4.3) | 2025-07-09 |
-| GHSA | [GHSA-GHSA-26x3-7jw5-7mg4](https://github.com/advisories/GHSA-26x3-7jw5-7mg4): Jenkins Statistics Gatherer Plugin does not mask AWS Secret Key (MAVEN/org.jenkins.plugins.statistics.gatherer:statistics-gatherer) | MODERATE (CVSS: 4.3) | 2025-07-09 |
-| GHSA | [GHSA-GHSA-3c9f-c64m-h4wc](https://github.com/advisories/GHSA-3c9f-c64m-h4wc): Jenkins Statistics Gatherer Plugin vulnerability exposes AWS Secret Key (MAVEN/org.jenkins.plugins.statistics.gatherer:statistics-gatherer) | MODERATE (CVSS: 4.3) | 2025-07-09 |
-| GHSA | [GHSA-GHSA-9768-hprv-crj5](https://github.com/advisories/GHSA-9768-hprv-crj5): Jenkins Credentials Binding Plugin vulnerability can expose sensitive information in logger messages (MAVEN/org.jenkins-ci.plugins:credentials-binding) | MODERATE (CVSS: 4.3) | 2025-07-09 |
-| GHSA | [GHSA-GHSA-7f8r-222p-6f5g](https://github.com/advisories/GHSA-7f8r-222p-6f5g): MCP Inspector proxy server lacks authentication between the Inspector client and proxy (NPM/@modelcontextprotocol/inspector) | CRITICAL (CVSS: 0.0) | 2025-06-13 |
-| GHSA | [GHSA-GHSA-hcgh-r5gq-6qc2](https://github.com/advisories/GHSA-hcgh-r5gq-6qc2): Microweber vulnerable to XSS attack due to insure `group` component in its Settings handler (COMPOSER/microweber/microweber) | LOW (CVSS: 3.5) | 2025-03-12 |
-| GHSA | [GHSA-GHSA-jwvw-v7c5-m82h](https://github.com/advisories/GHSA-jwvw-v7c5-m82h): protobuf susceptible to buffer overflow (GO/github.com/protocolbuffers/protobuf, GO/github.com/protocolbuffers/protobuf, PIP/protobuf) | HIGH (CVSS: 8.8) | 2022-05-13 |
-| GHSA | [GHSA-GHSA-7p6w-x2gr-rrf8](https://github.com/advisories/GHSA-7p6w-x2gr-rrf8): ag-grid Cross-Site Scripting vulnerability (NPM/ag-grid) | HIGH (CVSS: 0.0) | 2020-09-02 |
+| GHSA | [GHSA-GHSA-ggmv-j932-q89q](https://github.com/advisories/GHSA-ggmv-j932-q89q): Chall-Manager's HTTP Gateway is vulnerable to DoS due to missing header timeout (GO/github.com/ctfer-io/chall-manager) | HIGH (CVSS: 0.0) | 2025-07-10 |
+| GHSA | [GHSA-GHSA-r7fm-3pqm-ww5w](https://github.com/advisories/GHSA-r7fm-3pqm-ww5w): Chall-Manager's scenario decoding process does not check for zip bombs (GO/github.com/ctfer-io/chall-manager) | HIGH (CVSS: 0.0) | 2025-07-10 |
+| GHSA | [GHSA-GHSA-3gv2-v3jx-r9fh](https://github.com/advisories/GHSA-3gv2-v3jx-r9fh): Chall-Manager is vulnerable to Path Traversal when extracting/decoding a zip archive (GO/github.com/ctfer-io/chall-manager) | HIGH (CVSS: 0.0) | 2025-07-10 |
+| GHSA | [GHSA-GHSA-54xv-94qv-2gfg](https://github.com/advisories/GHSA-54xv-94qv-2gfg): @pdfme/common vulnerable to to XSS and Prototype Pollution through its expression evaluation (NPM/@pdfme/common) | MODERATE (CVSS: 6.1) | 2025-07-10 |
+| GHSA | [GHSA-GHSA-275g-g844-73jh](https://github.com/advisories/GHSA-275g-g844-73jh): Matrix Rust SDK vulnerable to SQL Injection through its EventCache implementation (RUST/matrix-sdk) | MODERATE (CVSS: 0.0) | 2025-07-10 |
+| GHSA | [GHSA-GHSA-q8p4-vw42-66gh](https://github.com/advisories/GHSA-q8p4-vw42-66gh): Jenkins Apica Loadtest Plugin vulnerability exposes authentication tokens (MAVEN/com.apica:ApicaLoadtest) | MODERATE (CVSS: 4.3) | 2025-07-09 |
+| GHSA | [GHSA-GHSA-28j3-hphh-cjr8](https://github.com/advisories/GHSA-28j3-hphh-cjr8): Jenkins Apica Loadtest Plugin vulnerability exposes authentication tokens (MAVEN/com.apica:ApicaLoadtest) | MODERATE (CVSS: 4.3) | 2025-07-09 |
+| GHSA | [GHSA-GHSA-pgrx-5f8q-r5mq](https://github.com/advisories/GHSA-pgrx-5f8q-r5mq): Jenkins IBM Cloud DevOps Plugin vulnerability exposes SonarQube authentication tokens (MAVEN/com.ibm.devops:ibm-cloud-devops) | MODERATE (CVSS: 4.3) | 2025-07-09 |
+| GHSA | [GHSA-GHSA-jxwj-qccf-4896](https://github.com/advisories/GHSA-jxwj-qccf-4896): Jenkins IFTTT Build Notifier Plugin vulnerability exposes IFTTT Maker Channel Keys (MAVEN/org.jenkins-ci.plugins:ifttt-build-notifier) | MODERATE (CVSS: 4.3) | 2025-07-09 |
+| GHSA | [GHSA-GHSA-qr9h-j6xg-2j72](https://github.com/advisories/GHSA-qr9h-j6xg-2j72): Qwik's unhandled exception vulnerabilty can cause server crashes from malicious requests (NPM/@builder.io/qwik-city) | CRITICAL (CVSS: 0.0) | 2025-07-09 |
+| GHSA | [GHSA-GHSA-93j6-jcjw-3rwp](https://github.com/advisories/GHSA-93j6-jcjw-3rwp): Jenkins Sensedia API Platform Plugin vulnerability exposes unencrypted tokens in its global configuration file (MAVEN/org.jenkins-ci.plugins:sensedia-api-platform) | MODERATE (CVSS: 4.3) | 2025-07-09 |
+| GHSA | [GHSA-GHSA-8gp3-m447-gw2v](https://github.com/advisories/GHSA-8gp3-m447-gw2v): Jenkins VAddy Plugin vulnerability exposes plaintext keys on its job configuration form (MAVEN/org.jenkins-ci.plugins:vaddy-plugin) | MODERATE (CVSS: 4.3) | 2025-07-09 |
+| GHSA | [GHSA-GHSA-4v4v-92cx-x4f4](https://github.com/advisories/GHSA-4v4v-92cx-x4f4): Jenkins Nouvola DiveCloud Plugin vulnerability does not mask keys on its job configuration form (MAVEN/org.jenkins-ci.plugins:nouvola-divecloud) | MODERATE (CVSS: 4.3) | 2025-07-09 |
+| GHSA | [GHSA-GHSA-45hr-8gq6-7f7f](https://github.com/advisories/GHSA-45hr-8gq6-7f7f): Jenkins Nouvola DiveCloud Plugin vulnerability stores unencrypted credentials (MAVEN/org.jenkins-ci.plugins:nouvola-divecloud) | MODERATE (CVSS: 4.3) | 2025-07-09 |
+| GHSA | [GHSA-GHSA-cvg7-767r-w3fq](https://github.com/advisories/GHSA-cvg7-767r-w3fq): Jenkins Kryptowire Plugin vulnerability stores unencrypted Kryptowire API key (MAVEN/io.jenkins.plugins:kryptowire) | MODERATE (CVSS: 6.5) | 2025-07-09 |
+| GHSA | [GHSA-GHSA-5pcv-7v3q-hw8j](https://github.com/advisories/GHSA-5pcv-7v3q-hw8j): Jenkins Dead Man's Snitch Plugin vulnerability stores tokens in plain text  (MAVEN/org.jenkins-ci.plugins:deadmanssnitch) | MODERATE (CVSS: 4.3) | 2025-07-09 |
+| GHSA | [GHSA-GHSA-m248-72rh-cpx4](https://github.com/advisories/GHSA-m248-72rh-cpx4): Jenkins Dead Man's Snitch Plugin vulnerability does not mask tokens (MAVEN/org.jenkins-ci.plugins:deadmanssnitch) | MODERATE (CVSS: 4.3) | 2025-07-09 |
+| GHSA | [GHSA-GHSA-p9gh-rpjw-78qg](https://github.com/advisories/GHSA-p9gh-rpjw-78qg): Jenkins QMetry Test Management Plugin stores unencrypted API keys (MAVEN/org.jenkins-ci.plugins:qmetry-test-management) | MODERATE (CVSS: 4.3) | 2025-07-09 |
+| GHSA | [GHSA-GHSA-r496-x769-f8j4](https://github.com/advisories/GHSA-r496-x769-f8j4): Jenkins ReadyAPI Functional Testing Plugin vulnerability exposes secrets (MAVEN/org.jenkins-ci.plugins:soapui-pro-functional-testing) | MODERATE (CVSS: 4.3) | 2025-07-09 |
+| GHSA | [GHSA-GHSA-j4wf-9gx8-63f8](https://github.com/advisories/GHSA-j4wf-9gx8-63f8): Jenkins Applitools Eyes Plugin vulnerable to XSS through its Build page (MAVEN/org.jenkins-ci.plugins:applitools-eyes) | HIGH (CVSS: 8.0) | 2025-07-09 |
+| GHSA | [GHSA-GHSA-8wp4-r84g-gcmw](https://github.com/advisories/GHSA-8wp4-r84g-gcmw): Jenkins Testsigma Test Plan vulnerability exposes API keys via job configuration form (MAVEN/io.jenkins.plugins:testsigma) | LOW (CVSS: 3.1) | 2025-07-09 |
+| GHSA | [GHSA-GHSA-9mp4-77wg-rwx9](https://github.com/advisories/GHSA-9mp4-77wg-rwx9): @clerk/backend Performs Insufficient Verification of Data Authenticity (NPM/@clerk/tanstack-react-start, NPM/@clerk/remix, NPM/@clerk/react-router) | HIGH (CVSS: 7.5) | 2025-07-09 |
+| GHSA | [GHSA-GHSA-557j-xg8c-q2mm](https://github.com/advisories/GHSA-557j-xg8c-q2mm): Helm vulnerable to Code Injection through malicious chart.yaml content (GO/helm.sh/helm/v3) | HIGH (CVSS: 8.5) | 2025-07-08 |
+| GHSA | [GHSA-GHSA-gq57-v332-7666](https://github.com/advisories/GHSA-gq57-v332-7666): n8n is vulnerable to Improper Authorization through its `/stop` endpoint (NPM/n8n) | MODERATE (CVSS: 4.3) | 2025-07-03 |
+| GHSA | [GHSA-GHSA-r26v-98qj-48q9](https://github.com/advisories/GHSA-r26v-98qj-48q9): XXL SSO is vulnerable to an Open Redirect through malicious manipulation of the redirect_url argument  (MAVEN/com.xuxueli:xxl-sso) | LOW (CVSS: 3.5) | 2025-06-26 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [bc9ff19](https://github.com/torvalds/linux/commit/bc9ff192a6c940d9a26e21a0a82f2667067aaf5f) | Merge tag 'net-6.16-rc6' of git://git.kernel.org/pub/scm/linux/kernel/git/netdev/net | 2025-07-10 |
-| torvalds/linux | [8c2e52e](https://github.com/torvalds/linux/commit/8c2e52ebbe885c7eeaabd3b7ddcdc1246fc400d2) | eventpoll: don't decrement ep refcount while still holding the ep mutex | 2025-07-09 |
-| chromium/chromium | [37e8c13](https://github.com/chromium/chromium/commit/37e8c13053405e9da98b8b472acfbaf7834472ba) | [bedrock] Null-check BrowserView in ~ChromeLabsBubbleView() | 2025-07-09 |
-| torvalds/linux | [d556838](https://github.com/torvalds/linux/commit/d55683866c79a3af1e334126f32841d05e7e4143) | selftests/tc-testing: Create test case for UAF scenario with DRR/NETEM/BLACKHOLE chain | 2025-07-05 |
-| torvalds/linux | [22fc46c](https://github.com/torvalds/linux/commit/22fc46cea91df3dce140a7dc6847c6fcf0354505) | atm: clip: Fix NULL pointer dereference in vcc_sendmsg() | 2025-07-05 |
+| chromium/chromium | [04faffc](https://github.com/chromium/chromium/commit/04faffcf5d149501c43c3f0c92b2709df5d819e3) | Roll src/third_party/libwebp/src/ 2af6c034a..4fa219123 (54 commits) | 2025-07-10 |
+
+## Pull Requests
+
+| Source | Title | Severity | Date |
+|--------|-------|----------|------|
+| wazuh/wazuh | [#30804](https://github.com/wazuh/wazuh/pull/30804) | Fixed error in database feed manager when wazuh is shutting down | 2025-07-10 |
 
