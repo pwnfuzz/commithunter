@@ -1,12 +1,12 @@
 # Security Updates Monitor
 
-*Last updated: 2025-07-11 16:18:27 UTC*
+*Last updated: 2025-07-11 17:14:30 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 15 |
-| COMMIT | 4 |
+| ADVISORY | 11 |
+| PR | 2 |
 
 ---
 
@@ -14,28 +14,22 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-25xr-qj8w-c4vf](https://github.com/advisories/GHSA-25xr-qj8w-c4vf): Apache Tomcat Coyote vulnerable to Denial of Service via excessive HTTP/2 streams (MAVEN/org.apache.tomcat:tomcat-coyote, MAVEN/org.apache.tomcat:tomcat-coyote, MAVEN/org.apache.tomcat:tomcat-coyote) | MODERATE (CVSS: 0.0) | 2025-07-10 |
-| GHSA | [GHSA-GHSA-wr62-c79q-cv37](https://github.com/advisories/GHSA-wr62-c79q-cv37): Apache Tomcat Catalina is vulnerable to DoS attack through bypassing of size limits (MAVEN/org.apache.tomcat:tomcat-catalina, MAVEN/org.apache.tomcat:tomcat-catalina, MAVEN/org.apache.tomcat:tomcat-catalina) | MODERATE (CVSS: 0.0) | 2025-07-10 |
-| GHSA | [GHSA-GHSA-54xv-94qv-2gfg](https://github.com/advisories/GHSA-54xv-94qv-2gfg): @pdfme/common vulnerable to to XSS and Prototype Pollution through its expression evaluation (NPM/@pdfme/common) | MODERATE (CVSS: 6.1) | 2025-07-10 |
-| GHSA | [GHSA-GHSA-3gv2-v3jx-r9fh](https://github.com/advisories/GHSA-3gv2-v3jx-r9fh): Chall-Manager is vulnerable to Path Traversal when extracting/decoding a zip archive (GO/github.com/ctfer-io/chall-manager) | HIGH (CVSS: 0.0) | 2025-07-10 |
-| GHSA | [GHSA-GHSA-ggmv-j932-q89q](https://github.com/advisories/GHSA-ggmv-j932-q89q): Chall-Manager's HTTP Gateway is vulnerable to DoS due to missing header timeout (GO/github.com/ctfer-io/chall-manager) | HIGH (CVSS: 0.0) | 2025-07-10 |
-| GHSA | [GHSA-GHSA-r7fm-3pqm-ww5w](https://github.com/advisories/GHSA-r7fm-3pqm-ww5w): Chall-Manager's scenario decoding process does not check for zip bombs (GO/github.com/ctfer-io/chall-manager) | HIGH (CVSS: 0.0) | 2025-07-10 |
-| GHSA | [GHSA-GHSA-275g-g844-73jh](https://github.com/advisories/GHSA-275g-g844-73jh): Matrix Rust SDK vulnerable to SQL Injection through its EventCache implementation (RUST/matrix-sdk) | MODERATE (CVSS: 0.0) | 2025-07-10 |
-| GHSA | [GHSA-GHSA-r26v-98qj-48q9](https://github.com/advisories/GHSA-r26v-98qj-48q9): XXL SSO is vulnerable to an Open Redirect through malicious manipulation of the redirect_url argument  (MAVEN/com.xuxueli:xxl-sso) | LOW (CVSS: 3.5) | 2025-06-26 |
-| GHSA | [GHSA-GHSA-79vf-hf9f-j9q8](https://github.com/advisories/GHSA-79vf-hf9f-j9q8): @vue/cli-plugin-pwa Regular Expression Denial of Service vulnerability (NPM/@vue/cli-plugin-pwa) | MODERATE (CVSS: 4.3) | 2025-06-09 |
-| GHSA | [GHSA-GHSA-f5xg-cfpj-2mw6](https://github.com/advisories/GHSA-f5xg-cfpj-2mw6): taro-css-to-react-native Regular Expression Denial of Service vulnerability (NPM/taro-css-to-react-native) | MODERATE (CVSS: 4.3) | 2025-06-09 |
-| GHSA | [GHSA-GHSA-x5gf-qvw8-r2rm](https://github.com/advisories/GHSA-x5gf-qvw8-r2rm): pm2 Regular Expression Denial of Service vulnerability (NPM/pm2) | LOW (CVSS: 4.3) | 2025-06-09 |
-| GHSA | [GHSA-GHSA-jqfv-jrvq-95jm](https://github.com/advisories/GHSA-jqfv-jrvq-95jm): Apache XML Graphics FOP XML External Entity Reference ('XXE') vulnerability (MAVEN/org.apache.xmlgraphics:fop-core) | MODERATE (CVSS: 5.3) | 2024-10-09 |
-| GHSA | [GHSA-GHSA-r7pg-v2c8-mfg3](https://github.com/advisories/GHSA-r7pg-v2c8-mfg3): Apache Avro Java SDK: Arbitrary Code Execution when reading Avro Data (Java SDK) (MAVEN/org.apache.avro:avro) | CRITICAL (CVSS: 9.8) | 2024-10-03 |
-| GHSA | [GHSA-GHSA-f5fw-25gw-5m92](https://github.com/advisories/GHSA-f5fw-25gw-5m92): Apache Hadoop: Temporary File Local Information Disclosure (MAVEN/org.apache.hadoop:hadoop-common) | LOW (CVSS: 3.3) | 2024-09-25 |
-| GHSA | [GHSA-GHSA-6247-7862-q2pq](https://github.com/advisories/GHSA-6247-7862-q2pq): Apache Helix Front (UI) component contained a hard-coded secret (MAVEN/org.apache.helix:helix) | HIGH (CVSS: 7.5) | 2024-08-21 |
+| GHSA | [GHSA-GHSA-hq75-xg7r-rx6c](https://github.com/advisories/GHSA-hq75-xg7r-rx6c): Better Call routing bug can lead to Cache Deception (NPM/better-call) | MODERATE (CVSS: 0.0) | 2025-07-11 |
+| GHSA | [GHSA-GHSA-xwmg-2g98-w7v9](https://github.com/advisories/GHSA-xwmg-2g98-w7v9): Nimbus JOSE + JWT is vulnerable to DoS attacks when processing deeply nested JSON (MAVEN/com.nimbusds:nimbus-jose-jwt) | MODERATE (CVSS: 5.8) | 2025-07-11 |
+| GHSA | [GHSA-GHSA-7pgw-q3qp-6pgq](https://github.com/advisories/GHSA-7pgw-q3qp-6pgq): DynamicPageList3 vulnerability exposes hidden/suppressed usernames (COMPOSER/universal-omega/dynamic-page-list3) | HIGH (CVSS: 0.0) | 2025-07-10 |
+| GHSA | [GHSA-GHSA-4j3c-42xv-3f84](https://github.com/advisories/GHSA-4j3c-42xv-3f84): Apache Tomcat Utilities is vulnerable to resource exhaustion when using the APR/Native connector (MAVEN/org.apache.tomcat:tomcat-util) | MODERATE (CVSS: 0.0) | 2025-07-10 |
+| GHSA | [GHSA-GHSA-gj52-35xm-gxjh](https://github.com/advisories/GHSA-gj52-35xm-gxjh): Keycloak vulnerable to phishing attacks through its Review Profile section (MAVEN/org.keycloak:keycloak-services) | MODERATE (CVSS: 5.4) | 2025-07-10 |
+| GHSA | [GHSA-GHSA-48q3-prgv-gm4w](https://github.com/advisories/GHSA-48q3-prgv-gm4w): Parse Server exposes the data schema via GraphQL API (NPM/parse-server, NPM/parse-server) | MODERATE (CVSS: 5.3) | 2025-07-10 |
+| GHSA | [GHSA-GHSA-5hq9-5r78-2gjh](https://github.com/advisories/GHSA-5hq9-5r78-2gjh): LlamaIndex vulnerable to data loss through hash collisions in its DocugamiReader class  (PIP/llama-index-readers-docugami, PIP/llama-index) | MODERATE (CVSS: 6.5) | 2025-07-10 |
+| GHSA | [GHSA-GHSA-j857-2pwm-jjmm](https://github.com/advisories/GHSA-j857-2pwm-jjmm): Apache Airflow vulnerable to Insertion of Sensitive Information Into Sent Data (PIP/apache-airflow) | LOW (CVSS: 6.5) | 2024-11-08 |
+| GHSA | [GHSA-GHSA-752q-72qc-rc66](https://github.com/advisories/GHSA-752q-72qc-rc66): Apache Kylin Session Fixation vulnerability (MAVEN/org.apache.kylin:kylin) | HIGH (CVSS: 9.1) | 2024-11-04 |
+| GHSA | [GHSA-GHSA-48cr-j2cx-mcr8](https://github.com/advisories/GHSA-48cr-j2cx-mcr8): Apache Answer: Avatar URL leaked user email addresses (GO/github.com/apache/incubator-answer) | MODERATE (CVSS: 5.3) | 2024-09-25 |
+| GHSA | [GHSA-GHSA-jh5w-6964-x5cf](https://github.com/advisories/GHSA-jh5w-6964-x5cf): chromedriver Downloads Resources over HTTP (NPM/chromedriver) | HIGH (CVSS: 8.1) | 2019-02-18 |
 
-## Code Commits
+## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| chromium/chromium | [94b9495](https://github.com/chromium/chromium/commit/94b949573d9e12e2c6fd97cf9986b7cbbc32dddf) | Avoid calling SetNeedsRedraw for each queue inside MarkTilesOOM. | 2025-07-11 |
-| chromium/chromium | [f0a1284](https://github.com/chromium/chromium/commit/f0a12849f29b89172b76361b74602454b07ef1ab) | Add 'URL:Google Internal' to template. | 2025-07-10 |
-| chromium/chromium | [532e92c](https://github.com/chromium/chromium/commit/532e92cca81b0e3fd50ba504d938b68897dccd50) | Prevent origin updates in same-document navigations | 2025-07-10 |
-| chromium/chromium | [04faffc](https://github.com/chromium/chromium/commit/04faffcf5d149501c43c3f0c92b2709df5d819e3) | Roll src/third_party/libwebp/src/ 2af6c034a..4fa219123 (54 commits) | 2025-07-10 |
+| openssl/openssl | [#27910](https://github.com/openssl/openssl/pull/27910) | Fix nullpointer dereference in OSSL_PARAM_merge | 2025-07-11 |
+| wazuh/wazuh | [#30675](https://github.com/wazuh/wazuh/pull/30675) | Remove wazuh-analysisd and wazuh-dbd | 2025-07-11 |
 
