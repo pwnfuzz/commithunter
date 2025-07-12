@@ -1,11 +1,12 @@
 # Security Updates Monitor
 
-*Last updated: 2025-07-12 13:24:46 UTC*
+*Last updated: 2025-07-12 14:13:18 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 15 |
+| ADVISORY | 9 |
+| COMMIT | 5 |
 | PR | 1 |
 
 ---
@@ -14,25 +15,29 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-h952-963h-rv99](https://github.com/advisories/GHSA-h952-963h-rv99): ExecuTorch vulnerable to Heap-based Buffer Overflow attack (PIP/executorch) | HIGH (CVSS: 8.1) | 2025-07-11 |
-| GHSA | [GHSA-GHSA-q745-cfqh-hcrw](https://github.com/advisories/GHSA-q745-cfqh-hcrw): phpThumb is vulnerable to Command Injection through its gif_outputAsJpeg function (COMPOSER/james-heinrich/phpthumb) | MODERATE (CVSS: 4.9) | 2025-07-11 |
-| GHSA | [GHSA-GHSA-hq75-xg7r-rx6c](https://github.com/advisories/GHSA-hq75-xg7r-rx6c): Better Call routing bug can lead to Cache Deception (NPM/better-call) | MODERATE (CVSS: 0.0) | 2025-07-11 |
-| GHSA | [GHSA-GHSA-xwmg-2g98-w7v9](https://github.com/advisories/GHSA-xwmg-2g98-w7v9): Nimbus JOSE + JWT is vulnerable to DoS attacks when processing deeply nested JSON (MAVEN/com.nimbusds:nimbus-jose-jwt) | MODERATE (CVSS: 5.8) | 2025-07-11 |
-| GHSA | [GHSA-GHSA-4j3c-42xv-3f84](https://github.com/advisories/GHSA-4j3c-42xv-3f84): Apache Tomcat Utilities is vulnerable to resource exhaustion when using the APR/Native connector (MAVEN/org.apache.tomcat:tomcat-util) | MODERATE (CVSS: 7.5) | 2025-07-10 |
-| GHSA | [GHSA-GHSA-rq7x-cfmc-rq3w](https://github.com/advisories/GHSA-rq7x-cfmc-rq3w): JuzaWeb CMS is vulnerable to Incorrect Privilege Assignment when installing Import Page component (COMPOSER/juzaweb/cms) | LOW (CVSS: 6.3) | 2025-06-27 |
-| GHSA | [GHSA-GHSA-mrph-pjv2-34f4](https://github.com/advisories/GHSA-mrph-pjv2-34f4): JuzaWeb CMS is vulnerable to Incorrect Privilege Assignment when installing certain components (COMPOSER/juzaweb/cms) | LOW (CVSS: 6.3) | 2025-06-27 |
-| GHSA | [GHSA-GHSA-j857-2pwm-jjmm](https://github.com/advisories/GHSA-j857-2pwm-jjmm): Apache Airflow vulnerable to Insertion of Sensitive Information Into Sent Data (PIP/apache-airflow) | LOW (CVSS: 6.5) | 2024-11-08 |
-| GHSA | [GHSA-GHSA-752q-72qc-rc66](https://github.com/advisories/GHSA-752q-72qc-rc66): Apache Kylin Session Fixation vulnerability (MAVEN/org.apache.kylin:kylin) | HIGH (CVSS: 9.1) | 2024-11-04 |
-| GHSA | [GHSA-GHSA-48cr-j2cx-mcr8](https://github.com/advisories/GHSA-48cr-j2cx-mcr8): Apache Answer: Avatar URL leaked user email addresses (GO/github.com/apache/incubator-answer) | MODERATE (CVSS: 5.3) | 2024-09-25 |
-| GHSA | [GHSA-GHSA-q4c2-q63g-62j7](https://github.com/advisories/GHSA-q4c2-q63g-62j7): MODX Revolution vulnerable to XSS attack through its User Photo field (COMPOSER/modx/revolution) | MODERATE (CVSS: 6.1) | 2022-05-14 |
-| GHSA | [GHSA-GHSA-fpxg-5x79-43rm](https://github.com/advisories/GHSA-fpxg-5x79-43rm): MODX Revolution allows XSS via document resources (COMPOSER/modx/revolution) | MODERATE (CVSS: 6.1) | 2022-05-14 |
-| GHSA | [GHSA-GHSA-gm2g-65wj-43g8](https://github.com/advisories/GHSA-gm2g-65wj-43g8): MODX Revolution allows XSS through extended user fields (COMPOSER/modx/revolution) | MODERATE (CVSS: 6.1) | 2022-05-14 |
-| GHSA | [GHSA-GHSA-vwqw-wfhv-2xcq](https://github.com/advisories/GHSA-vwqw-wfhv-2xcq): MODX vulnerability allows for XSS via user settings parameters (COMPOSER/modx/revolution) | MODERATE (CVSS: 5.4) | 2022-05-13 |
-| GHSA | [GHSA-GHSA-jh5w-6964-x5cf](https://github.com/advisories/GHSA-jh5w-6964-x5cf): chromedriver Downloads Resources over HTTP (NPM/chromedriver) | HIGH (CVSS: 8.1) | 2019-02-18 |
+| GHSA | [GHSA-GHSA-j288-q9x7-2f5v](https://github.com/advisories/GHSA-j288-q9x7-2f5v): Apache Commons Lang is vulnerable to Uncontrolled Recursion when processing long inputs (MAVEN/commons-lang:commons-lang, MAVEN/org.apache.commons:commons-lang3) | MODERATE (CVSS: 6.5) | 2025-07-11 |
+| GHSA | [GHSA-GHSA-xrrq-rrgq-h89w](https://github.com/advisories/GHSA-xrrq-rrgq-h89w): static-alloc vulnerability leads to uninitialized read after allocating MemBump (RUST/static-alloc) | LOW (CVSS: 0.0) | 2025-07-11 |
+| GHSA | [GHSA-GHSA-37mw-44qp-f5jm](https://github.com/advisories/GHSA-37mw-44qp-f5jm): Transformers is vulnerable to ReDoS attack through its DonutProcessor class (PIP/transformers) | MODERATE (CVSS: 5.3) | 2025-07-11 |
+| GHSA | [GHSA-GHSA-25xr-qj8w-c4vf](https://github.com/advisories/GHSA-25xr-qj8w-c4vf): Apache Tomcat Coyote vulnerable to Denial of Service via excessive HTTP/2 streams (MAVEN/org.apache.tomcat:tomcat-coyote, MAVEN/org.apache.tomcat:tomcat-coyote, MAVEN/org.apache.tomcat:tomcat-coyote) | MODERATE (CVSS: 7.5) | 2025-07-10 |
+| GHSA | [GHSA-GHSA-wr62-c79q-cv37](https://github.com/advisories/GHSA-wr62-c79q-cv37): Apache Tomcat Catalina is vulnerable to DoS attack through bypassing of size limits (MAVEN/org.apache.tomcat:tomcat-catalina, MAVEN/org.apache.tomcat:tomcat-catalina, MAVEN/org.apache.tomcat:tomcat-catalina) | MODERATE (CVSS: 7.5) | 2025-07-10 |
+| GHSA | [GHSA-GHSA-275g-g844-73jh](https://github.com/advisories/GHSA-275g-g844-73jh): Matrix Rust SDK vulnerable to SQL Injection through its EventCache implementation (RUST/matrix-sdk-sqlite, RUST/matrix-sdk) | MODERATE (CVSS: 0.0) | 2025-07-10 |
+| GHSA | [GHSA-GHSA-x5gf-qvw8-r2rm](https://github.com/advisories/GHSA-x5gf-qvw8-r2rm): pm2 Regular Expression Denial of Service vulnerability (NPM/pm2) | LOW (CVSS: 4.3) | 2025-06-09 |
+| GHSA | [GHSA-GHSA-gp98-hfvm-2r4x](https://github.com/advisories/GHSA-gp98-hfvm-2r4x): Apache IoTDB JDBC Driver Discloses Sensitive Information via Log Files (MAVEN/org.apache.iotdb:iotdb-jdbc, MAVEN/org.apache.iotdb:iotdb-jdbc) | MODERATE (CVSS: 7.5) | 2025-05-14 |
+| GHSA | [GHSA-GHSA-fpwp-69xv-c67f](https://github.com/advisories/GHSA-fpwp-69xv-c67f): aiohttp-session Session Fixation vulnerability (PIP/aiohttp-session) | HIGH (CVSS: 6.5) | 2018-09-13 |
+
+## Code Commits
+
+| Source | Title | Severity | Date |
+|--------|-------|----------|------|
+| chromium/chromium | [2323efd](https://github.com/chromium/chromium/commit/2323efdd56bec882a440296f3a1999614a25fe2c) | [Multiple Requests] Fix issue in virtual card enrollment. | 2025-07-12 |
+| torvalds/linux | [40f92e7](https://github.com/torvalds/linux/commit/40f92e79b0aabbf3575e371f9054657a421a3e79) | Merge tag 'block-6.16-20250710' of git://git.kernel.dk/linux | 2025-07-11 |
+| chromium/chromium | [db40b07](https://github.com/chromium/chromium/commit/db40b0718a6a1a9a48451056850f615c58d920eb) | Use a WeakPtr for the Web Payment Handler progress bar. | 2025-07-11 |
+| chromium/chromium | [94b9495](https://github.com/chromium/chromium/commit/94b949573d9e12e2c6fd97cf9986b7cbbc32dddf) | Avoid calling SetNeedsRedraw for each queue inside MarkTilesOOM. | 2025-07-11 |
+| torvalds/linux | [eb41a26](https://github.com/torvalds/linux/commit/eb41a264a3a576dc040ee37c3d9d6b7e2d9be968) | net/mlx5e: Fix race between DIM disable and net_dim() | 2025-07-10 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| openssl/openssl | [#27910](https://github.com/openssl/openssl/pull/27910) | Fix nullpointer dereference in OSSL_PARAM_merge | 2025-07-11 |
+| langflow-ai/langflow | [#9020](https://github.com/langflow-ai/langflow/pull/9020) | Feat/OAuth Single Sign-On Implementation with Google and Microsoft AD (Entra ID) | 2025-07-11 |
 
