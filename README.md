@@ -1,11 +1,11 @@
 # Security Updates Monitor
 
-*Last updated: 2025-07-14 08:22:27 UTC*
+*Last updated: 2025-07-14 09:22:55 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| COMMIT | 1 |
+| COMMIT | 2 |
 
 ---
 
@@ -13,5 +13,6 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [3cd7521](https://github.com/torvalds/linux/commit/3cd752194e2ec2573d0e740f4a1edbfcc28257f5) | Merge tag 'clk-fixes-for-linus' of git://git.kernel.org/pub/scm/linux/kernel/git/clk/linux | 2025-07-13 |
+| chromium/chromium | [ae198fc](https://github.com/chromium/chromium/commit/ae198fc44c04b9574a8fdef16a39b1b4d13018f9) | Fix use-after-free crash in ChromeOS notification handling | 2025-07-14 |
+| chromium/chromium | [09bc93a](https://github.com/chromium/chromium/commit/09bc93a2c04f61ce4e9ed27c05084c16d6260cc4) | Fix read of uninitialized memory in MemoryConsumerTraitsTest.OutOfRange | 2025-07-14 |
 
