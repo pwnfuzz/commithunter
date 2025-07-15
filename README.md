@@ -1,12 +1,13 @@
 # Security Updates Monitor
 
-*Last updated: 2025-07-15 19:14:15 UTC*
+*Last updated: 2025-07-15 20:17:15 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 9 |
-| COMMIT | 3 |
+| ADVISORY | 31 |
+| COMMIT | 4 |
+| PR | 1 |
 
 ---
 
@@ -14,21 +15,50 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-6jx8-rcjx-vmwf](https://github.com/advisories/GHSA-6jx8-rcjx-vmwf): GitHub Kanban MCP Server vulnerable to Command Injection (NPM/@sunwood-ai-labs/github-kanban-mcp-server) | HIGH (CVSS: 0.0) | 2025-07-15 |
-| GHSA | [GHSA-GHSA-xh69-987w-hrp8](https://github.com/advisories/GHSA-xh69-987w-hrp8): resolv vulnerable to DoS via insufficient DNS domain name length validation (RUBYGEMS/resolv, RUBYGEMS/resolv, RUBYGEMS/resolv) | MODERATE (CVSS: 0.0) | 2025-07-15 |
-| GHSA | [GHSA-GHSA-x8c6-gj59-6rx8](https://github.com/advisories/GHSA-x8c6-gj59-6rx8): py-libp2p is vulnerable to DoS attacks through use of large RSA keys (PIP/libp2p) | MODERATE (CVSS: 4.3) | 2025-07-14 |
-| GHSA | [GHSA-GHSA-qxh9-qmf2-rhwc](https://github.com/advisories/GHSA-qxh9-qmf2-rhwc): Roundup is vulnerable to XSS through interactions between URLs and issue tracker templates (PIP/roundup) | MODERATE (CVSS: 6.4) | 2025-07-13 |
-| GHSA | [GHSA-GHSA-7pgf-ppxw-8624](https://github.com/advisories/GHSA-7pgf-ppxw-8624): Apache Zeppelin exposes server resources to unauthenticated attackers (MAVEN/org.apache.zeppelin:zeppelin-server, MAVEN/org.apache.zeppelin:zeppelin-interpreter) | HIGH (CVSS: 7.5) | 2025-07-12 |
-| GHSA | [GHSA-GHSA-822f-jfpg-hg7h](https://github.com/advisories/GHSA-822f-jfpg-hg7h): Liferay Portal and Liferay DXP fails to check permissions to view sites/groups (MAVEN/com.liferay.portal:com.liferay.portal.impl, MAVEN/com.liferay:com.liferay.site.browser.web, MAVEN/com.liferay.portal:release.dxp.bom) | MODERATE (CVSS: 4.3) | 2022-04-20 |
-| GHSA | [GHSA-GHSA-ghw5-998m-vw4w](https://github.com/advisories/GHSA-ghw5-998m-vw4w): Liferay Portal and Liferay DXP fails to check origin of event messages (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay:com.liferay.remote.app.web) | MODERATE (CVSS: 5.3) | 2022-03-04 |
-| GHSA | [GHSA-GHSA-ffmm-5ww2-g3q4](https://github.com/advisories/GHSA-ffmm-5ww2-g3q4): Liferay Portal and Liferay DXP cross-site scripting (XSS) vulnerability via the script console (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay:com.liferay.server.admin.web) | MODERATE (CVSS: 6.1) | 2022-03-04 |
-| GHSA | [GHSA-GHSA-jp3m-vh3g-6ggp](https://github.com/advisories/GHSA-jp3m-vh3g-6ggp): Liferay Portal and Liferay DXP fails to properly import users from LDAP (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay:com.liferay.portal.security.ldap.impl) | HIGH (CVSS: 7.5) | 2022-03-04 |
+| GHSA | [GHSA-GHSA-29g5-m8v7-v564](https://github.com/advisories/GHSA-29g5-m8v7-v564): Measured is vulnerable to Path Traversal attacks during class initialization (RUBYGEMS/measured) | MODERATE (CVSS: 0.0) | 2025-07-15 |
+| GHSA | [GHSA-GHSA-vhvx-8xgc-99wf](https://github.com/advisories/GHSA-vhvx-8xgc-99wf): DSpace is vulnerable to Path Traversal attacks when importing packages using Simple Archive Format (MAVEN/org.dspace:dspace-api, MAVEN/org.dspace:dspace-api, MAVEN/org.dspace:dspace-api) | MODERATE (CVSS: 5.2) | 2025-07-15 |
+| GHSA | [GHSA-GHSA-jjwr-5cfh-7xwh](https://github.com/advisories/GHSA-jjwr-5cfh-7xwh): DSpace is vulnerable to XML External Entity injection during archive imports  (MAVEN/org.dspace:dspace-api, MAVEN/org.dspace:dspace-api, MAVEN/org.dspace:dspace-api) | MODERATE (CVSS: 6.9) | 2025-07-15 |
+| GHSA | [GHSA-GHSA-8w3f-4r8f-pf53](https://github.com/advisories/GHSA-8w3f-4r8f-pf53): pyLoad vulnerable to XSS through insecure CAPTCHA  (PIP/pyload-ng) | CRITICAL (CVSS: 9.8) | 2025-07-15 |
+| GHSA | [GHSA-GHSA-7cvf-pxgp-42fc](https://github.com/advisories/GHSA-7cvf-pxgp-42fc): Directus' insufficient permission checks can enable unauthenticated users to manually trigger Flows (NPM/directus) | MODERATE (CVSS: 6.5) | 2025-07-15 |
+| GHSA | [GHSA-GHSA-rmjh-cf9q-pv7q](https://github.com/advisories/GHSA-rmjh-cf9q-pv7q): Directus' exact version number is exposed by the OpenAPI Spec (NPM/directus) | MODERATE (CVSS: 5.3) | 2025-07-15 |
+| GHSA | [GHSA-GHSA-f24x-rm6g-3w5v](https://github.com/advisories/GHSA-f24x-rm6g-3w5v): Directus tokens are not redacted in flow logs, exposing session credentials to all admin (NPM/directus) | MODERATE (CVSS: 4.5) | 2025-07-15 |
+| GHSA | [GHSA-GHSA-x3vm-88hf-gpxp](https://github.com/advisories/GHSA-x3vm-88hf-gpxp): Directus is vulnerable to sensitive data exposure as user data is not being redacted when logged (NPM/directus) | MODERATE (CVSS: 4.2) | 2025-07-15 |
+| GHSA | [GHSA-GHSA-6qjf-g333-pv38](https://github.com/advisories/GHSA-6qjf-g333-pv38): Job Iteration API is vulnerable to OS Command Injection attack through its CsvEnumerator class (RUBYGEMS/job-iteration) | HIGH (CVSS: 0.0) | 2025-07-14 |
+| GHSA | [GHSA-GHSA-32mf-57h2-64x9](https://github.com/advisories/GHSA-32mf-57h2-64x9): XWiki Rendering is vulnerable to RCE attacks when processing nested macros (MAVEN/org.xwiki.rendering:xwiki-rendering-transformation-macro, MAVEN/org.xwiki.rendering:xwiki-rendering-transformation-macro, MAVEN/org.xwiki.rendering:xwiki-rendering-transformation-macro) | CRITICAL (CVSS: 10.0) | 2025-07-14 |
+| GHSA | [GHSA-GHSA-w3wh-g4m9-783p](https://github.com/advisories/GHSA-w3wh-g4m9-783p): XWiki Rendering is vulnerable to XSS attacks through insecure XHTML syntax (MAVEN/org.xwiki.rendering:xwiki-rendering-syntax-xhtml) | CRITICAL (CVSS: 9.1) | 2025-07-14 |
+| GHSA | [GHSA-GHSA-jv7x-xhv2-p5v2](https://github.com/advisories/GHSA-jv7x-xhv2-p5v2): LaRecipe is vulnerable to Server-Side Template Injection attacks (COMPOSER/binarytorch/larecipe) | CRITICAL (CVSS: 10.0) | 2025-07-14 |
+| GHSA | [GHSA-GHSA-9548-qrrj-x5pj](https://github.com/advisories/GHSA-9548-qrrj-x5pj):  AIOHTTP is vulnerable to HTTP Request/Response Smuggling through incorrect parsing of chunked trailer sections (PIP/aiohttp) | LOW (CVSS: 0.0) | 2025-07-14 |
+| GHSA | [GHSA-GHSA-q28v-664f-q6wj](https://github.com/advisories/GHSA-q28v-664f-q6wj): Indico vulnerability allows attackers to bulk dump user details (PIP/indico) | MODERATE (CVSS: 0.0) | 2025-07-14 |
+| GHSA | [GHSA-GHSA-44c3-38h8-9fh9](https://github.com/advisories/GHSA-44c3-38h8-9fh9): Apache Jackrabbit vulnerable to blind XXE attack due to insecure document build (MAVEN/org.apache.jackrabbit:jackrabbit-core, MAVEN/org.apache.jackrabbit:jackrabbit-core, MAVEN/org.apache.jackrabbit:jackrabbit-core) | HIGH (CVSS: 8.8) | 2025-07-14 |
+| GHSA | [GHSA-GHSA-7pr5-w74r-jjj7](https://github.com/advisories/GHSA-7pr5-w74r-jjj7): Mezzanine CMS has a Stored Cross-Site Scripting (XSS) vulnerability in the displayable_links_js function (PIP/Mezzanine) | MODERATE (CVSS: 0.0) | 2025-06-17 |
+| GHSA | [GHSA-GHSA-pm4j-p7pm-fpvx](https://github.com/advisories/GHSA-pm4j-p7pm-fpvx): Apache ActiveMQ Artemis Vulnerable to Insertion of Sensitive Information into Log File (MAVEN/org.apache.activemq:artemis-project) | MODERATE (CVSS: 6.5) | 2025-04-09 |
+| GHSA | [GHSA-GHSA-3w85-5p9g-h334](https://github.com/advisories/GHSA-3w85-5p9g-h334): Apache ActiveMQ Artemis User Without Create Address Permissions can Modify Address Routing-Type (MAVEN/org.apache.activemq:artemis-server) | LOW (CVSS: 4.3) | 2025-04-01 |
+| GHSA | [GHSA-GHSA-2xcr-p767-f3rv](https://github.com/advisories/GHSA-2xcr-p767-f3rv): Apache Druid vulnerable to Server-Side Request Forgery, Cross-site Scripting, Open Redirect (MAVEN/org.apache.druid:druid, MAVEN/org.apache.druid:druid) | MODERATE (CVSS: 5.4) | 2025-03-20 |
+| GHSA | [GHSA-GHSA-8355-xj3p-hv6q](https://github.com/advisories/GHSA-8355-xj3p-hv6q): Apache Ignite: Possible RCE when deserializing incoming messages by the server node (MAVEN/org.apache.ignite:ignite-core) | CRITICAL (CVSS: 9.1) | 2025-02-14 |
+| GHSA | [GHSA-GHSA-9h7f-5hc8-cj5f](https://github.com/advisories/GHSA-9h7f-5hc8-cj5f): Liferay Portal cross-site scripting (XSS) vulnerability in the Frontend Taglib module (MAVEN/com.liferay:com.liferay.frontend.taglib.clay, MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 6.1) | 2022-05-24 |
+| GHSA | [GHSA-GHSA-2ggw-8gmc-r2gq](https://github.com/advisories/GHSA-2ggw-8gmc-r2gq): Liferay Portal XSS vulnerability via movie parameter in the /html/portal/flash.jsp page (MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 6.1) | 2022-05-14 |
+| GHSA | [GHSA-GHSA-rpj9-pc39-h8j8](https://github.com/advisories/GHSA-rpj9-pc39-h8j8): Liferay Portal vulnerable to arbitrary command injection (MAVEN/com.liferay.portal:portal-service) | MODERATE (CVSS: 0.0) | 2022-05-13 |
+| GHSA | [GHSA-GHSA-3vww-jrmm-9vff](https://github.com/advisories/GHSA-3vww-jrmm-9vff): Liferay Portal and Liferay DXP allows arbitrary injection via the site name (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay:com.liferay.layout.seo.web) | MODERATE (CVSS: 6.1) | 2022-04-26 |
+| GHSA | [GHSA-GHSA-658f-xhv4-p978](https://github.com/advisories/GHSA-658f-xhv4-p978): Liferay Portal and Liferay DXP allows arbitrary injection via form field (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay:com.liferay.dynamic.data.mapping.form.field.type) | MODERATE (CVSS: 6.1) | 2022-04-16 |
+| GHSA | [GHSA-GHSA-9536-m86r-q297](https://github.com/advisories/GHSA-9536-m86r-q297): Liferay Portal vulnerable to cross-site scripting (XSS) via the keywords parameter (MAVEN/com.liferay:com.liferay.frontend.taglib.clay) | MODERATE (CVSS: 6.1) | 2022-03-04 |
+| GHSA | [GHSA-GHSA-r39x-3qq4-gxmr](https://github.com/advisories/GHSA-r39x-3qq4-gxmr): Liferay Portal and Liferay DXP vulnerable to cross-site scripting (XSS) in edit blog entry page (MAVEN/com.liferay:com.liferay.frontend.js.web, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 5.4) | 2022-03-04 |
+| GHSA | [GHSA-GHSA-vw6g-gh6c-8qwp](https://github.com/advisories/GHSA-vw6g-gh6c-8qwp): Liferay Portal and Liferay DXP vulnerable to cross-site scripting (XSS) in the Gogo Shell module (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom) | MODERATE (CVSS: 5.4) | 2022-03-04 |
+| GHSA | [GHSA-GHSA-3x83-whxw-pvmg](https://github.com/advisories/GHSA-3x83-whxw-pvmg): Liferay Portal and Liferay DXP vulnerable to cross-site scripting (XSS) (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay:com.liferay.layout.admin.web) | MODERATE (CVSS: 5.4) | 2022-03-04 |
+| GHSA | [GHSA-GHSA-f855-2rvm-5j7h](https://github.com/advisories/GHSA-f855-2rvm-5j7h): Liferay Portal and Liferay DXP has incorrect default permissions for site members (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom) | MODERATE (CVSS: 6.5) | 2022-03-03 |
+| GHSA | [GHSA-GHSA-v588-qcp3-jv46](https://github.com/advisories/GHSA-v588-qcp3-jv46): Path Traversal in serve (NPM/serve) | HIGH (CVSS: 7.5) | 2019-03-25 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| chromium/chromium | [247cd02](https://github.com/chromium/chromium/commit/247cd023ec889ccb73f505a32099cece5d6f1afb) | Update video picture-in-picture window title animation | 2025-07-15 |
-| chromium/chromium | [077a08f](https://github.com/chromium/chromium/commit/077a08fdb40fb32c2798528bf63ed52e1688ead3) | Fix dangling pointer in VisitedLink event test teardown | 2025-07-15 |
-| chromium/chromium | [701b81e](https://github.com/chromium/chromium/commit/701b81ebacf6636073f94802cc9d655be5371c0e) | Check for null style in caret-blinking code | 2025-07-15 |
+| chromium/chromium | [4c51ea1](https://github.com/chromium/chromium/commit/4c51ea1e26b5738f8b57ec12ccf639cf402d2bd7) | [minizip] Fix potential OOB in unicode path extra field parsing | 2025-07-15 |
+| chromium/chromium | [5e936ab](https://github.com/chromium/chromium/commit/5e936ab51409fc9ceba7e0863d1c175a36a9cea1) | [iOS] Fix ReaderModeJavaScriptFeatureTest heap-use-after-free failure. | 2025-07-15 |
+| chromium/chromium | [451590f](https://github.com/chromium/chromium/commit/451590f266419b572b2058498877ecc357368e3e) | Fix: Add null safety to tab loading supplier | 2025-07-15 |
+| chromium/chromium | [fb7843d](https://github.com/chromium/chromium/commit/fb7843d75d73d2a38ac996ce294f9433aee7c49b) | Enable graphite test for CI | 2025-07-15 |
+
+## Pull Requests
+
+| Source | Title | Severity | Date |
+|--------|-------|----------|------|
+| langflow-ai/langflow | [#9057](https://github.com/langflow-ai/langflow/pull/9057) | docs: langflow 1.5 auto-login security doc | 2025-07-15 |
 
