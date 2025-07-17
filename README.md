@@ -1,11 +1,12 @@
 # Security Updates Monitor
 
-*Last updated: 2025-07-17 05:20:18 UTC*
+*Last updated: 2025-07-17 06:23:03 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 17 |
+| ADVISORY | 13 |
+| COMMIT | 1 |
 
 ---
 
@@ -13,21 +14,23 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-4q2v-9p7v-3v22](https://github.com/advisories/GHSA-4q2v-9p7v-3v22): Reactor Netty HTTP is vulnerable to credential leaks during chained redirects (MAVEN/io.projectreactor.netty:reactor-netty-http, MAVEN/io.projectreactor.netty:reactor-netty-http) | MODERATE (CVSS: 6.1) | 2025-07-16 |
-| GHSA | [GHSA-GHSA-7xqm-7738-642x](https://github.com/advisories/GHSA-7xqm-7738-642x): File Browser's Uncontrolled Memory Consumption vulnerability can enable DoS attack due to oversized file processing (GO/github.com/filebrowser/filebrowser, GO/github.com/filebrowser/filebrowser) | HIGH (CVSS: 0.0) | 2025-07-16 |
-| GHSA | [GHSA-GHSA-7mcq-f592-pf7v](https://github.com/advisories/GHSA-7mcq-f592-pf7v): Slice Ring Buffer and Slice Deque contains four unique double-free vulnerabilities triggered through safe APIs (RUST/slice-ring-buffer, RUST/slice-deque) | HIGH (CVSS: 0.0) | 2025-07-16 |
-| GHSA | [GHSA-GHSA-36wv-v2qp-v4g4](https://github.com/advisories/GHSA-36wv-v2qp-v4g4): Apache CXF is vulnerable to DoS attacks as entire files are read into memory and logged (MAVEN/org.apache.cxf:cxf-core, MAVEN/org.apache.cxf:cxf-core, MAVEN/org.apache.cxf:cxf-core) | MODERATE (CVSS: 5.6) | 2025-07-15 |
-| GHSA | [GHSA-GHSA-557j-xg8c-q2mm](https://github.com/advisories/GHSA-557j-xg8c-q2mm): Helm vulnerable to Code Injection through malicious chart.yaml content (GO/helm.sh/helm/v3, GO/helm.sh/helm/v3) | HIGH (CVSS: 8.5) | 2025-07-08 |
-| GHSA | [GHSA-GHSA-4qqf-9m5c-w2c5](https://github.com/advisories/GHSA-4qqf-9m5c-w2c5): Weblate exposes personal IP address via e-mail (PIP/weblate) | LOW (CVSS: 5.3) | 2025-06-16 |
-| GHSA | [GHSA-GHSA-w6c7-j32f-rq8j](https://github.com/advisories/GHSA-w6c7-j32f-rq8j): Apache Superset Allows Ownership Takeover (PIP/apache-superset) | MODERATE (CVSS: 8.8) | 2025-05-13 |
-| GHSA | [GHSA-GHSA-whxr-3p84-rf3c](https://github.com/advisories/GHSA-whxr-3p84-rf3c): Apache ActiveMQ: Unchecked buffer length can cause excessive memory allocation (MAVEN/org.apache.activemq:activemq-client, MAVEN/org.apache.activemq:activemq-client, MAVEN/org.apache.activemq:activemq-client) | MODERATE (CVSS: 7.5) | 2025-05-07 |
-| GHSA | [GHSA-GHSA-35gq-cvrm-xf94](https://github.com/advisories/GHSA-35gq-cvrm-xf94): Apache NiFi: Potential Insertion of MongoDB Password in Provenance Record (MAVEN/org.apache.nifi:nifi-mongodb-services) | MODERATE (CVSS: 6.5) | 2025-03-12 |
-| GHSA | [GHSA-GHSA-56jp-w6vw-j3jw](https://github.com/advisories/GHSA-56jp-w6vw-j3jw): Apache James vulnerable to denial of service through the use of IMAP literals (MAVEN/org.apache.james.protocols:protocols-imap, MAVEN/org.apache.james.protocols:protocols-imap) | HIGH (CVSS: 8.6) | 2025-02-06 |
-| GHSA | [GHSA-GHSA-f3cw-hg6r-chfv](https://github.com/advisories/GHSA-f3cw-hg6r-chfv): Craft CMS vulnerable to Potential Remote Code Execution via missing path normalization & Twig SSTI (COMPOSER/craftcms/cms, COMPOSER/craftcms/cms) | HIGH (CVSS: 7.2) | 2024-11-13 |
-| GHSA | [GHSA-GHSA-44wr-rmwq-3phw](https://github.com/advisories/GHSA-44wr-rmwq-3phw): Craft CMS vulnerable to Remote Code Execution via validatePath bypass (COMPOSER/craftcms/cms, COMPOSER/craftcms/cms) | HIGH (CVSS: 7.2) | 2023-08-21 |
-| GHSA | [GHSA-GHSA-wffm-j7m8-93g4](https://github.com/advisories/GHSA-wffm-j7m8-93g4): Liferay Portal and Liferay DXP Vulnerable to XSS via Tag Name (MAVEN/com.liferay:com.liferay.asset.taglib) | MODERATE (CVSS: 6.1) | 2022-09-23 |
-| GHSA | [GHSA-GHSA-5j86-vmpx-42pc](https://github.com/advisories/GHSA-5j86-vmpx-42pc): Liferay Portal Path Traversal Vulnerability via the Hypermedia REST APIs Module (MAVEN/com.liferay:com.liferay.headless.discovery.web) | HIGH (CVSS: 7.5) | 2022-09-23 |
-| GHSA | [GHSA-GHSA-8mp9-w7gr-pvj3](https://github.com/advisories/GHSA-8mp9-w7gr-pvj3): Liferay Portal and Liferay DXP Vulnerable to XSS via the filter_ Prefix (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay:com.liferay.fragment.renderer.collection.filter.impl) | MODERATE (CVSS: 6.1) | 2022-09-23 |
-| GHSA | [GHSA-GHSA-7m65-hmvg-rxpc](https://github.com/advisories/GHSA-7m65-hmvg-rxpc): Liferay Portal and Liferay DXP Vulnerable to XSS in the Site Module (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom) | MODERATE (CVSS: 5.4) | 2022-09-23 |
-| GHSA | [GHSA-GHSA-w397-9p2j-6x23](https://github.com/advisories/GHSA-w397-9p2j-6x23): Liferay Portal and Liferay DXP HtmlUtil.escapeRedirect Can Be Circumvented (MAVEN/com.liferay.portal:com.liferay.util.java, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom) | MODERATE (CVSS: 6.1) | 2022-09-23 |
+| GHSA | [GHSA-GHSA-x8qp-wqqm-57ph](https://github.com/advisories/GHSA-x8qp-wqqm-57ph): vue-i18n's escapeParameterHtml does not prevent DOM-based XSS through its tag attributes (NPM/petite-vue-i18n, NPM/petite-vue-i18n, NPM/@intlify/vue-i18n-core) | MODERATE (CVSS: 0.0) | 2025-07-16 |
+| GHSA | [GHSA-GHSA-7xwp-2cpp-p8r7](https://github.com/advisories/GHSA-7xwp-2cpp-p8r7): File Browser’s insecure JWT handling can lead to session replay attacks after logout (GO/github.com/filebrowser/filebrowser) | HIGH (CVSS: 0.0) | 2025-07-16 |
+| GHSA | [GHSA-GHSA-h4c9-rr5m-32fm](https://github.com/advisories/GHSA-h4c9-rr5m-32fm): RuoYi vulnerable to arbitrary file download (MAVEN/com.ruoyi:ruoyi) | HIGH (CVSS: 7.5) | 2023-04-02 |
+| GHSA | [GHSA-GHSA-f43m-hhj4-q3jg](https://github.com/advisories/GHSA-f43m-hhj4-q3jg): Liferay Portal and Liferay DXP Includes LDAP Credentials in the Page URL (MAVEN/com.liferay:com.liferay.portal.settings.authentication.ldap.web, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom) | MODERATE (CVSS: 5.9) | 2022-11-15 |
+| GHSA | [GHSA-GHSA-hw56-7xj4-7gx6](https://github.com/advisories/GHSA-hw56-7xj4-7gx6): Liferay Portal and Liferay DXP Vulnerable to SQL Injection via Friendly URL Module (MAVEN/com.liferay:com.liferay.friendly.url.service, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.portal.bom) | CRITICAL (CVSS: 9.8) | 2022-11-15 |
+| GHSA | [GHSA-GHSA-x43w-xphx-86w3](https://github.com/advisories/GHSA-x43w-xphx-86w3): Liferay Portal Vulnerable to XSS in the Object Module (MAVEN/com.liferay:com.liferay.object.web) | MODERATE (CVSS: 5.4) | 2022-10-19 |
+| GHSA | [GHSA-GHSA-67jp-27jj-6x85](https://github.com/advisories/GHSA-67jp-27jj-6x85): Liferay Portal and Liferay DXP Vulnerable to XSS in the CKEditor Integration with the Frontend Editor Module (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay:com.liferay.frontend.editor.ckeditor.web) | MODERATE (CVSS: 6.1) | 2022-10-19 |
+| GHSA | [GHSA-GHSA-g6r2-6x46-jpp6](https://github.com/advisories/GHSA-g6r2-6x46-jpp6): Liferay Portal and Liferay DXP Vulnerable to XSS in the Frontend Taglib Module (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay:com.liferay.frontend.taglib.clay) | MODERATE (CVSS: 6.1) | 2022-10-19 |
+| GHSA | [GHSA-GHSA-7f7g-vhff-mjqj](https://github.com/advisories/GHSA-7f7g-vhff-mjqj): Liferay Portal and Liferay DXP Vulnerable to XSS via the Portal Search Module (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom) | MODERATE (CVSS: 5.4) | 2022-10-19 |
+| GHSA | [GHSA-GHSA-r32w-v775-5952](https://github.com/advisories/GHSA-r32w-v775-5952): Liferay Portal and Liferay DXP Vulnerable to XSS via the Document Library Module (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay:com.liferay.document.library.web) | MODERATE (CVSS: 6.1) | 2022-10-19 |
+| GHSA | [GHSA-GHSA-cmrw-cgfc-v6x2](https://github.com/advisories/GHSA-cmrw-cgfc-v6x2): Liferay Portal and Liferay DXP Vulnerable to XSS via the Role Module (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay:com.liferay.roles.admin.web) | MODERATE (CVSS: 5.4) | 2022-10-19 |
+| GHSA | [GHSA-GHSA-9427-7f65-88c8](https://github.com/advisories/GHSA-9427-7f65-88c8): Liferay Portal Insecure Default Configuration in auth.login.prompt.enabled (MAVEN/com.liferay.portal:com.liferay.portal.impl, MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 5.3) | 2022-10-07 |
+| GHSA | [GHSA-GHSA-h9ww-wjg4-jvvg](https://github.com/advisories/GHSA-h9ww-wjg4-jvvg): Liferay Portal and Liferay DXP Fails to Check Permissions in Translation Module (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay:com.liferay.translation.web) | MODERATE (CVSS: 6.5) | 2022-09-23 |
+
+## Code Commits
+
+| Source | Title | Severity | Date |
+|--------|-------|----------|------|
+| chromium/chromium | [54788bf](https://github.com/chromium/chromium/commit/54788bf20c04579648d93dfbe0deb1840fb819ca) | Fix UAF in InputInjector | 2025-07-16 |
 
