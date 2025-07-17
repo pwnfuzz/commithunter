@@ -1,12 +1,13 @@
 # Security Updates Monitor
 
-*Last updated: 2025-07-17 19:14:00 UTC*
+*Last updated: 2025-07-17 20:16:58 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 10 |
-| PR | 5 |
+| ADVISORY | 1 |
+| COMMIT | 3 |
+| PR | 1 |
 
 ---
 
@@ -14,24 +15,19 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-4q2v-9p7v-3v22](https://github.com/advisories/GHSA-4q2v-9p7v-3v22): Reactor Netty HTTP is vulnerable to credential leaks during chained redirects (MAVEN/io.projectreactor.netty:reactor-netty-http, MAVEN/io.projectreactor.netty:reactor-netty-http) | MODERATE (CVSS: 6.1) | 2025-07-16 |
-| GHSA | [GHSA-GHSA-36wv-v2qp-v4g4](https://github.com/advisories/GHSA-36wv-v2qp-v4g4): Apache CXF is vulnerable to DoS attacks as entire files are read into memory and logged (MAVEN/org.apache.cxf:cxf-core, MAVEN/org.apache.cxf:cxf-core, MAVEN/org.apache.cxf:cxf-core) | MODERATE (CVSS: 5.6) | 2025-07-15 |
-| GHSA | [GHSA-GHSA-557j-xg8c-q2mm](https://github.com/advisories/GHSA-557j-xg8c-q2mm): Helm vulnerable to Code Injection through malicious chart.yaml content (GO/helm.sh/helm/v3, GO/helm.sh/helm/v3) | HIGH (CVSS: 8.5) | 2025-07-08 |
-| GHSA | [GHSA-GHSA-4qqf-9m5c-w2c5](https://github.com/advisories/GHSA-4qqf-9m5c-w2c5): Weblate exposes personal IP address via e-mail (PIP/weblate) | LOW (CVSS: 5.3) | 2025-06-16 |
-| GHSA | [GHSA-GHSA-w6c7-j32f-rq8j](https://github.com/advisories/GHSA-w6c7-j32f-rq8j): Apache Superset Allows Ownership Takeover (PIP/apache-superset) | MODERATE (CVSS: 8.8) | 2025-05-13 |
-| GHSA | [GHSA-GHSA-whxr-3p84-rf3c](https://github.com/advisories/GHSA-whxr-3p84-rf3c): Apache ActiveMQ: Unchecked buffer length can cause excessive memory allocation (MAVEN/org.apache.activemq:activemq-client, MAVEN/org.apache.activemq:activemq-client, MAVEN/org.apache.activemq:activemq-client) | MODERATE (CVSS: 7.5) | 2025-05-07 |
-| GHSA | [GHSA-GHSA-35gq-cvrm-xf94](https://github.com/advisories/GHSA-35gq-cvrm-xf94): Apache NiFi: Potential Insertion of MongoDB Password in Provenance Record (MAVEN/org.apache.nifi:nifi-mongodb-services) | MODERATE (CVSS: 6.5) | 2025-03-12 |
-| GHSA | [GHSA-GHSA-56jp-w6vw-j3jw](https://github.com/advisories/GHSA-56jp-w6vw-j3jw): Apache James vulnerable to denial of service through the use of IMAP literals (MAVEN/org.apache.james.protocols:protocols-imap, MAVEN/org.apache.james.protocols:protocols-imap) | HIGH (CVSS: 8.6) | 2025-02-06 |
-| GHSA | [GHSA-GHSA-f3cw-hg6r-chfv](https://github.com/advisories/GHSA-f3cw-hg6r-chfv): Craft CMS vulnerable to Potential Remote Code Execution via missing path normalization & Twig SSTI (COMPOSER/craftcms/cms, COMPOSER/craftcms/cms) | HIGH (CVSS: 7.2) | 2024-11-13 |
-| GHSA | [GHSA-GHSA-44wr-rmwq-3phw](https://github.com/advisories/GHSA-44wr-rmwq-3phw): Craft CMS vulnerable to Remote Code Execution via validatePath bypass (COMPOSER/craftcms/cms, COMPOSER/craftcms/cms) | HIGH (CVSS: 7.2) | 2023-08-21 |
+| GHSA | [GHSA-GHSA-hfj7-542q-8fvv](https://github.com/advisories/GHSA-hfj7-542q-8fvv): DiracX-Web is vulnerable to attack through an Open Redirect on its login page (NPM/@dirac-grid/diracx-web-components) | MODERATE (CVSS: 4.7) | 2025-07-17 |
+
+## Code Commits
+
+| Source | Title | Severity | Date |
+|--------|-------|----------|------|
+| torvalds/linux | [6832a93](https://github.com/torvalds/linux/commit/6832a9317eee280117cd695fa885b2b7a7a38daf) | Merge tag 'net-6.16-rc7' of git://git.kernel.org/pub/scm/linux/kernel/git/netdev/net | 2025-07-17 |
+| torvalds/linux | [4ab26bc](https://github.com/torvalds/linux/commit/4ab26bce3969f8fd925fe6f6f551e4d1a508c68b) | tls: always refresh the queue when reading sock | 2025-07-16 |
+| torvalds/linux | [3cd582e](https://github.com/torvalds/linux/commit/3cd582e7d0787506990ef0180405eb6224fa90a6) | net: airoha: fix potential use-after-free in airoha_npu_get() | 2025-07-15 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| openssl/openssl | [#28059](https://github.com/openssl/openssl/pull/28059) | Add array memory allocation routines | 2025-07-17 |
-| chromium/chromium | [#316](https://github.com/chromium/chromium/pull/316) | Bump brace-expansion from 1.1.11 to 1.1.12 in /ui/file_manager/image_loader/piex | 2025-07-17 |
-| chromium/chromium | [#298](https://github.com/chromium/chromium/pull/298) | Bump tokio from 1.43.0 to 1.44.2 in /tools/crates/gnrt | 2025-07-17 |
-| chromium/chromium | [#294](https://github.com/chromium/chromium/pull/294) | Bump openssl from 0.10.71 to 0.10.72 in /tools/crates/gnrt | 2025-07-17 |
-| langflow-ai/langflow | [#9090](https://github.com/langflow-ai/langflow/pull/9090) | Add MseeP.ai badge | 2025-07-17 |
+| langflow-ai/langflow | [#9057](https://github.com/langflow-ai/langflow/pull/9057) | docs: langflow 1.5 auto-login security doc | 2025-07-17 |
 
