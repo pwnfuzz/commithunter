@@ -1,12 +1,11 @@
 # Security Updates Monitor
 
-*Last updated: 2025-07-19 18:19:50 UTC*
+*Last updated: 2025-07-19 19:11:10 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 12 |
-| COMMIT | 2 |
+| ADVISORY | 4 |
 
 ---
 
@@ -14,23 +13,8 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-5662-cv6m-63wh](https://github.com/advisories/GHSA-5662-cv6m-63wh): melange's world-writable permissions expose SBOM files to potential image tampering (GO/chainguard.dev/melange) | MODERATE (CVSS: 4.4) | 2025-07-18 |
-| GHSA | [GHSA-GHSA-x6ph-r535-3vjw](https://github.com/advisories/GHSA-x6ph-r535-3vjw): apko is vulnerable to attack through incorrect permissions in /etc/ld.so.cache and other files (GO/chainguard.dev/apko) | HIGH (CVSS: 7.0) | 2025-07-18 |
-| GHSA | [GHSA-GHSA-fm79-3f68-h2fc](https://github.com/advisories/GHSA-fm79-3f68-h2fc): Wasmtime CLI  is vulnerable to host panic through its fd_renumber function (RUST/wasmtime-wasi, RUST/wasmtime-wasi, RUST/wasmtime-wasi) | LOW (CVSS: 3.5) | 2025-07-18 |
-| GHSA | [GHSA-GHSA-4j2x-v3mr-467m](https://github.com/advisories/GHSA-4j2x-v3mr-467m): Jeecg-boot vulnerable to SQL injection via updateNullByEmptyString (MAVEN/org.jeecgframework.boot:jeecg-module-system) | CRITICAL (CVSS: 9.8) | 2022-11-25 |
-| GHSA | [GHSA-GHSA-25gv-mvm7-5h3h](https://github.com/advisories/GHSA-25gv-mvm7-5h3h): Jeecg-boot vulnerable to SQL injection via /sys/user/putRecycleBin (MAVEN/org.jeecgframework.boot:jeecg-module-system) | MODERATE (CVSS: 4.3) | 2022-11-25 |
-| GHSA | [GHSA-GHSA-7r3w-wggm-pjwf](https://github.com/advisories/GHSA-7r3w-wggm-pjwf): Liferay Portal and Liferay DXP Vulnerable to XSS in the Portal Search Module (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay:com.liferay.portal.search.web) | MODERATE (CVSS: 6.1) | 2022-09-23 |
-| GHSA | [GHSA-GHSA-8gqf-26xw-x3gx](https://github.com/advisories/GHSA-8gqf-26xw-x3gx): Liferay Portal XSS Vulnerability  (MAVEN/com.liferay:com.liferay.login.web, MAVEN/com.liferay:com.liferay.login.authentication.openid.connect.web, MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 6.1) | 2022-05-17 |
-| GHSA | [GHSA-GHSA-cm99-x97g-9qx8](https://github.com/advisories/GHSA-cm99-x97g-9qx8): Liferay Portal XSS Vulnerability (MAVEN/com.liferay:com.liferay.frontend.taglib, MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 6.1) | 2022-05-17 |
-| GHSA | [GHSA-GHSA-w7f2-6896-6mm2](https://github.com/advisories/GHSA-w7f2-6896-6mm2): Liferay Portal and Liferay DXP allows arbitrary injection via web content template names (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom) | MODERATE (CVSS: 6.1) | 2022-04-26 |
-| GHSA | [GHSA-GHSA-2m53-83f3-562j](https://github.com/advisories/GHSA-2m53-83f3-562j): Prototype pollution in min-dash (MAVEN/org.webjars.npm:min-dash, NPM/min-dash) | HIGH (CVSS: 7.5) | 2022-02-01 |
-| GHSA | [GHSA-GHSA-fm93-fhh2-cg2c](https://github.com/advisories/GHSA-fm93-fhh2-cg2c): Duplicate Advisory: Prototype Pollution in min-dash (NPM/min-dash) | HIGH (CVSS: 7.5) | 2022-01-27 |
-| GHSA | [GHSA-GHSA-4r97-78gf-q24v](https://github.com/advisories/GHSA-4r97-78gf-q24v): Duplicate Advisory: Prototype Pollution in klona (NPM/klona) | HIGH (CVSS: 0.0) | 2020-09-04 |
-
-## Code Commits
-
-| Source | Title | Severity | Date |
-|--------|-------|----------|------|
-| torvalds/linux | [4871b7c](https://github.com/torvalds/linux/commit/4871b7cb27f480f6ecce804f81d4b9ee27281dd2) | Merge tag 'v6.16-rc6-smb3-client-fixes' of git://git.samba.org/sfrench/cifs-2.6 | 2025-07-19 |
-| chromium/chromium | [4adb825](https://github.com/chromium/chromium/commit/4adb82512af566927fcda8574504324c27653f58) | Implement media playback trust check for the video PiP overlay window | 2025-07-18 |
+| GHSA | [GHSA-GHSA-xffm-g5w8-qvg7](https://github.com/advisories/GHSA-xffm-g5w8-qvg7): @eslint/plugin-kit is vulnerable to Regular Expression Denial of Service attacks through ConfigCommentParser (NPM/@eslint/plugin-kit) | HIGH (CVSS: 0.0) | 2025-07-18 |
+| GHSA | [GHSA-GHSA-c352-x843-ggpq](https://github.com/advisories/GHSA-c352-x843-ggpq): XXL-JOB vulnerable to Server-Side Request Forgery (MAVEN/com.xuxueli:xxl-job) | HIGH (CVSS: 8.8) | 2024-02-08 |
+| GHSA | [GHSA-GHSA-g5cj-5h58-j93w](https://github.com/advisories/GHSA-g5cj-5h58-j93w): Jeecg-boot vulnerable to SQL Injection (MAVEN/org.jeecgframework.boot:jeecg-module-system) | CRITICAL (CVSS: 9.8) | 2022-11-25 |
+| GHSA | [GHSA-GHSA-v87q-rpwp-qr7q](https://github.com/advisories/GHSA-v87q-rpwp-qr7q): Jeecg-boot vulnerable to SQL Injection (MAVEN/org.jeecgframework.boot:jeecg-module-system) | MODERATE (CVSS: 4.3) | 2022-11-25 |
 
