@@ -1,11 +1,12 @@
 # Security Updates Monitor
 
-*Last updated: 2025-07-19 19:11:10 UTC*
+*Last updated: 2025-07-19 20:15:58 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 4 |
+| ADVISORY | 1 |
+| COMMIT | 2 |
 
 ---
 
@@ -13,8 +14,12 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-xffm-g5w8-qvg7](https://github.com/advisories/GHSA-xffm-g5w8-qvg7): @eslint/plugin-kit is vulnerable to Regular Expression Denial of Service attacks through ConfigCommentParser (NPM/@eslint/plugin-kit) | HIGH (CVSS: 0.0) | 2025-07-18 |
-| GHSA | [GHSA-GHSA-c352-x843-ggpq](https://github.com/advisories/GHSA-c352-x843-ggpq): XXL-JOB vulnerable to Server-Side Request Forgery (MAVEN/com.xuxueli:xxl-job) | HIGH (CVSS: 8.8) | 2024-02-08 |
-| GHSA | [GHSA-GHSA-g5cj-5h58-j93w](https://github.com/advisories/GHSA-g5cj-5h58-j93w): Jeecg-boot vulnerable to SQL Injection (MAVEN/org.jeecgframework.boot:jeecg-module-system) | CRITICAL (CVSS: 9.8) | 2022-11-25 |
-| GHSA | [GHSA-GHSA-v87q-rpwp-qr7q](https://github.com/advisories/GHSA-v87q-rpwp-qr7q): Jeecg-boot vulnerable to SQL Injection (MAVEN/org.jeecgframework.boot:jeecg-module-system) | MODERATE (CVSS: 4.3) | 2022-11-25 |
+| GHSA | [GHSA-GHSA-4j2x-v3mr-467m](https://github.com/advisories/GHSA-4j2x-v3mr-467m): Jeecg-boot vulnerable to SQL injection via updateNullByEmptyString (MAVEN/org.jeecgframework.boot:jeecg-module-system) | CRITICAL (CVSS: 9.8) | 2022-11-25 |
+
+## Code Commits
+
+| Source | Title | Severity | Date |
+|--------|-------|----------|------|
+| torvalds/linux | [4871b7c](https://github.com/torvalds/linux/commit/4871b7cb27f480f6ecce804f81d4b9ee27281dd2) | Merge tag 'v6.16-rc6-smb3-client-fixes' of git://git.samba.org/sfrench/cifs-2.6 | 2025-07-19 |
+| chromium/chromium | [4adb825](https://github.com/chromium/chromium/commit/4adb82512af566927fcda8574504324c27653f58) | Implement media playback trust check for the video PiP overlay window | 2025-07-18 |
 
