@@ -1,12 +1,12 @@
 # Security Updates Monitor
 
-*Last updated: 2025-07-21 13:35:26 UTC*
+*Last updated: 2025-07-21 14:17:47 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 6 |
-| COMMIT | 2 |
+| ADVISORY | 4 |
+| PR | 2 |
 
 ---
 
@@ -14,17 +14,15 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-cj6r-rrr9-fg82](https://github.com/advisories/GHSA-cj6r-rrr9-fg82): Nuxt MDC has an XSS vulnerability in markdown rendering that bypasses HTML filtering (NPM/@nuxtjs/mdc) | HIGH (CVSS: 8.3) | 2025-07-20 |
-| GHSA | [GHSA-GHSA-r7q6-6fmq-mx4c](https://github.com/advisories/GHSA-r7q6-6fmq-mx4c): Filemanager is vulnerable to Relative Path Traversal through filemanager.php (COMPOSER/simogeo/filemanager) | MODERATE (CVSS: 6.5) | 2025-07-18 |
-| GHSA | [GHSA-GHSA-vqph-p5vc-g644](https://github.com/advisories/GHSA-vqph-p5vc-g644): Grafana is vulnerable to XSS attacks through open redirects and path traversal (GO/github.com/grafana/grafana) | HIGH (CVSS: 7.6) | 2025-07-18 |
-| GHSA | [GHSA-GHSA-9768-hprv-crj5](https://github.com/advisories/GHSA-9768-hprv-crj5): Jenkins Credentials Binding Plugin vulnerability can expose sensitive information in logger messages (MAVEN/org.jenkins-ci.plugins:credentials-binding) | MODERATE (CVSS: 4.3) | 2025-07-09 |
-| GHSA | [GHSA-GHSA-q53q-gxq9-mgrj](https://github.com/advisories/GHSA-q53q-gxq9-mgrj): Grafana Cross-Site-Scripting (XSS) via custom loaded frontend plugin (GO/github.com/grafana/grafana) | HIGH (CVSS: 7.6) | 2025-05-22 |
-| GHSA | [GHSA-GHSA-3wqh-h42r-x8fq](https://github.com/advisories/GHSA-3wqh-h42r-x8fq): Denial of Service in @hapi/subtext (NPM/@hapi/subtext, NPM/@hapi/subtext) | HIGH (CVSS: 0.0) | 2020-09-03 |
+| GHSA | [GHSA-GHSA-xj5p-8h7g-76m7](https://github.com/advisories/GHSA-xj5p-8h7g-76m7): @translated/lara-mcp vulnerable to command injection in import_tmx tool (NPM/@translated/lara-mcp) | HIGH (CVSS: 7.5) | 2025-07-21 |
+| GHSA | [GHSA-GHSA-2gxp-6r36-m97r](https://github.com/advisories/GHSA-2gxp-6r36-m97r): Cadwyn vulnerable to XSS on the docs page (PIP/cadwyn) | LOW (CVSS: 0.0) | 2025-07-21 |
+| GHSA | [GHSA-GHSA-f8vw-8vgh-22r9](https://github.com/advisories/GHSA-f8vw-8vgh-22r9): XXL-JOB is vulnerable to SSRF attacks (MAVEN/com.xuxueli:xxl-job-core) | LOW (CVSS: 6.3) | 2025-07-18 |
+| GHSA | [GHSA-GHSA-83j7-mhw9-388w](https://github.com/advisories/GHSA-83j7-mhw9-388w): Keycloak is vulnerable to bad actors escalating privileges through its Fine-Grained Admin Permissions (MAVEN/org.keycloak:keycloak-services) | MODERATE (CVSS: 6.5) | 2025-07-18 |
 
-## Code Commits
+## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [4f066b1](https://github.com/torvalds/linux/commit/4f066b189f91622f3a3a231736659f25eb6e30b0) | Merge tag 'usb-6.16-rc6' of git://git.kernel.org/pub/scm/linux/kernel/git/gregkh/usb | 2025-07-20 |
-| torvalds/linux | [ecf11d3](https://github.com/torvalds/linux/commit/ecf11d31bf5ccde62c91abe94d4edb867b64958f) | Merge tag 'char-misc-6.16-rc7' of git://git.kernel.org/pub/scm/linux/kernel/git/gregkh/char-misc | 2025-07-20 |
+| openssl/openssl | [#28059](https://github.com/openssl/openssl/pull/28059) | Add array memory allocation routines | 2025-07-21 |
+| openssl/openssl | [#27044](https://github.com/openssl/openssl/pull/27044) | fix potential null pointer dereference in cms_main function in apps/cms.c #26941 | 2025-07-21 |
 
