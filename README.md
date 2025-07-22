@@ -1,13 +1,12 @@
 # Security Updates Monitor
 
-*Last updated: 2025-07-22 19:14:29 UTC*
+*Last updated: 2025-07-22 20:17:55 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 13 |
-| COMMIT | 1 |
-| PR | 1 |
+| ADVISORY | 12 |
+| PR | 2 |
 
 ---
 
@@ -15,29 +14,23 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-rc5f-3hfv-jxp2](https://github.com/advisories/GHSA-rc5f-3hfv-jxp2): Femanager extension for TYPO3 allows Insecure Direct Object Reference (COMPOSER/in2code/femanager, COMPOSER/in2code/femanager, COMPOSER/in2code/femanager) | MODERATE (CVSS: 0.0) | 2025-07-22 |
-| GHSA | [GHSA-GHSA-x769-3cwv-f8hc](https://github.com/advisories/GHSA-x769-3cwv-f8hc): Powermail extension for TYPO3 allows Insecure Direct Object Reference (COMPOSER/in2code/powermail, COMPOSER/in2code/powermail) | MODERATE (CVSS: 0.0) | 2025-07-22 |
-| GHSA | [GHSA-GHSA-9g4j-v8w5-7x42](https://github.com/advisories/GHSA-9g4j-v8w5-7x42): Authentik has insufficient check for account active status when authenticating with OAuth/SAML Sources (GO/goauthentik.io) | HIGH (CVSS: 0.0) | 2025-07-22 |
-| GHSA | [GHSA-GHSA-r5p3-955p-5ggq](https://github.com/advisories/GHSA-r5p3-955p-5ggq): Kyverno's Improper JMESPath Variable Evaluation Lead to Denial of Service (GO/github.com/kyverno/kyverno) | HIGH (CVSS: 7.7) | 2025-07-22 |
-| GHSA | [GHSA-GHSA-96c2-h667-9fxp](https://github.com/advisories/GHSA-96c2-h667-9fxp): nova-tiptap has Unauthenticated Arbitrary File Upload Vulnerability (COMPOSER/manogi/nova-tiptap, COMPOSER/marshmallow/nova-tiptap) | CRITICAL (CVSS: 0.0) | 2025-07-21 |
-| GHSA | [GHSA-GHSA-54vw-f4xf-f92j](https://github.com/advisories/GHSA-54vw-f4xf-f92j): HAX CMS application pages vulnerable to clickjacking (COMPOSER/elmsln/haxcms, NPM/@haxtheweb/haxcms-nodejs) | MODERATE (CVSS: 4.3) | 2025-07-21 |
-| GHSA | [GHSA-GHSA-gq96-8w38-hhj2](https://github.com/advisories/GHSA-gq96-8w38-hhj2): LibreNMS has Authenticated Remote File Inclusion in ajax_form.php that Allows RCE (COMPOSER/librenms/librenms) | HIGH (CVSS: 7.5) | 2025-07-21 |
-| GHSA | [GHSA-GHSA-f29h-pxvx-f335](https://github.com/advisories/GHSA-f29h-pxvx-f335): eslint-config-prettier, eslint-plugin-prettier, synckit, @pkgr/core, napi-postinstall have embedded malicious code (NPM/got-fetch, NPM/napi-postinstall, NPM/@pkgr/core) | HIGH (CVSS: 7.5) | 2025-07-19 |
-| GHSA | [GHSA-GHSA-q28v-664f-q6wj](https://github.com/advisories/GHSA-q28v-664f-q6wj): Indico vulnerability allows attackers to bulk dump user details (PIP/indico) | MODERATE (CVSS: 0.0) | 2025-07-14 |
-| GHSA | [GHSA-GHSA-38r9-3j52-h92v](https://github.com/advisories/GHSA-38r9-3j52-h92v): Aim vulnerable to Cross-Site Request Forgery (PIP/aim) | HIGH (CVSS: 7.4) | 2025-03-20 |
-| GHSA | [GHSA-GHSA-m5vv-6r4h-3vj9](https://github.com/advisories/GHSA-m5vv-6r4h-3vj9): Azure Identity Libraries and Microsoft Authentication Library Elevation of Privilege Vulnerability (GO/github.com/Azure/azure-sdk-for-go/sdk/azidentity, NUGET/Microsoft.Identity.Client, NUGET/Microsoft.Identity.Client) | MODERATE (CVSS: 5.5) | 2024-06-11 |
-| GHSA | [GHSA-GHSA-5844-q3fc-56rh](https://github.com/advisories/GHSA-5844-q3fc-56rh): pubnub Insufficient Entropy vulnerability (GO/github.com/pubnub/go/v5, GO/github.com/pubnub/go/v6, GO/github.com/pubnub/go) | MODERATE (CVSS: 5.9) | 2023-12-06 |
-| GHSA | [GHSA-GHSA-x9qq-236j-gj97](https://github.com/advisories/GHSA-x9qq-236j-gj97): Canonical LXD documentation improvement to make clear restricted.devices.disk=allow without restricted.devices.disk.paths also allows shift=true (GO/github.com/canonical/lxd, GO/github.com/canonical/lxd) | LOW (CVSS: 0.0) | 2023-12-05 |
-
-## Code Commits
-
-| Source | Title | Severity | Date |
-|--------|-------|----------|------|
-| postgres/postgres | [1b8bbee](https://github.com/postgres/postgres/commit/1b8bbee05d70deae34d0f7484afde03518c07e42) | ecpg: Fix NULL pointer dereference during connection lookup | 2025-07-22 |
+| GHSA | [GHSA-GHSA-pjj3-j5j6-qj27](https://github.com/advisories/GHSA-pjj3-j5j6-qj27): HAX CMS NodeJS Application Has Improper Error Handling That Leads to Denial of Service (NPM/@haxtheweb/haxcms-nodejs) | HIGH (CVSS: 0.0) | 2025-07-21 |
+| GHSA | [GHSA-GHSA-59g8-h59f-8hjp](https://github.com/advisories/GHSA-59g8-h59f-8hjp): NodeJS version of HAX CMS Has Disabled Content Security Policy That Enables Cross-Site Scripting (NPM/@haxtheweb/haxcms-nodejs) | HIGH (CVSS: 0.0) | 2025-07-21 |
+| GHSA | [GHSA-GHSA-f38f-jvqj-mfg6](https://github.com/advisories/GHSA-f38f-jvqj-mfg6): NodeJS version of HAX CMS Has Insecure Default Configuration That Leads to Unauthenticated Access (NPM/@haxtheweb/haxcms-nodejs) | CRITICAL (CVSS: 0.0) | 2025-07-21 |
+| GHSA | [GHSA-GHSA-xj5p-8h7g-76m7](https://github.com/advisories/GHSA-xj5p-8h7g-76m7): @translated/lara-mcp vulnerable to command injection in import_tmx tool (NPM/@translated/lara-mcp) | HIGH (CVSS: 7.5) | 2025-07-21 |
+| GHSA | [GHSA-GHSA-2gxp-6r36-m97r](https://github.com/advisories/GHSA-2gxp-6r36-m97r): Cadwyn vulnerable to XSS on the docs page (PIP/cadwyn) | LOW (CVSS: 7.6) | 2025-07-21 |
+| GHSA | [GHSA-GHSA-2c2j-9gv5-cj73](https://github.com/advisories/GHSA-2c2j-9gv5-cj73): Starlette has possible denial-of-service vector when parsing large files in multipart forms (PIP/starlette) | MODERATE (CVSS: 5.3) | 2025-07-21 |
+| GHSA | [GHSA-GHSA-xqpg-92fq-grfg](https://github.com/advisories/GHSA-xqpg-92fq-grfg): `pyLoad` has Path Traversal Vulnerability in `json/upload` Endpoint that allows Arbitrary File Write (PIP/pyload-ng) | HIGH (CVSS: 7.5) | 2025-07-21 |
+| GHSA | [GHSA-GHSA-5fpv-5qvh-7cf3](https://github.com/advisories/GHSA-5fpv-5qvh-7cf3): NodeJS version of the HAX CMS application is distributed with Default Secrets (NPM/@haxtheweb/haxcms-nodejs) | HIGH (CVSS: 7.3) | 2025-07-21 |
+| GHSA | [GHSA-GHSA-r67m-mf7v-qp7j](https://github.com/advisories/GHSA-r67m-mf7v-qp7j): Mattermost password hash disclosure vulnerability (GO/github.com/mattermost/mattermost-server, GO/github.com/mattermost/mattermost-server/v5, GO/github.com/mattermost/mattermost-server/v6) | MODERATE (CVSS: 4.9) | 2023-11-06 |
+| GHSA | [GHSA-GHSA-jg82-xh3w-rhxx](https://github.com/advisories/GHSA-jg82-xh3w-rhxx): Synchrony deobfuscator prototype pollution vulnerability leading to arbitrary code execution (NPM/deobfuscator) | HIGH (CVSS: 7.8) | 2023-10-18 |
+| GHSA | [GHSA-GHSA-c23v-vqw5-52c5](https://github.com/advisories/GHSA-c23v-vqw5-52c5): PowerJob vulnerable to Incorrect Access Control via the create user/save interface. (MAVEN/tech.powerjob:powerjob) | MODERATE (CVSS: 5.3) | 2023-04-19 |
+| GHSA | [GHSA-GHSA-627p-rr78-99rj](https://github.com/advisories/GHSA-627p-rr78-99rj): GitLab auth uses full name instead of username as user ID, allowing impersonation (GO/github.com/concourse/concourse, GO/github.com/concourse/dex, GO/github.com/concourse/concourse) | HIGH (CVSS: 7.5) | 2021-12-20 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| langflow-ai/langflow | [#9130](https://github.com/langflow-ai/langflow/pull/9130) | chore(deps): bump form-data from 4.0.3 to 4.0.4 in /docs | 2025-07-22 |
+| erlang/otp | [#9946](https://github.com/erlang/otp/pull/9946) | chore(deps): update dependency microsoft/stl to v17.14 (maint) | 2025-07-21 |
+| erlang/otp | [#9918](https://github.com/erlang/otp/pull/9918) | chore(deps): update dependency microsoft/stl to v17.14 (master) | 2025-07-21 |
 
