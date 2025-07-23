@@ -1,12 +1,12 @@
 # Security Updates Monitor
 
-*Last updated: 2025-07-23 14:17:11 UTC*
+*Last updated: 2025-07-23 15:17:22 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 17 |
-| PR | 4 |
+| ADVISORY | 5 |
+| PR | 1 |
 
 ---
 
@@ -14,30 +14,15 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-x9hg-5q6g-q3jr](https://github.com/advisories/GHSA-x9hg-5q6g-q3jr): Ollama vulnerable to Cross-Domain Token Exposure (GO/github.com/ollama/ollama) | MODERATE (CVSS: 6.9) | 2025-07-22 |
-| GHSA | [GHSA-GHSA-h7x8-jv97-fvvm](https://github.com/advisories/GHSA-h7x8-jv97-fvvm): Dagster Local File Inclusion vulnerability (PIP/dagster) | MODERATE (CVSS: 6.6) | 2025-07-22 |
-| GHSA | [GHSA-GHSA-2gxp-6r36-m97r](https://github.com/advisories/GHSA-2gxp-6r36-m97r): Cadwyn vulnerable to XSS on the docs page (PIP/cadwyn) | LOW (CVSS: 7.6) | 2025-07-21 |
-| GHSA | [GHSA-GHSA-xqpg-92fq-grfg](https://github.com/advisories/GHSA-xqpg-92fq-grfg): `pyLoad` has Path Traversal Vulnerability in `json/upload` Endpoint that allows Arbitrary File Write (PIP/pyload-ng) | HIGH (CVSS: 7.5) | 2025-07-21 |
-| GHSA | [GHSA-GHSA-54vw-f4xf-f92j](https://github.com/advisories/GHSA-54vw-f4xf-f92j): HAX CMS application pages vulnerable to clickjacking (COMPOSER/elmsln/haxcms, NPM/@haxtheweb/haxcms-nodejs) | MODERATE (CVSS: 4.3) | 2025-07-21 |
-| GHSA | [GHSA-GHSA-gq96-8w38-hhj2](https://github.com/advisories/GHSA-gq96-8w38-hhj2): LibreNMS has Authenticated Remote File Inclusion in ajax_form.php that Allows RCE (COMPOSER/librenms/librenms) | HIGH (CVSS: 7.5) | 2025-07-21 |
-| GHSA | [GHSA-GHSA-5fpv-5qvh-7cf3](https://github.com/advisories/GHSA-5fpv-5qvh-7cf3): NodeJS version of the HAX CMS application is distributed with Default Secrets (NPM/@haxtheweb/haxcms-nodejs) | HIGH (CVSS: 7.3) | 2025-07-21 |
-| GHSA | [GHSA-GHSA-mqcp-p2hv-vw6x](https://github.com/advisories/GHSA-mqcp-p2hv-vw6x): Thor can construct an unsafe shell command from library input. (RUBYGEMS/thor) | LOW (CVSS: 2.8) | 2025-07-20 |
-| GHSA | [GHSA-GHSA-46m5-8hpj-p5p5](https://github.com/advisories/GHSA-46m5-8hpj-p5p5): Grafana's insecure DingDing Alert integration exposes sensitive information (GO/github.com/grafana/grafana) | MODERATE (CVSS: 4.3) | 2025-07-17 |
-| GHSA | [GHSA-GHSA-65gg-3w2w-hr4h](https://github.com/advisories/GHSA-65gg-3w2w-hr4h): Podman Improper Certificate Validation; machine missing TLS verification (GO/github.com/containers/podman/v4, GO/github.com/containers/podman/v5) | HIGH (CVSS: 8.4) | 2025-06-25 |
-| GHSA | [GHSA-GHSA-w69q-w4h4-2fx8](https://github.com/advisories/GHSA-w69q-w4h4-2fx8): Reverb use after free vulnerability (PIP/dm-reverb-nightly, PIP/dm-reverb) | MODERATE (CVSS: 6.0) | 2024-09-19 |
-| GHSA | [GHSA-GHSA-qjvf-8748-9w7h](https://github.com/advisories/GHSA-qjvf-8748-9w7h): github.com/google/nftable IP addresses were encoded in the wrong byte order (GO/github.com/google/nftables) | MODERATE (CVSS: 5.6) | 2024-07-04 |
-| GHSA | [GHSA-GHSA-rcm2-22f3-pqv3](https://github.com/advisories/GHSA-rcm2-22f3-pqv3): Firebase vulnerable to CRSF attack (NPM/firebase-tools) | LOW (CVSS: 2.6) | 2024-05-02 |
-| GHSA | [GHSA-GHSA-r67m-mf7v-qp7j](https://github.com/advisories/GHSA-r67m-mf7v-qp7j): Mattermost password hash disclosure vulnerability (GO/github.com/mattermost/mattermost-server, GO/github.com/mattermost/mattermost-server/v5, GO/github.com/mattermost/mattermost-server/v6) | MODERATE (CVSS: 4.9) | 2023-11-06 |
-| GHSA | [GHSA-GHSA-jg82-xh3w-rhxx](https://github.com/advisories/GHSA-jg82-xh3w-rhxx): Synchrony deobfuscator prototype pollution vulnerability leading to arbitrary code execution (NPM/deobfuscator) | HIGH (CVSS: 7.8) | 2023-10-18 |
-| GHSA | [GHSA-GHSA-c23v-vqw5-52c5](https://github.com/advisories/GHSA-c23v-vqw5-52c5): PowerJob vulnerable to Incorrect Access Control via the create user/save interface. (MAVEN/tech.powerjob:powerjob) | MODERATE (CVSS: 5.3) | 2023-04-19 |
-| GHSA | [GHSA-GHSA-627p-rr78-99rj](https://github.com/advisories/GHSA-627p-rr78-99rj): GitLab auth uses full name instead of username as user ID, allowing impersonation (GO/github.com/concourse/concourse, GO/github.com/concourse/dex, GO/github.com/concourse/concourse) | HIGH (CVSS: 7.5) | 2021-12-20 |
+| GHSA | [GHSA-GHSA-f9vc-vf3r-pqqq](https://github.com/advisories/GHSA-f9vc-vf3r-pqqq): Harbor repository description page has Cross-site Scripting vulnerability (GO/github.com/goharbor/harbor, GO/github.com/goharbor/harbor, GO/github.com/goharbor/harbor) | MODERATE (CVSS: 4.1) | 2025-07-23 |
+| GHSA | [GHSA-GHSA-gmvv-rj92-9w35](https://github.com/advisories/GHSA-gmvv-rj92-9w35): Aim vulnerable to Cross-site Scripting (PIP/aim) | MODERATE (CVSS: 0.0) | 2025-07-22 |
+| GHSA | [GHSA-GHSA-96c2-h667-9fxp](https://github.com/advisories/GHSA-96c2-h667-9fxp): nova-tiptap has Unauthenticated Arbitrary File Upload Vulnerability (COMPOSER/manogi/nova-tiptap, COMPOSER/marshmallow/nova-tiptap) | CRITICAL (CVSS: 0.0) | 2025-07-21 |
+| GHSA | [GHSA-GHSA-f29h-pxvx-f335](https://github.com/advisories/GHSA-f29h-pxvx-f335): eslint-config-prettier, eslint-plugin-prettier, synckit, @pkgr/core, napi-postinstall have embedded malicious code (NPM/got-fetch, NPM/napi-postinstall, NPM/@pkgr/core) | HIGH (CVSS: 7.5) | 2025-07-19 |
+| GHSA | [GHSA-GHSA-q28v-664f-q6wj](https://github.com/advisories/GHSA-q28v-664f-q6wj): Indico vulnerability allows attackers to bulk dump user details (PIP/indico) | MODERATE (CVSS: 0.0) | 2025-07-14 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [#1171](https://github.com/torvalds/linux/pull/1171) | Begin Rewrite in Java to be truly Enterprise:tm:-ready. | 2025-07-23 |
-| wazuh/wazuh | [#31046](https://github.com/wazuh/wazuh/pull/31046) | Fix API secure headers | 2025-07-23 |
-| wazuh/wazuh | [#30494](https://github.com/wazuh/wazuh/pull/30494) | Fix cluster restart race condition | 2025-07-23 |
-| langflow-ai/langflow | [#9057](https://github.com/langflow-ai/langflow/pull/9057) | docs: langflow 1.5 auto-login security doc | 2025-07-23 |
+| openssl/openssl | [#28059](https://github.com/openssl/openssl/pull/28059) | Add array memory allocation routines | 2025-07-23 |
 
