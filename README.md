@@ -1,13 +1,13 @@
 # Security Updates Monitor
 
-*Last updated: 2025-07-24 19:14:17 UTC*
+*Last updated: 2025-07-24 20:16:07 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
 | ADVISORY | 5 |
-| COMMIT | 4 |
-| PR | 2 |
+| COMMIT | 3 |
+| PR | 1 |
 
 ---
 
@@ -15,25 +15,23 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-526j-mv3p-f4vv](https://github.com/advisories/GHSA-526j-mv3p-f4vv): eKuiper API endpoints handling SQL queries with user-controlled table names.  (GO/github.com/lf-edge/ekuiper/v2) | HIGH (CVSS: 0.0) | 2025-07-24 |
-| GHSA | [GHSA-GHSA-4j66-8f4r-3pjx](https://github.com/advisories/GHSA-4j66-8f4r-3pjx): bun vulnerable to OS Command Injection (NPM/bun) | HIGH (CVSS: 8.8) | 2025-07-23 |
-| GHSA | [GHSA-GHSA-rm8p-cx58-hcvx](https://github.com/advisories/GHSA-rm8p-cx58-hcvx): Withdrawn Advisory: Axios has Transitive Critical Vulnerability via form-data (NPM/axios) | HIGH (CVSS: 7.5) | 2025-07-23 |
-| GHSA | [GHSA-GHSA-f9vc-vf3r-pqqq](https://github.com/advisories/GHSA-f9vc-vf3r-pqqq): Harbor repository description page has Cross-site Scripting vulnerability (GO/github.com/goharbor/harbor, GO/github.com/goharbor/harbor, GO/github.com/goharbor/harbor) | MODERATE (CVSS: 4.1) | 2025-07-23 |
-| GHSA | [GHSA-GHSA-v9mx-4pqq-h232](https://github.com/advisories/GHSA-v9mx-4pqq-h232): Bun has an Application-level Prototype Pollution vulnerability in the runtime native API for Glo (NPM/bun) | MODERATE (CVSS: 7.5) | 2024-12-18 |
+| GHSA | [GHSA-GHSA-vr59-gm53-v7cq](https://github.com/advisories/GHSA-vr59-gm53-v7cq): XWiki Platform vulnerable to SQL injection through getdeleteddocuments.vm template sort parameter (MAVEN/org.xwiki.platform:xwiki-platform-distribution-war, MAVEN/org.xwiki.platform:xwiki-platform-distribution-war) | CRITICAL (CVSS: 0.0) | 2025-07-24 |
+| GHSA | [GHSA-GHSA-rrf6-pxg8-684g](https://github.com/advisories/GHSA-rrf6-pxg8-684g): FastAPI Guard has a regex bypass (PIP/fastapi-guard) | HIGH (CVSS: 0.0) | 2025-07-23 |
+| GHSA | [GHSA-GHSA-9g4j-v8w5-7x42](https://github.com/advisories/GHSA-9g4j-v8w5-7x42): Authentik has insufficient check for account active status when authenticating with OAuth/SAML Sources (GO/goauthentik.io) | HIGH (CVSS: 0.0) | 2025-07-22 |
+| GHSA | [GHSA-GHSA-r5p3-955p-5ggq](https://github.com/advisories/GHSA-r5p3-955p-5ggq): Kyverno's Improper JMESPath Variable Evaluation Lead to Denial of Service (GO/github.com/kyverno/kyverno) | HIGH (CVSS: 7.7) | 2025-07-22 |
+| GHSA | [GHSA-GHSA-q3rp-vvm7-j8jg](https://github.com/advisories/GHSA-q3rp-vvm7-j8jg): Safearchive Path Traversal vulnerability (GO/github.com/google/safearchive) | MODERATE (CVSS: 5.3) | 2024-11-04 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| chromium/chromium | [d8499ea](https://github.com/chromium/chromium/commit/d8499ead5dd7eda0b87688fe63e8a122d041ba35) | [cpesuggest] Add CPE prefix for third_party/flatbuffers/README.chromium. | 2025-07-24 |
-| chromium/chromium | [caa0229](https://github.com/chromium/chromium/commit/caa0229d58d000c3f00af902bcbcc73e1602b34d) | [cpesuggest] Add CPE prefix for third_party/unrar/README.chromium. | 2025-07-24 |
-| torvalds/linux | [337666c](https://github.com/torvalds/linux/commit/337666c522b9eca36deabf4133f7b2279155b69f) | Merge tag 'drm-misc-fixes-2025-07-23' of https://gitlab.freedesktop.org/drm/misc/kernel into drm-fixes | 2025-07-23 |
-| chromium/chromium | [e136d1d](https://github.com/chromium/chromium/commit/e136d1d8c460baeed12e16886d93687e9938b7d1) | Fix use-after-free in ~WaylandScreen() | 2025-07-23 |
+| torvalds/linux | [407c114](https://github.com/torvalds/linux/commit/407c114c983f6eb87161853f0fdbe4a08e394b92) | Merge tag 'net-6.16-rc8' of git://git.kernel.org/pub/scm/linux/kernel/git/netdev/net | 2025-07-24 |
+| torvalds/linux | [291d5dc](https://github.com/torvalds/linux/commit/291d5dc80eca1fc67a0fa4c861d13c101345501a) | Merge tag 'ipsec-2025-07-23' of git://git.kernel.org/pub/scm/linux/kernel/git/klassert/ipsec | 2025-07-24 |
+| chromium/chromium | [dc9c95f](https://github.com/chromium/chromium/commit/dc9c95f4ad0e3e01f7c2e280b1a0f89fdaf4e916) | [cpesuggest] Add CPE prefix for third_party/libx11/README.chromium. | 2025-07-24 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| openssl/openssl | [#28059](https://github.com/openssl/openssl/pull/28059) | Add array memory allocation routines | 2025-07-24 |
-| wazuh/wazuh | [#31046](https://github.com/wazuh/wazuh/pull/31046) | Fix API secure headers | 2025-07-24 |
+| torvalds/linux | [#1302](https://github.com/torvalds/linux/pull/1302) | Optimize linux by adding ShefOS and removing systemd exploit redhat module in GCC | 2025-07-24 |
 
