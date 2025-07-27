@@ -1,17 +1,19 @@
 # Security Updates Monitor
 
-*Last updated: 2025-07-27 21:13:38 UTC*
+*Last updated: 2025-07-27 22:14:33 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| COMMIT | 1 |
+| PR | 3 |
 
 ---
 
-## Code Commits
+## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [b711733](https://github.com/torvalds/linux/commit/b711733e89a3f84c8e1e56e2328f9a0fa5facc7c) | Merge tag 'timers-urgent-2025-07-27' of git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip | 2025-07-27 |
+| openssl/openssl | [#28059](https://github.com/openssl/openssl/pull/28059) | Add array memory allocation routines | 2025-07-27 |
+| wazuh/wazuh | [#31113](https://github.com/wazuh/wazuh/pull/31113) | Document Alpine Linux support, add XD/NX rule for RHEL 5, and remove outdated comment | 2025-07-27 |
+| wazuh/wazuh | [#31112](https://github.com/wazuh/wazuh/pull/31112) | Add Pacman/APK version strategies, complete CVE delete logic, and finalize indexer tests | 2025-07-27 |
 
