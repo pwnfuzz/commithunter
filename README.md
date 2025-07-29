@@ -1,12 +1,13 @@
 # Security Updates Monitor
 
-*Last updated: 2025-07-29 11:13:49 UTC*
+*Last updated: 2025-07-29 12:33:41 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 23 |
+| ADVISORY | 36 |
 | COMMIT | 3 |
+| PR | 1 |
 
 ---
 
@@ -14,35 +15,54 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-4mxg-3p6v-xgq3](https://github.com/advisories/GHSA-4mxg-3p6v-xgq3): Node-SAML SAML Signature Verification Vulnerability (NPM/@node-saml/node-saml) | CRITICAL (CVSS: 10.0) | 2025-07-28 |
-| GHSA | [GHSA-GHSA-9q4r-x2hj-jmvr](https://github.com/advisories/GHSA-9q4r-x2hj-jmvr): copyparty has DOM-Based XSS vulnerability when displaying multimedia metadata (PIP/copyparty) | MODERATE (CVSS: 5.4) | 2025-07-28 |
-| GHSA | [GHSA-GHSA-c2fv-2fmj-9xrx](https://github.com/advisories/GHSA-c2fv-2fmj-9xrx): ssrfcheck has Incomplete IP Address Deny List that leads to Server-Side Request Forgery Vulnerability (NPM/ssrfcheck) | HIGH (CVSS: 8.2) | 2025-07-28 |
-| GHSA | [GHSA-GHSA-8xq3-w9fx-74rv](https://github.com/advisories/GHSA-8xq3-w9fx-74rv): webfinger.js Blind SSRF Vulnerability (NPM/webfinger.js) | MODERATE (CVSS: 0.0) | 2025-07-28 |
-| GHSA | [GHSA-GHSA-624c-2h52-gf7f](https://github.com/advisories/GHSA-624c-2h52-gf7f): Duplicate Advisory: Remotely exploitable denial of service in Rosenpass (RUST/rosenpass) | MODERATE (CVSS: 5.3) | 2025-07-28 |
-| GHSA | [GHSA-GHSA-6v92-r5mx-h5fx](https://github.com/advisories/GHSA-6v92-r5mx-h5fx): smolagents has Sandbox Escape Vulnerability in the local_python_executor.py Module (PIP/smolagents) | HIGH (CVSS: 7.6) | 2025-07-27 |
-| GHSA | [GHSA-GHSA-cmm8-gw4m-26cw](https://github.com/advisories/GHSA-cmm8-gw4m-26cw): JHipster allows privilege escalation via a modified authorities parameter (NPM/generator-jhipster) | LOW (CVSS: 2.9) | 2025-07-25 |
-| GHSA | [GHSA-GHSA-4v6w-xpmh-gfgp](https://github.com/advisories/GHSA-4v6w-xpmh-gfgp): Skops may allow MethodNode to access unexpected object fields through dot notation, leading to arbitrary code execution at load time (PIP/skops) | HIGH (CVSS: 0.0) | 2025-07-25 |
-| GHSA | [GHSA-GHSA-m7f4-hrc6-fwg3](https://github.com/advisories/GHSA-m7f4-hrc6-fwg3): Skops has Inconsistent Trusted Type Validation that Enables Hidden `operator` Methods Execution (PIP/skops) | HIGH (CVSS: 0.0) | 2025-07-25 |
-| GHSA | [GHSA-GHSA-p9qm-p942-q3w5](https://github.com/advisories/GHSA-p9qm-p942-q3w5): XWiki Platform vulnerable to SQL injection through XWiki#searchDocuments API (MAVEN/org.xwiki.platform:xwiki-platform-oldcore, MAVEN/org.xwiki.platform:xwiki-platform-oldcore) | HIGH (CVSS: 0.0) | 2025-07-25 |
-| GHSA | [GHSA-GHSA-j63h-hmgw-x4j7](https://github.com/advisories/GHSA-j63h-hmgw-x4j7): Opencast still publishes global system account credentials  (MAVEN/org.opencastproject:opencast-publication-service-oaipmh-remote, MAVEN/org.opencastproject:opencast-kernel, MAVEN/org.opencastproject:opencast-ingest-service-impl) | MODERATE (CVSS: 6.5) | 2025-07-25 |
-| GHSA | [GHSA-GHSA-9jr9-8ff3-m894](https://github.com/advisories/GHSA-9jr9-8ff3-m894): HAX CMS API Lacks Authorization Checks (COMPOSER/elmsln/haxcms, NPM/@haxtheweb/haxcms-nodejs) | HIGH (CVSS: 8.3) | 2025-07-25 |
-| GHSA | [GHSA-GHSA-gq52-6phf-x2r6](https://github.com/advisories/GHSA-gq52-6phf-x2r6): tj-actions/branch-names has a Command Injection Vulnerability (ACTIONS/tj-actions/branch-names) | CRITICAL (CVSS: 9.1) | 2025-07-25 |
-| GHSA | [GHSA-GHSA-2g7m-ph9x-7q7m](https://github.com/advisories/GHSA-2g7m-ph9x-7q7m): Calibre Web and Autocaliweb have a ReDoS vulnerability (PIP/calibreweb) | HIGH (CVSS: 0.0) | 2025-07-24 |
-| GHSA | [GHSA-GHSA-jv7x-xhv2-p5v2](https://github.com/advisories/GHSA-jv7x-xhv2-p5v2): LaRecipe is vulnerable to Server-Side Template Injection attacks (COMPOSER/binarytorch/larecipe) | CRITICAL (CVSS: 10.0) | 2025-07-14 |
-| GHSA | [GHSA-GHSA-gj52-35xm-gxjh](https://github.com/advisories/GHSA-gj52-35xm-gxjh): Keycloak vulnerable to phishing attacks through its Review Profile section (MAVEN/org.keycloak:keycloak-services) | MODERATE (CVSS: 5.4) | 2025-07-10 |
-| GHSA | [GHSA-GHSA-6j2q-c73v-97c5](https://github.com/advisories/GHSA-6j2q-c73v-97c5): Spring Cloud Gateway Server Forwards Headers from Untrusted Proxies (MAVEN/org.springframework.cloud:spring-cloud-gateway-server-mvc, MAVEN/org.springframework.cloud:spring-cloud-gateway-server, MAVEN/org.springframework.cloud:spring-cloud-gateway-server) | HIGH (CVSS: 8.6) | 2025-05-30 |
-| GHSA | [GHSA-GHSA-q5q7-8x6x-hcg2](https://github.com/advisories/GHSA-q5q7-8x6x-hcg2): ActiveMQ Artemis AMQ Broker Operator Starting Credentials Reuse (GO/github.com/arkmq-org/activemq-artemis-operator) | MODERATE (CVSS: 5.5) | 2025-05-26 |
-| GHSA | [GHSA-GHSA-rpg2-jvhp-h354](https://github.com/advisories/GHSA-rpg2-jvhp-h354): Yggdrasil Vulnerable to Local Privilege Escalation (GO/github.com/redhatinsights/yggdrasil) | HIGH (CVSS: 7.8) | 2025-05-14 |
-| GHSA | [GHSA-GHSA-4pc9-x2fx-p7vj](https://github.com/advisories/GHSA-4pc9-x2fx-p7vj): @cloudflare/workers-oauth-provider missing validation of redirect_uri on authorize endpoint (NPM/@cloudflare/workers-oauth-provider) | MODERATE (CVSS: 0.0) | 2025-05-01 |
-| GHSA | [GHSA-GHSA-5jfq-x6xp-7rw2](https://github.com/advisories/GHSA-5jfq-x6xp-7rw2): Keycloak vulnerable to two factor authentication bypass (MAVEN/org.keycloak:keycloak-services) | MODERATE (CVSS: 5.4) | 2025-04-30 |
-| GHSA | [GHSA-GHSA-6ggr-cwv4-g7qg](https://github.com/advisories/GHSA-6ggr-cwv4-g7qg): Remotely exploitable denial of service in Rosenpass (RUST/rosenpass) | MODERATE (CVSS: 5.3) | 2023-12-21 |
-| GHSA | [GHSA-GHSA-prc3-vjfx-vhm9](https://github.com/advisories/GHSA-prc3-vjfx-vhm9): Angular (deprecated package) Cross-site Scripting (NPM/angular) | MODERATE (CVSS: 6.1) | 2022-07-16 |
+| GHSA | [GHSA-GHSA-9952-gv64-x94c](https://github.com/advisories/GHSA-9952-gv64-x94c): CodeIgniter4's ImageMagick Handler has Command Injection Vulnerability (COMPOSER/codeigniter4/framework) | CRITICAL (CVSS: 9.8) | 2025-07-28 |
+| GHSA | [GHSA-GHSA-q5h2-xq96-6gmc](https://github.com/advisories/GHSA-q5h2-xq96-6gmc): Duplicate Advisory: buffered-reader vulnerable to out-of-bounds array access leading to panic (RUST/buffered-reader, RUST/buffered-reader) | LOW (CVSS: 2.9) | 2025-07-28 |
+| GHSA | [GHSA-GHSA-286m-6pg9-v42v](https://github.com/advisories/GHSA-286m-6pg9-v42v): Duplicate Advisory: Multiple issues involving quote API in shlex (RUST/shlex) | LOW (CVSS: 3.2) | 2025-07-28 |
+| GHSA | [GHSA-GHSA-97f8-h76h-f297](https://github.com/advisories/GHSA-97f8-h76h-f297): Duplicate Advisory: Unauthenticated Nonce Increment in snow (RUST/snow) | LOW (CVSS: 3.1) | 2025-07-28 |
+| GHSA | [GHSA-GHSA-rfx3-ffrp-6875](https://github.com/advisories/GHSA-rfx3-ffrp-6875): Duplicate Advisory: sequoia-openpgp vulnerable to out-of-bounds array access leading to panic (RUST/sequoia-openpgp, RUST/sequoia-openpgp, RUST/sequoia-openpgp) | LOW (CVSS: 2.9) | 2025-07-28 |
+| GHSA | [GHSA-GHSA-gw89-822v-8v8g](https://github.com/advisories/GHSA-gw89-822v-8v8g): Duplicate Advisory: `openssl` `X509VerifyParamRef::set_host` buffer over-read (RUST/openssl) | MODERATE (CVSS: 4.5) | 2025-07-28 |
+| GHSA | [GHSA-GHSA-g693-v3jr-8hcr](https://github.com/advisories/GHSA-g693-v3jr-8hcr): Duplicate Advisory: `ed25519-dalek` Double Public Key Signing Function Oracle Attack (RUST/ed25519-dalek) | MODERATE (CVSS: 5.9) | 2025-07-28 |
+| GHSA | [GHSA-GHSA-5c5j-jmhx-q2gr](https://github.com/advisories/GHSA-5c5j-jmhx-q2gr): Duplicate Advisory: gix-transport code execution vulnerability (RUST/gix-transport) | MODERATE (CVSS: 4.1) | 2025-07-28 |
+| GHSA | [GHSA-GHSA-j87p-gjr6-m4pv](https://github.com/advisories/GHSA-j87p-gjr6-m4pv): Duplicate Advisory: serde-json-wasm stack overflow during recursive JSON parsing (RUST/serde-json-wasm, RUST/serde-json-wasm) | LOW (CVSS: 3.2) | 2025-07-27 |
+| GHSA | [GHSA-GHSA-p444-p2rm-hvrw](https://github.com/advisories/GHSA-p444-p2rm-hvrw): Duplicate Advisory: transpose: Buffer overflow due to integer overflow (RUST/transpose) | MODERATE (CVSS: 4.5) | 2025-07-27 |
+| GHSA | [GHSA-GHSA-rm83-pxjx-pr5j](https://github.com/advisories/GHSA-rm83-pxjx-pr5j): Duplicate Advisory: CosmWasm affected by arithmetic overflows (RUST/cosmwasm-std, RUST/cosmwasm-std) | LOW (CVSS: 3.7) | 2025-07-27 |
+| GHSA | [GHSA-GHSA-4hff-hh47-7788](https://github.com/advisories/GHSA-4hff-hh47-7788): Duplicate Advisory: curve25519-dalek has timing variability in `curve25519-dalek`'s `Scalar29::sub`/`Scalar52::sub` (RUST/curve25519-dalek) | LOW (CVSS: 2.9) | 2025-07-27 |
+| GHSA | [GHSA-GHSA-g97w-mw7g-v3jv](https://github.com/advisories/GHSA-g97w-mw7g-v3jv): Duplicate Advisory: Low severity (DoS) vulnerability in sequoia-openpgp (RUST/sequoia-openpgp) | LOW (CVSS: 2.9) | 2025-07-27 |
+| GHSA | [GHSA-GHSA-mvw6-62qv-vmqf](https://github.com/advisories/GHSA-mvw6-62qv-vmqf): Koa Open Redirect Vulnerability (NPM/koa) | LOW (CVSS: 3.5) | 2025-07-25 |
+| GHSA | [GHSA-GHSA-49jm-g4m8-x53p](https://github.com/advisories/GHSA-49jm-g4m8-x53p): CodeIgniter4 Cross-Site Scripting Vulnerability in debugbar_time Parameter (COMPOSER/codeigniter4/framework) | MODERATE (CVSS: 6.1) | 2025-07-25 |
+| GHSA | [GHSA-GHSA-83j7-mhw9-388w](https://github.com/advisories/GHSA-83j7-mhw9-388w): Keycloak is vulnerable to bad actors escalating privileges through its Fine-Grained Admin Permissions (MAVEN/org.keycloak:keycloak-services) | MODERATE (CVSS: 6.5) | 2025-07-18 |
+| GHSA | [GHSA-GHSA-xffm-g5w8-qvg7](https://github.com/advisories/GHSA-xffm-g5w8-qvg7): @eslint/plugin-kit is vulnerable to Regular Expression Denial of Service attacks through ConfigCommentParser (NPM/@eslint/plugin-kit) | LOW (CVSS: 0.0) | 2025-07-18 |
+| GHSA | [GHSA-GHSA-9344-p847-qm5c](https://github.com/advisories/GHSA-9344-p847-qm5c): Low severity (DoS) vulnerability in sequoia-openpgp (RUST/sequoia-openpgp) | LOW (CVSS: 2.9) | 2024-06-26 |
+| GHSA | [GHSA-GHSA-x4gp-pqpj-f43q](https://github.com/advisories/GHSA-x4gp-pqpj-f43q): curve25519-dalek has timing variability in `curve25519-dalek`'s `Scalar29::sub`/`Scalar52::sub` (RUST/curve25519-dalek) | MODERATE (CVSS: 0.0) | 2024-06-18 |
+| GHSA | [GHSA-GHSA-8724-5xmm-w5xq](https://github.com/advisories/GHSA-8724-5xmm-w5xq): CosmWasm affected by arithmetic overflows (RUST/cosmwasm-std, RUST/cosmwasm-std, RUST/cosmwasm-std) | LOW (CVSS: 3.7) | 2024-04-24 |
+| GHSA | [GHSA-GHSA-5gmm-6m36-r7jh](https://github.com/advisories/GHSA-5gmm-6m36-r7jh): transpose: Buffer overflow due to integer overflow (RUST/transpose) | MODERATE (CVSS: 4.5) | 2024-04-05 |
+| GHSA | [GHSA-GHSA-4585-28v2-8h46](https://github.com/advisories/GHSA-4585-28v2-8h46): Liferay Portal and Liferay DXP Information Disclosure Vulnerability in the Control Panel (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 4.3) | 2024-02-20 |
+| GHSA | [GHSA-GHSA-qpgh-6v9w-vfv6](https://github.com/advisories/GHSA-qpgh-6v9w-vfv6): Liferay Portal and Liferay DXP Does Not Properly Restrict Membership to Child Site Based on Parent Site Options (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 5.4) | 2024-02-20 |
+| GHSA | [GHSA-GHSA-3mrr-cw9q-727m](https://github.com/advisories/GHSA-3mrr-cw9q-727m): Liferay Vulnerable to Open Redirect via Adaptive Media Administration Page (MAVEN/com.liferay:com.liferay.adaptive.media.web, MAVEN/com.liferay:com.liferay.adaptive.media.web) | MODERATE (CVSS: 6.1) | 2024-02-20 |
+| GHSA | [GHSA-GHSA-f3rf-cr7f-cwc4](https://github.com/advisories/GHSA-f3rf-cr7f-cwc4): Liferay Portal and Liferay DXP Vulnerable to Open Redirect in Countries Management's Edit Region Page (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 6.1) | 2024-02-20 |
+| GHSA | [GHSA-GHSA-rr69-rxr6-8qwf](https://github.com/advisories/GHSA-rr69-rxr6-8qwf): serde-json-wasm stack overflow during recursive JSON parsing (RUST/serde-json-wasm, RUST/serde-json-wasm) | HIGH (CVSS: 7.5) | 2024-02-09 |
+| GHSA | [GHSA-GHSA-7g9j-g5jg-3vv3](https://github.com/advisories/GHSA-7g9j-g5jg-3vv3): Unauthenticated Nonce Increment in snow (RUST/snow) | LOW (CVSS: 3.1) | 2024-01-24 |
+| GHSA | [GHSA-GHSA-r7qv-8r2h-pg27](https://github.com/advisories/GHSA-r7qv-8r2h-pg27): Multiple issues involving quote API in shlex (RUST/shlex) | LOW (CVSS: 3.2) | 2024-01-22 |
+| GHSA | [GHSA-GHSA-qp68-5v39-r869](https://github.com/advisories/GHSA-qp68-5v39-r869): Liferay Portal and Liferay DXP Vulnerable to XSS in the Commerce Module (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.commerce:com.liferay.commerce.address.content.web) | CRITICAL (CVSS: 9.7) | 2023-10-17 |
+| GHSA | [GHSA-GHSA-hv45-r2f5-fmhj](https://github.com/advisories/GHSA-hv45-r2f5-fmhj): Liferay Portal and Liferay DXP Vulnerable to XSS in the Wiki Widget (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom) | CRITICAL (CVSS: 9.1) | 2023-10-17 |
+| GHSA | [GHSA-GHSA-rrjw-j4m2-mf34](https://github.com/advisories/GHSA-rrjw-j4m2-mf34): gix-transport code execution vulnerability (RUST/gix-transport) | MODERATE (CVSS: 4.1) | 2023-09-25 |
+| GHSA | [GHSA-GHSA-w5vr-6qhr-36cc](https://github.com/advisories/GHSA-w5vr-6qhr-36cc): `ed25519-dalek` Double Public Key Signing Function Oracle Attack (RUST/ed25519-dalek) | MODERATE (CVSS: 5.9) | 2023-08-14 |
+| GHSA | [GHSA-GHSA-xcf7-rvmh-g6q4](https://github.com/advisories/GHSA-xcf7-rvmh-g6q4): `openssl` `X509VerifyParamRef::set_host` buffer over-read (RUST/openssl) | MODERATE (CVSS: 4.5) | 2023-06-21 |
+| GHSA | [GHSA-GHSA-29mf-62xx-28jq](https://github.com/advisories/GHSA-29mf-62xx-28jq): buffered-reader vulnerable to out-of-bounds array access leading to panic (RUST/buffered-reader, RUST/buffered-reader) | LOW (CVSS: 2.9) | 2023-06-06 |
+| GHSA | [GHSA-GHSA-25mx-8f3v-8wh7](https://github.com/advisories/GHSA-25mx-8f3v-8wh7): sequoia-openpgp vulnerable to out-of-bounds array access leading to panic (RUST/sequoia-openpgp, RUST/sequoia-openpgp, RUST/sequoia-openpgp) | LOW (CVSS: 2.9) | 2023-06-06 |
+| GHSA | [GHSA-GHSA-h47j-hc6x-h3qq](https://github.com/advisories/GHSA-h47j-hc6x-h3qq): Remote Code Execution Vulnerability in NPM mongo-express (NPM/mongo-express) | CRITICAL (CVSS: 10.0) | 2019-12-30 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [9669b24](https://github.com/torvalds/linux/commit/9669b2499ea377764f8320dd562dd6cd4ea80a5d) | Merge tag 'platform-drivers-x86-v6.17-1' of git://git.kernel.org/pub/scm/linux/kernel/git/pdx86/platform-drivers-x86 | 2025-07-29 |
-| torvalds/linux | [9bbf8e1](https://github.com/torvalds/linux/commit/9bbf8e17d8521211c5c5516ed5ec78d7581aacff) | Merge tag 'acpi-6.17-rc1' of git://git.kernel.org/pub/scm/linux/kernel/git/rafael/linux-pm | 2025-07-29 |
-| torvalds/linux | [53edfec](https://github.com/torvalds/linux/commit/53edfecef66bfa65882ae065ed1a52f466c88979) | Merge tag 'pm-6.17-rc1' of git://git.kernel.org/pub/scm/linux/kernel/git/rafael/linux-pm | 2025-07-29 |
+| torvalds/linux | [e5cf61f](https://github.com/torvalds/linux/commit/e5cf61fa6e2fb9ae6339eaa892612488c966baaf) | Merge tag 'v6.17-rc-smb3-server-fixes' of git://git.samba.org/ksmbd | 2025-07-28 |
+| torvalds/linux | [f70d24c](https://github.com/torvalds/linux/commit/f70d24c230bcaa1e95f66252133068a98c895200) | Merge tag 'vfs-6.17-rc1.nsfs' of git://git.kernel.org/pub/scm/linux/kernel/git/vfs/vfs | 2025-07-28 |
+| torvalds/linux | [ce3f5bb](https://github.com/torvalds/linux/commit/ce3f5bb7504ca802efa710280a4601a06545bd2e) | Merge tag 'nfsd-6.17' of git://git.kernel.org/pub/scm/linux/kernel/git/cel/linux | 2025-07-28 |
+
+## Pull Requests
+
+| Source | Title | Severity | Date |
+|--------|-------|----------|------|
+| openssl/openssl | [#28095](https://github.com/openssl/openssl/pull/28095) | crypto: evp: fix potential null pointer dereference in EVP_DigestSign in m_sigver.c | 2025-07-28 |
 
