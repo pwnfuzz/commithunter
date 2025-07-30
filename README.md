@@ -1,12 +1,13 @@
 # Security Updates Monitor
 
-*Last updated: 2025-07-30 11:14:08 UTC*
+*Last updated: 2025-07-30 12:33:29 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 15 |
+| ADVISORY | 21 |
 | COMMIT | 5 |
+| PR | 4 |
 
 ---
 
@@ -14,29 +15,44 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-jgmv-j7ww-jx2x](https://github.com/advisories/GHSA-jgmv-j7ww-jx2x): Koa Open Redirect via Referrer Header (User-Controlled) (NPM/koa) | LOW (CVSS: 3.5) | 2025-07-29 |
-| GHSA | [GHSA-GHSA-75vq-qvhr-7ffr](https://github.com/advisories/GHSA-75vq-qvhr-7ffr): Umbraco Delivery API allows for cached requests to be returned with an invalid API key (NUGET/Umbraco.Cms.Api.Delivery, NUGET/Umbraco.Cms.Api.Delivery, NUGET/Umbraco.Cms.Api.Delivery) | MODERATE (CVSS: 5.3) | 2025-07-29 |
-| GHSA | [GHSA-GHSA-4mxg-3p6v-xgq3](https://github.com/advisories/GHSA-4mxg-3p6v-xgq3): Node-SAML SAML Signature Verification Vulnerability (NPM/@node-saml/node-saml) | CRITICAL (CVSS: 10.0) | 2025-07-28 |
-| GHSA | [GHSA-GHSA-9q4r-x2hj-jmvr](https://github.com/advisories/GHSA-9q4r-x2hj-jmvr): copyparty has DOM-Based XSS vulnerability when displaying multimedia metadata (PIP/copyparty) | MODERATE (CVSS: 5.4) | 2025-07-28 |
-| GHSA | [GHSA-GHSA-95jq-xph2-cx9h](https://github.com/advisories/GHSA-95jq-xph2-cx9h): Linkify Allows Prototype Pollution & HTML Attribute Injection (XSS) (NPM/linkifyjs) | HIGH (CVSS: 0.0) | 2025-07-26 |
-| GHSA | [GHSA-GHSA-gj52-35xm-gxjh](https://github.com/advisories/GHSA-gj52-35xm-gxjh): Keycloak vulnerable to phishing attacks through its Review Profile section (MAVEN/org.keycloak:keycloak-services) | MODERATE (CVSS: 5.4) | 2025-07-10 |
-| GHSA | [GHSA-GHSA-chj2-4vg7-hhg3](https://github.com/advisories/GHSA-chj2-4vg7-hhg3): Liferay Portal and Liferay DXP Vulnerable to CSRF in the Script Console (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom) | CRITICAL (CVSS: 9.7) | 2024-10-22 |
-| GHSA | [GHSA-GHSA-mh9r-9pcx-rx55](https://github.com/advisories/GHSA-mh9r-9pcx-rx55): Liferay Portal and Liferay DXP Vulnerable to Cross-Site Request Forgery in Terms of Use Page (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:com.liferay.portal.impl) | HIGH (CVSS: 8.8) | 2024-02-21 |
-| GHSA | [GHSA-GHSA-mwhf-6mjm-6w3h](https://github.com/advisories/GHSA-mwhf-6mjm-6w3h): Liferay Portal and Liferay DXP Does Not Obfuscate Password Reminder Answers (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.commerce:com.liferay.commerce.account.web) | MODERATE (CVSS: 6.3) | 2024-02-21 |
-| GHSA | [GHSA-GHSA-qm43-g2xj-hvg5](https://github.com/advisories/GHSA-qm43-g2xj-hvg5): Liferay Portal and Liferay DXP User Enumeration Vulnerability (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom) | MODERATE (CVSS: 5.3) | 2024-02-20 |
-| GHSA | [GHSA-GHSA-2mvj-q2q3-wxjv](https://github.com/advisories/GHSA-2mvj-q2q3-wxjv): Liferay Portal and Liferay DXP HTTP Header Can Expose Versions (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom) | MODERATE (CVSS: 5.3) | 2024-02-20 |
-| GHSA | [GHSA-GHSA-3qq5-wcrx-4h8r](https://github.com/advisories/GHSA-3qq5-wcrx-4h8r): Liferay Portal and Liferay DXP's HtmlUtil.escapeRedirect Can Be Circumvented via Two Forward Slashes (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 6.1) | 2024-02-20 |
-| GHSA | [GHSA-GHSA-548x-j6x6-hcv4](https://github.com/advisories/GHSA-548x-j6x6-hcv4): Liferay Portal and Liferay DXP's HtmlUtil.escapeRedirect Can Be Circumvented via Replacement Character (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom) | MODERATE (CVSS: 6.1) | 2024-02-20 |
-| GHSA | [GHSA-GHSA-mf8h-grfg-j9j3](https://github.com/advisories/GHSA-mf8h-grfg-j9j3): Liferay Portal and Liferay DXP Allows Templates to be Viewed via the UI or API (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 5.3) | 2024-02-20 |
-| GHSA | [GHSA-GHSA-pw7p-3648-qqmg](https://github.com/advisories/GHSA-pw7p-3648-qqmg): Liferay Portal and Liferay DXP Allows Authenticated Users with View Permissions to Edit Permissions (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 6.5) | 2024-02-20 |
+| GHSA | [GHSA-GHSA-mrmq-3q62-6cc8](https://github.com/advisories/GHSA-mrmq-3q62-6cc8): BentoML SSRF Vulnerability in File Upload Processing   (PIP/bentoml) | CRITICAL (CVSS: 9.9) | 2025-07-29 |
+| GHSA | [GHSA-GHSA-hfcf-79gh-f3jc](https://github.com/advisories/GHSA-hfcf-79gh-f3jc): Memos has Cross-Site Scripting (XSS) Vulnerability in Image URLs (GO/github.com/usememos/memos) | MODERATE (CVSS: 0.0) | 2025-07-29 |
+| GHSA | [GHSA-GHSA-q78p-g86f-jg6q](https://github.com/advisories/GHSA-q78p-g86f-jg6q): Bugsink path traversal via event_id in ingestion (PIP/bugsink, PIP/bugsink, PIP/bugsink) | HIGH (CVSS: 0.0) | 2025-07-29 |
+| GHSA | [GHSA-GHSA-w832-w3p8-cw29](https://github.com/advisories/GHSA-w832-w3p8-cw29): z-push/z-push-dev SQL Injection Vulnerability (COMPOSER/z-push/z-push-dev) | HIGH (CVSS: 9.1) | 2025-07-29 |
+| GHSA | [GHSA-GHSA-4vq8-7jfc-9cvp](https://github.com/advisories/GHSA-4vq8-7jfc-9cvp): Moby firewalld reload removes bridge network isolation (GO/github.com/docker/docker) | LOW (CVSS: 3.3) | 2025-07-29 |
+| GHSA | [GHSA-GHSA-x4rx-4gw3-53p4](https://github.com/advisories/GHSA-x4rx-4gw3-53p4): Moby firewalld reload makes published container ports accessible from remote hosts  (GO/github.com/docker/docker) | MODERATE (CVSS: 0.0) | 2025-07-29 |
+| GHSA | [GHSA-GHSA-8xq3-w9fx-74rv](https://github.com/advisories/GHSA-8xq3-w9fx-74rv): webfinger.js Blind SSRF Vulnerability (NPM/webfinger.js) | MODERATE (CVSS: 0.0) | 2025-07-28 |
+| GHSA | [GHSA-GHSA-rpcf-rmh6-42xr](https://github.com/advisories/GHSA-rpcf-rmh6-42xr): Netavark Has Possible DNS Resolve Confusion  (RUST/netavark) | LOW (CVSS: 3.7) | 2025-07-28 |
+| GHSA | [GHSA-GHSA-m7f4-hrc6-fwg3](https://github.com/advisories/GHSA-m7f4-hrc6-fwg3): Skops has Inconsistent Trusted Type Validation that Enables Hidden `operator` Methods Execution (PIP/skops) | HIGH (CVSS: 0.0) | 2025-07-25 |
+| GHSA | [GHSA-GHSA-mvw6-62qv-vmqf](https://github.com/advisories/GHSA-mvw6-62qv-vmqf): Duplicate Advisory: Koa Open Redirect via Referrer Header (User-Controlled) (NPM/koa) | LOW (CVSS: 3.5) | 2025-07-25 |
+| GHSA | [GHSA-GHSA-49jm-g4m8-x53p](https://github.com/advisories/GHSA-49jm-g4m8-x53p): Withdrawn Advisory: CodeIgniter4 Cross-Site Scripting Vulnerability in debugbar_time Parameter (COMPOSER/codeigniter4/framework) | MODERATE (CVSS: 6.1) | 2025-07-25 |
+| GHSA | [GHSA-GHSA-526j-mv3p-f4vv](https://github.com/advisories/GHSA-526j-mv3p-f4vv): eKuiper API endpoints handling SQL queries with user-controlled table names.  (GO/github.com/lf-edge/ekuiper, GO/github.com/lf-edge/ekuiper/v2) | HIGH (CVSS: 0.0) | 2025-07-24 |
+| GHSA | [GHSA-GHSA-7xqm-7738-642x](https://github.com/advisories/GHSA-7xqm-7738-642x): File Browser's Uncontrolled Memory Consumption vulnerability can enable DoS attack due to oversized file processing (GO/github.com/filebrowser/filebrowser/v2) | HIGH (CVSS: 0.0) | 2025-07-16 |
+| GHSA | [GHSA-GHSA-7xwp-2cpp-p8r7](https://github.com/advisories/GHSA-7xwp-2cpp-p8r7): File Browser’s insecure JWT handling can lead to session replay attacks after logout (GO/github.com/filebrowser/filebrowser/v2, GO/github.com/filebrowser/filebrowser) | HIGH (CVSS: 0.0) | 2025-07-16 |
+| GHSA | [GHSA-GHSA-56j4-446m-qrf6](https://github.com/advisories/GHSA-56j4-446m-qrf6): Babylon vulnerable to chain half when transaction has fees different than `ubbn` (GO/github.com/babylonlabs-io/babylon, GO/github.com/babylonlabs-io/babylon/v2) | HIGH (CVSS: 0.0) | 2025-06-30 |
+| GHSA | [GHSA-GHSA-8f5r-8cmq-7fmq](https://github.com/advisories/GHSA-8f5r-8cmq-7fmq): OpenBao Inserts Sensitive Information into Log File when processing malformed data (GO/github.com/openbao/openbao/sdk/v2) | MODERATE (CVSS: 4.5) | 2025-06-26 |
+| GHSA | [GHSA-GHSA-xh32-cx6c-cp4v](https://github.com/advisories/GHSA-xh32-cx6c-cp4v): Gogs XSS allowed by stored call in PDF renderer (GO/gogs.io/gogs, GO/github.com/gogs/gogs) | MODERATE (CVSS: 6.3) | 2025-06-26 |
+| GHSA | [GHSA-GHSA-65p9-j6pg-72hj](https://github.com/advisories/GHSA-65p9-j6pg-72hj): billboard.js allows prototype pollution via the function generate (NPM/billboard.js) | CRITICAL (CVSS: 9.8) | 2025-06-04 |
+| GHSA | [GHSA-GHSA-ggwg-cmwp-46r5](https://github.com/advisories/GHSA-ggwg-cmwp-46r5): yiisoft/yii2 Mishandles the Attaching of Behavior Defined by a `__class` Array Key (COMPOSER/yiisoft/yii2) | CRITICAL (CVSS: 9.1) | 2025-04-10 |
+| GHSA | [GHSA-GHSA-6pm2-j2v8-h3cj](https://github.com/advisories/GHSA-6pm2-j2v8-h3cj): Withdrawn: Fortra GoAnywhere MFT Deserialization of Untrusted Data vulnerability affects metasploit-framework (RUBYGEMS/metasploit-framework) | HIGH (CVSS: 7.2) | 2023-02-06 |
+| GHSA | [GHSA-GHSA-4x9r-j582-cgr8](https://github.com/advisories/GHSA-4x9r-j582-cgr8): Apache Spark UI can allow impersonation if ACLs enabled (PIP/pyspark, MAVEN/org.apache.spark:spark-parent_2.12, MAVEN/org.apache.spark:spark-parent_2.12) | HIGH (CVSS: 8.8) | 2022-07-19 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [a26321e](https://github.com/torvalds/linux/commit/a26321ee4c935a63c29ed6518f27e38826b36e68) | Merge tag 'hardening-v6.17-rc1-fix1' of git://git.kernel.org/pub/scm/linux/kernel/git/kees/linux | 2025-07-30 |
-| torvalds/linux | [94fd446](https://github.com/torvalds/linux/commit/94fd44648dae2a5b6149a41faa0b07928c3e1963) | fortify: Fix incorrect reporting of read buffer size | 2025-07-29 |
-| torvalds/linux | [4eee152](https://github.com/torvalds/linux/commit/4eee1520ea845a6d6d82e85498d9412419560871) | Merge tag 'usb-6.17-rc1' of git://git.kernel.org/pub/scm/linux/kernel/git/gregkh/usb | 2025-07-29 |
-| chromium/chromium | [27f85dd](https://github.com/chromium/chromium/commit/27f85ddbff8fb2a79a2bc7f0616d0051c1b7052c) | [cpesuggest] Add CPE prefix for third_party/maven/3pp/3pp.pb. | 2025-07-29 |
-| openssl/openssl | [daa004d](https://github.com/openssl/openssl/commit/daa004d48438d67241b58592d43c3214dd3a903f) | crypto: evp: fix potential null pointer dereference in EVP_DigestSignUpdate in m_sigver.c | 2025-07-25 |
+| torvalds/linux | [854ff79](https://github.com/torvalds/linux/commit/854ff7923753009189a9e1f80d23ae9d407c2fb2) | Merge tag 'mmc-v6.17' of git://git.kernel.org/pub/scm/linux/kernel/git/ulfh/mmc | 2025-07-29 |
+| torvalds/linux | [0ae982d](https://github.com/torvalds/linux/commit/0ae982df67760cd08affa935c0fe86c8a9311797) | Merge tag 'i2c-for-6.17-rc1' of git://git.kernel.org/pub/scm/linux/kernel/git/wsa/linux | 2025-07-29 |
+| chromium/chromium | [71c9f77](https://github.com/chromium/chromium/commit/71c9f77f9d079c316eef0d86a0bc6e68e58f6b22) | Revert "Roll src/third_party/fontconfig/src/ 8f169b6a9..09ee17b85 (3 commits)" | 2025-07-29 |
+| chromium/chromium | [d44fb92](https://github.com/chromium/chromium/commit/d44fb92ddf97a649de1e24eb2b216d7ccb0cb3e5) | Roll src/third_party/fontconfig/src/ 8f169b6a9..09ee17b85 (3 commits) | 2025-07-29 |
+| chromium/chromium | [10556e3](https://github.com/chromium/chromium/commit/10556e396b434a59079a5fb585cfe600968df450) | Fix use-after-free in TailoredSecurityConsentedModal | 2025-07-29 |
+
+## Pull Requests
+
+| Source | Title | Severity | Date |
+|--------|-------|----------|------|
+| openssl/openssl | [#18504](https://github.com/openssl/openssl/pull/18504) | crypto/bn: Fix a null pointer dereference | 2025-07-30 |
+| roundcube/roundcubemail | [#9707](https://github.com/roundcube/roundcubemail/pull/9707) | Bump eslint from 8.57.1 to 9.15.0 | 2025-07-30 |
+| roundcube/roundcubemail | [#9698](https://github.com/roundcube/roundcubemail/pull/9698) | Bump openpgp from 5.11.2 to 6.0.0 | 2025-07-30 |
+| openssl/openssl | [#28095](https://github.com/openssl/openssl/pull/28095) | crypto: evp: fix potential null pointer dereference in EVP_DigestSign in m_sigver.c | 2025-07-29 |
 
