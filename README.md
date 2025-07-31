@@ -1,12 +1,13 @@
 # Security Updates Monitor
 
-*Last updated: 2025-07-31 12:31:24 UTC*
+*Last updated: 2025-07-31 13:34:55 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 10 |
-| COMMIT | 4 |
+| ADVISORY | 11 |
+| COMMIT | 3 |
+| PR | 1 |
 
 ---
 
@@ -14,23 +15,29 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-7rh7-c77v-6434](https://github.com/advisories/GHSA-7rh7-c77v-6434): OAuth2-Proxy has authentication bypass in oauth2-proxy skip_auth_routes due to Query Parameter inclusion (GO/github.com/oauth2-proxy/oauth2-proxy/v7) | CRITICAL (CVSS: 9.1) | 2025-07-30 |
-| GHSA | [GHSA-GHSA-cx25-xg7c-xfm5](https://github.com/advisories/GHSA-cx25-xg7c-xfm5): Apache Struts Extras Before 2 has an Improper Output Neutralization for Logs Vulnerability (MAVEN/org.apache.struts:struts-extras) | MODERATE (CVSS: 6.5) | 2025-07-30 |
-| GHSA | [GHSA-GHSA-q78p-g86f-jg6q](https://github.com/advisories/GHSA-q78p-g86f-jg6q): Bugsink path traversal via event_id in ingestion (PIP/bugsink, PIP/bugsink, PIP/bugsink) | HIGH (CVSS: 0.0) | 2025-07-29 |
-| GHSA | [GHSA-GHSA-4vq8-7jfc-9cvp](https://github.com/advisories/GHSA-4vq8-7jfc-9cvp): Moby firewalld reload removes bridge network isolation (GO/github.com/docker/docker) | LOW (CVSS: 3.3) | 2025-07-29 |
-| GHSA | [GHSA-GHSA-x4rx-4gw3-53p4](https://github.com/advisories/GHSA-x4rx-4gw3-53p4): Moby firewalld reload makes published container ports accessible from remote hosts  (GO/github.com/docker/docker) | MODERATE (CVSS: 0.0) | 2025-07-29 |
-| GHSA | [GHSA-GHSA-8xq3-w9fx-74rv](https://github.com/advisories/GHSA-8xq3-w9fx-74rv): webfinger.js Blind SSRF Vulnerability (NPM/webfinger.js) | MODERATE (CVSS: 0.0) | 2025-07-28 |
-| GHSA | [GHSA-GHSA-xh32-cx6c-cp4v](https://github.com/advisories/GHSA-xh32-cx6c-cp4v): Gogs XSS allowed by stored call in PDF renderer (GO/gogs.io/gogs, GO/github.com/gogs/gogs) | MODERATE (CVSS: 6.3) | 2025-06-26 |
-| GHSA | [GHSA-GHSA-65gg-3w2w-hr4h](https://github.com/advisories/GHSA-65gg-3w2w-hr4h): Podman Improper Certificate Validation; machine missing TLS verification (GO/github.com/containers/podman/v4, GO/github.com/containers/podman/v5) | HIGH (CVSS: 8.4) | 2025-06-25 |
-| GHSA | [GHSA-GHSA-f2jm-rw3h-6phg](https://github.com/advisories/GHSA-f2jm-rw3h-6phg): LangChain pickle deserialization of untrusted data (PIP/langchain-community) | HIGH (CVSS: 5.2) | 2024-09-17 |
-| GHSA | [GHSA-GHSA-wj6h-64fc-37mp](https://github.com/advisories/GHSA-wj6h-64fc-37mp): Minerva timing attack on P-256 in python-ecdsa (PIP/ecdsa) | HIGH (CVSS: 7.4) | 2024-01-22 |
+| GHSA | [GHSA-GHSA-v98g-8rqx-g93g](https://github.com/advisories/GHSA-v98g-8rqx-g93g): GitProxy Hidden Commits Injection (NPM/@finos/git-proxy) | HIGH (CVSS: 7.1) | 2025-07-30 |
+| GHSA | [GHSA-GHSA-39p2-8hq9-fwj6](https://github.com/advisories/GHSA-39p2-8hq9-fwj6): GitProxy New Branch Approval Exploit (NPM/@finos/git-proxy) | HIGH (CVSS: 0.0) | 2025-07-30 |
+| GHSA | [GHSA-GHSA-xxmh-rf63-qwjv](https://github.com/advisories/GHSA-xxmh-rf63-qwjv): GitProxy Backfile Parsing Exploit (NPM/@finos/git-proxy) | HIGH (CVSS: 0.0) | 2025-07-30 |
+| GHSA | [GHSA-GHSA-qr93-8wwf-22g4](https://github.com/advisories/GHSA-qr93-8wwf-22g4): GitProxy Approval Bypass When Pushing Multiple Branches (NPM/@finos/git-proxy) | HIGH (CVSS: 0.0) | 2025-07-30 |
+| GHSA | [GHSA-GHSA-7h24-c332-p48c](https://github.com/advisories/GHSA-7h24-c332-p48c): vproxy Divide by Zero DoS Vulnerability (RUST/vproxy) | HIGH (CVSS: 7.5) | 2025-07-30 |
+| GHSA | [GHSA-GHSA-rxmq-m78w-7wmc](https://github.com/advisories/GHSA-rxmq-m78w-7wmc): SixLabors ImageSharp Has Infinite Loop in GIF Decoder When Skipping Malformed Comment Extension Blocks (NUGET/SixLabors.ImageSharp, NUGET/SixLabors.ImageSharp) | MODERATE (CVSS: 5.3) | 2025-07-30 |
+| GHSA | [GHSA-GHSA-652x-m2gr-hppm](https://github.com/advisories/GHSA-652x-m2gr-hppm): OAuth2-Proxy's `--gitlab-group` GitLab Group Authorization config flag stopped working in v7.0.0 (GO/github.com/oauth2-proxy/oauth2-proxy/v7) | MODERATE (CVSS: 5.5) | 2025-07-30 |
+| GHSA | [GHSA-GHSA-rrqh-93c8-j966](https://github.com/advisories/GHSA-rrqh-93c8-j966): Ruby SAML DOS vulnerability with large SAML response (RUBYGEMS/ruby-saml) | MODERATE (CVSS: 0.0) | 2025-07-30 |
+| GHSA | [GHSA-GHSA-75vq-qvhr-7ffr](https://github.com/advisories/GHSA-75vq-qvhr-7ffr): Umbraco Delivery API allows for cached requests to be returned with an invalid API key (NUGET/Umbraco.Cms.Api.Delivery, NUGET/Umbraco.Cms.Api.Delivery, NUGET/Umbraco.Cms.Api.Delivery) | MODERATE (CVSS: 5.3) | 2025-07-29 |
+| GHSA | [GHSA-GHSA-jgmv-j7ww-jx2x](https://github.com/advisories/GHSA-jgmv-j7ww-jx2x): Koa Open Redirect via Referrer Header (User-Controlled) (NPM/koa, NPM/koa) | LOW (CVSS: 3.5) | 2025-07-29 |
+| GHSA | [GHSA-GHSA-76c9-3jph-rj3q](https://github.com/advisories/GHSA-76c9-3jph-rj3q): on-headers is vulnerable to http response header manipulation (NPM/on-headers) | LOW (CVSS: 3.4) | 2025-07-17 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [7d767a9](https://github.com/torvalds/linux/commit/7d767a9528f6d203bca5e83faf1b8f2f6af3fc07) | Merge tag 'for-linus-6.17-rc1-tag' of git://git.kernel.org/pub/scm/linux/kernel/git/xen/tip | 2025-07-31 |
-| chromium/chromium | [66dd91f](https://github.com/chromium/chromium/commit/66dd91fa5bf90d651709f138ff40c3bcb9de0afb) | [ios] Fix possible use-after-free in data sharing code | 2025-07-31 |
-| torvalds/linux | [b7dbc2e](https://github.com/torvalds/linux/commit/b7dbc2e813e00d61e66fc0267599441493774b93) | Merge tag 'probes-v6.17' of git://git.kernel.org/pub/scm/linux/kernel/git/trace/linux-trace | 2025-07-30 |
-| chromium/chromium | [9774163](https://github.com/chromium/chromium/commit/9774163885c12368e96af61346e6712e614894f3) | Roll PDFium from 864375abbcd3 to ea66420dc6fb (2 revisions) | 2025-07-30 |
+| torvalds/linux | [260f6f4](https://github.com/torvalds/linux/commit/260f6f4fda93c8485c8037865c941b42b9cba5d2) | Merge tag 'drm-next-2025-07-30' of https://gitlab.freedesktop.org/drm/kernel | 2025-07-31 |
+| torvalds/linux | [53564f4](https://github.com/torvalds/linux/commit/53564f400572b1b8d9ee5bafb9c226eb1d38600a) | Merge tag 'iommu-updates-v6.17' of git://git.kernel.org/pub/scm/linux/kernel/git/iommu/linux | 2025-07-30 |
+| chromium/chromium | [9af749d](https://github.com/chromium/chromium/commit/9af749d9dfb0f4a5aaa0463bcad126973e3d5363) | Roll src/third_party/fontconfig/src/ 8f169b6a9..86b48ec01 (7 commits) | 2025-07-30 |
+
+## Pull Requests
+
+| Source | Title | Severity | Date |
+|--------|-------|----------|------|
+| wazuh/wazuh | [#31163](https://github.com/wazuh/wazuh/pull/31163) | Add support for Inspector v2. | 2025-07-31 |
 
