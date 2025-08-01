@@ -1,13 +1,13 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-01 17:17:35 UTC*
+*Last updated: 2025-08-01 18:22:00 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 7 |
-| COMMIT | 5 |
-| PR | 2 |
+| ADVISORY | 15 |
+| COMMIT | 2 |
+| PR | 1 |
 
 ---
 
@@ -15,28 +15,32 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-h45x-qhg2-q375](https://github.com/advisories/GHSA-h45x-qhg2-q375): OpenEXR Heap-Based Buffer Overflow in Deep Scanline Parsing via Forged Unpacked Size (PIP/OpenEXR) | HIGH (CVSS: 0.0) | 2025-07-31 |
-| GHSA | [GHSA-GHSA-7qw8-3vmf-gj32](https://github.com/advisories/GHSA-7qw8-3vmf-gj32): MaterialX Null Pointer Dereference in MaterialXCore Shader Generation due to Unchecked implGraphOutput (PIP/MaterialX) | LOW (CVSS: 0.0) | 2025-07-31 |
-| GHSA | [GHSA-GHSA-3jhf-gxhr-q4cx](https://github.com/advisories/GHSA-3jhf-gxhr-q4cx): MaterialX Null Pointer Dereference in getShaderNodes due to Unchecked nodeGraph->getOutput return (PIP/MaterialX) | LOW (CVSS: 0.0) | 2025-07-31 |
-| GHSA | [GHSA-GHSA-xxmh-rf63-qwjv](https://github.com/advisories/GHSA-xxmh-rf63-qwjv): GitProxy Backfile Parsing Exploit (NPM/@finos/git-proxy) | HIGH (CVSS: 0.0) | 2025-07-30 |
-| GHSA | [GHSA-GHSA-qr93-8wwf-22g4](https://github.com/advisories/GHSA-qr93-8wwf-22g4): GitProxy Approval Bypass When Pushing Multiple Branches (NPM/@finos/git-proxy) | HIGH (CVSS: 0.0) | 2025-07-30 |
-| GHSA | [GHSA-GHSA-jq8x-v7jw-v675](https://github.com/advisories/GHSA-jq8x-v7jw-v675): Duplicate Advisory: users may append `root` to group listings (RUST/users) | HIGH (CVSS: 7.1) | 2025-06-06 |
-| GHSA | [GHSA-GHSA-q5q7-8x6x-hcg2](https://github.com/advisories/GHSA-q5q7-8x6x-hcg2): ActiveMQ Artemis AMQ Broker Operator Starting Credentials Reuse (GO/github.com/arkmq-org/activemq-artemis-operator) | MODERATE (CVSS: 5.5) | 2025-05-26 |
+| GHSA | [GHSA-GHSA-2rjv-cv85-xhgm](https://github.com/advisories/GHSA-2rjv-cv85-xhgm): OpenSearch unauthorized data access on fields protected by field level security if field is a member of an object (MAVEN/org.opensearch.plugin:opensearch-security) | MODERATE (CVSS: 5.7) | 2025-08-01 |
+| GHSA | [GHSA-GHSA-rrmm-wq7q-h4v5](https://github.com/advisories/GHSA-rrmm-wq7q-h4v5): OpenSearch unauthorized data access on fields protected by field masking for fields of type ip, geo_point, geo_shape, xy_point, xy_shape (MAVEN/org.opensearch.plugin:opensearch-security) | MODERATE (CVSS: 5.7) | 2025-08-01 |
+| GHSA | [GHSA-GHSA-8j63-96wh-wh3j](https://github.com/advisories/GHSA-8j63-96wh-wh3j): 1Panel agent certificate verification bypass leading to arbitrary command execution (GO/github.com/1Panel-dev/1Panel/core, GO/github.com/1Panel-dev/1Panel/core) | HIGH (CVSS: 8.1) | 2025-08-01 |
+| GHSA | [GHSA-GHSA-q6gg-9f92-r9wg](https://github.com/advisories/GHSA-q6gg-9f92-r9wg): Traefik Client Plugin's Path Traversal Vulnerability Allows Arbitrary File Overwrite and Remote Code Execution (GO/github.com/traefik/traefik/v3, GO/github.com/traefik/traefik/v3, GO/github.com/traefik/traefik/v2) | HIGH (CVSS: 0.0) | 2025-08-01 |
+| GHSA | [GHSA-GHSA-782f-gxj5-xvqc](https://github.com/advisories/GHSA-782f-gxj5-xvqc): Microweber Has Stored XSS Vulnerability in User Profile Fields (COMPOSER/microweber/microweber) | LOW (CVSS: 0.0) | 2025-07-31 |
+| GHSA | [GHSA-GHSA-wx6g-fm6f-w822](https://github.com/advisories/GHSA-wx6g-fm6f-w822): MaterialX Stack Overflow via Lack of MTLX XML Parsing Recursion Limit  (PIP/MaterialX) | MODERATE (CVSS: 0.0) | 2025-07-31 |
+| GHSA | [GHSA-GHSA-qhpm-86v7-phmm](https://github.com/advisories/GHSA-qhpm-86v7-phmm): OpenEXR ScanLineProcess::run_fill NULL Pointer Write In "reduceMemory" Mode (PIP/OpenEXR) | MODERATE (CVSS: 0.0) | 2025-07-31 |
+| GHSA | [GHSA-GHSA-4r7w-q3jg-ff43](https://github.com/advisories/GHSA-4r7w-q3jg-ff43): OpenEXR Out of Bounds Heap Read due to Bad Pointer Arithmetic in LossyDctDecoder_execute (PIP/OpenEXR) | MODERATE (CVSS: 0.0) | 2025-07-31 |
+| GHSA | [GHSA-GHSA-7c78-rm87-5673](https://github.com/advisories/GHSA-7c78-rm87-5673): MS SWIFT WEB-UI RCE Vulnerability (PIP/ms-swift) | MODERATE (CVSS: 0.0) | 2025-07-31 |
+| GHSA | [GHSA-GHSA-r54c-2xmf-2cf3](https://github.com/advisories/GHSA-r54c-2xmf-2cf3): MS SWIFT Deserialization RCE Vulnerability (PIP/ms-swift) | MODERATE (CVSS: 0.0) | 2025-07-31 |
+| GHSA | [GHSA-GHSA-fm6c-f59h-7mmg](https://github.com/advisories/GHSA-fm6c-f59h-7mmg): MS SWIFT Remote Code Execution via unsafe PyYAML deserialization (PIP/ms-swift) | LOW (CVSS: 0.0) | 2025-07-31 |
+| GHSA | [GHSA-GHSA-qc2h-74x3-4v3w](https://github.com/advisories/GHSA-qc2h-74x3-4v3w): MaterialX Lack of MTLX Import Depth Limit Leads to DoS (Denial-Of-Service) Via Stack Exhaustion (PIP/MaterialX) | MODERATE (CVSS: 0.0) | 2025-07-31 |
+| GHSA | [GHSA-GHSA-jxr6-qrxx-2ph2](https://github.com/advisories/GHSA-jxr6-qrxx-2ph2): num2words subjected to phishing attack, two versions published containing malware (PIP/num2words) | CRITICAL (CVSS: 0.0) | 2025-07-31 |
+| GHSA | [GHSA-GHSA-9qm3-6qrr-c76m](https://github.com/advisories/GHSA-9qm3-6qrr-c76m): @nyariv/sandboxjs has Prototype Pollution vulnerability that may lead to RCE (NPM/@nyariv/sandboxjs) | HIGH (CVSS: 0.0) | 2025-07-31 |
+| GHSA | [GHSA-GHSA-x22w-82jp-8rvf](https://github.com/advisories/GHSA-x22w-82jp-8rvf): OpenEXR Out-Of-Memory via Unbounded File Header Values (PIP/OpenEXR) | MODERATE (CVSS: 0.0) | 2025-07-31 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [b80a75c](https://github.com/torvalds/linux/commit/b80a75cf6999fb79971b41eaec7af2bb4b514714) | Merge tag 'hid-for-linus-2025073101' of git://git.kernel.org/pub/scm/linux/kernel/git/hid/hid | 2025-08-01 |
-| chromium/chromium | [44f483d](https://github.com/chromium/chromium/commit/44f483d46d950995bf76f4fa1a7ced6f013136ef) | Roll Dawn from ae947216dca9 to 24eec2f88310 (10 revisions) | 2025-08-01 |
-| chromium/chromium | [41905e4](https://github.com/chromium/chromium/commit/41905e418351fe5fa6266f14d109834ada25a78f) | base: Add integer overflow checks in File::Read/Write | 2025-08-01 |
-| torvalds/linux | [96ba894](https://github.com/torvalds/linux/commit/96ba894dc209cf833abc2ccdca2dc0ad5f01eefe) | Merge branch 'for-6.17/apple' into for-linus | 2025-07-31 |
-| torvalds/linux | [831462f](https://github.com/torvalds/linux/commit/831462ff3ec61fd2e6726b534a351a1a722bf2ab) | Merge tag 'leds-next-6.17' of git://git.kernel.org/pub/scm/linux/kernel/git/lee/leds | 2025-07-31 |
+| torvalds/linux | [c93529a](https://github.com/torvalds/linux/commit/c93529ad4fa8d8d8cb21649e70a46991a1dda0f8) | Merge tag 'for-linus-iommufd' of git://git.kernel.org/pub/scm/linux/kernel/git/jgg/iommufd | 2025-07-31 |
+| torvalds/linux | [2c8c9aa](https://github.com/torvalds/linux/commit/2c8c9aae4492f813b9b9ae95f0931945a693100e) | Merge tag 'scsi-misc' of git://git.kernel.org/pub/scm/linux/kernel/git/jejb/scsi | 2025-07-31 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| wazuh/wazuh | [#31187](https://github.com/wazuh/wazuh/pull/31187) | Fix authd.pass ACL permissions to match client.keys security level | 2025-08-01 |
-| wazuh/wazuh | [#31163](https://github.com/wazuh/wazuh/pull/31163) | Add support for Inspector v2. | 2025-08-01 |
+| openssl/openssl | [#28059](https://github.com/openssl/openssl/pull/28059) | Add array memory allocation routines | 2025-08-01 |
 
