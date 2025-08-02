@@ -1,6 +1,6 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-02 21:13:36 UTC*
+*Last updated: 2025-08-02 22:14:26 UTC*
 
 ## Summary
 | Type | Count |
@@ -13,6 +13,6 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [eacf91b](https://github.com/torvalds/linux/commit/eacf91b0c78a7113844830ed65ebf543eb9052c5) | Merge tag 'fbdev-for-6.17-rc1' of git://git.kernel.org/pub/scm/linux/kernel/git/deller/linux-fbdev | 2025-08-02 |
-| chromium/chromium | [a1f090c](https://github.com/chromium/chromium/commit/a1f090cfa63df356946367734ffed310be11bf98) | Notify GeolocationSystemPermissionManager observers before destruction | 2025-08-01 |
+| torvalds/linux | [a6923c0](https://github.com/torvalds/linux/commit/a6923c06a3b2e2c534ae28c53a7531e76cc95cfa) | Merge tag 'bpf-fixes' of git://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf | 2025-08-02 |
+| postgres/postgres | [3b3fa94](https://github.com/postgres/postgres/commit/3b3fa949009393541e552b8ae42cc2b03be25549) | Fix use-after-free with INSERT ON CONFLICT changes in reorderbuffer.c | 2025-08-02 |
 
