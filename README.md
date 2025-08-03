@@ -1,12 +1,11 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-03 04:43:22 UTC*
+*Last updated: 2025-08-03 05:22:30 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
 | COMMIT | 1 |
-| PR | 1 |
 
 ---
 
@@ -14,11 +13,5 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| postgres/postgres | [3b3fa94](https://github.com/postgres/postgres/commit/3b3fa949009393541e552b8ae42cc2b03be25549) | Fix use-after-free with INSERT ON CONFLICT changes in reorderbuffer.c | 2025-08-02 |
-
-## Pull Requests
-
-| Source | Title | Severity | Date |
-|--------|-------|----------|------|
-| openssl/openssl | [#27920](https://github.com/openssl/openssl/pull/27920) | fuzz/cmp.c: Correct the usages of BIO_new() | 2025-08-03 |
+| torvalds/linux | [eacf91b](https://github.com/torvalds/linux/commit/eacf91b0c78a7113844830ed65ebf543eb9052c5) | Merge tag 'fbdev-for-6.17-rc1' of git://git.kernel.org/pub/scm/linux/kernel/git/deller/linux-fbdev | 2025-08-02 |
 
