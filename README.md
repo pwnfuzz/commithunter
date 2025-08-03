@@ -1,17 +1,17 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-03 08:19:02 UTC*
+*Last updated: 2025-08-03 09:15:14 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| PR | 1 |
+| COMMIT | 1 |
 
 ---
 
-## Pull Requests
+## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| openssl/openssl | [#27920](https://github.com/openssl/openssl/pull/27920) | fuzz/cmp.c: Correct the usages of BIO_new() | 2025-08-03 |
+| torvalds/linux | [eacf91b](https://github.com/torvalds/linux/commit/eacf91b0c78a7113844830ed65ebf543eb9052c5) | Merge tag 'fbdev-for-6.17-rc1' of git://git.kernel.org/pub/scm/linux/kernel/git/deller/linux-fbdev | 2025-08-02 |
 
