@@ -1,6 +1,6 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-04 03:51:50 UTC*
+*Last updated: 2025-08-04 05:33:20 UTC*
 
 ## Summary
 | Type | Count |
@@ -13,5 +13,5 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| chromium/chromium | [541ac71](https://github.com/chromium/chromium/commit/541ac7163f78ec14b1e0afc52145d70f2b44b783) | [PA] Purge Scheduler-Loop Quarantine on UI Thread Task Completion | 2025-08-04 |
+| chromium/chromium | [f171c1c](https://github.com/chromium/chromium/commit/f171c1c9c3c54abc01d22c316b88fa07fe5e96e9) | Cancel navigation on unexpected OnAcceptCHFrameReceived() | 2025-08-04 |
 
