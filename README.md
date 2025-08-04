@@ -1,17 +1,17 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-03 16:18:03 UTC*
+*Last updated: 2025-08-04 03:51:50 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| PR | 1 |
+| COMMIT | 1 |
 
 ---
 
-## Pull Requests
+## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| openssl/openssl | [#27920](https://github.com/openssl/openssl/pull/27920) | fuzz/cmp.c: Correct the usages of BIO_new() | 2025-08-03 |
+| chromium/chromium | [541ac71](https://github.com/chromium/chromium/commit/541ac7163f78ec14b1e0afc52145d70f2b44b783) | [PA] Purge Scheduler-Loop Quarantine on UI Thread Task Completion | 2025-08-04 |
 
