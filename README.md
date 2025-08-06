@@ -1,12 +1,12 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-06 14:19:28 UTC*
+*Last updated: 2025-08-06 15:18:19 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
 | ADVISORY | 10 |
-| COMMIT | 1 |
+| PR | 2 |
 
 ---
 
@@ -14,20 +14,21 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-mrwc-mvr8-9xq5](https://github.com/advisories/GHSA-mrwc-mvr8-9xq5): ThinkPHP Path Traversal Vulnerability (COMPOSER/topthink/framework) | CRITICAL (CVSS: 0.0) | 2025-08-05 |
-| GHSA | [GHSA-GHSA-f6rc-24x4-ppxp](https://github.com/advisories/GHSA-f6rc-24x4-ppxp): RISC Zero Underconstrained Vulnerability: Division (RUST/risc0-circuit-rv32im-sys, RUST/risc0-circuit-rv32im, RUST/risc0-zkvm) | LOW (CVSS: 0.0) | 2025-08-05 |
-| GHSA | [GHSA-GHSA-3j6h-5v68-hvqg](https://github.com/advisories/GHSA-3j6h-5v68-hvqg): Liferay Portal CAPTCHA Bypass for Gogo Shell (MAVEN/com.liferay:com.liferay.captcha.impl) | MODERATE (CVSS: 0.0) | 2025-08-05 |
-| GHSA | [GHSA-GHSA-m9x4-w7p9-mxhx](https://github.com/advisories/GHSA-m9x4-w7p9-mxhx): XWiki allows Reflected XSS in two templates (MAVEN/org.xwiki.platform:xwiki-platform-web-templates, MAVEN/org.xwiki.platform:xwiki-platform-web-templates, MAVEN/org.xwiki.platform:xwiki-platform-web-templates) | MODERATE (CVSS: 0.0) | 2025-08-05 |
-| GHSA | [GHSA-GHSA-jxhh-4648-vpp3](https://github.com/advisories/GHSA-jxhh-4648-vpp3): FPDI allows Memory Exhaustion (OOM) in PDF Parser which leads to Denial of Service (COMPOSER/setasign/fpdi) | MODERATE (CVSS: 0.0) | 2025-08-05 |
-| GHSA | [GHSA-GHSA-qx2q-88mx-vhg7](https://github.com/advisories/GHSA-qx2q-88mx-vhg7): Fiber Crashes in BodyParser Due to Unvalidated Large Slice Index in Decoder (GO/github.com/gofiber/fiber/v2) | HIGH (CVSS: 0.0) | 2025-08-05 |
-| GHSA | [GHSA-GHSA-fm3m-jrgm-5ppg](https://github.com/advisories/GHSA-fm3m-jrgm-5ppg): RatPanel can perform remote command execution without authorization (GO/github.com/tnborg/panel, GO/github.com/tnborg/panel) | HIGH (CVSS: 0.0) | 2025-08-04 |
-| GHSA | [GHSA-GHSA-65fc-cr5f-v7r2](https://github.com/advisories/GHSA-65fc-cr5f-v7r2): js-toml Prototype Pollution Vulnerability (NPM/js-toml) | HIGH (CVSS: 0.0) | 2025-08-04 |
-| GHSA | [GHSA-GHSA-48rp-jc79-2264](https://github.com/advisories/GHSA-48rp-jc79-2264): pyLoad CNL Blueprint allows Path Traversal through `dlc_path` which leads to Remote Code Execution (RCE) (PIP/pyload-ng) | CRITICAL (CVSS: 9.8) | 2025-08-04 |
-| GHSA | [GHSA-GHSA-frg3-gpcx-968f](https://github.com/advisories/GHSA-frg3-gpcx-968f): SwiftNIO SSL arbitrary code execution vulnerability (SWIFT/github.com/apple/swift-nio-ssl) | CRITICAL (CVSS: 9.8) | 2022-05-24 |
+| GHSA | [GHSA-GHSA-57q2-6cp4-9mq3](https://github.com/advisories/GHSA-57q2-6cp4-9mq3): XWiki exposes passwords and emails stored in fields not named password/email in xml.vm (MAVEN/org.xwiki.platform:xwiki-platform-legacy-oldcore, MAVEN/org.xwiki.platform:xwiki-platform-legacy-oldcore, MAVEN/org.xwiki.platform:xwiki-platform-legacy-oldcore) | HIGH (CVSS: 0.0) | 2025-08-05 |
+| GHSA | [GHSA-GHSA-r38m-cgpg-qj69](https://github.com/advisories/GHSA-r38m-cgpg-qj69): XWiki leaks password hashes and other accessible password properties (MAVEN/org.xwiki.platform:xwiki-platform-legacy-oldcore, MAVEN/org.xwiki.platform:xwiki-platform-legacy-oldcore, MAVEN/org.xwiki.platform:xwiki-platform-legacy-oldcore) | HIGH (CVSS: 0.0) | 2025-08-05 |
+| GHSA | [GHSA-GHSA-h5rc-j5f5-3gcm](https://github.com/advisories/GHSA-h5rc-j5f5-3gcm): russh is missing overflow checks during channel windows adjust (RUST/russh) | MODERATE (CVSS: 6.5) | 2025-08-04 |
+| GHSA | [GHSA-GHSA-x56v-x2h6-7j34](https://github.com/advisories/GHSA-x56v-x2h6-7j34): Claude Code echo command allowed bypass of user approval prompt for command execution (NPM/@anthropic-ai/claude-code) | HIGH (CVSS: 0.0) | 2025-08-04 |
+| GHSA | [GHSA-GHSA-pmw4-pwvc-3hx2](https://github.com/advisories/GHSA-pmw4-pwvc-3hx2): Claude Code Research Preview has a Path Restriction Bypass which could allow unauthorized file access (NPM/@anthropic-ai/claude-code) | HIGH (CVSS: 0.0) | 2025-08-04 |
+| GHSA | [GHSA-GHSA-mm3p-j368-7jcr](https://github.com/advisories/GHSA-mm3p-j368-7jcr): IPX Allows Path Traversal via Prefix Matching Bypass (NPM/ipx, NPM/ipx, NPM/ipx) | MODERATE (CVSS: 0.0) | 2025-08-04 |
+| GHSA | [GHSA-GHSA-vf2r-cxg9-p7rf](https://github.com/advisories/GHSA-vf2r-cxg9-p7rf): The ADOdb sqlite3 driver allows SQL injection (COMPOSER/adodb/adodb-php) | CRITICAL (CVSS: 10.0) | 2025-08-04 |
+| GHSA | [GHSA-GHSA-mqcp-p2hv-vw6x](https://github.com/advisories/GHSA-mqcp-p2hv-vw6x): Thor can construct an unsafe shell command from library input. (RUBYGEMS/thor) | HIGH (CVSS: 7.9) | 2025-07-20 |
+| GHSA | [GHSA-GHSA-969w-gqqr-g6j3](https://github.com/advisories/GHSA-969w-gqqr-g6j3): MLflow Cross-Site Request Forgery (CSRF) vulnerability (PIP/mlflow) | MODERATE (CVSS: 5.4) | 2025-03-20 |
+| GHSA | [GHSA-GHSA-w8qp-hmh5-4v9v](https://github.com/advisories/GHSA-w8qp-hmh5-4v9v): Object state limitation has no effect (COMPOSER/ezsystems/ezplatform-kernel) | CRITICAL (CVSS: 0.0) | 2022-04-29 |
 
-## Code Commits
+## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| chromium/chromium | [525c2ec](https://github.com/chromium/chromium/commit/525c2ec42e6288dc4720f1aa72512eabaa827308) | java_cpp_enum: Support IS_POSIX and fix a bug on empty line handling | 2025-08-06 |
+| openssl/openssl | [#28059](https://github.com/openssl/openssl/pull/28059) | Add array memory allocation routines | 2025-08-06 |
+| openssl/openssl | [#28184](https://github.com/openssl/openssl/pull/28184) | Fix integer overflow in date_to_julian() call | 2025-08-06 |
 
