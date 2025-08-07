@@ -1,13 +1,13 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-07 15:18:10 UTC*
+*Last updated: 2025-08-07 16:20:19 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 8 |
+| ADVISORY | 15 |
 | COMMIT | 1 |
-| PR | 5 |
+| PR | 3 |
 
 ---
 
@@ -15,28 +15,33 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-8q6v-474h-whgg](https://github.com/advisories/GHSA-8q6v-474h-whgg): The Thinbus Javascript Secure Remote Password (SRP) Client Generates Fewer Bits of Entropy Than Intended (NPM/thinbus-srp) | MODERATE (CVSS: 0.0) | 2025-08-06 |
-| GHSA | [GHSA-GHSA-q82r-2j7m-9rv4](https://github.com/advisories/GHSA-q82r-2j7m-9rv4): github.com/go-acme/lego/v4/acme/api does not enforce HTTPS (GO/github.com/go-acme/lego/v4, GO/github.com/go-acme/lego/v3, GO/github.com/go-acme/lego) | LOW (CVSS: 0.0) | 2025-08-06 |
-| GHSA | [GHSA-GHSA-52f5-9888-hmc6](https://github.com/advisories/GHSA-52f5-9888-hmc6): tmp allows arbitrary temporary file / directory write via symbolic link `dir` parameter (NPM/tmp) | LOW (CVSS: 2.5) | 2025-08-06 |
-| GHSA | [GHSA-GHSA-qj5r-2r5p-phc7](https://github.com/advisories/GHSA-qj5r-2r5p-phc7): Keycloak-services SMTP Inject Vulnerability (MAVEN/org.keycloak:keycloak-services) | MODERATE (CVSS: 6.5) | 2025-08-06 |
-| GHSA | [GHSA-GHSA-6v92-r5mx-h5fx](https://github.com/advisories/GHSA-6v92-r5mx-h5fx): smolagents has Sandbox Escape Vulnerability in the local_python_executor.py Module (PIP/smolagents) | CRITICAL (CVSS: 9.9) | 2025-07-27 |
-| GHSA | [GHSA-GHSA-9342-92gg-6v29](https://github.com/advisories/GHSA-9342-92gg-6v29): Jakarta Mail vulnerable to SMTP Injection (MAVEN/org.eclipse.angus:smtp) | MODERATE (CVSS: 7.5) | 2025-07-21 |
-| GHSA | [GHSA-GHSA-37mw-44qp-f5jm](https://github.com/advisories/GHSA-37mw-44qp-f5jm): Transformers is vulnerable to ReDoS attack through its DonutProcessor class (PIP/transformers) | MODERATE (CVSS: 5.3) | 2025-07-11 |
-| GHSA | [GHSA-GHSA-r3w7-mfpm-c2vw](https://github.com/advisories/GHSA-r3w7-mfpm-c2vw): Incorrect TLS certificate auth method in Vault (GO/github.com/hashicorp/vault, GO/github.com/hashicorp/vault) | HIGH (CVSS: 8.1) | 2024-03-04 |
+| GHSA | [GHSA-GHSA-vh9x-phq6-fx54](https://github.com/advisories/GHSA-vh9x-phq6-fx54): Duplicate Advisory: Denial of service via malicious preflight requests in github.com/rs/cors (GO/github.com/rs/cors) | LOW (CVSS: 0.0) | 2025-08-06 |
+| GHSA | [GHSA-GHSA-9356-575x-2w9m](https://github.com/advisories/GHSA-9356-575x-2w9m): Hugging Face Transformers Regular Expression Denial of Service (ReDoS) vulnerability (PIP/transformers) | MODERATE (CVSS: 5.3) | 2025-08-06 |
+| GHSA | [GHSA-GHSA-7rx2-769v-hrwf](https://github.com/advisories/GHSA-7rx2-769v-hrwf): HashiCorp Vault ldap auth method may not have correctly enforced MFA (GO/github.com/hashicorp/vault) | MODERATE (CVSS: 6.5) | 2025-08-06 |
+| GHSA | [GHSA-GHSA-522r-9946-fw43](https://github.com/advisories/GHSA-522r-9946-fw43): Duplicate Advisory: CIRCL-Fourq: Missing and wrong validation can lead to incorrect results (GO/github.com/cloudflare/circl) | LOW (CVSS: 3.7) | 2025-08-06 |
+| GHSA | [GHSA-GHSA-27gv-mg7w-mm34](https://github.com/advisories/GHSA-27gv-mg7w-mm34): Shopware race condition bypasses voucher restrictions (COMPOSER/shopware/platform) | MODERATE (CVSS: 0.0) | 2025-08-06 |
+| GHSA | [GHSA-GHSA-c5xf-rmv4-j85h](https://github.com/advisories/GHSA-c5xf-rmv4-j85h): Concrete CMS is vulnerable to Stored XSS from Home Folder on Members Dashboard page (COMPOSER/concrete5/concrete5) | LOW (CVSS: 0.0) | 2025-08-06 |
+| GHSA | [GHSA-GHSA-4pcg-pjp5-3mc6](https://github.com/advisories/GHSA-4pcg-pjp5-3mc6): Concrete CMS vulnerable to Reflected Cross-Site Scripting (XSS) in Conversation Messages Dashboard Page (COMPOSER/concrete5/concrete5, COMPOSER/concrete5/concrete5) | MODERATE (CVSS: 0.0) | 2025-08-06 |
+| GHSA | [GHSA-GHSA-hj2p-8wj8-pfq4](https://github.com/advisories/GHSA-hj2p-8wj8-pfq4): kubernetes allows nodes to bypass dynamic resource allocation authorization checks (GO/k8s.io/kubernetes, GO/k8s.io/kubernetes) | LOW (CVSS: 2.7) | 2025-06-23 |
+| GHSA | [GHSA-GHSA-2x5j-vhc8-9cwm](https://github.com/advisories/GHSA-2x5j-vhc8-9cwm): CIRCL-Fourq: Missing and wrong validation can lead to incorrect results (GO/github.com/cloudflare/circl) | LOW (CVSS: 3.7) | 2025-06-10 |
+| GHSA | [GHSA-GHSA-hw58-3793-42gg](https://github.com/advisories/GHSA-hw58-3793-42gg): Keycloak hostname verification (MAVEN/org.keycloak:keycloak-services) | HIGH (CVSS: 8.2) | 2025-04-30 |
+| GHSA | [GHSA-GHSA-hx7h-9vf7-5xhg](https://github.com/advisories/GHSA-hx7h-9vf7-5xhg): Uptime Kuma's Regular Expression in pushdeeer and whapi file Leads to ReDoS Vulnerability Due to Catastrophic Backtracking (NPM/uptime-kuma, NPM/uptime-kuma) | MODERATE (CVSS: 0.0) | 2025-03-31 |
+| GHSA | [GHSA-GHSA-3rw8-4xrq-3f7p](https://github.com/advisories/GHSA-3rw8-4xrq-3f7p): Duplicate Advisory: Uptime Kuma ReDoS vulnerability (NPM/uptime-kuma) | MODERATE (CVSS: 6.0) | 2025-03-17 |
+| GHSA | [GHSA-GHSA-4r7v-whpg-8rx3](https://github.com/advisories/GHSA-4r7v-whpg-8rx3): changedetection.io has a Server Side Template Injection using Jinja2 which allows Remote Command Execution (PIP/changedetection.io) | CRITICAL (CVSS: 10.0) | 2024-10-15 |
+| GHSA | [GHSA-GHSA-mh55-gqvf-xfwm](https://github.com/advisories/GHSA-mh55-gqvf-xfwm): Denial of service via malicious preflight requests in github.com/rs/cors (GO/github.com/rs/cors) | MODERATE (CVSS: 0.0) | 2024-07-05 |
+| GHSA | [GHSA-GHSA-94g7-hpv8-h9qm](https://github.com/advisories/GHSA-94g7-hpv8-h9qm): Remote code injection in Log4j (MAVEN/com.splunk.logging:splunk-library-javalogging, MAVEN/com.splunk.logging:splunk-library-javalogging) | CRITICAL (CVSS: 0.0) | 2021-12-14 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [e8214ed](https://github.com/torvalds/linux/commit/e8214ed59b75fa794126686370a5e47cb7da5b12) | Merge tag 'vfio-v6.17-rc1-v2' of https://github.com/awilliam/linux-vfio | 2025-08-07 |
+| chromium/chromium | [d0e34ba](https://github.com/chromium/chromium/commit/d0e34ba0bb8d497ee034e9baabe83432aec61915) | [components] Fix null pointer dereference in NoStatePrefetch | 2025-08-07 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| openssl/openssl | [#28059](https://github.com/openssl/openssl/pull/28059) | Add array memory allocation routines | 2025-08-07 |
-| openssl/openssl | [#28184](https://github.com/openssl/openssl/pull/28184) | Fix integer overflow in date_to_julian() call | 2025-08-07 |
-| erlang/otp | [#9967](https://github.com/erlang/otp/pull/9967) | chore(deps): update dependency microsoft/stl to v17.14 (maint-28) | 2025-08-07 |
-| erlang/otp | [#9918](https://github.com/erlang/otp/pull/9918) | chore(deps): update dependency microsoft/stl to v17.14 (master) | 2025-08-07 |
-| erlang/otp | [#9946](https://github.com/erlang/otp/pull/9946) | chore(deps): update dependency microsoft/stl to v17.14 (maint) | 2025-08-07 |
+| wazuh/wazuh | [#28959](https://github.com/wazuh/wazuh/pull/28959) | Added Defender ASR event rules | 2025-08-07 |
+| wazuh/wazuh | [#31163](https://github.com/wazuh/wazuh/pull/31163) | Add support for Inspector v2. | 2025-08-07 |
+| langflow-ai/langflow | [#9316](https://github.com/langflow-ai/langflow/pull/9316) | build(deps): bump tmp from 0.2.3 to 0.2.4 in /src/frontend | 2025-08-06 |
 
