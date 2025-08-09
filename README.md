@@ -1,11 +1,11 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-09 20:15:43 UTC*
+*Last updated: 2025-08-09 21:13:17 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 3 |
+| ADVISORY | 2 |
 | COMMIT | 1 |
 
 ---
@@ -14,13 +14,12 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-3mfq-fp2f-vwqh](https://github.com/advisories/GHSA-3mfq-fp2f-vwqh): Liferay Portal and Liferay DXP Workflow Component Does Not Check User Permissions (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom) | CRITICAL (CVSS: 9.1) | 2024-10-22 |
-| GHSA | [GHSA-GHSA-j663-6jpj-xx8c](https://github.com/advisories/GHSA-j663-6jpj-xx8c): Liferay Portal and Liferay DXP Vulnerable to XSS in the Fragment Components (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay:com.liferay.fragment.entry.processor.impl) | CRITICAL (CVSS: 9.1) | 2023-10-17 |
-| GHSA | [GHSA-GHSA-g44j-f8wm-6622](https://github.com/advisories/GHSA-g44j-f8wm-6622): Liferay Portal and Liferay DXP Vulnerable to Stored XSS in the Manage Vocabulary Page (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay:com.liferay.asset.categories.admin.web) | CRITICAL (CVSS: 9.1) | 2023-10-17 |
+| GHSA | [GHSA-GHSA-8qf3-x8v5-2pj8](https://github.com/advisories/GHSA-8qf3-x8v5-2pj8): uv allows ZIP payload obfuscation through parsing differentials (PIP/uv) | MODERATE (CVSS: 0.0) | 2025-08-07 |
+| GHSA | [GHSA-GHSA-w2g3-j73q-7qv7](https://github.com/advisories/GHSA-w2g3-j73q-7qv7): Liferay Portal and Liferay DXP Vulnerable to Reflected XSS via the Export for Translation Page (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay:com.liferay.translation.web) | CRITICAL (CVSS: 9.7) | 2023-10-17 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [2988dfe](https://github.com/torvalds/linux/commit/2988dfed8a5dc752921a5790b81c06e781af51ce) | Merge tag 'block-6.17-20250808' of git://git.kernel.dk/linux | 2025-08-09 |
+| chromium/chromium | [81af41c](https://github.com/chromium/chromium/commit/81af41c710b29c8b202376b49e0dadc8615b527b) | [ntp][composebox] Fix crash bug | 2025-08-09 |
 
