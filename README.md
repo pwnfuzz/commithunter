@@ -1,17 +1,24 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-09 22:14:05 UTC*
+*Last updated: 2025-08-09 23:14:22 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
+| ADVISORY | 1 |
 | COMMIT | 1 |
 
 ---
+
+## Security Advisories
+
+| Source | Title | Severity | Date |
+|--------|-------|----------|------|
+| GHSA | [GHSA-GHSA-8qf3-x8v5-2pj8](https://github.com/advisories/GHSA-8qf3-x8v5-2pj8): uv allows ZIP payload obfuscation through parsing differentials (PIP/uv) | MODERATE (CVSS: 0.0) | 2025-08-07 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [2988dfe](https://github.com/torvalds/linux/commit/2988dfed8a5dc752921a5790b81c06e781af51ce) | Merge tag 'block-6.17-20250808' of git://git.kernel.dk/linux | 2025-08-09 |
+| chromium/chromium | [81af41c](https://github.com/chromium/chromium/commit/81af41c710b29c8b202376b49e0dadc8615b527b) | [ntp][composebox] Fix crash bug | 2025-08-09 |
 
