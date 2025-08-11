@@ -1,17 +1,17 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-10 23:14:21 UTC*
+*Last updated: 2025-08-11 01:19:15 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| PR | 1 |
+| COMMIT | 1 |
 
 ---
 
-## Pull Requests
+## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| openssl/openssl | [#28184](https://github.com/openssl/openssl/pull/28184) | Fix integer overflow in date_to_julian() call | 2025-08-10 |
+| torvalds/linux | [7d2fed1](https://github.com/torvalds/linux/commit/7d2fed1f3ce46f7b161e33626b2cffedfa21767f) | Merge tag 'irq_urgent_for_v6.17_rc1' of git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip | 2025-08-10 |
 
