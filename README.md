@@ -1,20 +1,17 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-11 05:23:37 UTC*
+*Last updated: 2025-08-11 08:23:04 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| PR | 4 |
+| COMMIT | 1 |
 
 ---
 
-## Pull Requests
+## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| erlang/otp | [#9960](https://github.com/erlang/otp/pull/9960) | chore(deps): update github-actions (maint-26) | 2025-08-11 |
-| erlang/otp | [#9956](https://github.com/erlang/otp/pull/9956) | chore(deps): update github-actions (maint-28) | 2025-08-11 |
-| erlang/otp | [#9958](https://github.com/erlang/otp/pull/9958) | chore(deps): update github-actions (maint-27) | 2025-08-11 |
-| openssl/openssl | [#28184](https://github.com/openssl/openssl/pull/28184) | Fix integer overflow in date_to_julian() call | 2025-08-10 |
+| postgres/postgres | [2242495](https://github.com/postgres/postgres/commit/22424953cded3f83f0382383773eaf36eb1abda9) | Fix security checks in selectivity estimation functions. | 2025-08-11 |
 
