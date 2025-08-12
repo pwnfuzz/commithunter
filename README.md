@@ -1,12 +1,12 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-12 13:30:33 UTC*
+*Last updated: 2025-08-12 14:15:14 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 18 |
-| PR | 4 |
+| ADVISORY | 21 |
+| PR | 1 |
 
 ---
 
@@ -14,31 +14,31 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-qx2v-8332-m4fv](https://github.com/advisories/GHSA-qx2v-8332-m4fv): slab allows out-of-bounds access in `get_disjoint_mut` due to incorrect bounds check (RUST/slab) | MODERATE (CVSS: 0.0) | 2025-08-11 |
-| GHSA | [GHSA-GHSA-6ff3-jgxh-vffj](https://github.com/advisories/GHSA-6ff3-jgxh-vffj): Mattermost Confluence Plugin is Missing Authentication for Critical Function (GO/github.com/mattermost/mattermost-plugin-confluence) | HIGH (CVSS: 7.2) | 2025-08-11 |
-| GHSA | [GHSA-GHSA-pwq7-2gvj-vg9v](https://github.com/advisories/GHSA-pwq7-2gvj-vg9v): Keras safe mode bypass vulnerability (PIP/keras) | HIGH (CVSS: 0.0) | 2025-08-11 |
-| GHSA | [GHSA-GHSA-674p-xv2x-rf3g](https://github.com/advisories/GHSA-674p-xv2x-rf3g): Litestar has potential log injection in exception logging (PIP/litestar) | LOW (CVSS: 3.7) | 2025-08-11 |
-| GHSA | [GHSA-GHSA-cmpr-8prq-w5p5](https://github.com/advisories/GHSA-cmpr-8prq-w5p5): Mattermost Confluence Plugin has Missing Authorization vulnerability (GO/github.com/mattermost/mattermost-plugin-confluence) | MODERATE (CVSS: 6.4) | 2025-08-11 |
-| GHSA | [GHSA-GHSA-rfg4-2m63-fw2q](https://github.com/advisories/GHSA-rfg4-2m63-fw2q): Mattermost Confluence Plugin has Missing Authorization vulnerability (GO/github.com/mattermost/mattermost-plugin-confluence) | LOW (CVSS: 3.7) | 2025-08-11 |
-| GHSA | [GHSA-GHSA-vpcr-fqpc-386h](https://github.com/advisories/GHSA-vpcr-fqpc-386h): Mattermost Confluence Plugin has Missing Authorization vulnerability (GO/github.com/mattermost/mattermost-plugin-confluence) | MODERATE (CVSS: 4.0) | 2025-08-11 |
-| GHSA | [GHSA-GHSA-xwmg-2g98-w7v9](https://github.com/advisories/GHSA-xwmg-2g98-w7v9): Nimbus JOSE + JWT is vulnerable to DoS attacks when processing deeply nested JSON (MAVEN/com.nimbusds:nimbus-jose-jwt, MAVEN/com.nimbusds:nimbus-jose-jwt) | MODERATE (CVSS: 5.8) | 2025-07-11 |
-| GHSA | [GHSA-GHSA-w5mx-334j-6fwv](https://github.com/advisories/GHSA-w5mx-334j-6fwv): Bagist Cross-site Scripting vulnerability (COMPOSER/bagisto/bagisto) | MODERATE (CVSS: 6.5) | 2024-03-01 |
-| GHSA | [GHSA-GHSA-v642-mh27-8j6m](https://github.com/advisories/GHSA-v642-mh27-8j6m): MantisBT may disclose project names to unauthorized users  (COMPOSER/mantisbt/mantisbt) | MODERATE (CVSS: 4.3) | 2023-10-17 |
-| GHSA | [GHSA-GHSA-29mw-wpgm-hmr9](https://github.com/advisories/GHSA-29mw-wpgm-hmr9): Regular Expression Denial of Service (ReDoS) in lodash (RUBYGEMS/lodash-rails, NPM/lodash.trim, NPM/lodash.trimend) | MODERATE (CVSS: 5.3) | 2022-01-06 |
-| GHSA | [GHSA-GHSA-35jh-r3h4-6jhm](https://github.com/advisories/GHSA-35jh-r3h4-6jhm): Command Injection in lodash (RUBYGEMS/lodash-rails, NPM/lodash-template, NPM/lodash.template) | HIGH (CVSS: 7.2) | 2021-05-06 |
-| GHSA | [GHSA-GHSA-p6mc-m468-83gw](https://github.com/advisories/GHSA-p6mc-m468-83gw): Prototype Pollution in lodash (RUBYGEMS/lodash-rails, NPM/lodash.updatewith, NPM/lodash.update) | HIGH (CVSS: 7.4) | 2020-07-15 |
-| GHSA | [GHSA-GHSA-x5rq-j2xg-h7qm](https://github.com/advisories/GHSA-x5rq-j2xg-h7qm): Regular Expression Denial of Service (ReDoS) in lodash (RUBYGEMS/lodash-rails, NPM/lodash-amd, NPM/lodash-es) | MODERATE (CVSS: 0.0) | 2019-07-19 |
-| GHSA | [GHSA-GHSA-jf85-cpcp-j695](https://github.com/advisories/GHSA-jf85-cpcp-j695): Prototype Pollution in lodash (RUBYGEMS/lodash-rails, NPM/lodash.defaultsdeep, NPM/lodash-amd) | CRITICAL (CVSS: 9.1) | 2019-07-10 |
-| GHSA | [GHSA-GHSA-4xc9-xhrj-v574](https://github.com/advisories/GHSA-4xc9-xhrj-v574): Prototype Pollution in lodash (RUBYGEMS/lodash-rails, NPM/lodash) | HIGH (CVSS: 0.0) | 2019-02-07 |
-| GHSA | [GHSA-GHSA-4q53-fqhc-cr46](https://github.com/advisories/GHSA-4q53-fqhc-cr46): ember-source Cross-site Scripting vulnerability (RUBYGEMS/ember-source, RUBYGEMS/ember-source, RUBYGEMS/ember-source) | LOW (CVSS: 0.0) | 2018-08-28 |
-| GHSA | [GHSA-GHSA-fvqr-27wr-82fm](https://github.com/advisories/GHSA-fvqr-27wr-82fm): Prototype Pollution in lodash (RUBYGEMS/lodash-rails, NPM/lodash) | MODERATE (CVSS: 6.5) | 2018-07-26 |
+| GHSA | [GHSA-GHSA-pwh4-6r3m-j2rf](https://github.com/advisories/GHSA-pwh4-6r3m-j2rf): PyLoad vulnerable to SQL Injection via API /json/add_package in add_links parameter (PIP/pyload-ng) | HIGH (CVSS: 0.0) | 2025-08-12 |
+| GHSA | [GHSA-GHSA-r3v7-pc4g-7xp9](https://github.com/advisories/GHSA-r3v7-pc4g-7xp9): Oak Server has ReDoS in x-forwarded-proto and x-forwarded-for headers (NPM/@oakserver/oak) | MODERATE (CVSS: 5.3) | 2025-08-12 |
+| GHSA | [GHSA-GHSA-9gvj-pp9x-gcfr](https://github.com/advisories/GHSA-9gvj-pp9x-gcfr): Picklescan has pickle parsing logic flaw that leads to malicious pickle file bypass (PIP/picklescan) | HIGH (CVSS: 0.0) | 2025-08-12 |
+| GHSA | [GHSA-GHSA-jhmr-57cj-q6g9](https://github.com/advisories/GHSA-jhmr-57cj-q6g9): Komari vulnerable to 2FA Authentication Bypass (GO/github.com/komari-monitor/komari) | HIGH (CVSS: 0.0) | 2025-08-12 |
+| GHSA | [GHSA-GHSA-q355-h244-969h](https://github.com/advisories/GHSA-q355-h244-969h): Komari vulnerable to Cross-site WebSocket Hijacking (GO/github.com/komari-monitor/komari) | HIGH (CVSS: 0.0) | 2025-08-12 |
+| GHSA | [GHSA-GHSA-xcxh-6cv4-q8p8](https://github.com/advisories/GHSA-xcxh-6cv4-q8p8): HFS user adding a "web link" in HFS is vulnerable to "target=_blank" exploit (NPM/hfs) | LOW (CVSS: 0.0) | 2025-08-12 |
+| GHSA | [GHSA-GHSA-qpjq-c5hr-7925](https://github.com/advisories/GHSA-qpjq-c5hr-7925): Mattermost Confluence Plugin is Missing Authentication for Critical Function (GO/github.com/mattermost/mattermost-plugin-confluence) | HIGH (CVSS: 7.2) | 2025-08-11 |
+| GHSA | [GHSA-GHSA-3cg3-3mmr-w8hj](https://github.com/advisories/GHSA-3cg3-3mmr-w8hj): Mattermost Confluence Plugin has Improper Validation of Specified Type of Input (GO/github.com/mattermost/mattermost-plugin-confluence) | HIGH (CVSS: 7.5) | 2025-08-11 |
+| GHSA | [GHSA-GHSA-gjpm-6w34-ppvf](https://github.com/advisories/GHSA-gjpm-6w34-ppvf): Mattermost Confluence Plugin has Improper Check for Unusual or Exceptional Conditions (GO/github.com/mattermost/mattermost-plugin-confluence) | MODERATE (CVSS: 5.9) | 2025-08-11 |
+| GHSA | [GHSA-GHSA-j66h-xhpr-7q5g](https://github.com/advisories/GHSA-j66h-xhpr-7q5g): Mattermost Confluence Plugin has Missing Authorization vulnerability (GO/github.com/mattermost/mattermost-plugin-confluence) | MODERATE (CVSS: 5.0) | 2025-08-11 |
+| GHSA | [GHSA-GHSA-v6c8-g53h-mc2h](https://github.com/advisories/GHSA-v6c8-g53h-mc2h): Mattermost Confluence Plugin has Missing Authorization vulnerability (GO/github.com/mattermost/mattermost-plugin-confluence) | MODERATE (CVSS: 4.0) | 2025-08-11 |
+| GHSA | [GHSA-GHSA-42m6-5vm7-fjv2](https://github.com/advisories/GHSA-42m6-5vm7-fjv2): Mattermost Confluence Plugin has Missing Authorization vulnerability (GO/github.com/mattermost/mattermost-plugin-confluence) | LOW (CVSS: 3.7) | 2025-08-11 |
+| GHSA | [GHSA-GHSA-w92j-c6gr-hj8r](https://github.com/advisories/GHSA-w92j-c6gr-hj8r): Mattermost Confluence Plugin has Improper Check for Unusual or Exceptional Conditions (GO/github.com/mattermost/mattermost-plugin-confluence) | MODERATE (CVSS: 5.9) | 2025-08-11 |
+| GHSA | [GHSA-GHSA-vc77-c2hx-h5x2](https://github.com/advisories/GHSA-vc77-c2hx-h5x2): Mattermost Confluence Plugin has Improper Check for Unusual or Exceptional Conditions (GO/github.com/mattermost/mattermost-plugin-confluence) | HIGH (CVSS: 7.5) | 2025-08-11 |
+| GHSA | [GHSA-GHSA-qjrx-j8wm-xf83](https://github.com/advisories/GHSA-qjrx-j8wm-xf83): Mattermost Confluence Plugin has Missing Authorization vulnerability (GO/github.com/mattermost/mattermost-plugin-confluence) | MODERATE (CVSS: 4.0) | 2025-08-11 |
+| GHSA | [GHSA-GHSA-c6g5-g6r7-q4j6](https://github.com/advisories/GHSA-c6g5-g6r7-q4j6): Liferay Portal and Liferay DXP vulnerable to Server-Side Request Forgery (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom) | MODERATE (CVSS: 0.0) | 2025-08-09 |
+| GHSA | [GHSA-GHSA-6v93-frf9-2rp8](https://github.com/advisories/GHSA-6v93-frf9-2rp8): Liferay Portal and Liferay DXP vulnerable to Server-Side Request Forgery (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom) | MODERATE (CVSS: 0.0) | 2025-08-09 |
+| GHSA | [GHSA-GHSA-75jv-vfxf-3865](https://github.com/advisories/GHSA-75jv-vfxf-3865): Assemblyline 4 service client vulnerable to Arbitrary Write through path traversal in Client code  (PIP/assemblyline-service-client, PIP/assemblyline-service-client) | MODERATE (CVSS: 4.2) | 2025-07-25 |
+| GHSA | [GHSA-GHSA-4j66-8f4r-3pjx](https://github.com/advisories/GHSA-4j66-8f4r-3pjx): Withdrawn Advisory: bun vulnerable to OS Command Injection (NPM/bun) | HIGH (CVSS: 8.8) | 2025-07-23 |
+| GHSA | [GHSA-GHSA-h4h6-vccr-44h2](https://github.com/advisories/GHSA-h4h6-vccr-44h2): uptrace pgdriver SQL injection vulnerability (GO/github.com/uptrace/bun/driver/pgdriver) | MODERATE (CVSS: 6.5) | 2025-06-12 |
+| GHSA | [GHSA-GHSA-m8p2-495h-ccmh](https://github.com/advisories/GHSA-m8p2-495h-ccmh): The SafeHtml annotation in Hibernate-Validator does not properly guard against XSS attacks (MAVEN/org.hibernate.validator:hibernate-validator, MAVEN/org.hibernate.validator:hibernate-validator) | MODERATE (CVSS: 6.5) | 2020-01-08 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| openssl/openssl | [#28184](https://github.com/openssl/openssl/pull/28184) | Fix integer overflow in date_to_julian() call | 2025-08-12 |
-| erlang/otp | [#9956](https://github.com/erlang/otp/pull/9956) | chore(deps): update github-actions (maint-28) | 2025-08-12 |
-| erlang/otp | [#9960](https://github.com/erlang/otp/pull/9960) | chore(deps): update github-actions (maint-26) | 2025-08-11 |
-| erlang/otp | [#9958](https://github.com/erlang/otp/pull/9958) | chore(deps): update github-actions (maint-27) | 2025-08-11 |
+| openssl/openssl | [#28221](https://github.com/openssl/openssl/pull/28221) | Add missing NULL check in i2r_HASH | 2025-08-12 |
 
