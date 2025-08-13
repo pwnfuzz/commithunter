@@ -1,13 +1,11 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-13 19:12:15 UTC*
+*Last updated: 2025-08-13 20:16:26 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 11 |
-| COMMIT | 1 |
-| PR | 3 |
+| ADVISORY | 12 |
 
 ---
 
@@ -15,29 +13,16 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-prj3-ccx8-p6x4](https://github.com/advisories/GHSA-prj3-ccx8-p6x4): Netty affected by MadeYouReset HTTP/2 DDoS vulnerability (MAVEN/io.netty:netty-codec-http2, MAVEN/io.netty:netty-codec-http2) | HIGH (CVSS: 0.0) | 2025-08-13 |
-| GHSA | [GHSA-GHSA-gpmg-4x4g-mr5r](https://github.com/advisories/GHSA-gpmg-4x4g-mr5r): OMERO.web displays unecessary user information when requesting password reset (PIP/omero-web) | MODERATE (CVSS: 5.3) | 2025-08-13 |
-| GHSA | [GHSA-GHSA-222w-xmc5-jhp3](https://github.com/advisories/GHSA-222w-xmc5-jhp3): Liferay Portal and Liferay DXP have a reflected cross-site scripting vulnerability (MAVEN/com.liferay.portal:com.liferay.portal.impl, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom) | MODERATE (CVSS: 0.0) | 2025-08-12 |
-| GHSA | [GHSA-GHSA-22wq-q86m-83fh](https://github.com/advisories/GHSA-22wq-q86m-83fh): svg-sanitizer Bypasses Attribute Sanitization (COMPOSER/enshrined/svg-sanitize) | MODERATE (CVSS: 0.0) | 2025-08-12 |
-| GHSA | [GHSA-GHSA-pwq7-2gvj-vg9v](https://github.com/advisories/GHSA-pwq7-2gvj-vg9v): Duplicate Advisory: Keras safe mode bypass vulnerability (PIP/keras) | HIGH (CVSS: 0.0) | 2025-08-11 |
-| GHSA | [GHSA-GHSA-mqcp-p2hv-vw6x](https://github.com/advisories/GHSA-mqcp-p2hv-vw6x): Withdrawn Advisory: Thor can construct an unsafe shell command from library input. (RUBYGEMS/thor) | HIGH (CVSS: 7.9) | 2025-07-20 |
-| GHSA | [GHSA-GHSA-prpj-rchp-9j5h](https://github.com/advisories/GHSA-prpj-rchp-9j5h): OpenBao allows cancellation of root rekey and recovery rekey operations without authentication (GO/github.com/openbao/openbao, GO/github.com/openbao/openbao) | MODERATE (CVSS: 0.0) | 2025-06-26 |
-| GHSA | [GHSA-GHSA-jg74-mwgw-v6x3](https://github.com/advisories/GHSA-jg74-mwgw-v6x3): Vault SSH Secrets Engine Configuration Did Not Restrict Valid Principals By Default (GO/github.com/openbao/openbao, GO/github.com/openbao/openbao, GO/github.com/hashicorp/vault) | HIGH (CVSS: 7.5) | 2024-09-26 |
-| GHSA | [GHSA-GHSA-6628-q6j9-w8vg](https://github.com/advisories/GHSA-6628-q6j9-w8vg): gRPC Reachable Assertion issue (RUBYGEMS/grpc, PIP/grpcio, MAVEN/io.grpc:grpc-protobuf) | HIGH (CVSS: 7.5) | 2023-07-06 |
-| GHSA | [GHSA-GHSA-9hxf-ppjv-w6rq](https://github.com/advisories/GHSA-9hxf-ppjv-w6rq): gRPC connection termination issue (RUBYGEMS/grpc, PIP/grpcio, MAVEN/io.grpc:grpc-protobuf) | MODERATE (CVSS: 5.3) | 2023-07-06 |
-| GHSA | [GHSA-GHSA-cfgp-2977-2fmm](https://github.com/advisories/GHSA-cfgp-2977-2fmm): Connection confusion in gRPC (MAVEN/io.grpc:grpc-protobuf, RUBYGEMS/grpc, PIP/grpcio) | HIGH (CVSS: 7.4) | 2023-07-05 |
-
-## Code Commits
-
-| Source | Title | Severity | Date |
-|--------|-------|----------|------|
-| chromium/chromium | [8c5f647](https://github.com/chromium/chromium/commit/8c5f6476e38fc50a936d4e5965d05320868f8020) | [bedrock] Ensure window placement is saved when Browser is Closed | 2025-08-13 |
-
-## Pull Requests
-
-| Source | Title | Severity | Date |
-|--------|-------|----------|------|
-| erlang/otp | [#10095](https://github.com/erlang/otp/pull/10095) | Fix for httpd CGI scripts | 2025-08-13 |
-| erlang/otp | [#9790](https://github.com/erlang/otp/pull/9790) | otp scan PRs for vulnerabilities | 2025-08-13 |
-| wazuh/wazuh | [#31254](https://github.com/wazuh/wazuh/pull/31254) | wazuh-remoted - Improve control message processing | 2025-08-13 |
+| GHSA | [GHSA-GHSA-7hfw-26vp-jp8m](https://github.com/advisories/GHSA-7hfw-26vp-jp8m): PyPDF's Manipulated FlateDecode streams can exhaust RAM (PIP/pypdf) | MODERATE (CVSS: 0.0) | 2025-08-13 |
+| GHSA | [GHSA-GHSA-fcxq-v2r3-cc8h](https://github.com/advisories/GHSA-fcxq-v2r3-cc8h): External Secrets Operator's Missing Namespace Restriction Allows Unauthorized Secret Access (GO/github.com/external-secrets/external-secrets) | HIGH (CVSS: 0.0) | 2025-08-13 |
+| GHSA | [GHSA-GHSA-m5c7-5gv3-hcpf](https://github.com/advisories/GHSA-m5c7-5gv3-hcpf): Liferay Portal 7.4.0 and Liferay DXP have a reflected cross-site scripting (XSS) vulnerability (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom) | MODERATE (CVSS: 0.0) | 2025-08-12 |
+| GHSA | [GHSA-GHSA-xcxh-6cv4-q8p8](https://github.com/advisories/GHSA-xcxh-6cv4-q8p8): HFS user adding a "web link" in HFS is vulnerable to "target=_blank" exploit (NPM/hfs) | LOW (CVSS: 0.0) | 2025-08-12 |
+| GHSA | [GHSA-GHSA-xcj6-4355-2823](https://github.com/advisories/GHSA-xcj6-4355-2823): Jenkins Mattermost Notification Plugin contains unencrypted storage of secret token (MAVEN/org.jenkins-ci.plugins:mattermost) | MODERATE (CVSS: 6.5) | 2022-05-24 |
+| GHSA | [GHSA-GHSA-29mw-wpgm-hmr9](https://github.com/advisories/GHSA-29mw-wpgm-hmr9): Regular Expression Denial of Service (ReDoS) in lodash (RUBYGEMS/lodash-rails, NPM/lodash.trim, NPM/lodash.trimend) | MODERATE (CVSS: 5.3) | 2022-01-06 |
+| GHSA | [GHSA-GHSA-35jh-r3h4-6jhm](https://github.com/advisories/GHSA-35jh-r3h4-6jhm): Command Injection in lodash (RUBYGEMS/lodash-rails, NPM/lodash-template, NPM/lodash.template) | HIGH (CVSS: 7.2) | 2021-05-06 |
+| GHSA | [GHSA-GHSA-p6mc-m468-83gw](https://github.com/advisories/GHSA-p6mc-m468-83gw): Prototype Pollution in lodash (RUBYGEMS/lodash-rails, NPM/lodash.updatewith, NPM/lodash.update) | HIGH (CVSS: 7.4) | 2020-07-15 |
+| GHSA | [GHSA-GHSA-x5rq-j2xg-h7qm](https://github.com/advisories/GHSA-x5rq-j2xg-h7qm): Regular Expression Denial of Service (ReDoS) in lodash (RUBYGEMS/lodash-rails, NPM/lodash-amd, NPM/lodash-es) | MODERATE (CVSS: 0.0) | 2019-07-19 |
+| GHSA | [GHSA-GHSA-jf85-cpcp-j695](https://github.com/advisories/GHSA-jf85-cpcp-j695): Prototype Pollution in lodash (RUBYGEMS/lodash-rails, NPM/lodash.defaultsdeep, NPM/lodash-amd) | CRITICAL (CVSS: 9.1) | 2019-07-10 |
+| GHSA | [GHSA-GHSA-4xc9-xhrj-v574](https://github.com/advisories/GHSA-4xc9-xhrj-v574): Prototype Pollution in lodash (RUBYGEMS/lodash-rails, NPM/lodash) | HIGH (CVSS: 0.0) | 2019-02-07 |
+| GHSA | [GHSA-GHSA-fvqr-27wr-82fm](https://github.com/advisories/GHSA-fvqr-27wr-82fm): Prototype Pollution in lodash (RUBYGEMS/lodash-rails, NPM/lodash) | MODERATE (CVSS: 6.5) | 2018-07-26 |
 
