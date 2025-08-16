@@ -1,17 +1,32 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-16 20:14:43 UTC*
+*Last updated: 2025-08-16 21:13:07 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| PR | 1 |
+| ADVISORY | 1 |
+| COMMIT | 1 |
+| PR | 2 |
 
 ---
+
+## Security Advisories
+
+| Source | Title | Severity | Date |
+|--------|-------|----------|------|
+| GHSA | [GHSA-GHSA-8mq8-c243-2335](https://github.com/advisories/GHSA-8mq8-c243-2335): Magento Cross-site Scripting vulnerability (COMPOSER/magento/project-community-edition, COMPOSER/magento/community-edition, COMPOSER/magento/community-edition) | HIGH (CVSS: 8.7) | 2025-08-12 |
+
+## Code Commits
+
+| Source | Title | Severity | Date |
+|--------|-------|----------|------|
+| torvalds/linux | [dfd4b50](https://github.com/torvalds/linux/commit/dfd4b508c8c6106083698a0dd5e35aecc7c48725) | Merge tag 'drm-fixes-2025-08-16' of https://gitlab.freedesktop.org/drm/kernel | 2025-08-15 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| langflow-ai/langflow | [#9413](https://github.com/langflow-ai/langflow/pull/9413) | doc: Add links to translated README versions | 2025-08-16 |
+| openssl/openssl | [#27868](https://github.com/openssl/openssl/pull/27868) | fuzz/provider.c: Add check for OPENSSL_malloc() to avoid potential NU… | 2025-08-16 |
+| erlang/otp | [#9956](https://github.com/erlang/otp/pull/9956) | chore(deps): update github-actions (maint-28) | 2025-08-16 |
 
