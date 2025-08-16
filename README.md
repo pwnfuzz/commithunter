@@ -1,35 +1,26 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-16 15:13:12 UTC*
+*Last updated: 2025-08-16 16:16:20 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 3 |
-| COMMIT | 2 |
-| PR | 2 |
+| COMMIT | 3 |
+| PR | 1 |
 
 ---
-
-## Security Advisories
-
-| Source | Title | Severity | Date |
-|--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-9x9c-ghc5-jhw9](https://github.com/advisories/GHSA-9x9c-ghc5-jhw9): @astrojs/node's trailing slash handling causes open redirect issue (NPM/@astrojs/node) | MODERATE (CVSS: 0.0) | 2025-08-15 |
-| GHSA | [GHSA-GHSA-3x3q-ghcp-whf7](https://github.com/advisories/GHSA-3x3q-ghcp-whf7): Template Secret leakage in logs in Scaffolder when using `fetch:template` (NPM/@backstage/plugin-scaffolder-backend) | LOW (CVSS: 2.6) | 2025-08-15 |
-| GHSA | [GHSA-GHSA-8mq8-c243-2335](https://github.com/advisories/GHSA-8mq8-c243-2335): Magento Cross-site Scripting vulnerability (COMPOSER/magento/project-community-edition, COMPOSER/magento/community-edition, COMPOSER/magento/community-edition) | HIGH (CVSS: 8.7) | 2025-08-12 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [dfd4b50](https://github.com/torvalds/linux/commit/dfd4b508c8c6106083698a0dd5e35aecc7c48725) | Merge tag 'drm-fixes-2025-08-16' of https://gitlab.freedesktop.org/drm/kernel | 2025-08-15 |
-| chromium/chromium | [9cee804](https://github.com/chromium/chromium/commit/9cee804e398ba5b88ea9abf8116e5708cfabce1b) | Reland "Use base::ByteCount in base::SysInfo." | 2025-08-15 |
+| torvalds/linux | [d0efc9e](https://github.com/torvalds/linux/commit/d0efc9e4276cda07c2f76652d240b165c30b05b8) | Merge tag 'xfs-fixes-6.17-rc2' of git://git.kernel.org/pub/scm/fs/xfs/xfs-linux | 2025-08-15 |
+| chromium/chromium | [0e05843](https://github.com/chromium/chromium/commit/0e0584392e59bdef2adc28299798c577f18dc075) | Move null check for web_contents before its usage | 2025-08-15 |
+| chromium/chromium | [567c969](https://github.com/chromium/chromium/commit/567c969f3b2568d3bfc31109b6e603192f269b77) | Fixed crash in tab group suggestion toolbar button | 2025-08-15 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| erlang/otp | [#9956](https://github.com/erlang/otp/pull/9956) | chore(deps): update github-actions (maint-28) | 2025-08-16 |
-| erlang/otp | [#9790](https://github.com/erlang/otp/pull/9790) | otp scan PRs for vulnerabilities | 2025-08-15 |
+| langflow-ai/langflow | [#9413](https://github.com/langflow-ai/langflow/pull/9413) | doc: Add links to translated README versions | 2025-08-16 |
 
