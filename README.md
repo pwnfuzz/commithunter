@@ -1,11 +1,11 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-17 03:21:58 UTC*
+*Last updated: 2025-08-17 04:28:20 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| PR | 2 |
+| PR | 1 |
 
 ---
 
@@ -13,6 +13,5 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| openssl/openssl | [#27868](https://github.com/openssl/openssl/pull/27868) | fuzz/provider.c: Add check for OPENSSL_malloc() to avoid potential NU… | 2025-08-16 |
-| erlang/otp | [#9956](https://github.com/erlang/otp/pull/9956) | chore(deps): update github-actions (maint-28) | 2025-08-16 |
+| langflow-ai/langflow | [#9413](https://github.com/langflow-ai/langflow/pull/9413) | doc: Add links to translated README versions | 2025-08-16 |
 
