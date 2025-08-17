@@ -1,17 +1,18 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-17 18:19:47 UTC*
+*Last updated: 2025-08-17 19:11:06 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| COMMIT | 1 |
+| PR | 2 |
 
 ---
 
-## Code Commits
+## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [8d561ba](https://github.com/torvalds/linux/commit/8d561baae505bab6b3f133e10dc48e27e4505cbe) | Merge tag 'x86_urgent_for_v6.17_rc2' of git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip | 2025-08-17 |
+| erlang/otp | [#9790](https://github.com/erlang/otp/pull/9790) | otp scan PRs for vulnerabilities | 2025-08-17 |
+| erlang/otp | [#9956](https://github.com/erlang/otp/pull/9956) | chore(deps): update github-actions (maint-28) | 2025-08-17 |
 
