@@ -1,17 +1,18 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-17 14:13:00 UTC*
+*Last updated: 2025-08-17 15:13:41 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| COMMIT | 1 |
+| PR | 2 |
 
 ---
 
-## Code Commits
+## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [8d561ba](https://github.com/torvalds/linux/commit/8d561baae505bab6b3f133e10dc48e27e4505cbe) | Merge tag 'x86_urgent_for_v6.17_rc2' of git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip | 2025-08-17 |
+| erlang/otp | [#9956](https://github.com/erlang/otp/pull/9956) | chore(deps): update github-actions (maint-28) | 2025-08-17 |
+| openssl/openssl | [#27868](https://github.com/openssl/openssl/pull/27868) | fuzz/provider.c: Add check for OPENSSL_malloc() to avoid potential NU… | 2025-08-16 |
 
