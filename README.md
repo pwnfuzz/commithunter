@@ -1,27 +1,24 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-18 13:32:13 UTC*
+*Last updated: 2025-08-18 14:16:19 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| COMMIT | 1 |
-| PR | 4 |
+| ADVISORY | 1 |
+| PR | 1 |
 
 ---
 
-## Code Commits
+## Security Advisories
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| chromium/chromium | [11964ea](https://github.com/chromium/chromium/commit/11964ea8bd6f296bed45a49714672f6a2f281fd4) | Roll V8 from f44e8c0244b8 to ebc4771a4e19 (3 revisions) | 2025-08-18 |
+| GHSA | [GHSA-GHSA-29cq-5w36-x7w3](https://github.com/advisories/GHSA-29cq-5w36-x7w3): Livewire is vulnerable to remote command execution during component property update hydration (COMPOSER/livewire/livewire) | CRITICAL (CVSS: 0.0) | 2025-07-17 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| openssl/openssl | [#28184](https://github.com/openssl/openssl/pull/28184) | Fix integer overflow in date_to_julian() call | 2025-08-18 |
-| openssl/openssl | [#28290](https://github.com/openssl/openssl/pull/28290) | Fix double free when reusing PSK sessions | 2025-08-18 |
-| erlang/otp | [#9790](https://github.com/erlang/otp/pull/9790) | otp scan PRs for vulnerabilities | 2025-08-18 |
-| erlang/otp | [#10110](https://github.com/erlang/otp/pull/10110) | security: Update OTP version | 2025-08-18 |
+| erlang/otp | [#9956](https://github.com/erlang/otp/pull/9956) | chore(deps): update github-actions (maint-28) | 2025-08-18 |
 
