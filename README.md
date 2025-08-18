@@ -1,17 +1,20 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-18 06:25:19 UTC*
+*Last updated: 2025-08-18 07:18:52 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| COMMIT | 1 |
+| PR | 4 |
 
 ---
 
-## Code Commits
+## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [8d561ba](https://github.com/torvalds/linux/commit/8d561baae505bab6b3f133e10dc48e27e4505cbe) | Merge tag 'x86_urgent_for_v6.17_rc2' of git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip | 2025-08-17 |
+| openssl/openssl | [#28290](https://github.com/openssl/openssl/pull/28290) | Fix double free when reusing PSK sessions | 2025-08-18 |
+| erlang/otp | [#10110](https://github.com/erlang/otp/pull/10110) | security: Update OTP version | 2025-08-18 |
+| erlang/otp | [#9790](https://github.com/erlang/otp/pull/9790) | otp scan PRs for vulnerabilities | 2025-08-17 |
+| erlang/otp | [#9956](https://github.com/erlang/otp/pull/9956) | chore(deps): update github-actions (maint-28) | 2025-08-17 |
 
