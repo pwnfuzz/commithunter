@@ -1,24 +1,27 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-18 12:32:03 UTC*
+*Last updated: 2025-08-18 13:32:13 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 1 |
 | COMMIT | 1 |
+| PR | 4 |
 
 ---
-
-## Security Advisories
-
-| Source | Title | Severity | Date |
-|--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-29cq-5w36-x7w3](https://github.com/advisories/GHSA-29cq-5w36-x7w3): Livewire is vulnerable to remote command execution during component property update hydration (COMPOSER/livewire/livewire) | CRITICAL (CVSS: 0.0) | 2025-07-17 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [8d561ba](https://github.com/torvalds/linux/commit/8d561baae505bab6b3f133e10dc48e27e4505cbe) | Merge tag 'x86_urgent_for_v6.17_rc2' of git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip | 2025-08-17 |
+| chromium/chromium | [11964ea](https://github.com/chromium/chromium/commit/11964ea8bd6f296bed45a49714672f6a2f281fd4) | Roll V8 from f44e8c0244b8 to ebc4771a4e19 (3 revisions) | 2025-08-18 |
+
+## Pull Requests
+
+| Source | Title | Severity | Date |
+|--------|-------|----------|------|
+| openssl/openssl | [#28184](https://github.com/openssl/openssl/pull/28184) | Fix integer overflow in date_to_julian() call | 2025-08-18 |
+| openssl/openssl | [#28290](https://github.com/openssl/openssl/pull/28290) | Fix double free when reusing PSK sessions | 2025-08-18 |
+| erlang/otp | [#9790](https://github.com/erlang/otp/pull/9790) | otp scan PRs for vulnerabilities | 2025-08-18 |
+| erlang/otp | [#10110](https://github.com/erlang/otp/pull/10110) | security: Update OTP version | 2025-08-18 |
 
