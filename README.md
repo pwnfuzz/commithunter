@@ -1,11 +1,11 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-19 14:14:40 UTC*
+*Last updated: 2025-08-19 15:15:45 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 4 |
+| ADVISORY | 11 |
 | COMMIT | 1 |
 | PR | 5 |
 
@@ -15,24 +15,31 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-3p2m-574v-v257](https://github.com/advisories/GHSA-3p2m-574v-v257): Liferay Portal Vulnerable to Cross-Site Scripting (MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 0.0) | 2025-08-18 |
-| GHSA | [GHSA-GHSA-g4wg-mpfg-x2q6](https://github.com/advisories/GHSA-g4wg-mpfg-x2q6): Liferay Portal Login Bypass Vulnerability (MAVEN/com.liferay.portal:release.portal.bom) | LOW (CVSS: 0.0) | 2025-08-18 |
-| GHSA | [GHSA-GHSA-v6xr-v2qg-h22h](https://github.com/advisories/GHSA-v6xr-v2qg-h22h): Liferay Portal Vulnerable to Insecure Direct Object Reference (MAVEN/com.liferay:com.liferay.roles.selector.web) | MODERATE (CVSS: 0.0) | 2025-08-18 |
-| GHSA | [GHSA-GHSA-qppj-fm5r-hxr3](https://github.com/advisories/GHSA-qppj-fm5r-hxr3): HTTP/2 Stream Cancellation Attack (MAVEN/org.apache.tomcat:tomcat-coyote, MAVEN/org.apache.tomcat:tomcat-coyote, MAVEN/org.apache.tomcat:tomcat-coyote) | MODERATE (CVSS: 5.3) | 2023-10-10 |
+| GHSA | [GHSA-GHSA-3xw7-v6cj-5q8h](https://github.com/advisories/GHSA-3xw7-v6cj-5q8h): Copier's safe template has arbitrary filesystem read/write access (PIP/copier) | HIGH (CVSS: 0.0) | 2025-08-18 |
+| GHSA | [GHSA-GHSA-p7q8-grrj-3m8w](https://github.com/advisories/GHSA-p7q8-grrj-3m8w): Copier's safe template has filesystem write access outside destination path (PIP/copier) | MODERATE (CVSS: 0.0) | 2025-08-18 |
+| GHSA | [GHSA-GHSA-mgh9-4mwp-fg55](https://github.com/advisories/GHSA-mgh9-4mwp-fg55): OpenFGA Authorization Bypass  (GO/github.com/openfga/openfga) | MODERATE (CVSS: 0.0) | 2025-08-18 |
+| GHSA | [GHSA-GHSA-vhcr-hgc8-29qr](https://github.com/advisories/GHSA-vhcr-hgc8-29qr): Liferay Portal Vulnerable to Cross-Site Scripting  (MAVEN/com.liferay:com.liferay.layout.taglib) | LOW (CVSS: 0.0) | 2025-08-18 |
+| GHSA | [GHSA-GHSA-r936-gwx5-v52f](https://github.com/advisories/GHSA-r936-gwx5-v52f): Spring Framework MVC Applications Path Traversal Vulnerability (MAVEN/org.springframework:spring-webmvc, MAVEN/org.springframework:spring-webmvc, MAVEN/org.springframework:spring-webmvc) | MODERATE (CVSS: 5.9) | 2025-08-18 |
+| GHSA | [GHSA-GHSA-vxq6-8cwm-wj99](https://github.com/advisories/GHSA-vxq6-8cwm-wj99): LibreNMS allows stored XSS in Alert Template name field (COMPOSER/librenms/librenms) | MODERATE (CVSS: 5.5) | 2025-08-18 |
+| GHSA | [GHSA-GHSA-fcpm-6mxq-m5vv](https://github.com/advisories/GHSA-fcpm-6mxq-m5vv): Capsule tenant owners with "patch namespace" permission can hijack system namespaces label (GO/github.com/projectcapsule/capsule) | CRITICAL (CVSS: 9.1) | 2025-08-18 |
+| GHSA | [GHSA-GHSA-x5gv-jw7f-j6xj](https://github.com/advisories/GHSA-x5gv-jw7f-j6xj): Claude Code's Permissive Default Allowlist Enables Unauthorized File Read and Network Exfiltration in Claude Code (NPM/@anthropic-ai/claude-code) | HIGH (CVSS: 0.0) | 2025-08-18 |
+| GHSA | [GHSA-GHSA-v6cf-mv9h-c8mc](https://github.com/advisories/GHSA-v6cf-mv9h-c8mc): Bouncy Castle for Java Uncontrolled Resource Consumption Vulnerability (MAVEN/org.bouncycastle:bc-fips) | LOW (CVSS: 0.0) | 2025-08-16 |
+| GHSA | [GHSA-GHSA-2vv2-3x8x-4gv7](https://github.com/advisories/GHSA-2vv2-3x8x-4gv7): Flowise OS command remote code execution (NPM/flowise) | CRITICAL (CVSS: 9.8) | 2025-08-14 |
+| GHSA | [GHSA-GHSA-fcxq-v2r3-cc8h](https://github.com/advisories/GHSA-fcxq-v2r3-cc8h): External Secrets Operator's Missing Namespace Restriction Allows Unauthorized Secret Access (GO/github.com/external-secrets/external-secrets) | HIGH (CVSS: 0.0) | 2025-08-13 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| postgres/postgres | [24225ad](https://github.com/postgres/postgres/commit/24225ad9aafc576295e210026d8ffa9f50d61145) | Pathify RHS unique-ification for semijoin planning | 2025-08-19 |
+| chromium/chromium | [490ef25](https://github.com/chromium/chromium/commit/490ef25b449c5c0f8ff07bcc73ef88e6d3ae23e2) | [Fix] Use WeakPtr in NavigationWaiter to prevent crash | 2025-08-19 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| openssl/openssl | [#28290](https://github.com/openssl/openssl/pull/28290) | Fix double free when reusing PSK sessions | 2025-08-19 |
-| openssl/openssl | [#27868](https://github.com/openssl/openssl/pull/27868) | fuzz/provider.c: Add check for OPENSSL_malloc() to avoid potential NU… | 2025-08-19 |
-| erlang/otp | [#10110](https://github.com/erlang/otp/pull/10110) | security: Update OTP version | 2025-08-19 |
-| erlang/otp | [#10095](https://github.com/erlang/otp/pull/10095) | Fix for httpd CGI scripts | 2025-08-19 |
-| erlang/otp | [#9956](https://github.com/erlang/otp/pull/9956) | chore(deps): update github-actions (maint-28) | 2025-08-18 |
+| openssl/openssl | [#28300](https://github.com/openssl/openssl/pull/28300) | Avoid doublefree of OCSP_SINGLERESP | 2025-08-19 |
+| openssl/openssl | [#28259](https://github.com/openssl/openssl/pull/28259) | Fix potential null pointer dereference in pkey_dh_derive | 2025-08-19 |
+| erlang/otp | [#9790](https://github.com/erlang/otp/pull/9790) | otp scan PRs for vulnerabilities | 2025-08-19 |
+| wazuh/wazuh | [#31433](https://github.com/wazuh/wazuh/pull/31433) | Fix Coverity defects in 4.13.0 RC3 | 2025-08-19 |
+| openssl/openssl | [#28184](https://github.com/openssl/openssl/pull/28184) | Fix integer overflow in date_to_julian() call | 2025-08-18 |
 
