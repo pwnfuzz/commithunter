@@ -1,13 +1,13 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-19 23:13:06 UTC*
+*Last updated: 2025-08-20 01:08:10 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 12 |
+| ADVISORY | 5 |
 | COMMIT | 3 |
-| PR | 4 |
+| PR | 5 |
 
 ---
 
@@ -15,33 +15,27 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-pr72-8fxw-xx22](https://github.com/advisories/GHSA-pr72-8fxw-xx22): Default Credentials in nginx-defender Configuration Files (GO/github.com/Anipaleja/nginx-defender) | MODERATE (CVSS: 6.5) | 2025-08-19 |
-| GHSA | [GHSA-GHSA-cwgh-r52j-xh6c](https://github.com/advisories/GHSA-cwgh-r52j-xh6c): Liferay Portal Reflected Cross-Site Scripting Vulnerability in displayType Parameter (MAVEN/com.liferay:com.liferay.expando.web) | MODERATE (CVSS: 0.0) | 2025-08-19 |
-| GHSA | [GHSA-GHSA-7mxq-h2r7-h449](https://github.com/advisories/GHSA-7mxq-h2r7-h449): Liferay Portal Email Modification Vulnerability via Calendar Portlet (MAVEN/com.liferay:com.liferay.calendar.service) | MODERATE (CVSS: 0.0) | 2025-08-19 |
-| GHSA | [GHSA-GHSA-22jp-w3cg-gvmm](https://github.com/advisories/GHSA-22jp-w3cg-gvmm): Liferay Portal has Stored Cross-Site Scripting Vulnerability via Message Boards Feature (MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 0.0) | 2025-08-19 |
-| GHSA | [GHSA-GHSA-35c5-67fm-cpcp](https://github.com/advisories/GHSA-35c5-67fm-cpcp): WP Crontrol Authenticated (Administrator+) plugin vulnerable to Blind Server-Side Request Forgery (COMPOSER/johnbillion/wp-crontrol) | MODERATE (CVSS: 0.0) | 2025-08-19 |
-| GHSA | [GHSA-GHSA-gjx4-2c7g-fm94](https://github.com/advisories/GHSA-gjx4-2c7g-fm94): screenshot-desktop vulnerable to command Injection via `format` option (NPM/screenshot-desktop) | CRITICAL (CVSS: 9.8) | 2025-08-19 |
-| GHSA | [GHSA-GHSA-7rqq-prvp-x9jh](https://github.com/advisories/GHSA-7rqq-prvp-x9jh): Mermaid improperly sanitizes sequence diagram labels leading to XSS (NPM/mermaid) | MODERATE (CVSS: 0.0) | 2025-08-19 |
-| GHSA | [GHSA-GHSA-8gwm-58g9-j8pw](https://github.com/advisories/GHSA-8gwm-58g9-j8pw): Mermaid does not properly sanitize architecture diagram iconText leading to XSS (NPM/mermaid) | MODERATE (CVSS: 0.0) | 2025-08-19 |
-| GHSA | [GHSA-GHSA-3xw7-v6cj-5q8h](https://github.com/advisories/GHSA-3xw7-v6cj-5q8h): Copier's safe template has arbitrary filesystem read/write access (PIP/copier) | HIGH (CVSS: 0.0) | 2025-08-18 |
-| GHSA | [GHSA-GHSA-p7q8-grrj-3m8w](https://github.com/advisories/GHSA-p7q8-grrj-3m8w): Copier's safe template has filesystem write access outside destination path (PIP/copier) | MODERATE (CVSS: 0.0) | 2025-08-18 |
-| GHSA | [GHSA-GHSA-mgh9-4mwp-fg55](https://github.com/advisories/GHSA-mgh9-4mwp-fg55): OpenFGA Authorization Bypass  (GO/github.com/openfga/openfga) | MODERATE (CVSS: 0.0) | 2025-08-18 |
-| GHSA | [GHSA-GHSA-v6cf-mv9h-c8mc](https://github.com/advisories/GHSA-v6cf-mv9h-c8mc): Bouncy Castle for Java Uncontrolled Resource Consumption Vulnerability (MAVEN/org.bouncycastle:bc-fips) | LOW (CVSS: 0.0) | 2025-08-16 |
+| GHSA | [GHSA-GHSA-xf8x-j4p2-f749](https://github.com/advisories/GHSA-xf8x-j4p2-f749): Astro allows unauthorized third-party images in _image endpoint (NPM/astro, NPM/@astrojs/node, NPM/astro) | MODERATE (CVSS: 0.0) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-hfmv-hhh3-43f2](https://github.com/advisories/GHSA-hfmv-hhh3-43f2): Stored XSS in n8n Form Trigger allows Account Takeover via injected iframe and video/source (NPM/n8n) | HIGH (CVSS: 8.7) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-qp7j-x725-g67f](https://github.com/advisories/GHSA-qp7j-x725-g67f): HydrAIDE Authentication Bypass Vulnerability (GO/github.com/hydraide/hydraide, GO/github.com/hydraide/hydraide) | CRITICAL (CVSS: 10.0) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-xfp8-x3j6-h67v](https://github.com/advisories/GHSA-xfp8-x3j6-h67v): ExpressGateway Cross-Site Scripting Vulnerability in lib/rest/routes/apps.js (NPM/express-gateway) | LOW (CVSS: 3.5) | 2025-08-18 |
+| GHSA | [GHSA-GHSA-q4rg-7cjj-5r86](https://github.com/advisories/GHSA-q4rg-7cjj-5r86): ExpressGateway Cross-Site Scripting Vulnerability in lib/rest/routes/users.js (NPM/express-gateway) | LOW (CVSS: 3.5) | 2025-08-18 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| chromium/chromium | [490ef25](https://github.com/chromium/chromium/commit/490ef25b449c5c0f8ff07bcc73ef88e6d3ae23e2) | [Fix] Use WeakPtr in NavigationWaiter to prevent crash | 2025-08-19 |
-| openssl/openssl | [257ac12](https://github.com/openssl/openssl/commit/257ac1279877f05a997c76f58fc0c7af08e02718) | test/stack_test.c: check sk_sint_push result in test_int_stack | 2025-08-12 |
-| openssl/openssl | [2b76895](https://github.com/openssl/openssl/commit/2b76895152fe7c7bcd11b9ae6e712c0437aee8c3) | test/mem_alloc_test.c: avoid referencing potentially freed old_ret | 2025-08-12 |
+| torvalds/linux | [055f213](https://github.com/torvalds/linux/commit/055f213075fbfa8e950bed8f2c50d01ac71bbf37) | Merge tag 'vfs-6.17-rc3.fixes' of git://git.kernel.org/pub/scm/linux/kernel/git/vfs/vfs | 2025-08-19 |
+| chromium/chromium | [33c91c7](https://github.com/chromium/chromium/commit/33c91c7255da81d81a8df067cb9d1ede7bf12a82) | Roll src/third_party/sqlite/src/ cc08c7962..7d348fc79 (45 commits) | 2025-08-19 |
+| torvalds/linux | [7375f22](https://github.com/torvalds/linux/commit/7375f22495e7cd1c5b3b5af9dcc4f6dffe34ce49) | fs/buffer: fix use-after-free when call bh_read() helper | 2025-08-11 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| openssl/openssl | [#28300](https://github.com/openssl/openssl/pull/28300) | Avoid doublefree of OCSP_SINGLERESP | 2025-08-19 |
-| openssl/openssl | [#28259](https://github.com/openssl/openssl/pull/28259) | Fix potential null pointer dereference in pkey_dh_derive | 2025-08-19 |
-| erlang/otp | [#9790](https://github.com/erlang/otp/pull/9790) | otp scan PRs for vulnerabilities | 2025-08-19 |
-| wazuh/wazuh | [#31433](https://github.com/wazuh/wazuh/pull/31433) | Fix Coverity defects in 4.13.0 RC3 | 2025-08-19 |
+| openssl/openssl | [#27868](https://github.com/openssl/openssl/pull/27868) | fuzz/provider.c: Add check for OPENSSL_malloc() to avoid potential NU… | 2025-08-19 |
+| openssl/openssl | [#28290](https://github.com/openssl/openssl/pull/28290) | Fix double free when reusing PSK sessions | 2025-08-19 |
+| erlang/otp | [#10110](https://github.com/erlang/otp/pull/10110) | security: Update OTP version | 2025-08-19 |
+| erlang/otp | [#10095](https://github.com/erlang/otp/pull/10095) | Fix for httpd CGI scripts | 2025-08-19 |
+| langflow-ai/langflow | [#9441](https://github.com/langflow-ai/langflow/pull/9441) | fix: update CORS configuration and add env vars to allow for user control | 2025-08-19 |
 
