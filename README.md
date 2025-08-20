@@ -1,13 +1,13 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-20 18:20:50 UTC*
+*Last updated: 2025-08-20 19:11:26 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 7 |
-| COMMIT | 2 |
-| PR | 4 |
+| ADVISORY | 19 |
+| COMMIT | 1 |
+| PR | 3 |
 
 ---
 
@@ -15,27 +15,37 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-xf8x-j4p2-f749](https://github.com/advisories/GHSA-xf8x-j4p2-f749): Astro allows unauthorized third-party images in _image endpoint (NPM/astro, NPM/@astrojs/node, NPM/astro) | MODERATE (CVSS: 0.0) | 2025-08-19 |
-| GHSA | [GHSA-GHSA-hfmv-hhh3-43f2](https://github.com/advisories/GHSA-hfmv-hhh3-43f2): Stored XSS in n8n Form Trigger allows Account Takeover via injected iframe and video/source (NPM/n8n) | HIGH (CVSS: 8.7) | 2025-08-19 |
-| GHSA | [GHSA-GHSA-vq9x-w82r-rhmc](https://github.com/advisories/GHSA-vq9x-w82r-rhmc): Soosyze CMS's /user/login endpoint missing rate-limiting and lockout mechanisms (COMPOSER/soosyze/soosyze) | HIGH (CVSS: 5.4) | 2025-08-13 |
-| GHSA | [GHSA-GHSA-47ww-ff84-4jrg](https://github.com/advisories/GHSA-47ww-ff84-4jrg): Cosmos SDK: x/group can halt when erroring in EndBlocker (GO/github.com/cosmos/cosmos-sdk, GO/github.com/cosmos/cosmos-sdk) | HIGH (CVSS: 0.0) | 2025-03-12 |
-| GHSA | [GHSA-GHSA-rcxc-wjgw-579r](https://github.com/advisories/GHSA-rcxc-wjgw-579r): Matrix Media Repo (MMR) allows untrusted file formats can be thumbnailed, invoking potentially further untrusted decoders (GO/github.com/t2bot/matrix-media-repo) | MODERATE (CVSS: 6.8) | 2025-01-16 |
-| GHSA | [GHSA-GHSA-gp86-q8hg-fpxj](https://github.com/advisories/GHSA-gp86-q8hg-fpxj): matrix-media-repo (MMR) allows a denial of service through memory exhaustion (GO/github.com/t2bot/matrix-media-repo) | MODERATE (CVSS: 5.3) | 2025-01-16 |
-| GHSA | [GHSA-GHSA-r6jg-jfv6-2fjv](https://github.com/advisories/GHSA-r6jg-jfv6-2fjv): Matrix Media Repo (MMR) allows Server-Side Request Forgery (SSRF) on redirects and federation (GO/github.com/t2bot/matrix-media-repo) | MODERATE (CVSS: 5.0) | 2025-01-16 |
+| GHSA | [GHSA-GHSA-8f93-j3fx-72f3](https://github.com/advisories/GHSA-8f93-j3fx-72f3): CRI-O has Potential High Memory Consumption from File Read (GO/github.com/cri-o/cri-o) | MODERATE (CVSS: 5.7) | 2025-08-20 |
+| GHSA | [GHSA-GHSA-ggjm-f3g4-rwmm](https://github.com/advisories/GHSA-ggjm-f3g4-rwmm): n8n symlink traversal vulnerability in "Read/Write File" node allows access to restricted files (NPM/n8n) | MODERATE (CVSS: 6.5) | 2025-08-20 |
+| GHSA | [GHSA-GHSA-hf86-8x8v-h7vc](https://github.com/advisories/GHSA-hf86-8x8v-h7vc): Apache EventMesh Vulnerable to Server-Side Request Forgery in WebhookUtil.java (MAVEN/org.apache.eventmesh:eventmesh-runtime) | MODERATE (CVSS: 6.3) | 2025-08-20 |
+| GHSA | [GHSA-GHSA-mv33-9f6j-pfmc](https://github.com/advisories/GHSA-mv33-9f6j-pfmc): Directus allows unauthenticated file upload and file modification due to lacking input sanitization (NPM/@directus/api, NPM/directus) | CRITICAL (CVSS: 9.3) | 2025-08-20 |
+| GHSA | [GHSA-GHSA-g4vp-4gqr-7v8c](https://github.com/advisories/GHSA-g4vp-4gqr-7v8c): Liferay Portal Enumeration Discrepancy in Calendars (MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 0.0) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-vjwr-cqwf-6q96](https://github.com/advisories/GHSA-vjwr-cqwf-6q96): Liferay Portal Vulnerable to Cross-Site Scripting via backURL Paramter (MAVEN/com.liferay:com.liferay.journal.web) | MODERATE (CVSS: 0.0) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-7q33-gwcm-r6cj](https://github.com/advisories/GHSA-7q33-gwcm-r6cj): Liferay Portal CSRF Vulnerability via Endpoint Parameter (MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 0.0) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-rh9f-gr6q-mpc4](https://github.com/advisories/GHSA-rh9f-gr6q-mpc4): moonshine Stored Cross-Site Scripting Vulnerability in Create Admin (COMPOSER/moonshine/moonshine) | MODERATE (CVSS: 4.9) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-p632-58pp-c9xg](https://github.com/advisories/GHSA-p632-58pp-c9xg): moonshine Stored Cross-Site Scripting Vulnerability in Create Article (COMPOSER/moonshine/moonshine) | MODERATE (CVSS: 4.5) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-9g9j-3w64-3cjh](https://github.com/advisories/GHSA-9g9j-3w64-3cjh): MoonShine SQL Injection Vulnerability (COMPOSER/moonshine/moonshine) | MODERATE (CVSS: 4.9) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-8xfq-7f6m-mpmf](https://github.com/advisories/GHSA-8xfq-7f6m-mpmf): MoonShine Arbitrary File Upload Vulnerability (COMPOSER/moonshine/moonshine) | MODERATE (CVSS: 4.5) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-pr72-8fxw-xx22](https://github.com/advisories/GHSA-pr72-8fxw-xx22): Default Credentials in nginx-defender Configuration Files (GO/github.com/Anipaleja/nginx-defender) | MODERATE (CVSS: 6.5) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-cwgh-r52j-xh6c](https://github.com/advisories/GHSA-cwgh-r52j-xh6c): Liferay Portal Reflected Cross-Site Scripting Vulnerability in displayType Parameter (MAVEN/com.liferay:com.liferay.expando.web) | MODERATE (CVSS: 0.0) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-7mxq-h2r7-h449](https://github.com/advisories/GHSA-7mxq-h2r7-h449): Liferay Portal Email Modification Vulnerability via Calendar Portlet (MAVEN/com.liferay:com.liferay.calendar.service) | MODERATE (CVSS: 0.0) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-22jp-w3cg-gvmm](https://github.com/advisories/GHSA-22jp-w3cg-gvmm): Liferay Portal has Stored Cross-Site Scripting Vulnerability via Message Boards Feature (MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 0.0) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-35c5-67fm-cpcp](https://github.com/advisories/GHSA-35c5-67fm-cpcp): WP Crontrol Authenticated (Administrator+) plugin vulnerable to Blind Server-Side Request Forgery (COMPOSER/johnbillion/wp-crontrol) | MODERATE (CVSS: 0.0) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-gjx4-2c7g-fm94](https://github.com/advisories/GHSA-gjx4-2c7g-fm94): screenshot-desktop vulnerable to command Injection via `format` option (NPM/screenshot-desktop) | CRITICAL (CVSS: 9.8) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-7rqq-prvp-x9jh](https://github.com/advisories/GHSA-7rqq-prvp-x9jh): Mermaid improperly sanitizes sequence diagram labels leading to XSS (NPM/mermaid) | MODERATE (CVSS: 0.0) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-8gwm-58g9-j8pw](https://github.com/advisories/GHSA-8gwm-58g9-j8pw): Mermaid does not properly sanitize architecture diagram iconText leading to XSS (NPM/mermaid) | MODERATE (CVSS: 0.0) | 2025-08-19 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| chromium/chromium | [d4f1458](https://github.com/chromium/chromium/commit/d4f145860ab27a0cf916180ebd405c93ce49a7ef) | Fix use-after-free in `OnRefreshTokenRevoked` | 2025-08-20 |
-| chromium/chromium | [ec320a6](https://github.com/chromium/chromium/commit/ec320a6124801de351083c8e6d981e49a9ac574d) | [cpesuggest] Add CPE prefix for third_party/android_deps/autorolled/committed/libs/com_google_guava_guava/README.chromium. | 2025-08-20 |
+| openssl/openssl | [eaacf56](https://github.com/openssl/openssl/commit/eaacf56ba97e8089344bc85f8a50b00932cd3416) | Avoid doublefree of OCSP_SINGLERESP | 2025-08-19 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| erlang/otp | [#9790](https://github.com/erlang/otp/pull/9790) | otp scan PRs for vulnerabilities | 2025-08-20 |
-| erlang/otp | [#10095](https://github.com/erlang/otp/pull/10095) | Fix for httpd CGI scripts | 2025-08-20 |
-| erlang/otp | [#10110](https://github.com/erlang/otp/pull/10110) | security: Update OTP version | 2025-08-20 |
-| langflow-ai/langflow | [#9441](https://github.com/langflow-ai/langflow/pull/9441) | fix: update CORS configuration and add env vars to allow for user control | 2025-08-20 |
+| openssl/openssl | [#28300](https://github.com/openssl/openssl/pull/28300) | Avoid doublefree of OCSP_SINGLERESP | 2025-08-20 |
+| openssl/openssl | [#28184](https://github.com/openssl/openssl/pull/28184) | Fix integer overflow in date_to_julian() call | 2025-08-20 |
+| openssl/openssl | [#28259](https://github.com/openssl/openssl/pull/28259) | Fix potential null pointer dereference in pkey_dh_derive | 2025-08-20 |
 
