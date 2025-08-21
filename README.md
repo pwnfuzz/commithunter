@@ -1,13 +1,13 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-21 04:17:36 UTC*
+*Last updated: 2025-08-21 05:15:08 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 7 |
-| COMMIT | 3 |
-| PR | 5 |
+| ADVISORY | 23 |
+| COMMIT | 2 |
+| PR | 2 |
 
 ---
 
@@ -15,29 +15,41 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-vq9x-w82r-rhmc](https://github.com/advisories/GHSA-vq9x-w82r-rhmc): Soosyze CMS's /user/login endpoint missing rate-limiting and lockout mechanisms (COMPOSER/soosyze/soosyze) | HIGH (CVSS: 5.4) | 2025-08-13 |
-| GHSA | [GHSA-GHSA-6qjf-g333-pv38](https://github.com/advisories/GHSA-6qjf-g333-pv38): Job Iteration API is vulnerable to OS Command Injection attack through its CsvEnumerator class (RUBYGEMS/job-iteration) | CRITICAL (CVSS: 0.0) | 2025-07-14 |
-| GHSA | [GHSA-GHSA-47ww-ff84-4jrg](https://github.com/advisories/GHSA-47ww-ff84-4jrg): Cosmos SDK: x/group can halt when erroring in EndBlocker (GO/github.com/cosmos/cosmos-sdk, GO/github.com/cosmos/cosmos-sdk) | HIGH (CVSS: 0.0) | 2025-03-12 |
-| GHSA | [GHSA-GHSA-8vmr-h7h5-cqhg](https://github.com/advisories/GHSA-8vmr-h7h5-cqhg): matrix-media-repo (MMR) allows unauthenticated writes to the media repository, which may allow planting of problematic content (GO/github.com/t2bot/matrix-media-repo) | MODERATE (CVSS: 5.3) | 2025-01-16 |
-| GHSA | [GHSA-GHSA-rcxc-wjgw-579r](https://github.com/advisories/GHSA-rcxc-wjgw-579r): Matrix Media Repo (MMR) allows untrusted file formats can be thumbnailed, invoking potentially further untrusted decoders (GO/github.com/t2bot/matrix-media-repo) | MODERATE (CVSS: 6.8) | 2025-01-16 |
-| GHSA | [GHSA-GHSA-gp86-q8hg-fpxj](https://github.com/advisories/GHSA-gp86-q8hg-fpxj): matrix-media-repo (MMR) allows a denial of service through memory exhaustion (GO/github.com/t2bot/matrix-media-repo) | MODERATE (CVSS: 5.3) | 2025-01-16 |
-| GHSA | [GHSA-GHSA-r6jg-jfv6-2fjv](https://github.com/advisories/GHSA-r6jg-jfv6-2fjv): Matrix Media Repo (MMR) allows Server-Side Request Forgery (SSRF) on redirects and federation (GO/github.com/t2bot/matrix-media-repo) | MODERATE (CVSS: 5.0) | 2025-01-16 |
+| GHSA | [GHSA-GHSA-ggjm-f3g4-rwmm](https://github.com/advisories/GHSA-ggjm-f3g4-rwmm): n8n symlink traversal vulnerability in "Read/Write File" node allows access to restricted files (NPM/n8n) | MODERATE (CVSS: 6.5) | 2025-08-20 |
+| GHSA | [GHSA-GHSA-mmxm-8w33-wc4h](https://github.com/advisories/GHSA-mmxm-8w33-wc4h): Eclipse Jetty affected by MadeYouReset HTTP/2 vulnerability (MAVEN/org.eclipse.jetty.http2:jetty-http2-common, MAVEN/org.eclipse.jetty.http2:jetty-http2-common, MAVEN/org.eclipse.jetty.http2:http2-common) | HIGH (CVSS: 7.5) | 2025-08-20 |
+| GHSA | [GHSA-GHSA-3j63-5h8p-gf7c](https://github.com/advisories/GHSA-3j63-5h8p-gf7c): x402 SDK vulnerable in outdated versions in resource servers for builders (NPM/x402-hono, NPM/x402-express, NPM/x402-next) | HIGH (CVSS: 0.0) | 2025-08-20 |
+| GHSA | [GHSA-GHSA-p9gc-59hf-x48p](https://github.com/advisories/GHSA-p9gc-59hf-x48p): Liferay Portal Vulnerable to Cross-Site Request Forgery (MAVEN/com.liferay.portal:release.portal.bom) | HIGH (CVSS: 0.0) | 2025-08-20 |
+| GHSA | [GHSA-GHSA-f9qj-4c5x-cpcw](https://github.com/advisories/GHSA-f9qj-4c5x-cpcw): elysia-cors Origin Validation Error (NPM/@elysiajs/cors) | MODERATE (CVSS: 0.0) | 2025-08-20 |
+| GHSA | [GHSA-GHSA-5fx5-cff6-f3fp](https://github.com/advisories/GHSA-5fx5-cff6-f3fp): Liferay Portal Unauthenticated File Access via URL (MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 0.0) | 2025-08-20 |
+| GHSA | [GHSA-GHSA-56qj-wp5r-mvhj](https://github.com/advisories/GHSA-56qj-wp5r-mvhj): Liferay Portal Unvalidated File Upload (MAVEN/com.liferay:com.liferay.dynamic.data.mapping.form.web) | MODERATE (CVSS: 0.0) | 2025-08-20 |
+| GHSA | [GHSA-GHSA-j6p8-g3rj-ghpm](https://github.com/advisories/GHSA-j6p8-g3rj-ghpm): Liferay Portal Vulnerable to Cross-Site Scripting via assetTagNames Parameter (MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 0.0) | 2025-08-20 |
+| GHSA | [GHSA-GHSA-3fp2-6mwq-4q3j](https://github.com/advisories/GHSA-3fp2-6mwq-4q3j): Liferay Portal Vulnerable to Cross-Site Scripting through URLs (MAVEN/com.liferay:com.liferay.layout.type.controller.display.page) | MODERATE (CVSS: 0.0) | 2025-08-20 |
+| GHSA | [GHSA-GHSA-8f93-j3fx-72f3](https://github.com/advisories/GHSA-8f93-j3fx-72f3): CRI-O has Potential High Memory Consumption from File Read (GO/github.com/cri-o/cri-o) | MODERATE (CVSS: 5.7) | 2025-08-20 |
+| GHSA | [GHSA-GHSA-hf86-8x8v-h7vc](https://github.com/advisories/GHSA-hf86-8x8v-h7vc): Apache EventMesh Vulnerable to Server-Side Request Forgery in WebhookUtil.java (MAVEN/org.apache.eventmesh:eventmesh-runtime) | MODERATE (CVSS: 6.3) | 2025-08-20 |
+| GHSA | [GHSA-GHSA-mv33-9f6j-pfmc](https://github.com/advisories/GHSA-mv33-9f6j-pfmc): Directus allows unauthenticated file upload and file modification due to lacking input sanitization (NPM/@directus/api, NPM/directus) | CRITICAL (CVSS: 9.3) | 2025-08-20 |
+| GHSA | [GHSA-GHSA-m49p-6cjp-x2h3](https://github.com/advisories/GHSA-m49p-6cjp-x2h3): Liferay Portal Vulnerable to Cross-Site Scripting via DDM Structure Field Labels (MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 0.0) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-8gwm-58g9-j8pw](https://github.com/advisories/GHSA-8gwm-58g9-j8pw): Mermaid does not properly sanitize architecture diagram iconText leading to XSS (NPM/mermaid) | MODERATE (CVSS: 0.0) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-g4vp-4gqr-7v8c](https://github.com/advisories/GHSA-g4vp-4gqr-7v8c): Liferay Portal Enumeration Discrepancy in Calendars (MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 0.0) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-vjwr-cqwf-6q96](https://github.com/advisories/GHSA-vjwr-cqwf-6q96): Liferay Portal Vulnerable to Cross-Site Scripting via backURL Paramter (MAVEN/com.liferay:com.liferay.journal.web) | MODERATE (CVSS: 0.0) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-7q33-gwcm-r6cj](https://github.com/advisories/GHSA-7q33-gwcm-r6cj): Liferay Portal CSRF Vulnerability via Endpoint Parameter (MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 0.0) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-rh9f-gr6q-mpc4](https://github.com/advisories/GHSA-rh9f-gr6q-mpc4): moonshine Stored Cross-Site Scripting Vulnerability in Create Admin (COMPOSER/moonshine/moonshine) | MODERATE (CVSS: 4.9) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-p632-58pp-c9xg](https://github.com/advisories/GHSA-p632-58pp-c9xg): moonshine Stored Cross-Site Scripting Vulnerability in Create Article (COMPOSER/moonshine/moonshine) | MODERATE (CVSS: 4.5) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-9g9j-3w64-3cjh](https://github.com/advisories/GHSA-9g9j-3w64-3cjh): MoonShine SQL Injection Vulnerability (COMPOSER/moonshine/moonshine) | MODERATE (CVSS: 4.9) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-8xfq-7f6m-mpmf](https://github.com/advisories/GHSA-8xfq-7f6m-mpmf): MoonShine Arbitrary File Upload Vulnerability (COMPOSER/moonshine/moonshine) | MODERATE (CVSS: 4.5) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-4gg5-vx3j-xwc7](https://github.com/advisories/GHSA-4gg5-vx3j-xwc7): Protobuf Java vulnerable to Uncontrolled Resource Consumption (MAVEN/com.google.protobuf:protobuf-java, MAVEN/com.google.protobuf:protobuf-javalite, MAVEN/com.google.protobuf:protobuf-javalite) | HIGH (CVSS: 7.5) | 2022-12-12 |
+| GHSA | [GHSA-GHSA-g5ww-5jh7-63cx](https://github.com/advisories/GHSA-g5ww-5jh7-63cx): Protobuf Java vulnerable to Uncontrolled Resource Consumption (MAVEN/com.google.protobuf:protobuf-java, MAVEN/com.google.protobuf:protobuf-javalite, MAVEN/com.google.protobuf:protobuf-javalite) | HIGH (CVSS: 7.5) | 2022-12-12 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| chromium/chromium | [0cbd506](https://github.com/chromium/chromium/commit/0cbd506a1712a02f9abad68492bf5aba8b7d54e8) | Fix use-after-free in StructuredMetricsServiceTest teardown. | 2025-08-20 |
-| chromium/chromium | [d4f1458](https://github.com/chromium/chromium/commit/d4f145860ab27a0cf916180ebd405c93ce49a7ef) | Fix use-after-free in `OnRefreshTokenRevoked` | 2025-08-20 |
-| chromium/chromium | [ec320a6](https://github.com/chromium/chromium/commit/ec320a6124801de351083c8e6d981e49a9ac574d) | [cpesuggest] Add CPE prefix for third_party/android_deps/autorolled/committed/libs/com_google_guava_guava/README.chromium. | 2025-08-20 |
+| torvalds/linux | [41cd3fd](https://github.com/torvalds/linux/commit/41cd3fd152634250fdd09a52a35352b3f323800d) | Merge tag 'pci-v6.17-fixes-2' of git://git.kernel.org/pub/scm/linux/kernel/git/pci/pci | 2025-08-20 |
+| openssl/openssl | [eaacf56](https://github.com/openssl/openssl/commit/eaacf56ba97e8089344bc85f8a50b00932cd3416) | Avoid doublefree of OCSP_SINGLERESP | 2025-08-19 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| openssl/openssl | [#27044](https://github.com/openssl/openssl/pull/27044) | fix potential null pointer dereference in cms_main function in apps/cms.c #26941 | 2025-08-21 |
-| erlang/otp | [#9790](https://github.com/erlang/otp/pull/9790) | otp scan PRs for vulnerabilities | 2025-08-20 |
-| erlang/otp | [#10095](https://github.com/erlang/otp/pull/10095) | Fix for httpd CGI scripts | 2025-08-20 |
-| erlang/otp | [#10110](https://github.com/erlang/otp/pull/10110) | security: Update OTP version | 2025-08-20 |
-| langflow-ai/langflow | [#9441](https://github.com/langflow-ai/langflow/pull/9441) | fix: update CORS configuration and add env vars to allow for user control | 2025-08-20 |
+| openssl/openssl | [#28300](https://github.com/openssl/openssl/pull/28300) | Avoid doublefree of OCSP_SINGLERESP | 2025-08-20 |
+| openssl/openssl | [#28184](https://github.com/openssl/openssl/pull/28184) | Fix integer overflow in date_to_julian() call | 2025-08-20 |
 
