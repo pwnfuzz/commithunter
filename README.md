@@ -1,13 +1,13 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-22 03:04:36 UTC*
+*Last updated: 2025-08-22 04:16:32 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 21 |
+| ADVISORY | 13 |
 | COMMIT | 2 |
-| PR | 1 |
+| PR | 5 |
 
 ---
 
@@ -15,38 +15,34 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-8hmm-4crw-vm2c](https://github.com/advisories/GHSA-8hmm-4crw-vm2c): @musistudio/claude-code-router has improper CORS configuration (NPM/@musistudio/claude-code-router) | HIGH (CVSS: 0.0) | 2025-08-21 |
-| GHSA | [GHSA-GHSA-pp7p-q8fx-2968](https://github.com/advisories/GHSA-pp7p-q8fx-2968): vite-plugin-static-copy files not included in `src` are possible to access with a crafted request (NPM/vite-plugin-static-copy, NPM/vite-plugin-static-copy) | MODERATE (CVSS: 0.0) | 2025-08-21 |
-| GHSA | [GHSA-GHSA-287x-6r2h-f9mw](https://github.com/advisories/GHSA-287x-6r2h-f9mw): UnoPim vulnerable to CSRF on Product edit feature and creation of other types (COMPOSER/unopim/unopim) | MODERATE (CVSS: 0.0) | 2025-08-21 |
-| GHSA | [GHSA-GHSA-v22v-xwh7-2vrm](https://github.com/advisories/GHSA-v22v-xwh7-2vrm): UnoPim vulnerable to remote code execution through Arbitrary File upload (COMPOSER/unopim/unopim) | HIGH (CVSS: 0.0) | 2025-08-21 |
-| GHSA | [GHSA-GHSA-xr97-25v7-hc2q](https://github.com/advisories/GHSA-xr97-25v7-hc2q): UnoPim has Stored Cross-site Scripting vulnerability in user creation functionality (COMPOSER/unopim/unopim) | HIGH (CVSS: 8.0) | 2025-08-21 |
-| GHSA | [GHSA-GHSA-rxc4-3w6r-4v47](https://github.com/advisories/GHSA-rxc4-3w6r-4v47): vllm API endpoints vulnerable to Denial of Service Attacks (PIP/vllm) | HIGH (CVSS: 7.5) | 2025-08-21 |
-| GHSA | [GHSA-GHSA-gq3r-5833-5532](https://github.com/advisories/GHSA-gq3r-5833-5532): Mattermost Fails to Validate File Paths (GO/github.com/mattermost/mattermost/server/v8, GO/github.com/mattermost/mattermost-server, GO/github.com/mattermost/mattermost-server) | MODERATE (CVSS: 6.8) | 2025-08-21 |
-| GHSA | [GHSA-GHSA-p6rm-483j-37jf](https://github.com/advisories/GHSA-p6rm-483j-37jf): wong2 mcp-cli Command Injection Vulnerability (NPM/@wong2/mcp-cli) | LOW (CVSS: 5.6) | 2025-08-21 |
-| GHSA | [GHSA-GHSA-95m3-7q98-8xr5](https://github.com/advisories/GHSA-95m3-7q98-8xr5): sha.js is missing type checks leading to hash rewind and passing on crafted data (NPM/sha.js) | CRITICAL (CVSS: 0.0) | 2025-08-21 |
-| GHSA | [GHSA-GHSA-cpq7-6gpm-g9rc](https://github.com/advisories/GHSA-cpq7-6gpm-g9rc): cipher-base is missing type checks, leading to hash rewind and passing on crafted data (NPM/cipher-base) | CRITICAL (CVSS: 0.0) | 2025-08-21 |
-| GHSA | [GHSA-GHSA-79j6-g2m3-jgfw](https://github.com/advisories/GHSA-79j6-g2m3-jgfw): vLLM has remote code execution vulnerability in the tool call parser for Qwen3-Coder (PIP/vllm) | HIGH (CVSS: 8.8) | 2025-08-21 |
-| GHSA | [GHSA-GHSA-2464-8j7c-4cjm](https://github.com/advisories/GHSA-2464-8j7c-4cjm): go-viper's mapstructure May Leak Sensitive Information in Logs When Processing Malformed Data (GO/github.com/go-viper/mapstructure/v2) | MODERATE (CVSS: 5.3) | 2025-08-21 |
-| GHSA | [GHSA-GHSA-p72g-pv48-7w9x](https://github.com/advisories/GHSA-p72g-pv48-7w9x): Apache Tika XXE Vulnerability via Crafted XFA File Inside a PDF (MAVEN/org.apache.tika:tika-parser-pdf-module) | CRITICAL (CVSS: 9.8) | 2025-08-20 |
-| GHSA | [GHSA-GHSA-f9qj-4c5x-cpcw](https://github.com/advisories/GHSA-f9qj-4c5x-cpcw): elysia-cors Origin Validation Error (NPM/@elysiajs/cors) | MODERATE (CVSS: 6.5) | 2025-08-20 |
-| GHSA | [GHSA-GHSA-xh9h-692f-mmg4](https://github.com/advisories/GHSA-xh9h-692f-mmg4): Microsoft Knack ReDoS Vulnerability in the Introspection Module (PIP/knack) | LOW (CVSS: 0.0) | 2025-08-20 |
-| GHSA | [GHSA-GHSA-6fxp-p9mg-q64w](https://github.com/advisories/GHSA-6fxp-p9mg-q64w): Microsoft Knack ReDoS Vulnerability in the Introspection Module (PIP/knack) | LOW (CVSS: 0.0) | 2025-08-20 |
-| GHSA | [GHSA-GHSA-62pf-hcwj-rcfc](https://github.com/advisories/GHSA-62pf-hcwj-rcfc): Liferay Portal Vulnerable to Cross-Site Scripting via DDMPortlet_definition Parameter (MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 0.0) | 2025-08-20 |
-| GHSA | [GHSA-GHSA-mpww-r37c-vxjw](https://github.com/advisories/GHSA-mpww-r37c-vxjw): Liferay Portal Vulnerable to Cross-Site Scripting in Dynamic Data Mapping (MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 0.0) | 2025-08-20 |
-| GHSA | [GHSA-GHSA-mmxm-8w33-wc4h](https://github.com/advisories/GHSA-mmxm-8w33-wc4h): Eclipse Jetty affected by MadeYouReset HTTP/2 vulnerability (MAVEN/org.eclipse.jetty.http2:jetty-http2-common, MAVEN/org.eclipse.jetty.http2:jetty-http2-common, MAVEN/org.eclipse.jetty.http2:http2-common) | HIGH (CVSS: 7.5) | 2025-08-20 |
-| GHSA | [GHSA-GHSA-ggjm-f3g4-rwmm](https://github.com/advisories/GHSA-ggjm-f3g4-rwmm): n8n symlink traversal vulnerability in "Read/Write File" node allows access to restricted files (NPM/n8n) | MODERATE (CVSS: 6.5) | 2025-08-20 |
-| GHSA | [GHSA-GHSA-8xfq-7f6m-mpmf](https://github.com/advisories/GHSA-8xfq-7f6m-mpmf): MoonShine Arbitrary File Upload Vulnerability (COMPOSER/moonshine/moonshine) | MODERATE (CVSS: 4.5) | 2025-08-19 |
+| GHSA | [GHSA-GHSA-9gjj-6gj7-c4wj](https://github.com/advisories/GHSA-9gjj-6gj7-c4wj): Denial-of-Service attack in pyLoad CNL Blueprint using dukpy.evaljs (PIP/pyload-ng) | HIGH (CVSS: 0.0) | 2025-08-21 |
+| GHSA | [GHSA-GHSA-x67c-v8jr-p29r](https://github.com/advisories/GHSA-x67c-v8jr-p29r): Mattermost Fails to Sanitize Path Traversal Sequences (GO/github.com/mattermost/mattermost/server/v8, GO/github.com/mattermost/mattermost-server, GO/github.com/mattermost/mattermost-server) | MODERATE (CVSS: 6.8) | 2025-08-21 |
+| GHSA | [GHSA-GHSA-q453-638c-h4mr](https://github.com/advisories/GHSA-q453-638c-h4mr): Mattermost Fails to Validate Remote Cluster Upload Sessions (GO/github.com/mattermost/mattermost/server/v8, GO/github.com/mattermost/mattermost-server, GO/github.com/mattermost/mattermost-server) | MODERATE (CVSS: 6.8) | 2025-08-21 |
+| GHSA | [GHSA-GHSA-4276-cm8c-788h](https://github.com/advisories/GHSA-4276-cm8c-788h): Mattermost Fails to Properly Validate Team Role Modification (GO/github.com/mattermost/mattermost/server/v8, GO/github.com/mattermost/mattermost-server, GO/github.com/mattermost/mattermost-server) | LOW (CVSS: 3.8) | 2025-08-21 |
+| GHSA | [GHSA-GHSA-pwvr-grqg-7vp2](https://github.com/advisories/GHSA-pwvr-grqg-7vp2): Mattermost Lack of Access Control Validation (GO/github.com/mattermost/mattermost/server/v8, GO/github.com/mattermost/mattermost-server) | LOW (CVSS: 3.5) | 2025-08-21 |
+| GHSA | [GHSA-GHSA-qj47-w9f2-qg44](https://github.com/advisories/GHSA-qj47-w9f2-qg44): Mattermost Does Not Sanitize the Team Invite ID (GO/github.com/mattermost/mattermost/server/v8, GO/github.com/mattermost/mattermost-server, GO/github.com/mattermost/mattermost-server) | MODERATE (CVSS: 4.3) | 2025-08-21 |
+| GHSA | [GHSA-GHSA-vqwh-5jhh-vc9p](https://github.com/advisories/GHSA-vqwh-5jhh-vc9p): Mattermost Server SSRF Vulnerability via the Agents Plugin (GO/github.com/mattermost/mattermost/server/v8, GO/github.com/mattermost/mattermost-server) | LOW (CVSS: 3.5) | 2025-08-21 |
+| GHSA | [GHSA-GHSA-r4mg-4433-c7g3](https://github.com/advisories/GHSA-r4mg-4433-c7g3): Active Storage allowed transformation methods that were potentially unsafe (RUBYGEMS/activestorage, RUBYGEMS/activestorage, RUBYGEMS/activestorage) | CRITICAL (CVSS: 0.0) | 2025-08-14 |
+| GHSA | [GHSA-GHSA-76r7-hhxj-r776](https://github.com/advisories/GHSA-76r7-hhxj-r776): Active Record logging vulnerable to ANSI escape injection (RUBYGEMS/activerecord, RUBYGEMS/activerecord, RUBYGEMS/activerecord) | MODERATE (CVSS: 0.0) | 2025-08-13 |
+| GHSA | [GHSA-GHSA-7h24-c332-p48c](https://github.com/advisories/GHSA-7h24-c332-p48c): vproxy Divide by Zero DoS Vulnerability (RUST/vproxy) | HIGH (CVSS: 7.5) | 2025-07-30 |
+| GHSA | [GHSA-GHSA-8fxg-mr34-jqr8](https://github.com/advisories/GHSA-8fxg-mr34-jqr8): NocoDB SQL Injection vulnerability (NPM/nocodb) | MODERATE (CVSS: 6.5) | 2024-05-13 |
+| GHSA | [GHSA-GHSA-qg73-g3cf-vhhh](https://github.com/advisories/GHSA-qg73-g3cf-vhhh): NocoDB Allows Preview of Files with Dangerous Content (NPM/nocodb) | MODERATE (CVSS: 5.7) | 2024-05-13 |
+| GHSA | [GHSA-GHSA-h6r4-xvw6-jc5h](https://github.com/advisories/GHSA-h6r4-xvw6-jc5h): NocoDB Vulnerable to Stored Cross-Site Scripting in Formula.vue (NPM/nocodb) | HIGH (CVSS: 7.3) | 2024-05-13 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [9a36b58](https://github.com/torvalds/linux/commit/9a36b58a88f62398dbd005e5f3648f257ae2b9b4) | Merge tag 'spi-fix-v6.17-rc2' of git://git.kernel.org/pub/scm/linux/kernel/git/broonie/spi | 2025-08-21 |
-| chromium/chromium | [c144985](https://github.com/chromium/chromium/commit/c144985e3b0968266017ae8958dee6dd292f2081) | Revert "[Fix] Use WeakPtr in NavigationWaiter to prevent crash" | 2025-08-21 |
+| chromium/chromium | [b15ce2e](https://github.com/chromium/chromium/commit/b15ce2eb31488788a1fd40e1ae75f2551dfdeb05) | Roll V8 from 7a52429bd26c to fcbc1059cb18 (26 revisions) | 2025-08-22 |
+| torvalds/linux | [eb4a099](https://github.com/torvalds/linux/commit/eb4a0992ddae04ad5b402029a430b2fa06c81647) | Merge tag '6.17-rc2-ksmbd-server-fixes' of git://git.samba.org/ksmbd | 2025-08-21 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| langflow-ai/langflow | [#9474](https://github.com/langflow-ai/langflow/pull/9474) | docs: troubleshooting backlog items | 2025-08-21 |
+| langflow-ai/langflow | [#9491](https://github.com/langflow-ai/langflow/pull/9491) | build(deps): bump sha.js from 2.4.11 to 2.4.12 in /docs | 2025-08-22 |
+| erlang/otp | [#9956](https://github.com/erlang/otp/pull/9956) | chore(deps): update github-actions (maint-28) | 2025-08-21 |
+| erlang/otp | [#9790](https://github.com/erlang/otp/pull/9790) | otp scan PRs for vulnerabilities | 2025-08-21 |
+| erlang/otp | [#10095](https://github.com/erlang/otp/pull/10095) | Fix for httpd CGI scripts | 2025-08-21 |
+| langflow-ai/langflow | [#9441](https://github.com/langflow-ai/langflow/pull/9441) | fix: update CORS configuration and add env vars to allow for user control | 2025-08-21 |
 
