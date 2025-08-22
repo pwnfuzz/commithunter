@@ -1,13 +1,13 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-22 20:15:46 UTC*
+*Last updated: 2025-08-22 21:12:42 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 6 |
-| COMMIT | 7 |
-| PR | 6 |
+| ADVISORY | 26 |
+| COMMIT | 1 |
+| PR | 2 |
 
 ---
 
@@ -15,33 +15,43 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-655h-hg88-5qmf](https://github.com/advisories/GHSA-655h-hg88-5qmf): Rust XCB `xcb::Connection::connect_to_fd*` functions violate I/O safety (RUST/xcb) | LOW (CVSS: 0.0) | 2025-08-22 |
-| GHSA | [GHSA-GHSA-h469-4fcf-p23h](https://github.com/advisories/GHSA-h469-4fcf-p23h): Mattermost has Potential Server Crash due to Unvalidated Import Data (GO/github.com/mattermost/mattermost-server, GO/github.com/mattermost/mattermost/server/v8, GO/github.com/mattermost/mattermost-server) | MODERATE (CVSS: 4.9) | 2025-08-21 |
-| GHSA | [GHSA-GHSA-w2wj-hw98-233h](https://github.com/advisories/GHSA-w2wj-hw98-233h): Keycloak Potential Variable Reference in Model Storage Services (MAVEN/org.keycloak:keycloak-model-storage-services) | MODERATE (CVSS: 4.9) | 2025-08-21 |
-| GHSA | [GHSA-GHSA-9gjj-6gj7-c4wj](https://github.com/advisories/GHSA-9gjj-6gj7-c4wj): Denial-of-Service attack in pyLoad CNL Blueprint using dukpy.evaljs (PIP/pyload-ng) | HIGH (CVSS: 0.0) | 2025-08-21 |
-| GHSA | [GHSA-GHSA-r4mg-4433-c7g3](https://github.com/advisories/GHSA-r4mg-4433-c7g3): Active Storage allowed transformation methods that were potentially unsafe (RUBYGEMS/activestorage, RUBYGEMS/activestorage, RUBYGEMS/activestorage) | CRITICAL (CVSS: 0.0) | 2025-08-14 |
-| GHSA | [GHSA-GHSA-76r7-hhxj-r776](https://github.com/advisories/GHSA-76r7-hhxj-r776): Active Record logging vulnerable to ANSI escape injection (RUBYGEMS/activerecord, RUBYGEMS/activerecord, RUBYGEMS/activerecord) | MODERATE (CVSS: 0.0) | 2025-08-13 |
+| GHSA | [GHSA-GHSA-fvqv-593q-qp8r](https://github.com/advisories/GHSA-fvqv-593q-qp8r): Liferay Portal Reflected Cross-Site Scripting Vulnerability via PortalUtil.escapeRedirect (MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 0.0) | 2025-08-22 |
+| GHSA | [GHSA-GHSA-74rg-6f92-g6wx](https://github.com/advisories/GHSA-74rg-6f92-g6wx): UnoPim has CSV Injection on Quick Export feature (COMPOSER/unopim/unopim) | LOW (CVSS: 0.0) | 2025-08-22 |
+| GHSA | [GHSA-GHSA-xwc5-q44v-p6gg](https://github.com/advisories/GHSA-xwc5-q44v-p6gg): Liferay Portal User Enumeration Vulnerability via the Create Account Page (MAVEN/com.liferay:com.liferay.login.web) | MODERATE (CVSS: 0.0) | 2025-08-22 |
+| GHSA | [GHSA-GHSA-8p2f-fx4q-75cx](https://github.com/advisories/GHSA-8p2f-fx4q-75cx): UnoPim has Broken Access Control (COMPOSER/unopim/unopim) | HIGH (CVSS: 8.1) | 2025-08-22 |
+| GHSA | [GHSA-GHSA-gcqf-pxgg-gw8q](https://github.com/advisories/GHSA-gcqf-pxgg-gw8q): Dpanel has an arbitrary file read vulnerability (GO/github.com/donknap/dpanel) | MODERATE (CVSS: 0.0) | 2025-08-22 |
+| GHSA | [GHSA-GHSA-95v9-hv42-pwrj](https://github.com/advisories/GHSA-95v9-hv42-pwrj): gnark is vulnerable to signature malleability in EdDSA and ECDSA due to missing scalar checks (GO/github.com/consensys/gnark) | HIGH (CVSS: 0.0) | 2025-08-22 |
+| GHSA | [GHSA-GHSA-gj8w-ffq9-6828](https://github.com/advisories/GHSA-gj8w-ffq9-6828): JeecgBoot SQL Injection Vulnerability (MAVEN/org.jeecgframework.boot:jeecg-boot-base-core) | MODERATE (CVSS: 6.5) | 2025-08-22 |
+| GHSA | [GHSA-GHSA-jfcv-jv9g-2vx2](https://github.com/advisories/GHSA-jfcv-jv9g-2vx2): Bouncy Castle for Java has Uncontrolled Resource Consumption Vulnerability (MAVEN/org.bouncycastle:bctls-fips, MAVEN/org.bouncycastle:bc-fips) | MODERATE (CVSS: 0.0) | 2025-08-22 |
+| GHSA | [GHSA-GHSA-g6rx-6wfx-gj74](https://github.com/advisories/GHSA-g6rx-6wfx-gj74): Bouncy Castle for Java has Out-of-Bounds Write Vulnerability (MAVEN/org.bouncycastle:bc-fips) | LOW (CVSS: 0.0) | 2025-08-22 |
+| GHSA | [GHSA-GHSA-vv6j-3g6g-2pvj](https://github.com/advisories/GHSA-vv6j-3g6g-2pvj): Picklescan missing detection when calling pytorch function torch.utils._config_module.load_config (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-22 |
+| GHSA | [GHSA-GHSA-vr7h-p6mm-wpmh](https://github.com/advisories/GHSA-vr7h-p6mm-wpmh): Picklescan missing detection when calling pytorch function torch.jit.unsupported_tensor_ops.execWrapper (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-22 |
+| GHSA | [GHSA-GHSA-h3qp-7fh3-f8h4](https://github.com/advisories/GHSA-h3qp-7fh3-f8h4): Picklescan missing detection when calling pytorch function torch.utils.data.datapipes.utils.decoder.basichandlers (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-22 |
+| GHSA | [GHSA-GHSA-f745-w6jp-hpxx](https://github.com/advisories/GHSA-f745-w6jp-hpxx): Picklescan missing detection when calling pytorch function torch.utils.collect_env.run (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-22 |
+| GHSA | [GHSA-GHSA-f4x7-rfwp-v3xw](https://github.com/advisories/GHSA-f4x7-rfwp-v3xw): Picklescan missing detection when calling pytorch function torch.fx.experimental.symbolic_shapes.ShapeEnv.evaluate_guards_expression (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-22 |
+| GHSA | [GHSA-GHSA-86cj-95qr-2p4f](https://github.com/advisories/GHSA-86cj-95qr-2p4f): Picklescan missing detection when calling pytorch function torch._dynamo.guards.GuardBuilder.get (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-22 |
+| GHSA | [GHSA-GHSA-4r9r-ch6f-vxmx](https://github.com/advisories/GHSA-4r9r-ch6f-vxmx): Picklescan missing detection when calling pytorch function torch.utils.bottleneck.__main__.run_cprofile (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-22 |
+| GHSA | [GHSA-GHSA-r367-q549-pgr5](https://github.com/advisories/GHSA-r367-q549-pgr5): Liferay Portal Reflected Cross-Site Scripting Vulnerability via Form Container (MAVEN/com.liferay:com.liferay.layout.taglib) | LOW (CVSS: 0.0) | 2025-08-22 |
+| GHSA | [GHSA-GHSA-qpp6-f3qj-rggq](https://github.com/advisories/GHSA-qpp6-f3qj-rggq): Liferay Portal's Unlimited File Upload Could Result in DoS (MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 0.0) | 2025-08-22 |
+| GHSA | [GHSA-GHSA-48cg-9c55-j2q7](https://github.com/advisories/GHSA-48cg-9c55-j2q7): hippo4j Includes Hard Coded Secret Key in JWT Creation (MAVEN/cn.hippo4j:hippo4j-core) | HIGH (CVSS: 8.8) | 2025-08-21 |
+| GHSA | [GHSA-GHSA-pj6f-rc94-gw53](https://github.com/advisories/GHSA-pj6f-rc94-gw53): Mattermost Fails to Sanitize File Names (GO/github.com/mattermost/mattermost/server/v8, GO/github.com/mattermost/mattermost-server, GO/github.com/mattermost/mattermost-server) | MODERATE (CVSS: 4.3) | 2025-08-21 |
+| GHSA | [GHSA-GHSA-58cq-8wm2-6m87](https://github.com/advisories/GHSA-58cq-8wm2-6m87): Liferay Portal Stored Cross-Site Scripting Vulnerability via GroupPagesPortlet_type Parameter (MAVEN/com.liferay:com.liferay.layout.admin.web) | MODERATE (CVSS: 0.0) | 2025-08-21 |
+| GHSA | [GHSA-GHSA-q2gv-w583-f2vq](https://github.com/advisories/GHSA-q2gv-w583-f2vq): Liferay Portal Reflected Cross-Site Scripting Vulnerability via snippet Parameter (MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 0.0) | 2025-08-21 |
+| GHSA | [GHSA-GHSA-x7p4-v8mj-6fxx](https://github.com/advisories/GHSA-x7p4-v8mj-6fxx): Liferay Portal Username Enumeration Vulnerability (MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 0.0) | 2025-08-21 |
+| GHSA | [GHSA-GHSA-gqp3-2cvr-x8m3](https://github.com/advisories/GHSA-gqp3-2cvr-x8m3): Apache Tomcat Improper Resource Shutdown or Release vulnerability (MAVEN/org.apache.tomcat.embed:tomcat-embed-core, MAVEN/org.apache.tomcat.embed:tomcat-embed-core, MAVEN/org.apache.tomcat.embed:tomcat-embed-core) | HIGH (CVSS: 7.5) | 2025-08-13 |
+| GHSA | [GHSA-GHSA-hfcf-79gh-f3jc](https://github.com/advisories/GHSA-hfcf-79gh-f3jc): Memos has Cross-Site Scripting (XSS) Vulnerability in Image URLs (GO/github.com/usememos/memos) | MODERATE (CVSS: 0.0) | 2025-07-29 |
+| GHSA | [GHSA-GHSA-4jq9-2xhw-jpx7](https://github.com/advisories/GHSA-4jq9-2xhw-jpx7): Java: DoS Vulnerability in JSON-JAVA (MAVEN/org.json:json) | HIGH (CVSS: 7.5) | 2023-11-14 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [edeee68](https://github.com/torvalds/linux/commit/edeee68c42747c9d9b237f06fbc4cd1a2348fefb) | Merge tag 'scsi-fixes' of git://git.kernel.org/pub/scm/linux/kernel/git/jejb/scsi | 2025-08-22 |
-| torvalds/linux | [c37d2bc](https://github.com/torvalds/linux/commit/c37d2bc92b90ef4df898d1aa7a3ffed34e4043b8) | Merge tag 'iommu-fixes-v6.17-rc2' of git://git.kernel.org/pub/scm/linux/kernel/git/iommu/linux | 2025-08-22 |
-| chromium/chromium | [0475dc5](https://github.com/chromium/chromium/commit/0475dc5655a706020c913942336e91e18ea1936a) | [Fix] Use WeakPtr in NavigationWaiter to prevent crash | 2025-08-22 |
-| chromium/chromium | [5333866](https://github.com/chromium/chromium/commit/5333866b930b0e7b8f0c243ce2b6c36a6e894898) | [dns] Rework DnsTask histograms | 2025-08-22 |
-| chromium/chromium | [b15ce2e](https://github.com/chromium/chromium/commit/b15ce2eb31488788a1fd40e1ae75f2551dfdeb05) | Roll V8 from 7a52429bd26c to fcbc1059cb18 (26 revisions) | 2025-08-22 |
-| torvalds/linux | [99d4d1a](https://github.com/torvalds/linux/commit/99d4d1a070870aa08163af8ce0522992b7f35d8c) | iommu/riscv: prevent NULL deref in iova_to_phys | 2025-08-20 |
-| openssl/openssl | [fc84d46](https://github.com/openssl/openssl/commit/fc84d46d7227886152be00618889a521e9132ef3) | Fix null pointer check in pkey_dh_derive to ensure both keys are set | 2025-08-13 |
+| torvalds/linux | [cf6fc5e](https://github.com/torvalds/linux/commit/cf6fc5eefc5bbbbff92a085039ff74cdbd065c29) | Merge tag 's390-6.17-3' of git://git.kernel.org/pub/scm/linux/kernel/git/s390/linux | 2025-08-22 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| openssl/openssl | [#28259](https://github.com/openssl/openssl/pull/28259) | Fix potential null pointer dereference in pkey_dh_derive | 2025-08-22 |
-| erlang/otp | [#9790](https://github.com/erlang/otp/pull/9790) | otp scan PRs for vulnerabilities | 2025-08-22 |
-| wazuh/wazuh | [#31511](https://github.com/wazuh/wazuh/pull/31511) | Fix literal parser dangling std::string_view capture, and add regression test | 2025-08-22 |
-| langflow-ai/langflow | [#9491](https://github.com/langflow-ai/langflow/pull/9491) | build(deps): bump sha.js from 2.4.11 to 2.4.12 in /docs | 2025-08-22 |
-| hibernate/hibernate-validator | [#1682](https://github.com/hibernate/hibernate-validator/pull/1682) | Bump org.glassfish:jakarta.el from 3.0.3 to 3.0.4 in /performance | 2025-08-22 |
-| erlang/otp | [#9956](https://github.com/erlang/otp/pull/9956) | chore(deps): update github-actions (maint-28) | 2025-08-21 |
+| wazuh/wazuh | [#31514](https://github.com/wazuh/wazuh/pull/31514) | Fix literal parser dangling std::string_view capture, and add regression test in 6.0.0 | 2025-08-22 |
+| langflow-ai/langflow | [#9474](https://github.com/langflow-ai/langflow/pull/9474) | docs: troubleshooting backlog items | 2025-08-22 |
 
