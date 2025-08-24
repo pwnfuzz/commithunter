@@ -1,12 +1,12 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-23 23:13:03 UTC*
+*Last updated: 2025-08-24 01:15:55 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
 | ADVISORY | 1 |
-| COMMIT | 2 |
+| COMMIT | 1 |
 
 ---
 
@@ -14,12 +14,11 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-xqrq-4mgf-ff32](https://github.com/advisories/GHSA-xqrq-4mgf-ff32): Python-Future Module Arbitrary Code Execution via Unintended Import of test.py (PIP/future) | HIGH (CVSS: 0.0) | 2025-08-14 |
+| GHSA | [GHSA-GHSA-95v9-hv42-pwrj](https://github.com/advisories/GHSA-95v9-hv42-pwrj): gnark is vulnerable to signature malleability in EdDSA and ECDSA due to missing scalar checks (GO/github.com/consensys/gnark) | HIGH (CVSS: 0.0) | 2025-08-22 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [e1d8f9c](https://github.com/torvalds/linux/commit/e1d8f9ccb24ecd969fb1062886b20200acc60009) | Merge tag 'trace-v6.17-rc2-2' of git://git.kernel.org/pub/scm/linux/kernel/git/trace/linux-trace | 2025-08-23 |
-| torvalds/linux | [bfb336c](https://github.com/torvalds/linux/commit/bfb336cf97df7b37b2b2edec0f69773e06d11955) | ftrace: Also allocate and copy hash for reading of filter files | 2025-08-22 |
+| torvalds/linux | [8d245ac](https://github.com/torvalds/linux/commit/8d245acc1e884e89f0808f64d6af3fc91d4903a0) | Merge tag 'char-misc-6.17-rc3' of git://git.kernel.org/pub/scm/linux/kernel/git/gregkh/char-misc | 2025-08-23 |
 
