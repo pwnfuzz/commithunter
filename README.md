@@ -1,17 +1,17 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-25 01:10:50 UTC*
+*Last updated: 2025-08-25 03:11:35 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| COMMIT | 1 |
+| PR | 1 |
 
 ---
 
-## Code Commits
+## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| chromium/chromium | [a659082](https://github.com/chromium/chromium/commit/a659082cd3753e336221f33bb40efbd003eb3be1) | [bedrock] null-check BrowserView in BFA::SetWindowAutoManaged() | 2025-08-24 |
+| wazuh/wazuh | [#31517](https://github.com/wazuh/wazuh/pull/31517) | Fix literal parser dangling std::string_view capture, and add regression test in 6.0.0 | 2025-08-24 |
 
