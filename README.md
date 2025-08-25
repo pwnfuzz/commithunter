@@ -1,13 +1,12 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-25 16:17:53 UTC*
+*Last updated: 2025-08-25 17:11:28 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 5 |
-| COMMIT | 1 |
-| PR | 1 |
+| ADVISORY | 4 |
+| PR | 3 |
 
 ---
 
@@ -15,21 +14,16 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-cjc8-g9w8-chfw](https://github.com/advisories/GHSA-cjc8-g9w8-chfw): imagemagick: heap-buffer overflow read in MNG magnification with alpha (NUGET/Magick.NET-Q8-x86, NUGET/Magick.NET-Q8-x64, NUGET/Magick.NET-Q8-arm64) | HIGH (CVSS: 7.6) | 2025-08-25 |
-| GHSA | [GHSA-GHSA-fff3-4rp7-px97](https://github.com/advisories/GHSA-fff3-4rp7-px97): ImageMagick has a heap-buffer-overflow (NUGET/Magick.NET-Q8-x86, NUGET/Magick.NET-Q8-x64, NUGET/Magick.NET-Q8-arm64) | LOW (CVSS: 0.0) | 2025-08-25 |
-| GHSA | [GHSA-GHSA-cfh4-9f7v-fhrc](https://github.com/advisories/GHSA-cfh4-9f7v-fhrc): ImageMagick has a Memory Leak in magick stream (NUGET/Magick.NET-Q8-x86, NUGET/Magick.NET-Q8-x64, NUGET/Magick.NET-Q8-arm64) | LOW (CVSS: 3.7) | 2025-08-25 |
-| GHSA | [GHSA-GHSA-hm4x-r5hc-794f](https://github.com/advisories/GHSA-hm4x-r5hc-794f): ImageMagick has a Heap Buffer Overflow in InterpretImageFilename (NUGET/Magick.NET-Q8-x86, NUGET/Magick.NET-Q8-x64, NUGET/Magick.NET-Q8-arm64) | LOW (CVSS: 3.7) | 2025-08-25 |
-| GHSA | [GHSA-GHSA-qh3h-j545-h8c9](https://github.com/advisories/GHSA-qh3h-j545-h8c9): ImageMagick has a Stack Buffer Overflow in image.c (NUGET/Magick.NET-Q8-x86, NUGET/Magick.NET-Q8-x64, NUGET/Magick.NET-Q8-arm64) | HIGH (CVSS: 7.4) | 2025-08-25 |
-
-## Code Commits
-
-| Source | Title | Severity | Date |
-|--------|-------|----------|------|
-| chromium/chromium | [a659082](https://github.com/chromium/chromium/commit/a659082cd3753e336221f33bb40efbd003eb3be1) | [bedrock] null-check BrowserView in BFA::SetWindowAutoManaged() | 2025-08-24 |
+| GHSA | [GHSA-GHSA-6hgw-6x87-578x](https://github.com/advisories/GHSA-6hgw-6x87-578x): ImageMagick has Undefined Behavior (function-type-mismatch) in CloneSplayTree (NUGET/Magick.NET-Q8-x86, NUGET/Magick.NET-Q8-x64, NUGET/Magick.NET-Q8-arm64) | MODERATE (CVSS: 6.1) | 2025-08-25 |
+| GHSA | [GHSA-GHSA-qp29-wxp5-wh82](https://github.com/advisories/GHSA-qp29-wxp5-wh82): imagemagick: integer overflows in MNG magnification (NUGET/Magick.NET-Q16-AnyCPU, NUGET/Magick.NET-Q16-HDRI-AnyCPU, NUGET/Magick.NET-Q16-HDRI-OpenMP-arm64) | HIGH (CVSS: 8.8) | 2025-08-25 |
+| GHSA | [GHSA-GHSA-4gv9-mp8m-592r](https://github.com/advisories/GHSA-4gv9-mp8m-592r): Langflow Vulnerable to Privilege Escalation via CLI Superuser Creation (Post-RCE) (PIP/langflow-base, PIP/langflow) | HIGH (CVSS: 8.8) | 2025-08-25 |
+| GHSA | [GHSA-GHSA-rx7m-68vc-ppxh](https://github.com/advisories/GHSA-rx7m-68vc-ppxh): PhpSpreadsheet vulnerable to SSRF when reading and displaying a processed HTML document in the browser (COMPOSER/phpoffice/phpspreadsheet, COMPOSER/phpoffice/phpspreadsheet, COMPOSER/phpoffice/phpspreadsheet) | HIGH (CVSS: 0.0) | 2025-08-25 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| erlang/otp | [#10095](https://github.com/erlang/otp/pull/10095) | Fix for httpd CGI scripts | 2025-08-25 |
+| erlang/otp | [#9790](https://github.com/erlang/otp/pull/9790) | otp scan PRs for vulnerabilities | 2025-08-25 |
+| wazuh/wazuh | [#31511](https://github.com/wazuh/wazuh/pull/31511) | Fix literal parser dangling std::string_view capture, and add regression test | 2025-08-25 |
+| wazuh/wazuh | [#31517](https://github.com/wazuh/wazuh/pull/31517) | Fix literal parser dangling std::string_view capture, and add regression test in 6.0.0 | 2025-08-25 |
 
