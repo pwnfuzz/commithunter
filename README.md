@@ -1,13 +1,12 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-25 19:11:28 UTC*
+*Last updated: 2025-08-25 20:16:02 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 6 |
-| COMMIT | 1 |
-| PR | 3 |
+| ADVISORY | 10 |
+| PR | 1 |
 
 ---
 
@@ -15,24 +14,20 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-6hgw-6x87-578x](https://github.com/advisories/GHSA-6hgw-6x87-578x): ImageMagick has Undefined Behavior (function-type-mismatch) in CloneSplayTree (NUGET/Magick.NET-Q8-x86, NUGET/Magick.NET-Q8-x64, NUGET/Magick.NET-Q8-arm64) | MODERATE (CVSS: 6.1) | 2025-08-25 |
-| GHSA | [GHSA-GHSA-qp29-wxp5-wh82](https://github.com/advisories/GHSA-qp29-wxp5-wh82): imagemagick: integer overflows in MNG magnification (NUGET/Magick.NET-Q16-AnyCPU, NUGET/Magick.NET-Q16-HDRI-AnyCPU, NUGET/Magick.NET-Q16-HDRI-OpenMP-arm64) | HIGH (CVSS: 8.8) | 2025-08-25 |
-| GHSA | [GHSA-GHSA-4gv9-mp8m-592r](https://github.com/advisories/GHSA-4gv9-mp8m-592r): Langflow Vulnerable to Privilege Escalation via CLI Superuser Creation (Post-RCE) (PIP/langflow-base, PIP/langflow) | HIGH (CVSS: 8.8) | 2025-08-25 |
-| GHSA | [GHSA-GHSA-rx7m-68vc-ppxh](https://github.com/advisories/GHSA-rx7m-68vc-ppxh): PhpSpreadsheet vulnerable to SSRF when reading and displaying a processed HTML document in the browser (COMPOSER/phpoffice/phpspreadsheet, COMPOSER/phpoffice/phpspreadsheet, COMPOSER/phpoffice/phpspreadsheet) | HIGH (CVSS: 0.0) | 2025-08-25 |
-| GHSA | [GHSA-GHSA-h4m4-xp33-37mj](https://github.com/advisories/GHSA-h4m4-xp33-37mj): Liferay Portal vulnerable to Reflected XSS with the referer and forward parameter (MAVEN/com.liferay.portal:com.liferay.portal.kernel) | MODERATE (CVSS: 0.0) | 2025-08-23 |
-| GHSA | [GHSA-GHSA-3h7r-4xxj-3mfm](https://github.com/advisories/GHSA-3h7r-4xxj-3mfm): Liferay Portal Reflected XSS in CKeditor 4.21.0 endpoint (NPM/liferay-ckeditor, MAVEN/com.liferay:com.liferay.frontend.js.dependencies.web, MAVEN/com.liferay:com.liferay.frontend.editor.ckeditor.web) | MODERATE (CVSS: 0.0) | 2025-08-22 |
-
-## Code Commits
-
-| Source | Title | Severity | Date |
-|--------|-------|----------|------|
-| chromium/chromium | [dc3fe74](https://github.com/chromium/chromium/commit/dc3fe7400a8b1c45d7e3ff2cd43d945c188602ab) | Reapply "Roll protobuf to v32." | 2025-08-25 |
+| GHSA | [GHSA-GHSA-cjc8-g9w8-chfw](https://github.com/advisories/GHSA-cjc8-g9w8-chfw): imagemagick: heap-buffer overflow read in MNG magnification with alpha (NUGET/Magick.NET-Q8-x86, NUGET/Magick.NET-Q8-x64, NUGET/Magick.NET-Q8-arm64) | HIGH (CVSS: 7.6) | 2025-08-25 |
+| GHSA | [GHSA-GHSA-fff3-4rp7-px97](https://github.com/advisories/GHSA-fff3-4rp7-px97): ImageMagick has a heap-buffer-overflow (NUGET/Magick.NET-Q8-x86, NUGET/Magick.NET-Q8-x64, NUGET/Magick.NET-Q8-arm64) | LOW (CVSS: 0.0) | 2025-08-25 |
+| GHSA | [GHSA-GHSA-cfh4-9f7v-fhrc](https://github.com/advisories/GHSA-cfh4-9f7v-fhrc): ImageMagick has a Memory Leak in magick stream (NUGET/Magick.NET-Q8-x86, NUGET/Magick.NET-Q8-x64, NUGET/Magick.NET-Q8-arm64) | LOW (CVSS: 3.7) | 2025-08-25 |
+| GHSA | [GHSA-GHSA-hm4x-r5hc-794f](https://github.com/advisories/GHSA-hm4x-r5hc-794f): ImageMagick has a Heap Buffer Overflow in InterpretImageFilename (NUGET/Magick.NET-Q8-x86, NUGET/Magick.NET-Q8-x64, NUGET/Magick.NET-Q8-arm64) | LOW (CVSS: 3.7) | 2025-08-25 |
+| GHSA | [GHSA-GHSA-qh3h-j545-h8c9](https://github.com/advisories/GHSA-qh3h-j545-h8c9): ImageMagick has a Stack Buffer Overflow in image.c (NUGET/Magick.NET-Q8-x86, NUGET/Magick.NET-Q8-x64, NUGET/Magick.NET-Q8-arm64) | HIGH (CVSS: 7.4) | 2025-08-25 |
+| GHSA | [GHSA-GHSA-84pp-qr92-95c9](https://github.com/advisories/GHSA-84pp-qr92-95c9): Liferay Portal users can upload an unlimited amount of files (MAVEN/com.liferay:com.liferay.dynamic.data.mapping.form.field.type, MAVEN/com.liferay:com.liferay.dynamic.data.mapping.form.web) | MODERATE (CVSS: 0.0) | 2025-08-22 |
+| GHSA | [GHSA-GHSA-mm62-gwj5-j285](https://github.com/advisories/GHSA-mm62-gwj5-j285): Liferay Portal's unauthenticated users can access loaded files via URL before submitting the object entry (MAVEN/com.liferay:com.liferay.object.web, MAVEN/com.liferay:com.liferay.object.dynamic.data.mapping.form.field.type, MAVEN/com.liferay:com.liferay.frontend.js.web) | MODERATE (CVSS: 0.0) | 2025-08-22 |
+| GHSA | [GHSA-GHSA-w3cr-3xw2-rp78](https://github.com/advisories/GHSA-w3cr-3xw2-rp78): Liferay Portal users are able to add system admin portlets to pages (MAVEN/com.liferay:com.liferay.layout.impl) | MODERATE (CVSS: 0.0) | 2025-08-22 |
+| GHSA | [GHSA-GHSA-qq6h-5g6j-q3cm](https://github.com/advisories/GHSA-qq6h-5g6j-q3cm): sweetalert2 v11.4.9 and above contains hidden functionality (NPM/sweetalert2) | LOW (CVSS: 0.0) | 2022-11-23 |
+| GHSA | [GHSA-GHSA-457r-cqc8-9vj9](https://github.com/advisories/GHSA-457r-cqc8-9vj9): sweetalert2 v10.16.10 and above contains hidden functionality (NPM/sweetalert2) | LOW (CVSS: 0.0) | 2022-11-23 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| erlang/otp | [#9790](https://github.com/erlang/otp/pull/9790) | otp scan PRs for vulnerabilities | 2025-08-25 |
-| wazuh/wazuh | [#31511](https://github.com/wazuh/wazuh/pull/31511) | Fix literal parser dangling std::string_view capture, and add regression test | 2025-08-25 |
-| wazuh/wazuh | [#31517](https://github.com/wazuh/wazuh/pull/31517) | Fix literal parser dangling std::string_view capture, and add regression test in 6.0.0 | 2025-08-25 |
+| erlang/otp | [#10095](https://github.com/erlang/otp/pull/10095) | Fix for httpd CGI scripts | 2025-08-25 |
 
