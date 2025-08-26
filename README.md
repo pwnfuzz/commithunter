@@ -1,13 +1,13 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-26 16:17:38 UTC*
+*Last updated: 2025-08-26 17:12:46 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 17 |
-| COMMIT | 2 |
-| PR | 2 |
+| ADVISORY | 15 |
+| COMMIT | 3 |
+| PR | 7 |
 
 ---
 
@@ -15,35 +15,39 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-mxvv-97wh-cfmm](https://github.com/advisories/GHSA-mxvv-97wh-cfmm): ImageMagick (WriteBMPImage): 32-bit integer overflow when writing BMP scanline stride → heap buffer overflow (NUGET/Magick.NET-Q8-x86, NUGET/Magick.NET-Q8-AnyCPU, NUGET/Magick.NET-Q16-x86) | HIGH (CVSS: 7.5) | 2025-08-26 |
-| GHSA | [GHSA-GHSA-9ccg-6pjw-x645](https://github.com/advisories/GHSA-9ccg-6pjw-x645): ImageMagick has a Format String Bug in InterpretImageFilename leads to arbitrary code execution (NUGET/Magick.NET-Q8-x86, NUGET/Magick.NET-Q8-x64, NUGET/Magick.NET-Q8-arm64) | HIGH (CVSS: 7.5) | 2025-08-26 |
-| GHSA | [GHSA-GHSA-fh55-q5pj-pxgw](https://github.com/advisories/GHSA-fh55-q5pj-pxgw): ImageMagick affected by divide-by-zero in ThumbnailImage via montage -geometry ":" leads to crash (NUGET/Magick.NET-Q8-x86, NUGET/Magick.NET-Q8-x64, NUGET/Magick.NET-Q8-arm64) | LOW (CVSS: 3.7) | 2025-08-26 |
-| GHSA | [GHSA-GHSA-rx7m-68vc-ppxh](https://github.com/advisories/GHSA-rx7m-68vc-ppxh): PhpSpreadsheet vulnerable to SSRF when reading and displaying a processed HTML document in the browser (COMPOSER/phpoffice/phpspreadsheet, COMPOSER/phpoffice/phpspreadsheet, COMPOSER/phpoffice/phpspreadsheet) | HIGH (CVSS: 0.0) | 2025-08-25 |
-| GHSA | [GHSA-GHSA-mqh4-2mm8-g7w9](https://github.com/advisories/GHSA-mqh4-2mm8-g7w9): Adminer PHP Object Injection issue leads to Denial of Service (COMPOSER/vrana/adminer) | HIGH (CVSS: 8.6) | 2025-08-25 |
-| GHSA | [GHSA-GHSA-5c4f-pxmx-xcm4](https://github.com/advisories/GHSA-5c4f-pxmx-xcm4): Apache Cassandra: User with MODIFY permission on ALL KEYSPACES can escalate privileges to superuser via unsafe actions (4.0.16 only) (MAVEN/org.apache.cassandra:cassandra-all) | HIGH (CVSS: 8.8) | 2025-08-25 |
-| GHSA | [GHSA-GHSA-pw25-c82r-75mm](https://github.com/advisories/GHSA-pw25-c82r-75mm): request-filtering-agent SSRF Bypass via HTTPS Requests to 127.0.0.1 (NPM/request-filtering-agent) | MODERATE (CVSS: 0.0) | 2025-08-25 |
-| GHSA | [GHSA-GHSA-95v9-hv42-pwrj](https://github.com/advisories/GHSA-95v9-hv42-pwrj): gnark is vulnerable to signature malleability in EdDSA and ECDSA due to missing scalar checks (GO/github.com/consensys/gnark) | HIGH (CVSS: 0.0) | 2025-08-22 |
-| GHSA | [GHSA-GHSA-84pp-qr92-95c9](https://github.com/advisories/GHSA-84pp-qr92-95c9): Liferay Portal users can upload an unlimited amount of files (MAVEN/com.liferay:com.liferay.dynamic.data.mapping.form.field.type, MAVEN/com.liferay:com.liferay.dynamic.data.mapping.form.web) | MODERATE (CVSS: 0.0) | 2025-08-22 |
-| GHSA | [GHSA-GHSA-mm62-gwj5-j285](https://github.com/advisories/GHSA-mm62-gwj5-j285): Liferay Portal's unauthenticated users can access loaded files via URL before submitting the object entry (MAVEN/com.liferay:com.liferay.object.web, MAVEN/com.liferay:com.liferay.object.dynamic.data.mapping.form.field.type, MAVEN/com.liferay:com.liferay.frontend.js.web) | MODERATE (CVSS: 0.0) | 2025-08-22 |
-| GHSA | [GHSA-GHSA-w3cr-3xw2-rp78](https://github.com/advisories/GHSA-w3cr-3xw2-rp78): Liferay Portal users are able to add system admin portlets to pages (MAVEN/com.liferay:com.liferay.layout.impl) | MODERATE (CVSS: 0.0) | 2025-08-22 |
-| GHSA | [GHSA-GHSA-cpq7-6gpm-g9rc](https://github.com/advisories/GHSA-cpq7-6gpm-g9rc): cipher-base is missing type checks, leading to hash rewind and passing on crafted data (NPM/cipher-base) | CRITICAL (CVSS: 0.0) | 2025-08-21 |
-| GHSA | [GHSA-GHSA-95m3-7q98-8xr5](https://github.com/advisories/GHSA-95m3-7q98-8xr5): sha.js is missing type checks leading to hash rewind and passing on crafted data (NPM/sha.js) | CRITICAL (CVSS: 0.0) | 2025-08-21 |
-| GHSA | [GHSA-GHSA-xr97-25v7-hc2q](https://github.com/advisories/GHSA-xr97-25v7-hc2q): UnoPim has Stored Cross-site Scripting vulnerability in user creation functionality (COMPOSER/unopim/unopim) | MODERATE (CVSS: 6.8) | 2025-08-21 |
-| GHSA | [GHSA-GHSA-wf6c-hrhf-86cw](https://github.com/advisories/GHSA-wf6c-hrhf-86cw): NocoDB Vulnerable to Reflected Cross-Site Scripting on Reset Password Page (NPM/nocodb) | MODERATE (CVSS: 6.1) | 2025-03-06 |
-| GHSA | [GHSA-GHSA-qq6h-5g6j-q3cm](https://github.com/advisories/GHSA-qq6h-5g6j-q3cm): sweetalert2 v11.4.9 and above contains hidden functionality (NPM/sweetalert2) | LOW (CVSS: 0.0) | 2022-11-23 |
-| GHSA | [GHSA-GHSA-457r-cqc8-9vj9](https://github.com/advisories/GHSA-457r-cqc8-9vj9): sweetalert2 v10.16.10 and above contains hidden functionality (NPM/sweetalert2) | LOW (CVSS: 0.0) | 2022-11-23 |
+| GHSA | [GHSA-GHSA-27r7-3m9x-r533](https://github.com/advisories/GHSA-27r7-3m9x-r533): traQ Allows Insertion of Sensitive Information into Log File (GO/github.com/traPtitech/traQ) | MODERATE (CVSS: 5.9) | 2025-08-26 |
+| GHSA | [GHSA-GHSA-8mvj-3j78-4qmw](https://github.com/advisories/GHSA-8mvj-3j78-4qmw): jsPDF Denial of Service (DoS) (NPM/jspdf) | HIGH (CVSS: 0.0) | 2025-08-26 |
+| GHSA | [GHSA-GHSA-crcq-738g-pqvc](https://github.com/advisories/GHSA-crcq-738g-pqvc): Craft CMS Potential Remote Code Execution via Twig SSTI (COMPOSER/craftcms/cms, COMPOSER/craftcms/cms) | MODERATE (CVSS: 0.0) | 2025-08-25 |
+| GHSA | [GHSA-GHSA-5cmr-4px5-23pc](https://github.com/advisories/GHSA-5cmr-4px5-23pc): XGrammar affected by Denial of Service by infinite recursion grammars (PIP/xgrammar) | HIGH (CVSS: 0.0) | 2025-08-25 |
+| GHSA | [GHSA-GHSA-847f-9342-265h](https://github.com/advisories/GHSA-847f-9342-265h): h2 allows HTTP Request Smuggling due to illegal characters in headers (PIP/h2) | MODERATE (CVSS: 0.0) | 2025-08-25 |
+| GHSA | [GHSA-GHSA-63cx-g855-hvv4](https://github.com/advisories/GHSA-63cx-g855-hvv4): mitmproxy binaries embed a vulnerable python-hyper/h2 dependency (PIP/mitmproxy) | MODERATE (CVSS: 0.0) | 2025-08-25 |
+| GHSA | [GHSA-GHSA-mf9q-87xx-jgvv](https://github.com/advisories/GHSA-mf9q-87xx-jgvv): Liferay Portal allows unrestricted upload of file in the style books component (MAVEN/com.liferay:com.liferay.style.book.web) | MODERATE (CVSS: 0.0) | 2025-08-23 |
+| GHSA | [GHSA-GHSA-h8gx-4hhm-w45v](https://github.com/advisories/GHSA-h8gx-4hhm-w45v): Liferay Portal stored cross-site scripting in text field of the web content structure (MAVEN/com.liferay:com.liferay.journal.service) | MODERATE (CVSS: 0.0) | 2025-08-23 |
+| GHSA | [GHSA-GHSA-23w4-rpc6-wpcc](https://github.com/advisories/GHSA-23w4-rpc6-wpcc): Liferay Portal ReDoS with Role Name search in KaleoDesignerPortlet (MAVEN/com.liferay:com.liferay.portal.workflow.kaleo.designer.web) | MODERATE (CVSS: 0.0) | 2025-08-23 |
+| GHSA | [GHSA-GHSA-6hj4-v2qp-cqr2](https://github.com/advisories/GHSA-6hj4-v2qp-cqr2): Liferay Portal allows open redirect in /c/portal/edit_info_item parameter redirect (MAVEN/com.liferay:com.liferay.info.impl) | MODERATE (CVSS: 0.0) | 2025-08-23 |
+| GHSA | [GHSA-GHSA-rvmf-jw8g-r35r](https://github.com/advisories/GHSA-rvmf-jw8g-r35r): Liferay Portal vulnerable to Stored XSS in Components portlet (MAVEN/com.liferay:com.liferay.plugins.admin.web) | MODERATE (CVSS: 0.0) | 2025-08-23 |
+| GHSA | [GHSA-GHSA-cv9j-mg9w-v7wm](https://github.com/advisories/GHSA-cv9j-mg9w-v7wm): Liferay Portal JSONWS API endpoint shares sensitive information (MAVEN/com.liferay.portal:com.liferay.portal.impl) | MODERATE (CVSS: 0.0) | 2025-08-23 |
+| GHSA | [GHSA-GHSA-h4m4-xp33-37mj](https://github.com/advisories/GHSA-h4m4-xp33-37mj): Liferay Portal vulnerable to Reflected XSS with the referer and forward parameter (MAVEN/com.liferay.portal:com.liferay.portal.kernel) | MODERATE (CVSS: 0.0) | 2025-08-23 |
+| GHSA | [GHSA-GHSA-3h7r-4xxj-3mfm](https://github.com/advisories/GHSA-3h7r-4xxj-3mfm): Liferay Portal Reflected XSS in CKeditor 4.21.0 endpoint (NPM/liferay-ckeditor, MAVEN/com.liferay:com.liferay.frontend.js.dependencies.web, MAVEN/com.liferay:com.liferay.frontend.editor.ckeditor.web) | MODERATE (CVSS: 0.0) | 2025-08-22 |
+| GHSA | [GHSA-GHSA-77rm-9x9h-xj3g](https://github.com/advisories/GHSA-77rm-9x9h-xj3g): Withdrawn Advisory: NULL Pointer Dereference in Protocol Buffers (GO/github.com/protocolbuffers/protobuf, GO/github.com/protocolbuffers/protobuf, MAVEN/com.google.protobuf:protobuf-java) | HIGH (CVSS: 7.5) | 2022-01-27 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| chromium/chromium | [01838f0](https://github.com/chromium/chromium/commit/01838f0d7ef96de9d8b25579ab45de9c7af34aed) | Remove insecure HTTP prefixed cookies from DB | 2025-08-26 |
-| erlang/otp | [d848fbc](https://github.com/erlang/otp/commit/d848fbc1dab75d5369284a6472baf0eea54c2c5d) | Merge pull request #9790 from kikofernandez/add-vendor-vulnerability-analysis/OTP-19652 | 2025-08-26 |
+| torvalds/linux | [fab1bed](https://github.com/torvalds/linux/commit/fab1beda7597fac1cecc01707d55eadb6bbe773c) | Merge tag 'devicetree-fixes-for-6.17-1' of git://git.kernel.org/pub/scm/linux/kernel/git/robh/linux | 2025-08-26 |
+| erlang/otp | [807a0a6](https://github.com/erlang/otp/commit/807a0a6ecf1bdfe7543ae05816ac1140004a0dcb) | Merge branch 'whaileee/inets/httpd/httpoxy/OTP-19729' into maint | 2025-08-26 |
+| chromium/chromium | [dc3fe74](https://github.com/chromium/chromium/commit/dc3fe7400a8b1c45d7e3ff2cd43d945c188602ab) | Reapply "Roll protobuf to v32." | 2025-08-25 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| erlang/otp | [#10095](https://github.com/erlang/otp/pull/10095) | Fix for httpd CGI scripts | 2025-08-26 |
-| wazuh/wazuh | [#31571](https://github.com/wazuh/wazuh/pull/31571) | Refactor add support for Amazon Inspector v2 | 2025-08-26 |
+| erlang/otp | [#6223](https://github.com/erlang/otp/pull/6223) | [inets/3392] Fix for CVE-2016-1000107 | 2025-08-26 |
+| erlang/otp | [#9790](https://github.com/erlang/otp/pull/9790) | otp scan PRs for vulnerabilities | 2025-08-26 |
+| wazuh/wazuh | [#31511](https://github.com/wazuh/wazuh/pull/31511) | Fix literal parser dangling std::string_view capture, and add regression test | 2025-08-26 |
+| wazuh/wazuh | [#31517](https://github.com/wazuh/wazuh/pull/31517) | Fix literal parser dangling std::string_view capture, and add regression test in 6.0.0 | 2025-08-26 |
+| langflow-ai/langflow | [#9541](https://github.com/langflow-ai/langflow/pull/9541) | fix: Run docling processing in subprocess | 2025-08-26 |
+| langflow-ai/langflow | [#9542](https://github.com/langflow-ai/langflow/pull/9542) | fix: superuser credential handling for security | 2025-08-26 |
+| langflow-ai/langflow | [#9474](https://github.com/langflow-ai/langflow/pull/9474) | docs: troubleshooting backlog items | 2025-08-25 |
 
