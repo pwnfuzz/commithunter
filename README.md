@@ -1,13 +1,12 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-27 18:19:50 UTC*
+*Last updated: 2025-08-27 19:11:53 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 22 |
-| COMMIT | 3 |
-| PR | 2 |
+| ADVISORY | 23 |
+| PR | 6 |
 
 ---
 
@@ -15,41 +14,38 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-9hp3-f5g8-rccg](https://github.com/advisories/GHSA-9hp3-f5g8-rccg): The Freeform CraftCMS plugin contains an Server-side template injection (SSTI) vulnerability (COMPOSER/solspace/craft-freeform) | CRITICAL (CVSS: 9.8) | 2025-08-27 |
-| GHSA | [GHSA-GHSA-27r7-3m9x-r533](https://github.com/advisories/GHSA-27r7-3m9x-r533): traQ Allows Insertion of Sensitive Information into Log File (GO/github.com/traPtitech/traQ) | MODERATE (CVSS: 5.9) | 2025-08-26 |
-| GHSA | [GHSA-GHSA-vj54-72f3-p5jv](https://github.com/advisories/GHSA-vj54-72f3-p5jv): devalue prototype pollution vulnerability (NPM/devalue) | HIGH (CVSS: 0.0) | 2025-08-26 |
-| GHSA | [GHSA-GHSA-gqp9-jh35-439m](https://github.com/advisories/GHSA-gqp9-jh35-439m): Badaso CMS file upload vulnerability (COMPOSER/badaso/core) | HIGH (CVSS: 0.0) | 2025-08-26 |
-| GHSA | [GHSA-GHSA-8mvj-3j78-4qmw](https://github.com/advisories/GHSA-8mvj-3j78-4qmw): jsPDF Denial of Service (DoS) (NPM/jspdf) | HIGH (CVSS: 0.0) | 2025-08-26 |
-| GHSA | [GHSA-GHSA-224p-v68g-5g8f](https://github.com/advisories/GHSA-224p-v68g-5g8f): GraphQL Armor Max-Depth Plugin Bypass via fragment caching (NPM/@escape.tech/graphql-armor-max-depth) | MODERATE (CVSS: 5.3) | 2025-08-26 |
-| GHSA | [GHSA-GHSA-hmfr-rx46-4jx2](https://github.com/advisories/GHSA-hmfr-rx46-4jx2): GraphQL Armor Max-Depth Plugin Bypass via Introspection Query Obfuscation (NPM/@escape.tech/graphql-armor-max-depth) | MODERATE (CVSS: 5.3) | 2025-08-26 |
-| GHSA | [GHSA-GHSA-9xph-j2h6-g47v](https://github.com/advisories/GHSA-9xph-j2h6-g47v): Picklescan has a missing detection when calling built-in python library idlelib.calltip.get_entity (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-26 |
-| GHSA | [GHSA-GHSA-8r4j-24qv-fmq9](https://github.com/advisories/GHSA-8r4j-24qv-fmq9): Picklescan has a missing detection when calling built-in python idlelib.calltip.Calltip (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-26 |
-| GHSA | [GHSA-GHSA-cj3c-v495-4xqh](https://github.com/advisories/GHSA-cj3c-v495-4xqh): Picklescan has a missing detection when calling built-in python code.InteractiveInterpreter (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-26 |
-| GHSA | [GHSA-GHSA-7cq8-mj8x-j263](https://github.com/advisories/GHSA-7cq8-mj8x-j263): Picklescan has a missing detection when calling built-in python idlelib.autocomplete.AutoComplete.fetch_completions (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-26 |
-| GHSA | [GHSA-GHSA-6w4w-5w54-rjvr](https://github.com/advisories/GHSA-6w4w-5w54-rjvr): Picklescan has a missing detection when calling built-in python idlelib.autocomplete.AutoComplete.get_entity (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-26 |
-| GHSA | [GHSA-GHSA-3vg9-h568-4w9m](https://github.com/advisories/GHSA-3vg9-h568-4w9m): Picklescan has a missing detection when calling built-in python idlelib.debugobj.ObjectTreeItem (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-26 |
-| GHSA | [GHSA-GHSA-f54q-57x4-jg88](https://github.com/advisories/GHSA-f54q-57x4-jg88): Picklescan has a missing detection when calling built-in python lib2to3.pgen2.grammar.Grammar.loads (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-26 |
-| GHSA | [GHSA-GHSA-6vqj-c2q5-j97w](https://github.com/advisories/GHSA-6vqj-c2q5-j97w): Picklescan has a missing detection when calling built-in python profile.Profile.runctx (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-26 |
-| GHSA | [GHSA-GHSA-x696-vm39-cp64](https://github.com/advisories/GHSA-x696-vm39-cp64): Picklescan has a missing detection when calling built-in python profile.Profile.run (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-26 |
-| GHSA | [GHSA-GHSA-g344-hcph-8vgg](https://github.com/advisories/GHSA-g344-hcph-8vgg): Picklescan has a missing detection when calling built-in python trace.Trace.runctx (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-26 |
-| GHSA | [GHSA-GHSA-5qwp-399c-mjwf](https://github.com/advisories/GHSA-5qwp-399c-mjwf): Picklescan has a missing detection when calling built-in python trace.Trace.run (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-26 |
-| GHSA | [GHSA-GHSA-8j63-96wh-wh3j](https://github.com/advisories/GHSA-8j63-96wh-wh3j): 1Panel agent certificate verification bypass leading to arbitrary command execution (GO/github.com/1Panel-dev/1Panel/core, GO/github.com/1Panel-dev/1Panel/core) | HIGH (CVSS: 8.1) | 2025-08-01 |
-| GHSA | [GHSA-GHSA-j63h-hmgw-x4j7](https://github.com/advisories/GHSA-j63h-hmgw-x4j7): Opencast still publishes global system account credentials  (MAVEN/org.opencastproject:opencast-publication-service-oaipmh-remote, MAVEN/org.opencastproject:opencast-kernel, MAVEN/org.opencastproject:opencast-ingest-service-impl) | MODERATE (CVSS: 6.5) | 2025-07-25 |
-| GHSA | [GHSA-GHSA-4vc8-wvhw-m5gv](https://github.com/advisories/GHSA-4vc8-wvhw-m5gv): Juju allows arbitrary executable uploads via authenticated endpoint without authorization (GO/github.com/juju/juju) | HIGH (CVSS: 8.8) | 2025-07-09 |
-| GHSA | [GHSA-GHSA-24ch-w38v-xmh8](https://github.com/advisories/GHSA-24ch-w38v-xmh8): Juju zip slip vulnerability via authenticated endpoint (GO/github.com/juju/juju) | HIGH (CVSS: 8.8) | 2025-07-09 |
-
-## Code Commits
-
-| Source | Title | Severity | Date |
-|--------|-------|----------|------|
-| chromium/chromium | [5242869](https://github.com/chromium/chromium/commit/524286931756a9df944a0915172d1384db01e5ca) | [ios] Fix use-after-free caused by __unsafe_unretained | 2025-08-27 |
-| chromium/chromium | [f17f5ac](https://github.com/chromium/chromium/commit/f17f5ac4eb340722d5ff61e60cd6efd98fbab83b) | [ios] Fix use-after-free caused by __unsafe_unretained | 2025-08-27 |
-| chromium/chromium | [7a28215](https://github.com/chromium/chromium/commit/7a2821580c0fd65387c70d432017e31881a90c51) | Fix race condition in ServiceWorkerVersion::OnTimeoutTimer | 2025-08-27 |
+| GHSA | [GHSA-GHSA-cxm3-wv7p-598c](https://github.com/advisories/GHSA-cxm3-wv7p-598c): Malicious versions of Nx were published (NPM/@nx/workspace, NPM/@nx/js, NPM/@nx/devkit) | CRITICAL (CVSS: 0.0) | 2025-08-27 |
+| GHSA | [GHSA-GHSA-7pwc-wh6m-44q3](https://github.com/advisories/GHSA-7pwc-wh6m-44q3): Google Sign-In for Rails allowed redirects to malformed URLs (RUBYGEMS/google_sign_in) | MODERATE (CVSS: 4.2) | 2025-08-27 |
+| GHSA | [GHSA-GHSA-q77w-mwjj-7mqx](https://github.com/advisories/GHSA-q77w-mwjj-7mqx): Picklescan is missing detection when calling built-in python library asyncio.unix_events._UnixSubprocessTransport._start (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-26 |
+| GHSA | [GHSA-GHSA-49gj-c84q-6qm9](https://github.com/advisories/GHSA-49gj-c84q-6qm9): Picklescan is missing detection when calling built-in python cProfile.run (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-26 |
+| GHSA | [GHSA-GHSA-9w88-8rmg-7g2p](https://github.com/advisories/GHSA-9w88-8rmg-7g2p): Picklescan is missing detection when calling built-in python cProfile.runctx (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-26 |
+| GHSA | [GHSA-GHSA-fqq6-7vqf-w3fg](https://github.com/advisories/GHSA-fqq6-7vqf-w3fg): Picklescan is missing detection when calling built-in python doctest.debug_script (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-26 |
+| GHSA | [GHSA-GHSA-3gf5-cxq9-w223](https://github.com/advisories/GHSA-3gf5-cxq9-w223): Picklescan is missing detection when calling built-in python idlelib.pyshell.ModifiedInterpreter.runcode (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-26 |
+| GHSA | [GHSA-GHSA-j343-8v2j-ff7w](https://github.com/advisories/GHSA-j343-8v2j-ff7w): Picklescan is missing detection when calling built-in python idlelib.pyshell.ModifiedInterpreter.runcommand (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-26 |
+| GHSA | [GHSA-GHSA-m869-42cg-3xwr](https://github.com/advisories/GHSA-m869-42cg-3xwr): Picklescan is missing detection when calling built-in python idlelib.run.Executive.runcode (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-26 |
+| GHSA | [GHSA-GHSA-p9w7-82w4-7q8m](https://github.com/advisories/GHSA-p9w7-82w4-7q8m): Picklescan is missing detection when calling built-in python lib2to3.pgen2.pgen.ParserGenerator.make_label (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-26 |
+| GHSA | [GHSA-GHSA-xp4f-hrf8-rxw7](https://github.com/advisories/GHSA-xp4f-hrf8-rxw7): Picklescan is missing detection when calling built-in python ensurepip._run_pip (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-26 |
+| GHSA | [GHSA-GHSA-4whj-rm5r-c2v8](https://github.com/advisories/GHSA-4whj-rm5r-c2v8): Picklescan is missing detection when calling pytorch function torch.utils.bottleneck.__main__.run_autograd_prof (PIP/picklescan) | MODERATE (CVSS: 0.0) | 2025-08-26 |
+| GHSA | [GHSA-GHSA-2f28-69j7-85hf](https://github.com/advisories/GHSA-2f28-69j7-85hf): Easy!Appointments SQL injection vulnerability (COMPOSER/alextselegidis/easyappointments) | MODERATE (CVSS: 0.0) | 2025-08-26 |
+| GHSA | [GHSA-GHSA-mxvv-97wh-cfmm](https://github.com/advisories/GHSA-mxvv-97wh-cfmm): ImageMagick (WriteBMPImage): 32-bit integer overflow when writing BMP scanline stride → heap buffer overflow (NUGET/Magick.NET-Q8-x86, NUGET/Magick.NET-Q8-AnyCPU, NUGET/Magick.NET-Q16-x86) | HIGH (CVSS: 7.5) | 2025-08-26 |
+| GHSA | [GHSA-GHSA-9ccg-6pjw-x645](https://github.com/advisories/GHSA-9ccg-6pjw-x645): ImageMagick has a Format String Bug in InterpretImageFilename leads to arbitrary code execution (NUGET/Magick.NET-Q8-x86, NUGET/Magick.NET-Q8-x64, NUGET/Magick.NET-Q8-arm64) | HIGH (CVSS: 7.5) | 2025-08-26 |
+| GHSA | [GHSA-GHSA-fh55-q5pj-pxgw](https://github.com/advisories/GHSA-fh55-q5pj-pxgw): ImageMagick affected by divide-by-zero in ThumbnailImage via montage -geometry ":" leads to crash (NUGET/Magick.NET-Q8-x86, NUGET/Magick.NET-Q8-x64, NUGET/Magick.NET-Q8-arm64) | LOW (CVSS: 3.7) | 2025-08-26 |
+| GHSA | [GHSA-GHSA-gpmg-4x4g-mr5r](https://github.com/advisories/GHSA-gpmg-4x4g-mr5r): OMERO.web displays unecessary user information when requesting password reset (PIP/omero-web) | MODERATE (CVSS: 5.3) | 2025-08-13 |
+| GHSA | [GHSA-GHSA-4xg4-54hm-9j77](https://github.com/advisories/GHSA-4xg4-54hm-9j77): Gokapi has stored XSS vulnerability in friendly name for API keys (GO/github.com/forceu/gokapi, GO/github.com/forceu/gokapi) | MODERATE (CVSS: 5.4) | 2025-06-03 |
+| GHSA | [GHSA-GHSA-95rc-wc32-gm53](https://github.com/advisories/GHSA-95rc-wc32-gm53): Gokapi vulnerable to stored XSS via uploading file with malicious file name (GO/github.com/forceu/gokapi, GO/github.com/forceu/gokapi) | MODERATE (CVSS: 0.0) | 2025-06-03 |
+| GHSA | [GHSA-GHSA-r9px-m959-cxf4](https://github.com/advisories/GHSA-r9px-m959-cxf4): go-git clients vulnerable to DoS via maliciously crafted Git server replies (GO/github.com/go-git/go-git, GO/github.com/go-git/go-git/v5, GO/gopkg.in/src-d/go-git.v4) | HIGH (CVSS: 7.5) | 2025-01-06 |
+| GHSA | [GHSA-GHSA-hj3w-wrh4-44vp](https://github.com/advisories/GHSA-hj3w-wrh4-44vp): LLama Factory Remote OS Command Injection Vulnerability (PIP/llamafactory) | HIGH (CVSS: 7.5) | 2024-11-21 |
+| GHSA | [GHSA-GHSA-jh6x-7xfg-9cq2](https://github.com/advisories/GHSA-jh6x-7xfg-9cq2): Searching Opencast may cause a denial of service (MAVEN/org.opencastproject:opencast-elasticsearch-impl, MAVEN/org.opencastproject:opencast-elasticsearch-impl, MAVEN/org.opencastproject:opencast-elasticsearch-impl) | MODERATE (CVSS: 6.5) | 2024-11-20 |
+| GHSA | [GHSA-GHSA-phh4-3hmm-24rx](https://github.com/advisories/GHSA-phh4-3hmm-24rx): Duplicate Advisory: Juju makes Use of Weak Credentials (GO/github.com/juju/juju) | HIGH (CVSS: 8.7) | 2024-10-02 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| openssl/openssl | [#28184](https://github.com/openssl/openssl/pull/28184) | Fix integer overflow in date_to_julian() call | 2025-08-27 |
-| langflow-ai/langflow | [#9541](https://github.com/langflow-ai/langflow/pull/9541) | fix: Run docling processing in subprocess | 2025-08-27 |
+| erlang/otp | [#9960](https://github.com/erlang/otp/pull/9960) | chore(deps): update github-actions (maint-26) | 2025-08-27 |
+| erlang/otp | [#9956](https://github.com/erlang/otp/pull/9956) | chore(deps): update github-actions (maint-28) | 2025-08-27 |
+| erlang/otp | [#9958](https://github.com/erlang/otp/pull/9958) | chore(deps): update github-actions (maint-27) | 2025-08-27 |
+| wazuh/wazuh | [#31594](https://github.com/wazuh/wazuh/pull/31594) | Fix VD DB workflow generation | 2025-08-27 |
+| wazuh/wazuh | [#31571](https://github.com/wazuh/wazuh/pull/31571) | Refactor add support for Amazon Inspector v2 | 2025-08-27 |
+| langflow-ai/langflow | [#9474](https://github.com/langflow-ai/langflow/pull/9474) | docs: troubleshooting backlog items | 2025-08-27 |
 
