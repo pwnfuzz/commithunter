@@ -1,32 +1,17 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-30 21:11:33 UTC*
+*Last updated: 2025-08-30 22:12:01 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 8 |
-| PR | 2 |
+| COMMIT | 1 |
 
 ---
 
-## Security Advisories
+## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-876g-49r6-33qj](https://github.com/advisories/GHSA-876g-49r6-33qj): Liferay Portal allows improper access through the expandoTableLocalService (MAVEN/com.liferay:com.liferay.portal.workflow.kaleo.runtime.impl) | MODERATE (CVSS: 0.0) | 2025-08-29 |
-| GHSA | [GHSA-GHSA-g5qg-72qw-gw5v](https://github.com/advisories/GHSA-g5qg-72qw-gw5v): Next.js Affected by Cache Key Confusion for Image Optimization API Routes (NPM/next, NPM/next) | MODERATE (CVSS: 6.2) | 2025-08-29 |
-| GHSA | [GHSA-GHSA-xv57-4mr9-wg8v](https://github.com/advisories/GHSA-xv57-4mr9-wg8v): Next.js Content Injection Vulnerability for Image Optimization (NPM/next, NPM/next) | MODERATE (CVSS: 4.3) | 2025-08-29 |
-| GHSA | [GHSA-GHSA-4342-x723-ch2f](https://github.com/advisories/GHSA-4342-x723-ch2f): Next.js Improper Middleware Redirect Handling Leads to SSRF (NPM/next, NPM/next) | MODERATE (CVSS: 6.5) | 2025-08-29 |
-| GHSA | [GHSA-GHSA-4855-q42w-5vr4](https://github.com/advisories/GHSA-4855-q42w-5vr4): DoS Vulnerability in ntpd-rs (RUST/ntpd-rs) | MODERATE (CVSS: 5.3) | 2025-08-29 |
-| GHSA | [GHSA-GHSA-5jch-xhw4-r43v](https://github.com/advisories/GHSA-5jch-xhw4-r43v): Google Sign-In for Rails allowed redirect to protocol-relative URI (RUBYGEMS/google_sign_in) | MODERATE (CVSS: 4.2) | 2025-08-29 |
-| GHSA | [GHSA-GHSA-hq8m-v68g-8cf8](https://github.com/advisories/GHSA-hq8m-v68g-8cf8): Opencast has a partial path traversal vulnerability in UI config (MAVEN/org.opencastproject:opencast-user-interface-configuration, MAVEN/org.opencastproject:opencast-user-interface-configuration) | LOW (CVSS: 0.0) | 2025-08-29 |
-| GHSA | [GHSA-GHSA-mpww-r37c-vxjw](https://github.com/advisories/GHSA-mpww-r37c-vxjw): Liferay Portal Vulnerable to Cross-Site Scripting in Dynamic Data Mapping (MAVEN/ccom.liferay:com.liferay.dynamic.data.mapping.web, MAVEN/com.liferay.portal:release.portal.bom) | MODERATE (CVSS: 0.0) | 2025-08-20 |
-
-## Pull Requests
-
-| Source | Title | Severity | Date |
-|--------|-------|----------|------|
-| openssl/openssl | [#28376](https://github.com/openssl/openssl/pull/28376) | make PCT on key import a transient error state not a permanent one | 2025-08-30 |
-| wazuh/wazuh | [#31646](https://github.com/wazuh/wazuh/pull/31646) | Remove UID generation from worker nodes | 2025-08-30 |
+| chromium/chromium | [8d0428d](https://github.com/chromium/chromium/commit/8d0428d5211aff5f38e7d51c36726bbb9ab952b8) | Roll compiler-rt from 781f4e850a9e to 361e87916c9c (6 revisions) | 2025-08-30 |
 
