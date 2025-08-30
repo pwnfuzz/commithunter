@@ -1,17 +1,18 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-30 22:12:01 UTC*
+*Last updated: 2025-08-30 23:12:18 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| COMMIT | 1 |
+| PR | 2 |
 
 ---
 
-## Code Commits
+## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| chromium/chromium | [8d0428d](https://github.com/chromium/chromium/commit/8d0428d5211aff5f38e7d51c36726bbb9ab952b8) | Roll compiler-rt from 781f4e850a9e to 361e87916c9c (6 revisions) | 2025-08-30 |
+| openssl/openssl | [#28376](https://github.com/openssl/openssl/pull/28376) | make PCT on key import a transient error state not a permanent one | 2025-08-30 |
+| wazuh/wazuh | [#31646](https://github.com/wazuh/wazuh/pull/31646) | Remove UID generation from worker nodes | 2025-08-30 |
 
