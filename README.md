@@ -1,17 +1,17 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-31 07:12:40 UTC*
+*Last updated: 2025-08-31 08:16:39 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| PR | 1 |
+| COMMIT | 1 |
 
 ---
 
-## Pull Requests
+## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| openssl/openssl | [#28376](https://github.com/openssl/openssl/pull/28376) | make PCT on key import a transient error state not a permanent one | 2025-08-31 |
+| chromium/chromium | [8d0428d](https://github.com/chromium/chromium/commit/8d0428d5211aff5f38e7d51c36726bbb9ab952b8) | Roll compiler-rt from 781f4e850a9e to 361e87916c9c (6 revisions) | 2025-08-30 |
 
