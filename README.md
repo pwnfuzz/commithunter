@@ -1,11 +1,11 @@
 # Security Updates Monitor
 
-*Last updated: 2025-09-01 12:29:31 UTC*
+*Last updated: 2025-09-01 13:24:48 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| PR | 1 |
+| PR | 2 |
 
 ---
 
@@ -13,5 +13,6 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| openssl/openssl | [#22285](https://github.com/openssl/openssl/pull/22285) | PKCS7/CMS: fix doc on signer/chain certs | 2025-09-01 |
+| wazuh/wazuh | [#31646](https://github.com/wazuh/wazuh/pull/31646) | Remove UID generation from worker nodes | 2025-09-01 |
+| hibernate/hibernate-validator | [#1695](https://github.com/hibernate/hibernate-validator/pull/1695) | Bump the workflow-actions group with 4 updates | 2025-09-01 |
 
