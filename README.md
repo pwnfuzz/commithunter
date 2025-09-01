@@ -1,11 +1,11 @@
 # Security Updates Monitor
 
-*Last updated: 2025-08-31 09:12:35 UTC*
+*Last updated: 2025-09-01 08:21:03 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| PR | 1 |
+| PR | 2 |
 
 ---
 
@@ -13,5 +13,6 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| openssl/openssl | [#28376](https://github.com/openssl/openssl/pull/28376) | make PCT on key import a transient error state not a permanent one | 2025-08-31 |
+| wazuh/wazuh | [#31646](https://github.com/wazuh/wazuh/pull/31646) | Remove UID generation from worker nodes | 2025-09-01 |
+| hibernate/hibernate-validator | [#1695](https://github.com/hibernate/hibernate-validator/pull/1695) | Bump the workflow-actions group with 4 updates | 2025-09-01 |
 
