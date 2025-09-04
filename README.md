@@ -1,13 +1,13 @@
 # Security Updates Monitor
 
-*Last updated: 2025-09-03 23:12:14 UTC*
+*Last updated: 2025-09-04 01:03:01 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 11 |
+| ADVISORY | 15 |
 | COMMIT | 1 |
-| PR | 3 |
+| PR | 4 |
 
 ---
 
@@ -15,29 +15,34 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-mw26-5g2v-hqw3](https://github.com/advisories/GHSA-mw26-5g2v-hqw3): DeepDiff Class Pollution in Delta class leading to DoS, Remote Code Execution, and more (PIP/deepdiff) | CRITICAL (CVSS: 0.0) | 2025-09-03 |
-| GHSA | [GHSA-GHSA-f696-867g-2759](https://github.com/advisories/GHSA-f696-867g-2759): Jenkins OpenTelemetry Plugin missing permission check allows capturing credentials (MAVEN/io.jenkins.plugins:opentelemetry) | MODERATE (CVSS: 4.2) | 2025-09-03 |
-| GHSA | [GHSA-GHSA-gm8g-fh49-qq6v](https://github.com/advisories/GHSA-gm8g-fh49-qq6v): Jenkins global-build-stats Plugin missing permission check can result in graph IDs being enumerated (MAVEN/org.jenkins-ci.plugins:global-build-stats) | MODERATE (CVSS: 4.3) | 2025-09-03 |
-| GHSA | [GHSA-GHSA-g2pq-9jr7-w6gv](https://github.com/advisories/GHSA-g2pq-9jr7-w6gv): Jenkins Git client Plugin file system information disclosure vulnerability (MAVEN/org.jenkins-ci.plugins:git-client) | MODERATE (CVSS: 4.3) | 2025-09-03 |
-| GHSA | [GHSA-GHSA-3ggv-qwcp-j6xg](https://github.com/advisories/GHSA-3ggv-qwcp-j6xg): Mautic Vulnerable to User Enumeration via Response Timing (COMPOSER/mautic/core, COMPOSER/mautic/core, COMPOSER/mautic/core) | MODERATE (CVSS: 5.9) | 2025-09-03 |
-| GHSA | [GHSA-GHSA-9v8p-m85m-f7mm](https://github.com/advisories/GHSA-9v8p-m85m-f7mm): Mautic vulnerable to reflected XSS in lead:addLeadTags - Quick Add (COMPOSER/mautic/core, COMPOSER/mautic/core, COMPOSER/mautic/core) | MODERATE (CVSS: 0.0) | 2025-09-03 |
-| GHSA | [GHSA-GHSA-438m-6mhw-hq5w](https://github.com/advisories/GHSA-438m-6mhw-hq5w): Mautic vulnerable to secret data extraction via elfinder (COMPOSER/mautic/core, COMPOSER/mautic/core, COMPOSER/mautic/core) | MODERATE (CVSS: 5.5) | 2025-09-03 |
-| GHSA | [GHSA-GHSA-45qj-4xq3-3c45](https://github.com/advisories/GHSA-45qj-4xq3-3c45): mcp-markdownify-server vulnerable to command injection in pptx-to-markdown tool (NPM/mcp-markdownify-server) | HIGH (CVSS: 7.5) | 2025-09-02 |
-| GHSA | [GHSA-GHSA-g5qg-72qw-gw5v](https://github.com/advisories/GHSA-g5qg-72qw-gw5v): Next.js Affected by Cache Key Confusion for Image Optimization API Routes (NPM/next, NPM/next) | MODERATE (CVSS: 6.2) | 2025-08-29 |
-| GHSA | [GHSA-GHSA-6fx8-h7jm-663j](https://github.com/advisories/GHSA-6fx8-h7jm-663j): parse-uri Regular expression Denial of Service (ReDoS) (NPM/parseuri, NPM/parse-uri) | MODERATE (CVSS: 0.0) | 2025-01-16 |
-| GHSA | [GHSA-GHSA-mw36-7c6c-q4q2](https://github.com/advisories/GHSA-mw36-7c6c-q4q2): XStream can be used for Remote Code Execution (MAVEN/com.thoughtworks.xstream:xstream) | HIGH (CVSS: 8.1) | 2020-11-16 |
+| GHSA | [GHSA-GHSA-hj6f-7hp7-xg69](https://github.com/advisories/GHSA-hj6f-7hp7-xg69): Mautic vulnerable to SSRF via webhook function (COMPOSER/mautic/core, COMPOSER/mautic/core, COMPOSER/mautic/core) | LOW (CVSS: 2.7) | 2025-09-03 |
+| GHSA | [GHSA-GHSA-9hp6-4448-45g2](https://github.com/advisories/GHSA-9hp6-4448-45g2): Hono's flaw in URL path parsing could cause path confusion (NPM/hono) | HIGH (CVSS: 7.5) | 2025-09-03 |
+| GHSA | [GHSA-GHSA-wgq8-vr6r-mqxm](https://github.com/advisories/GHSA-wgq8-vr6r-mqxm): frost-core: refresh shares with smaller min_signers will reduce security of group (RUST/frost-core) | MODERATE (CVSS: 0.0) | 2025-09-03 |
+| GHSA | [GHSA-GHSA-vmqv-hx8q-j7mg](https://github.com/advisories/GHSA-vmqv-hx8q-j7mg): Electron has ASAR Integrity Bypass via resource modification (NPM/electron, NPM/electron, NPM/electron) | MODERATE (CVSS: 6.1) | 2025-09-03 |
+| GHSA | [GHSA-GHSA-rrpj-r8h7-rm7r](https://github.com/advisories/GHSA-rrpj-r8h7-rm7r): Apache DolphinScheduler Incorrect Default Permissions Vulnerability (MAVEN/org.apache.dolphinscheduler:dolphinscheduler) | LOW (CVSS: 0.0) | 2025-09-03 |
+| GHSA | [GHSA-GHSA-ph6w-f82w-28w6](https://github.com/advisories/GHSA-ph6w-f82w-28w6): Claude Code Vulnerable to Arbitrary Code Execution Due to Insufficient Startup Warning (NPM/@anthropic-ai/claude-code) | HIGH (CVSS: 0.0) | 2025-09-03 |
+| GHSA | [GHSA-GHSA-x9gp-vjh6-3wv6](https://github.com/advisories/GHSA-x9gp-vjh6-3wv6): CKEditor 5 cross-site scripting (XSS) vulnerability in the clipboard package (NPM/@ckeditor/ckeditor5-clipboard, NPM/ckeditor5, NPM/@ckeditor/ckeditor5-clipboard) | LOW (CVSS: 0.0) | 2025-09-03 |
+| GHSA | [GHSA-GHSA-3p8m-j85q-pgmj](https://github.com/advisories/GHSA-3p8m-j85q-pgmj): Netty's decoders vulnerable to DoS via zip bomb style attack (MAVEN/io.netty:netty-codec, MAVEN/io.netty:netty-codec-compression) | MODERATE (CVSS: 0.0) | 2025-09-03 |
+| GHSA | [GHSA-GHSA-m63c-3rmg-r2cf](https://github.com/advisories/GHSA-m63c-3rmg-r2cf): XWiki configuration files can be accessed through jsx and sx endpoints (MAVEN/org.xwiki.platform:xwiki-platform-skin-skinx) | CRITICAL (CVSS: 0.0) | 2025-09-03 |
+| GHSA | [GHSA-GHSA-qww7-89xh-x7m7](https://github.com/advisories/GHSA-qww7-89xh-x7m7): XWiki configuration files can be accessed through the webjars API (MAVEN/org.xwiki.platform:xwiki-platform-webjars-api) | CRITICAL (CVSS: 0.0) | 2025-09-03 |
+| GHSA | [GHSA-GHSA-67mf-3cr5-8w23](https://github.com/advisories/GHSA-67mf-3cr5-8w23): Bouncy Castle for Java on All (API modules) allows Excessive Allocation (MAVEN/org.bouncycastle:bc-fips, MAVEN/org.bouncycastle:bc-fips, MAVEN/org.bouncycastle:bctls-jdk18on) | MODERATE (CVSS: 0.0) | 2025-08-12 |
+| GHSA | [GHSA-GHSA-7qgg-vw88-cc99](https://github.com/advisories/GHSA-7qgg-vw88-cc99): utils-extend Prototype Pollution (NPM/utils-extend) | CRITICAL (CVSS: 9.1) | 2025-02-06 |
+| GHSA | [GHSA-GHSA-mgfv-m47x-4wqp](https://github.com/advisories/GHSA-mgfv-m47x-4wqp): useragent Regular Expression Denial of Service vulnerability (NPM/useragent) | MODERATE (CVSS: 7.5) | 2024-10-26 |
+| GHSA | [GHSA-GHSA-cqfh-c4c5-c2hg](https://github.com/advisories/GHSA-cqfh-c4c5-c2hg): domain-suffix RegEx Denial of Service (NPM/domain-suffix) | HIGH (CVSS: 7.5) | 2024-03-28 |
+| GHSA | [GHSA-GHSA-9h6g-pr28-7cqp](https://github.com/advisories/GHSA-9h6g-pr28-7cqp): nodemailer ReDoS when trying to send a specially crafted email (NPM/nodemailer) | MODERATE (CVSS: 5.3) | 2024-01-31 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| postgres/postgres | [f2dbc83](https://github.com/postgres/postgres/commit/f2dbc83501d441a98f7799863e1b6f18af8e8fbe) | Fix use-after-free issue in slot synchronization. | 2025-09-03 |
+| openssl/openssl | [eb851cc](https://github.com/openssl/openssl/commit/eb851cc1fb985edfcbeb5710bd671ab6db49bc2d) | apps/enc.c: avoid signed integer overflow on bufsize assignment | 2025-09-01 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| openssl/openssl | [#27920](https://github.com/openssl/openssl/pull/27920) | fuzz/cmp.c: Correct the usages of BIO_new() | 2025-09-03 |
-| erlang/otp | [#10145](https://github.com/erlang/otp/pull/10145) | Verification of GH Securities included in OpenVEX statements | 2025-09-03 |
-| wazuh/wazuh | [#31599](https://github.com/wazuh/wazuh/pull/31599) | Improve and fix `dpkg` algorithm in version compare | 2025-09-03 |
+| langflow-ai/langflow | [#9542](https://github.com/langflow-ai/langflow/pull/9542) | fix: superuser credential handling and AUTO_LOGIN security | 2025-09-04 |
+| wazuh/wazuh | [#31674](https://github.com/wazuh/wazuh/pull/31674) | Remove deprecated VD tests | 2025-09-03 |
+| wazuh/wazuh | [#31631](https://github.com/wazuh/wazuh/pull/31631) | Update cluster configuration | 2025-09-03 |
+| langflow-ai/langflow | [#9441](https://github.com/langflow-ai/langflow/pull/9441) | fix: update CORS configuration and add env vars to allow for user control | 2025-09-03 |
 
