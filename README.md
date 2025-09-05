@@ -1,12 +1,13 @@
 # Security Updates Monitor
 
-*Last updated: 2025-09-05 18:18:22 UTC*
+*Last updated: 2025-09-05 19:11:25 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 13 |
-| PR | 1 |
+| ADVISORY | 11 |
+| COMMIT | 6 |
+| PR | 2 |
 
 ---
 
@@ -14,23 +15,33 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-377j-wj38-4728](https://github.com/advisories/GHSA-377j-wj38-4728): Weblate has a long session expiry when verifying second factor (PIP/Weblate) | LOW (CVSS: 0.0) | 2025-09-04 |
-| GHSA | [GHSA-GHSA-cgrg-86m5-xm4w](https://github.com/advisories/GHSA-cgrg-86m5-xm4w): Memos Vulnerable to Stored Cross-Site Scripting (GO/github.com/usememos/memos) | MODERATE (CVSS: 5.4) | 2025-09-04 |
-| GHSA | [GHSA-GHSA-78j5-8vq7-jxv5](https://github.com/advisories/GHSA-78j5-8vq7-jxv5): Memos Vulnerable to Path Traversal via the CreateResource Endpoint (GO/github.com/usememos/memos) | MODERATE (CVSS: 4.3) | 2025-09-04 |
-| GHSA | [GHSA-GHSA-pc6w-59fv-rh23](https://github.com/advisories/GHSA-pc6w-59fv-rh23): Langchain Community Vulnerable to XML External Entity (XXE) Attacks (PIP/langchain-community) | HIGH (CVSS: 7.5) | 2025-09-04 |
-| GHSA | [GHSA-GHSA-58p5-r2f6-g2cj](https://github.com/advisories/GHSA-58p5-r2f6-g2cj): Pixar OpenUSD Sdf_PathNode Module Use-After-Free Vulnerability Leading to Potential Remote Code Execution (PIP/usd-core) | CRITICAL (CVSS: 9.4) | 2025-09-04 |
-| GHSA | [GHSA-GHSA-9hp6-4448-45g2](https://github.com/advisories/GHSA-9hp6-4448-45g2): Hono's flaw in URL path parsing could cause path confusion (NPM/hono) | HIGH (CVSS: 7.5) | 2025-09-03 |
-| GHSA | [GHSA-GHSA-wgq8-vr6r-mqxm](https://github.com/advisories/GHSA-wgq8-vr6r-mqxm): frost-core: refresh shares with smaller min_signers will reduce security of group (RUST/frost-core) | MODERATE (CVSS: 0.0) | 2025-09-03 |
-| GHSA | [GHSA-GHSA-vmqv-hx8q-j7mg](https://github.com/advisories/GHSA-vmqv-hx8q-j7mg): Electron has ASAR Integrity Bypass via resource modification (NPM/electron, NPM/electron, NPM/electron) | MODERATE (CVSS: 6.1) | 2025-09-03 |
-| GHSA | [GHSA-GHSA-378x-6p4f-8jgm](https://github.com/advisories/GHSA-378x-6p4f-8jgm): SKOPS Card.get_model happily allows arbitrary code execution (PIP/skops) | HIGH (CVSS: 8.4) | 2025-08-07 |
-| GHSA | [GHSA-GHSA-4v6w-xpmh-gfgp](https://github.com/advisories/GHSA-4v6w-xpmh-gfgp): Skops may allow MethodNode to access unexpected object fields through dot notation, leading to arbitrary code execution at load time (PIP/skops) | HIGH (CVSS: 0.0) | 2025-07-25 |
-| GHSA | [GHSA-GHSA-f5fw-25gw-5m92](https://github.com/advisories/GHSA-f5fw-25gw-5m92): Apache Hadoop: Temporary File Local Information Disclosure (MAVEN/org.apache.hadoop:hadoop-common) | LOW (CVSS: 3.3) | 2024-09-25 |
-| GHSA | [GHSA-GHSA-86rg-pf4c-5grg](https://github.com/advisories/GHSA-86rg-pf4c-5grg): @backstage/backend-app-api leaks GitLab access tokens (NPM/@backstage/backend-app-api) | HIGH (CVSS: 7.3) | 2024-01-04 |
-| GHSA | [GHSA-GHSA-q35w-85pq-rv3x](https://github.com/advisories/GHSA-q35w-85pq-rv3x): Payara, when deployed to the root context, allows attackers to visit META-INF and WEB-INF (MAVEN/fish.payara.distributions:payara, MAVEN/fish.payara.distributions:payara, MAVEN/fish.payara.distributions:payara) | HIGH (CVSS: 7.5) | 2022-11-10 |
+| GHSA | [GHSA-GHSA-fghv-69vj-qj49](https://github.com/advisories/GHSA-fghv-69vj-qj49): Netty vulnerable to request smuggling due to incorrect parsing of chunk extensions (MAVEN/io.netty:netty-codec-http, MAVEN/io.netty:netty-codec-http) | LOW (CVSS: 0.0) | 2025-09-04 |
+| GHSA | [GHSA-GHSA-qpr4-c339-7vq8](https://github.com/advisories/GHSA-qpr4-c339-7vq8): Server-Side Request Forgery via /_image endpoint in Astro Cloudflare adapter (NPM/@astrojs/cloudflare) | HIGH (CVSS: 7.2) | 2025-09-04 |
+| GHSA | [GHSA-GHSA-786q-9hcg-v9ff](https://github.com/advisories/GHSA-786q-9hcg-v9ff): Argo CD's Project API Token Exposes Repository Credentials (GO/github.com/argoproj/argo-cd/v3, GO/github.com/argoproj/argo-cd/v3, GO/github.com/argoproj/argo-cd/v2) | CRITICAL (CVSS: 10.0) | 2025-09-04 |
+| GHSA | [GHSA-GHSA-wp3j-xq48-xpjw](https://github.com/advisories/GHSA-wp3j-xq48-xpjw): podman kube play symlink traversal vulnerability (GO/github.com/containers/podman/v4, GO/github.com/containers/podman/v5) | HIGH (CVSS: 8.1) | 2025-09-04 |
+| GHSA | [GHSA-GHSA-8xx5-h6m3-jr33](https://github.com/advisories/GHSA-8xx5-h6m3-jr33): Presta Shop vulnerable to email enumeration  (COMPOSER/prestashop/prestashop) | MODERATE (CVSS: 4.2) | 2025-09-04 |
+| GHSA | [GHSA-GHSA-x2jc-989c-47q4](https://github.com/advisories/GHSA-x2jc-989c-47q4): Hexo `include_code` has a path traversal (NPM/hexo) | HIGH (CVSS: 7.5) | 2023-09-08 |
+| GHSA | [GHSA-GHSA-hw56-7xj4-7gx6](https://github.com/advisories/GHSA-hw56-7xj4-7gx6): Liferay Portal and Liferay DXP Vulnerable to SQL Injection via Friendly URL Module (MAVEN/com.liferay:com.liferay.friendly.url.service, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.portal.bom) | CRITICAL (CVSS: 9.8) | 2022-11-15 |
+| GHSA | [GHSA-GHSA-r5fj-j449-vqw2](https://github.com/advisories/GHSA-r5fj-j449-vqw2): Liferay Portal and Liferay DXP Vulnerable to SQL Injection via the Fragment Module (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay:com.liferay.fragment.service) | CRITICAL (CVSS: 9.8) | 2022-11-15 |
+| GHSA | [GHSA-GHSA-gxxj-fhmr-37j9](https://github.com/advisories/GHSA-gxxj-fhmr-37j9): Liferay Portal and Liferay DXP Vulnerable to SQL Injection via the Layout Module (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay:com.liferay.layout.page.template.service) | HIGH (CVSS: 8.8) | 2022-11-15 |
+| GHSA | [GHSA-GHSA-vjj4-qwcm-552h](https://github.com/advisories/GHSA-vjj4-qwcm-552h): Inefficient Regular Expression Complexity in Liferay Portal  (MAVEN/com.liferay.portal:release.portal.bom) | HIGH (CVSS: 7.5) | 2022-11-15 |
+| GHSA | [GHSA-GHSA-hffx-r282-w2g9](https://github.com/advisories/GHSA-hffx-r282-w2g9): Path Traversal in Liferay Portal (MAVEN/com.liferay.portal:release.portal.bom) | HIGH (CVSS: 7.5) | 2022-11-15 |
+
+## Code Commits
+
+| Source | Title | Severity | Date |
+|--------|-------|----------|------|
+| torvalds/linux | [4e47e46](https://github.com/torvalds/linux/commit/4e47e46718c466d90f7a452579f9ed1a7c250553) | Merge tag 'pcmcia-6.18' of git://git.kernel.org/pub/scm/linux/kernel/git/brodo/linux | 2025-09-05 |
+| erlang/otp | [ae81b2f](https://github.com/erlang/otp/commit/ae81b2f6ff2d541c01242f12cdbd5238aa4b26bd) | Merge pull request #10168 from kikofernandez/kiko/create-automatic-vendor-vulnerability-issue/OTP-19763 | 2025-09-05 |
+| chromium/chromium | [3ddf9a1](https://github.com/chromium/chromium/commit/3ddf9a18f5ec781b7ad1c71568333ee052a5ec18) | Roll Dawn from 0567736dfb04 to 95122946d574 (25 revisions) | 2025-09-04 |
+| chromium/chromium | [beec7dd](https://github.com/chromium/chromium/commit/beec7dd467c2bf58f0b98719c7da70610a51f823) | Roll src/third_party/libvpx/source/libvpx/ b122dc093..8d00aca60 (5 commits) | 2025-09-04 |
+| wazuh/wazuh | [81cc44c](https://github.com/wazuh/wazuh/commit/81cc44c6908c680d2419087ca73ff6d5fcc47fcb) | fix: adjust indentation for policy loading in SecurityConfigurationAssessment::Run() | 2025-09-04 |
+| wazuh/wazuh | [f742908](https://github.com/wazuh/wazuh/commit/f742908cc7864ceeee50c0a129e1da98d5163c40) | fix: correct scan logic in SecurityConfigurationAssessment::Run() | 2025-09-03 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| langflow-ai/langflow | [#9542](https://github.com/langflow-ai/langflow/pull/9542) | fix: superuser credential handling and AUTO_LOGIN security | 2025-09-05 |
+| erlang/otp | [#9956](https://github.com/erlang/otp/pull/9956) | chore(deps): update github-actions (maint-28) | 2025-09-05 |
+| wazuh/wazuh | [#31599](https://github.com/wazuh/wazuh/pull/31599) | Improve and fix `dpkg` algorithm in version compare | 2025-09-05 |
 
