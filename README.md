@@ -1,12 +1,12 @@
 # Security Updates Monitor
 
-*Last updated: 2025-09-06 14:10:48 UTC*
+*Last updated: 2025-09-06 15:11:42 UTC*
 
 ## Summary
 | Type | Count |
 |------|-------|
-| ADVISORY | 15 |
-| COMMIT | 3 |
+| ADVISORY | 14 |
+| COMMIT | 2 |
 | PR | 1 |
 
 ---
@@ -15,33 +15,31 @@
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| GHSA | [GHSA-GHSA-wx3r-v6h7-frjp](https://github.com/advisories/GHSA-wx3r-v6h7-frjp): internetarchive Vulnerable to Directory Traversal in File.download() (PIP/internetarchive) | CRITICAL (CVSS: 0.0) | 2025-09-05 |
-| GHSA | [GHSA-GHSA-9q5r-wfvf-rr7f](https://github.com/advisories/GHSA-9q5r-wfvf-rr7f): xgrammar vulnerable to denial of service by huge enum grammar (PIP/xgrammar) | MODERATE (CVSS: 0.0) | 2025-09-05 |
-| GHSA | [GHSA-GHSA-ph2w-cx28-vhrq](https://github.com/advisories/GHSA-ph2w-cx28-vhrq): TkEasyGUI Affected by Uncontrolled Search Path Element Issue (PIP/TkEasyGUI) | HIGH (CVSS: 7.8) | 2025-09-05 |
-| GHSA | [GHSA-GHSA-hfrj-3w3g-jv32](https://github.com/advisories/GHSA-hfrj-3w3g-jv32): TkEasyGUI Vulnerable to OS Command Injection (PIP/TkEasyGUI) | CRITICAL (CVSS: 9.8) | 2025-09-05 |
-| GHSA | [GHSA-GHSA-rcw7-pqfp-735x](https://github.com/advisories/GHSA-rcw7-pqfp-735x): secrets-store-sync-controller discloses service account tokens in logs (GO/sigs.k8s.io/secrets-store-sync-controller) | MODERATE (CVSS: 6.5) | 2025-09-05 |
-| GHSA | [GHSA-GHSA-rrw2-px9j-qffj](https://github.com/advisories/GHSA-rrw2-px9j-qffj): FS2 half-shutdown of socket during TLS handshake may result in spin loop on opposite side (MAVEN/co.fs2:fs2-io_2.13.0-M5, MAVEN/co.fs2:fs2-io_2.12.0-RC2, MAVEN/co.fs2:fs2-io_2.12.0-M5) | MODERATE (CVSS: 5.3) | 2025-09-05 |
-| GHSA | [GHSA-GHSA-j6xf-jwrj-v5qp](https://github.com/advisories/GHSA-j6xf-jwrj-v5qp): Coder vulnerable to privilege escalation could lead to a cross workspace compromise (GO/github.com/coder/coder/v2, GO/github.com/coder/coder/v2) | HIGH (CVSS: 8.1) | 2025-09-05 |
-| GHSA | [GHSA-GHSA-fghv-69vj-qj49](https://github.com/advisories/GHSA-fghv-69vj-qj49): Netty vulnerable to request smuggling due to incorrect parsing of chunk extensions (MAVEN/io.netty:netty-codec-http, MAVEN/io.netty:netty-codec-http) | LOW (CVSS: 0.0) | 2025-09-04 |
-| GHSA | [GHSA-GHSA-qpr4-c339-7vq8](https://github.com/advisories/GHSA-qpr4-c339-7vq8): Server-Side Request Forgery via /_image endpoint in Astro Cloudflare adapter (NPM/@astrojs/cloudflare) | HIGH (CVSS: 7.2) | 2025-09-04 |
-| GHSA | [GHSA-GHSA-786q-9hcg-v9ff](https://github.com/advisories/GHSA-786q-9hcg-v9ff): Argo CD's Project API Token Exposes Repository Credentials (GO/github.com/argoproj/argo-cd/v3, GO/github.com/argoproj/argo-cd/v3, GO/github.com/argoproj/argo-cd/v2) | CRITICAL (CVSS: 10.0) | 2025-09-04 |
-| GHSA | [GHSA-GHSA-hw56-7xj4-7gx6](https://github.com/advisories/GHSA-hw56-7xj4-7gx6): Liferay Portal and Liferay DXP Vulnerable to SQL Injection via Friendly URL Module (MAVEN/com.liferay:com.liferay.friendly.url.service, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.portal.bom) | CRITICAL (CVSS: 9.8) | 2022-11-15 |
-| GHSA | [GHSA-GHSA-r5fj-j449-vqw2](https://github.com/advisories/GHSA-r5fj-j449-vqw2): Liferay Portal and Liferay DXP Vulnerable to SQL Injection via the Fragment Module (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay:com.liferay.fragment.service) | CRITICAL (CVSS: 9.8) | 2022-11-15 |
-| GHSA | [GHSA-GHSA-gxxj-fhmr-37j9](https://github.com/advisories/GHSA-gxxj-fhmr-37j9): Liferay Portal and Liferay DXP Vulnerable to SQL Injection via the Layout Module (MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay.portal:release.dxp.bom, MAVEN/com.liferay:com.liferay.layout.page.template.service) | HIGH (CVSS: 8.8) | 2022-11-15 |
-| GHSA | [GHSA-GHSA-vjj4-qwcm-552h](https://github.com/advisories/GHSA-vjj4-qwcm-552h): Inefficient Regular Expression Complexity in Liferay Portal  (MAVEN/com.liferay.portal:release.portal.bom) | HIGH (CVSS: 7.5) | 2022-11-15 |
-| GHSA | [GHSA-GHSA-hffx-r282-w2g9](https://github.com/advisories/GHSA-hffx-r282-w2g9): Path Traversal in Liferay Portal (MAVEN/com.liferay.portal:release.portal.bom) | HIGH (CVSS: 7.5) | 2022-11-15 |
+| GHSA | [GHSA-GHSA-xh7v-965r-23f7](https://github.com/advisories/GHSA-xh7v-965r-23f7): Atlantis Exposes Service Version Publicly on /status API Endpoint (GO/github.com/runatlantis/atlantis) | LOW (CVSS: 0.0) | 2025-09-05 |
+| GHSA | [GHSA-GHSA-6859-2qxq-ffv2](https://github.com/advisories/GHSA-6859-2qxq-ffv2): pgadmin4 is affected by a Cross-Origin Opener Policy (COOP) vulnerability (PIP/pgadmin4) | HIGH (CVSS: 7.9) | 2025-09-05 |
+| GHSA | [GHSA-GHSA-23hg-53q6-hqfg](https://github.com/advisories/GHSA-23hg-53q6-hqfg): ImageMagick BlobStream Forward-Seek Under-Allocation (NUGET/Magick.NET-Q16-HDRI-arm64, NUGET/Magick.NET-Q16-HDRI-OpenMP-arm64, NUGET/Magick.NET-Q8-OpenMP-arm64) | LOW (CVSS: 3.8) | 2025-09-05 |
+| GHSA | [GHSA-GHSA-377j-wj38-4728](https://github.com/advisories/GHSA-377j-wj38-4728): Weblate has a long session expiry when verifying second factor (PIP/Weblate) | LOW (CVSS: 0.0) | 2025-09-04 |
+| GHSA | [GHSA-GHSA-cgrg-86m5-xm4w](https://github.com/advisories/GHSA-cgrg-86m5-xm4w): Memos Vulnerable to Stored Cross-Site Scripting (GO/github.com/usememos/memos) | MODERATE (CVSS: 5.4) | 2025-09-04 |
+| GHSA | [GHSA-GHSA-78j5-8vq7-jxv5](https://github.com/advisories/GHSA-78j5-8vq7-jxv5): Memos Vulnerable to Path Traversal via the CreateResource Endpoint (GO/github.com/usememos/memos) | MODERATE (CVSS: 4.3) | 2025-09-04 |
+| GHSA | [GHSA-GHSA-pc6w-59fv-rh23](https://github.com/advisories/GHSA-pc6w-59fv-rh23): Langchain Community Vulnerable to XML External Entity (XXE) Attacks (PIP/langchain-community) | HIGH (CVSS: 7.5) | 2025-09-04 |
+| GHSA | [GHSA-GHSA-9hp6-4448-45g2](https://github.com/advisories/GHSA-9hp6-4448-45g2): Hono's flaw in URL path parsing could cause path confusion (NPM/hono) | HIGH (CVSS: 7.5) | 2025-09-03 |
+| GHSA | [GHSA-GHSA-wgq8-vr6r-mqxm](https://github.com/advisories/GHSA-wgq8-vr6r-mqxm): frost-core: refresh shares with smaller min_signers will reduce security of group (RUST/frost-core) | MODERATE (CVSS: 0.0) | 2025-09-03 |
+| GHSA | [GHSA-GHSA-vmqv-hx8q-j7mg](https://github.com/advisories/GHSA-vmqv-hx8q-j7mg): Electron has ASAR Integrity Bypass via resource modification (NPM/electron, NPM/electron, NPM/electron) | MODERATE (CVSS: 6.1) | 2025-09-03 |
+| GHSA | [GHSA-GHSA-378x-6p4f-8jgm](https://github.com/advisories/GHSA-378x-6p4f-8jgm): SKOPS Card.get_model happily allows arbitrary code execution (PIP/skops) | HIGH (CVSS: 8.4) | 2025-08-07 |
+| GHSA | [GHSA-GHSA-4v6w-xpmh-gfgp](https://github.com/advisories/GHSA-4v6w-xpmh-gfgp): Skops may allow MethodNode to access unexpected object fields through dot notation, leading to arbitrary code execution at load time (PIP/skops) | HIGH (CVSS: 0.0) | 2025-07-25 |
+| GHSA | [GHSA-GHSA-f5fw-25gw-5m92](https://github.com/advisories/GHSA-f5fw-25gw-5m92): Apache Hadoop: Temporary File Local Information Disclosure (MAVEN/org.apache.hadoop:hadoop-common) | LOW (CVSS: 3.3) | 2024-09-25 |
+| GHSA | [GHSA-GHSA-86rg-pf4c-5grg](https://github.com/advisories/GHSA-86rg-pf4c-5grg): @backstage/backend-app-api leaks GitLab access tokens (NPM/@backstage/backend-app-api) | HIGH (CVSS: 7.3) | 2024-01-04 |
 
 ## Code Commits
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| torvalds/linux | [d1d10ce](https://github.com/torvalds/linux/commit/d1d10cea0895264cc3769e4d9719baa94f4b250b) | Merge tag 'perf-tools-fixes-for-v6.17-2025-09-05' of git://git.kernel.org/pub/scm/linux/kernel/git/perf/perf-tools | 2025-09-05 |
-| torvalds/linux | [4e47e46](https://github.com/torvalds/linux/commit/4e47e46718c466d90f7a452579f9ed1a7c250553) | Merge tag 'pcmcia-6.18' of git://git.kernel.org/pub/scm/linux/kernel/git/brodo/linux | 2025-09-05 |
-| chromium/chromium | [d502577](https://github.com/chromium/chromium/commit/d502577278a11b670363452017efb31f0c3fde59) | fix close tab during actuation crash | 2025-09-05 |
+| torvalds/linux | [c2f3b10](https://github.com/torvalds/linux/commit/c2f3b108c09d1a8e2b20ce691df6a59d30351b7d) | Merge tag '6.17-RC4-smb3-client-fixes' of git://git.samba.org/sfrench/cifs-2.6 | 2025-09-05 |
+| chromium/chromium | [26382d1](https://github.com/chromium/chromium/commit/26382d185697d7d97b0589b919d4127721b1efc1) | Revert "fix close tab during actuation crash" | 2025-09-05 |
 
 ## Pull Requests
 
 | Source | Title | Severity | Date |
 |--------|-------|----------|------|
-| erlang/otp | [#9956](https://github.com/erlang/otp/pull/9956) | chore(deps): update github-actions (maint-28) | 2025-09-05 |
+| openssl/openssl | [#28379](https://github.com/openssl/openssl/pull/28379) | Avoid signed integer overflow in RAND_load_file | 2025-09-05 |
 
